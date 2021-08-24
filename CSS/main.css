@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../Font/Roboto/Roboto-Bold.ttf);
+}
+
+body{
+    background-color: #181818;
+    color: #FFFFFF;
+    font-family: "Roboto-Bold";
+    font-size: 22px;
+
+    width: auto;
+    height: auto;
+}
+
+.main_container{
+    background-color: #383838;
+    font-size: calc(8px + 1vw);
+    white-space: nowrap;
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main_icon_container{
+    width: 35%;
+    margin: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main_icon_item_container{
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+
+    transition: opacity 150ms;
+}
+
+.main_icon_item_container:hover{
+    opacity: 75%;
+}
+
+.main_icon_item{
+    min-height: 26px;
+    max-height: 48px;
+    margin-right: 5px;
+    height: 53px;
+    line-height: 53px;
+}
+
+.main_icon_image{
+    min-width: 26px;
+    max-width: 100%;
+}
+
+#main_icon_image_id{
+    display: flex;
+    align-items: center;
+}
+
+.main_other_container{
+    position: absolute;
+    right: 0;
+
+    width: 45%;
+    height: 48px;
+    margin: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main_other_item{
+    margin: 0;
+    margin-left: 15px;
+
+    min-height: 26px;
+    max-height: 48px;
+    height: 53px;
+    line-height: 53px;
+
+    transition: opacity 150ms;
+}
+
+.main_other_item:hover{
+    opacity: 75%;
+}
+
+.tugas_text_container{
+    position: relative;
+    top: 75px;
+}
+
+.tugas_text_item{
+    background-color: #383838;
+    color: white;
+    font-size: calc(16px + 1vw);
+    white-space: nowrap;
+    cursor: default;
+
+    margin: 0 auto;
+    padding: 10px;
+    height: fit-content;
+    width: fit-content;
+
+    border: none;
+    border-radius: 8px;
+}
+
+.tugas_file_container{
+    position: relative;
+    top: 80px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.tugas_file_item{
+    background-color: #383838;
+    color: white;
+    cursor: pointer;
+    
+    margin: 10px;
+    padding: 10px;
+    height: 250px;
+    width: 175px;
+
+    border: none;
+    border-radius: 8px;
+}
+
+/*
+.main_icon_container, .main_icon_item, .main_icon_image{
+    border: 1px yellow solid;
+}
+*/

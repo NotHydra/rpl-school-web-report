@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../Font/Roboto/Roboto-Bold.ttf);
+}
+
+body{
+    background-color: #383838;
+    color: white;
+
+    font-family: "Roboto-Bold";
+    font-size: calc(11px + 1.5vw);
+
+    width: auto;
+}
+
+.container{
+    height: 650px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    border: 1px yellow solid;
+}
+
+.item{
+    background-color: #181818;
+    
+    height: 500px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border: 1px yellow solid;
+}
+
+.item-item{
+    border: 1px yellow solid;
+}
+
+.icon_container{
+    border: 1px yellow solid;
+    min-height: 26px;
+    max-height: 48px;
+    min-width: 26px;
+    max-width: 100%;
+}
+
+.icon_image{
+    min-width: 26px;
+    max-width: 100%;
+}
+
+#left-item{
+    width: 25%;
+}
+
+#right-item{
+    width: 55%;
+}
