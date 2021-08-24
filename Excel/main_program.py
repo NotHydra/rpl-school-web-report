@@ -1,11 +1,22 @@
 import openpyxl
 from openpyxl.styles import *
 
+#Update
+wb_mingguan_file = []
+wb_mingguan_file.append("Excel/Mingguan/List Tugas Minggu Ke-1 (26 Juli 2021 -  1 Agustus 2021).xlsx")
+wb_mingguan_file.append("Excel/Mingguan/List Tugas Minggu Ke-2 (2 Agustus 2021 - 8 Agustus 2021).xlsx")
+wb_mingguan_file.append("Excel/Mingguan/List Tugas Minggu Ke-3 (9 Agustus 2021 - 15 Agustus 2021).xlsx")
+wb_mingguan_file.append("Excel/Mingguan/List Tugas Minggu Ke-4 (16 Agustus 2021 - 22 Agustus 2021).xlsx")
+wb_mingguan_file.append("Excel/Mingguan/List Tugas Minggu Ke-5 (23 Agustus 2021 - 29 Agustus 2021).xlsx")
+
+wb_bulanan_file = []
+wb_bulanan_file.append("Excel/Bulanan/List Tugas Bulanan Ke-1 (26 Juli 2021 - 29 Agustus 2021).xlsx")
+
 def write_table_names():
     wb_names = openpyxl.load_workbook("Excel/Names.xlsx")
 
     # Collect Data
-    value_list = []
+    value_list_weekly = []
     for i in range(1, 38):
         for j in range(1,3):
             temp_value = wb_names.active.cell(row = i, column = j).value
@@ -13,28 +24,61 @@ def write_table_names():
             if temp_value == None:
                 temp_value = " "
 
-            value_list.append(temp_value)
+            value_list_weekly.append(temp_value)
 
-    # Load Workbook + Update
-    wb_mingguan = []
-    wb_mingguan.append(openpyxl.load_workbook("Excel/Mingguan/List Tugas Minggu Ke-1 (26 Juli 2021 -  1 Agustus 2021).xlsx"))
-    wb_mingguan.append(openpyxl.load_workbook("Excel/Mingguan/List Tugas Minggu Ke-2 (2 Agustus 2021 - 8 Agustus 2021).xlsx"))
-    wb_mingguan.append(openpyxl.load_workbook("Excel/Mingguan/List Tugas Minggu Ke-3 (9 Agustus 2021 - 15 Agustus 2021).xlsx"))
-    wb_mingguan.append(openpyxl.load_workbook("Excel/Mingguan/List Tugas Minggu Ke-4 (16 Agustus 2021 - 22 Agustus 2021).xlsx"))
-    wb_mingguan.append(openpyxl.load_workbook("Excel/Mingguan/List Tugas Minggu Ke-5 (23 Agustus 2021 - 29 Agustus 2021).xlsx"))
     
+    value_list_monthly = []
+    for i in range(1, 38):
+        for j in range(1,3):
+            temp_value = wb_names.active.cell(row = i, column = j).value
+            
+            if temp_value == None:
+                temp_value = " "
+
+            value_list_monthly.append(temp_value)
+
+
+    value_list_monthly.insert(2, " ")
+    value_list_monthly.insert(3, " ")
+            
+    # Load Workbook
+    wb_mingguan = []
+    for i in range(len(wb_mingguan_file)):
+        wb_mingguan.append(openpyxl.load_workbook(wb_mingguan_file[i]))
+
+    wb_bulanan = []
+    for i in range(len(wb_bulanan_file)):
+        wb_bulanan.append(openpyxl.load_workbook(wb_bulanan_file[i]))
+    
+
     # Write Workbook
     for wb in range(len(wb_mingguan)):
         try: 
             k = 0
             for i in range(1, 38):
                 for j in range(1,3):
-                    wb_mingguan[wb].active.cell(row = i, column = j, value = value_list[k])
+                    wb_mingguan[wb].active.cell(row = i, column = j, value = value_list_weekly[k])
                     k += 1
 
         
             wb_mingguan[wb].active.merge_cells(start_row = 1, start_column = 1, end_row = 2, end_column = 1)
             wb_mingguan[wb].active.merge_cells(start_row = 1, start_column = 2, end_row = 2, end_column = 2)
+
+        except:
+            pass
+
+    
+    for wb in range(len(wb_bulanan)):
+        try: 
+            k = 0
+            for i in range(1, 39):
+                for j in range(1,3):
+                    wb_bulanan[wb].active.cell(row = i, column = j, value = value_list_monthly[k])
+                    k += 1
+
+        
+            wb_bulanan[wb].active.merge_cells(start_row = 1, start_column = 1, end_row = 3, end_column = 1)
+            wb_bulanan[wb].active.merge_cells(start_row = 1, start_column = 2, end_row = 3, end_column = 2)
 
         except:
             pass
@@ -65,13 +109,30 @@ def write_table_names():
         for i in range(3, 38):
             wb_mingguan[wb].active.cell(row = i, column = 2).alignment = name_alignment
 
+    
+    for wb in range(len(wb_bulanan)):
+        for i in range(1, 39):
+            for j in range(1, 3):
+                wb_bulanan[wb].active.cell(row = i, column = j).border = all_border
+                wb_bulanan[wb].active.cell(row = i, column = j).alignment = all_alignment
+                wb_bulanan[wb].active.cell(row = i, column = j).font = all_font
 
-    # Save Workbook + Update
-    wb_mingguan[0].save("Excel/Mingguan/List Tugas Minggu Ke-1 (26 Juli 2021 -  1 Agustus 2021).xlsx")
-    wb_mingguan[1].save("Excel/Mingguan/List Tugas Minggu Ke-2 (2 Agustus 2021 - 8 Agustus 2021).xlsx")
-    wb_mingguan[2].save("Excel/Mingguan/List Tugas Minggu Ke-3 (9 Agustus 2021 - 15 Agustus 2021).xlsx")
-    wb_mingguan[3].save("Excel/Mingguan/List Tugas Minggu Ke-4 (16 Agustus 2021 - 22 Agustus 2021).xlsx")
-    wb_mingguan[4].save("Excel/Mingguan/List Tugas Minggu Ke-5 (23 Agustus 2021 - 29 Agustus 2021).xlsx")
+
+        for i in range(1, 3):
+            wb_bulanan[wb].active.cell(row = 1, column = i).font = header_font  
+
+
+        for i in range(3, 39):
+            wb_bulanan[wb].active.cell(row = i, column = 2).alignment = name_alignment
+
+
+    # Save Workbook
+    for i in range(len(wb_mingguan_file)):
+        wb_mingguan[i].save(wb_mingguan_file[i])
+
+
+    for i in range(len(wb_bulanan_file)):
+        wb_bulanan[i].save(wb_bulanan_file[i])
 
 
 def write_table_value():
@@ -94,6 +155,23 @@ def write_table_value():
 
         weekly_task_value.append(value_list)
 
+    
+    monthly_task_start_column_range = [3]
+    monthly_task_end_column_range   = [27]
+    monthly_task_value = []
+    for k in range(len(monthly_task_start_column_range)):
+        value_list = []
+        for j in range(monthly_task_start_column_range[k], monthly_task_end_column_range[k]):
+            for i in range(1, 39):
+                temp_value = wb_gabunggan.active.cell(row = i, column = j).value
+                if wb_gabunggan.active.cell(row = i, column = j).value == None:
+                    temp_value = ""
+
+                value_list.append(temp_value)
+
+
+        monthly_task_value.append(value_list)
+
 
     """
     # Print Out Data Value Per Week
@@ -104,13 +182,16 @@ def write_table_value():
     """
 
 
-    # Load Workbook  + Update
+    # Load Workbook
     wb_mingguan = []
-    wb_mingguan.append(openpyxl.load_workbook("Excel/Mingguan/List Tugas Minggu Ke-1 (26 Juli 2021 -  1 Agustus 2021).xlsx"))
-    wb_mingguan.append(openpyxl.load_workbook("Excel/Mingguan/List Tugas Minggu Ke-2 (2 Agustus 2021 - 8 Agustus 2021).xlsx"))
-    wb_mingguan.append(openpyxl.load_workbook("Excel/Mingguan/List Tugas Minggu Ke-3 (9 Agustus 2021 - 15 Agustus 2021).xlsx"))
-    wb_mingguan.append(openpyxl.load_workbook("Excel/Mingguan/List Tugas Minggu Ke-4 (16 Agustus 2021 - 22 Agustus 2021).xlsx"))
-    wb_mingguan.append(openpyxl.load_workbook("Excel/Mingguan/List Tugas Minggu Ke-5 (23 Agustus 2021 - 29 Agustus 2021).xlsx"))
+    for i in range(len(wb_mingguan_file)):
+        wb_mingguan.append(openpyxl.load_workbook(wb_mingguan_file[i]))
+
+
+    wb_bulanan = []
+    for i in range(len(wb_bulanan_file)):
+        wb_bulanan.append(openpyxl.load_workbook(wb_bulanan_file[i]))
+
 
     # Write Workbook
     for wb in range(len(wb_mingguan)):
@@ -119,6 +200,19 @@ def write_table_value():
             for i in range(1, 38):
                 wb_mingguan[wb].active.cell(row = i, column = j, value = weekly_task_value[wb][k])
                 k += 1
+    
+
+    for wb in range(len(wb_bulanan)):
+        k = 0
+        for j in range(3, (monthly_task_end_column_range[wb] - monthly_task_start_column_range[wb] + 3)):
+            for i in range(1, 39):
+                wb_bulanan[wb].active.cell(row = i, column = j, value = monthly_task_value[wb][k])
+                k += 1
+    
+    
+    for wb in range(len(wb_bulanan)):
+        for i in range(len(weekly_task_start_column_range)):
+            wb_bulanan[wb].active.merge_cells(start_row = 1, start_column = weekly_task_start_column_range[i], end_row = 1, end_column = weekly_task_end_column_range[i] - 1)  
 
 
     # Style
@@ -159,13 +253,39 @@ def write_table_value():
                 if j % 2 == 0:
                     wb_mingguan[wb].active.cell(row = i, column = j).fill = gray_fill
 
+    
+    for wb in range(len(wb_bulanan)):
+        for i in range(1, 39):
+            for j in range(3, (monthly_task_end_column_range[wb] - monthly_task_start_column_range[wb] + 3)):
+                wb_bulanan[wb].active.cell(row = i, column = j).border = all_border
+                wb_bulanan[wb].active.cell(row = i, column = j).alignment = all_alignment
+                wb_bulanan[wb].active.cell(row = i, column = j).font = all_font
 
-    # Save Workbook + Update
-    wb_mingguan[0].save("Excel/Mingguan/List Tugas Minggu Ke-1 (26 Juli 2021 -  1 Agustus 2021).xlsx")
-    wb_mingguan[1].save("Excel/Mingguan/List Tugas Minggu Ke-2 (2 Agustus 2021 - 8 Agustus 2021).xlsx")
-    wb_mingguan[2].save("Excel/Mingguan/List Tugas Minggu Ke-3 (9 Agustus 2021 - 15 Agustus 2021).xlsx")
-    wb_mingguan[3].save("Excel/Mingguan/List Tugas Minggu Ke-4 (16 Agustus 2021 - 22 Agustus 2021).xlsx")
-    wb_mingguan[4].save("Excel/Mingguan/List Tugas Minggu Ke-5 (23 Agustus 2021 - 29 Agustus 2021).xlsx")
+
+        for i in range(3, (monthly_task_end_column_range[wb] - monthly_task_start_column_range[wb] + 3)):
+            wb_bulanan[wb].active.cell(row = 1, column = i).font = header_font
+
+
+        for i in range(3, (monthly_task_end_column_range[wb] - monthly_task_start_column_range[wb] + 3)):
+            wb_bulanan[wb].active.cell(row = 2, column = i).font = sub_header_font
+
+
+        for i in range(3, 39):
+            for j in range(3, (monthly_task_end_column_range[wb] - monthly_task_start_column_range[wb] + 3)):
+                if wb_bulanan[wb].active.cell(row = i, column = j).value == "ü":
+                    wb_bulanan[wb].active.cell(row = i, column = j).font = wingdings_font
+                
+                if j % 2 == 0:
+                    wb_bulanan[wb].active.cell(row = i, column = j).fill = gray_fill
+
+
+    # Save Workbook
+    for i in range(len(wb_mingguan_file)):
+        wb_mingguan[i].save(wb_mingguan_file[i])
+    
+    for i in range(len(wb_bulanan_file)):
+        wb_bulanan[i].save(wb_bulanan_file[i])
+
 
 write_table_names()
 write_table_value()
