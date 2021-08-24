@@ -173,15 +173,6 @@ def write_table_value():
         monthly_task_value.append(value_list)
 
 
-    """
-    # Print Out Data Value Per Week
-    for i in range(len(weekly_task_value)):
-        print(weekly_task_value[i])
-        print(len(weekly_task_value[i]))
-        print()
-    """
-
-
     # Load Workbook
     wb_mingguan = []
     for i in range(len(wb_mingguan_file)):
@@ -206,13 +197,22 @@ def write_table_value():
         k = 0
         for j in range(3, (monthly_task_end_column_range[wb] - monthly_task_start_column_range[wb] + 3)):
             for i in range(1, 39):
-                wb_bulanan[wb].active.cell(row = i, column = j, value = monthly_task_value[wb][k])
+                try:
+                    wb_bulanan[wb].active.cell(row = i, column = j, value = monthly_task_value[wb][k])
+                
+                except:
+                    pass
+
                 k += 1
     
-    
+
     for wb in range(len(wb_bulanan)):
         for i in range(len(weekly_task_start_column_range)):
-            wb_bulanan[wb].active.merge_cells(start_row = 1, start_column = weekly_task_start_column_range[i], end_row = 1, end_column = weekly_task_end_column_range[i] - 1)  
+            try:
+                wb_bulanan[wb].active.merge_cells(start_row = 1, start_column = weekly_task_start_column_range[i], end_row = 1, end_column = weekly_task_end_column_range[i] - 1)  
+
+            except:
+                pass
 
 
     # Style
@@ -227,7 +227,16 @@ def write_table_value():
 
     wingdings_font = Font(name = "Wingdings", size = 12)
 
+    light_color_fill = []
+    dark_color_fill = []
+    light_color = ["ffb14a", "92ff8a", "fc8dd0", "8ef5f3"]
+    dark_color  = ["eb972a", "62e359", "e66cb5", "38e8e5"]
     gray_fill = PatternFill(fill_type = "solid", fgColor = "b0b0b0")
+
+    for i in range(len(light_color)):
+        light_color_fill.append(PatternFill(fill_type = "solid", fgColor = light_color[i]))
+        dark_color_fill.append(PatternFill(fill_type = "solid", fgColor = dark_color[i]))
+    
 
     for wb in range(len(wb_mingguan)):
         for i in range(1, 38):
@@ -274,10 +283,30 @@ def write_table_value():
             for j in range(3, (monthly_task_end_column_range[wb] - monthly_task_start_column_range[wb] + 3)):
                 if wb_bulanan[wb].active.cell(row = i, column = j).value == "ü":
                     wb_bulanan[wb].active.cell(row = i, column = j).font = wingdings_font
-                
-                if j % 2 == 0:
-                    wb_bulanan[wb].active.cell(row = i, column = j).fill = gray_fill
 
+                    
+        l = 0
+        for k in range(len(wb_mingguan)):
+            for i in range(1, 39):
+                for j in range(weekly_task_start_column_range[k], (weekly_task_end_column_range[k])):
+                    wb_bulanan[wb].active.cell(row = i, column = j).fill = light_color_fill[l]
+            l += 1
+
+            if l >= 4 :
+                l = 0
+
+        
+        l = 0
+        for k in range(len(wb_mingguan)):
+            for i in range(4, 39):
+                for j in range(weekly_task_start_column_range[k], (weekly_task_end_column_range[k])):
+                    if j % 2 == 0:
+                        wb_bulanan[wb].active.cell(row = i, column = j).fill = dark_color_fill[l]
+            l += 1
+
+            if l >= 4 :
+                l = 0
+            
 
     # Save Workbook
     for i in range(len(wb_mingguan_file)):
