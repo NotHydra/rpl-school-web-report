@@ -1,16 +1,6 @@
 import openpyxl
 from openpyxl.styles import *
-
-#Update
-wb_mingguan_file = []
-wb_mingguan_file.append("Excel/Mingguan/List Tugas Minggu Ke-1 (26 Juli 2021 -  1 Agustus 2021).xlsx")
-wb_mingguan_file.append("Excel/Mingguan/List Tugas Minggu Ke-2 (2 Agustus 2021 - 8 Agustus 2021).xlsx")
-wb_mingguan_file.append("Excel/Mingguan/List Tugas Minggu Ke-3 (9 Agustus 2021 - 15 Agustus 2021).xlsx")
-wb_mingguan_file.append("Excel/Mingguan/List Tugas Minggu Ke-4 (16 Agustus 2021 - 22 Agustus 2021).xlsx")
-wb_mingguan_file.append("Excel/Mingguan/List Tugas Minggu Ke-5 (23 Agustus 2021 - 29 Agustus 2021).xlsx")
-
-wb_bulanan_file = []
-wb_bulanan_file.append("Excel/Bulanan/List Tugas Bulanan Ke-1 (26 Juli 2021 - 29 Agustus 2021).xlsx")
+from files import wb_mingguan_file, wb_bulanan_file
 
 def write_table_names():
     wb_names = openpyxl.load_workbook("Excel/Names.xlsx")
@@ -140,7 +130,7 @@ def write_table_value():
     
     # Collect Data Value + Update
     weekly_task_start_column_range = [3, 8, 16, 23, 26]
-    weekly_task_end_column_range   = [8, 16, 23, 26, 27]
+    weekly_task_end_column_range   = [8, 16, 23, 26, 28]
     weekly_task_value = []
     for k in range(len(weekly_task_start_column_range)):
         value_list = []
@@ -155,9 +145,9 @@ def write_table_value():
 
         weekly_task_value.append(value_list)
 
-    
+    # Collect Data Value + Update
     monthly_task_start_column_range = [3]
-    monthly_task_end_column_range   = [27]
+    monthly_task_end_column_range   = [28]
     monthly_task_value = []
     for k in range(len(monthly_task_start_column_range)):
         value_list = []
