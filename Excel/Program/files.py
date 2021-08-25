@@ -33,3 +33,6 @@ weekly_task_end_column_range   = [8, 16, 23, 26, 30]
 global monthly_task_start_column_range,monthly_task_end_column_range
 monthly_task_start_column_range = [3]
 monthly_task_end_column_range   = [30]
+
+global combined_task_range
+combined_task_range = "A1:AC42"
