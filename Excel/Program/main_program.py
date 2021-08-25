@@ -1,6 +1,6 @@
 import openpyxl
 from openpyxl.styles import *
-from files import wb_mingguan_file, wb_bulanan_file
+from files import wb_mingguan_file, wb_bulanan_file, weekly_task_start_column_range, weekly_task_end_column_range, monthly_task_start_column_range, monthly_task_end_column_range
 
 def write_table_names():
     wb_names = openpyxl.load_workbook("Excel/Names.xlsx")
@@ -128,9 +128,7 @@ def write_table_names():
 def write_table_value():
     wb_gabunggan = openpyxl.load_workbook("Excel/List Tugas Gabunggan.xlsx")
     
-    # Collect Data Value + Update
-    weekly_task_start_column_range = [3, 8, 16, 23, 26]
-    weekly_task_end_column_range   = [8, 16, 23, 26, 28]
+    # Collect Data Value
     weekly_task_value = []
     for k in range(len(weekly_task_start_column_range)):
         value_list = []
@@ -145,9 +143,7 @@ def write_table_value():
 
         weekly_task_value.append(value_list)
 
-    # Collect Data Value + Update
-    monthly_task_start_column_range = [3]
-    monthly_task_end_column_range   = [28]
+    # Collect Data Value
     monthly_task_value = []
     for k in range(len(monthly_task_start_column_range)):
         value_list = []
@@ -198,6 +194,12 @@ def write_table_value():
 
     for wb in range(len(wb_bulanan)):
         for i in range(len(weekly_task_start_column_range)):
+            try:
+                wb_bulanan[wb].active.unmerge_cells(start_row = 1, start_column = weekly_task_start_column_range[i], end_row = 1, end_column = weekly_task_end_column_range[i] - 1) 
+
+            except:
+                pass
+
             try:
                 wb_bulanan[wb].active.merge_cells(start_row = 1, start_column = weekly_task_start_column_range[i], end_row = 1, end_column = weekly_task_end_column_range[i] - 1)  
 

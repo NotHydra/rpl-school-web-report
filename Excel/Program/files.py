@@ -25,3 +25,11 @@ global wb_bulanan_image_name
 wb_bulanan_image_name = [
     "Image List Tugas Bulan Ke-1"
 ]
+
+global weekly_task_start_column_range, weekly_task_end_column_range
+weekly_task_start_column_range = [3, 8, 16, 23, 26]
+weekly_task_end_column_range   = [8, 16, 23, 26, 30]
+
+global monthly_task_start_column_range,monthly_task_end_column_range
+monthly_task_start_column_range = [3]
+monthly_task_end_column_range   = [30]
