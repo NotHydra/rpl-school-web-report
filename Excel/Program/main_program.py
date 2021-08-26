@@ -193,13 +193,20 @@ def write_table_value():
     
 
     for wb in range(len(wb_bulanan)):
+        for i in range(len(weekly_task_start_column_range)): 
+            j = weekly_task_start_column_range[i]
+            while j != weekly_task_end_column_range[i]:
+                try:
+                    wb_bulanan[wb].active.unmerge_cells(start_row = 1, start_column = weekly_task_start_column_range[i], end_row = 1, end_column = j)
+                
+                except:
+                    pass
+
+                j += 1
+
+
+    for wb in range(len(wb_bulanan)):
         for i in range(len(weekly_task_start_column_range)):
-            try:
-                wb_bulanan[wb].active.unmerge_cells(start_row = 1, start_column = weekly_task_start_column_range[i], end_row = 1, end_column = weekly_task_end_column_range[i] - 1) 
-
-            except:
-                pass
-
             try:
                 wb_bulanan[wb].active.merge_cells(start_row = 1, start_column = weekly_task_start_column_range[i], end_row = 1, end_column = weekly_task_end_column_range[i] - 1)  
 
