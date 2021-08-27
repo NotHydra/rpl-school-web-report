@@ -28,11 +28,11 @@ wb_bulanan_image_name = [
 
 global weekly_task_start_column_range, weekly_task_end_column_range
 weekly_task_start_column_range = [3, 8, 16, 23, 26]
-weekly_task_end_column_range   = [8, 16, 23, 26, 33]
+weekly_task_end_column_range   = [8, 16, 23, 26, 34]
 
 global monthly_task_start_column_range,monthly_task_end_column_range
 monthly_task_start_column_range = [3]
-monthly_task_end_column_range   = [33]
+monthly_task_end_column_range   = [34]
 
 global combined_task_range
-combined_task_range = "A1:AF42"
+combined_task_range = "A1:AG42"
