@@ -315,5 +315,190 @@ def write_table_value():
         wb_bulanan[i].save(wb_bulanan_file[i])
 
 
+def check_validity():
+    # Load Workbook
+    wb_gabunggan = openpyxl.load_workbook("Excel/List Tugas Gabunggan.xlsx")
+
+    wb_bulanan = []
+    for i in range(len(wb_bulanan_file)):
+        wb_bulanan.append(openpyxl.load_workbook(wb_bulanan_file[i]))
+
+
+    wb_mingguan = []
+    for i in range(len(wb_mingguan_file)):
+        wb_mingguan.append(openpyxl.load_workbook(wb_mingguan_file[i]))
+
+
+    # Task Value
+    combined_task_value = []
+    for k in range(len(weekly_task_start_column_range)):
+        for i in range(4, 39):
+            for j in range(weekly_task_start_column_range[k], weekly_task_end_column_range[k]):
+                temp_value = wb_gabunggan.active.cell(row = i, column = j).value
+
+                if temp_value == None:
+                    temp_value = ""
+                
+                combined_task_value.append(temp_value)
+
+
+    combined_monthly_task_value = []
+    for wb in range(len(wb_bulanan)):
+        temp_value_list = []
+        for i in range(4, 39):
+            for j in range(monthly_task_start_column_range[wb], monthly_task_end_column_range[wb]):
+                temp_value = wb_gabunggan.active.cell(row = i, column = j).value
+
+                if temp_value == None:
+                    temp_value = ""
+
+                temp_value_list.append(temp_value)
+
+        combined_monthly_task_value.append(temp_value_list)
+
+
+    combined_weekly_task_value = []
+    for wb in range(len(wb_mingguan)):
+        temp_value_list = []
+        for i in range(4, 39):
+            for j in range(weekly_task_start_column_range[wb], weekly_task_end_column_range[wb]):
+                temp_value = wb_gabunggan.active.cell(row = i, column = j).value
+
+                if temp_value == None:
+                    temp_value = ""
+
+                temp_value_list.append(temp_value)
+
+        combined_weekly_task_value.append(temp_value_list)
+    
+
+    monthly_task_value = []
+    for wb in range(len(wb_bulanan)):
+        temp_value_list = []
+        for i in range(4, 39):
+            for j in range(3, monthly_task_end_column_range[wb] - weekly_task_start_column_range[wb] + 3):
+                temp_value = wb_bulanan[wb].active.cell(row = i, column = j).value
+
+                if temp_value == None:
+                    temp_value = ""
+                
+                temp_value_list.append(temp_value)
+        
+
+        monthly_task_value.append(temp_value_list)
+
+
+    weekly_task_value = []
+    for wb in range(len(wb_mingguan)):
+        temp_value_list = []
+        for i in range(3, 38):
+            for j in range(3, weekly_task_end_column_range[wb] - weekly_task_start_column_range[wb] + 3):
+                temp_value = wb_mingguan[wb].active.cell(row = i, column = j).value
+
+                if temp_value == None:
+                    temp_value = ""
+
+                temp_value_list.append(temp_value)
+
+
+        weekly_task_value.append(temp_value_list)
+
+
+    # Print Max Value
+    print()
+    print("Checking Validity")
+    print(f"Combined Task Max Value    : {len(combined_task_value)}")
+
+    total_value = 0
+    for i in range(len(combined_monthly_task_value)):
+        total_value += len(combined_monthly_task_value[i])
+
+
+    print(f"Combined Monthly Max Value : {total_value}")
+
+    total_value = 0
+    for i in range(len(combined_weekly_task_value)):
+        total_value += len(combined_weekly_task_value[i])
+
+
+    print(f"Combined Weekly Max Value  : {total_value}")
+    print()
+
+    for i in range(len(monthly_task_value)):
+        print(f"C.Month {i + 1} Max Value : {len(combined_monthly_task_value[i])}")
+        print(f"Month {i + 1} Max Value   : {len(monthly_task_value[i])}")
+
+
+    print()
+    for i in range(len(weekly_task_value)):
+        print(f"C.Weekly {i + 1} Max Value : {len(combined_weekly_task_value[i])}")
+        print(f"Weekly {i + 1} Max Value   : {len(weekly_task_value[i])}")
+        print()
+
+    
+    # Print Current Value
+    combined_task_current_value = 0
+    for i in range(len(combined_task_value)):
+        if combined_task_value[i] != "":
+            combined_task_current_value += 1
+
+
+    print(f"Combined Task Current Value    : {combined_task_current_value}")
+
+    combined_monthly_task_current_value = 0
+    for wb in range(len(wb_bulanan)):
+        for i in range(len(combined_monthly_task_value[wb])):
+            if combined_monthly_task_value[wb][i] != "":
+                combined_monthly_task_current_value += 1
+
+
+    print(f"Combined Monthly Current Value : {combined_monthly_task_current_value}")
+
+    combined_weekly_task_current_value = 0
+    for wb in range(len(wb_mingguan)):
+        for i in range(len(combined_weekly_task_value[wb])):
+            if combined_weekly_task_value[wb][i] != "":
+                combined_weekly_task_current_value += 1
+
+
+    print(f"Combined Weekly Current Value  : {combined_weekly_task_current_value}")
+    print()
+
+    
+    for wb in range(len(wb_bulanan)):
+        combined_monthly_task_current_value = 0
+        for i in range(len(combined_monthly_task_value[wb])):
+            if combined_monthly_task_value[wb][i] != "":
+                combined_monthly_task_current_value += 1
+
+        print(f"C.Month {wb + 1} Current Value : {combined_monthly_task_current_value}")
+
+        monthly_task_current_value = 0
+        for i in range(len(monthly_task_value[wb])):
+            if monthly_task_value[wb][i] != "":
+                monthly_task_current_value += 1
+
+        print(f"Month {wb + 1} Current Value   : {monthly_task_current_value}")
+        print()
+    
+
+    for wb in range(len(wb_mingguan)):
+        combined_weekly_task_current_value = 0
+        for i in range(len(combined_weekly_task_value[wb])):
+            if combined_weekly_task_value[wb][i] != "":
+                combined_weekly_task_current_value += 1
+
+        print(f"C.Weekly {wb + 1} Current Value : {combined_weekly_task_current_value}")
+
+        weekly_task_current_value = 0
+        for i in range(len(weekly_task_value[wb])):
+            if weekly_task_value[wb][i] != "":
+                weekly_task_current_value += 1
+
+        print(f"Weekly {wb + 1} Current Value   : {weekly_task_current_value}")
+        print()
+
+
 write_table_names()
 write_table_value()
+check_validity()
