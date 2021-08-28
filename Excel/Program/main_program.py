@@ -405,45 +405,77 @@ def check_validity():
 
 
     # Print Max Value
+    # Print Combined Max Value
     print()
     print("Checking Validity")
-    print(f"Combined Task Max Value    : {len(combined_task_value)}")
+    print(f"Combined Max Value : {len(combined_task_value)},", end = " ")
 
     total_value = 0
     for i in range(len(combined_monthly_task_value)):
         total_value += len(combined_monthly_task_value[i])
 
 
-    print(f"Combined Monthly Max Value : {total_value}")
+    print(f"{total_value},", end = " ")
 
     total_value = 0
     for i in range(len(combined_weekly_task_value)):
         total_value += len(combined_weekly_task_value[i])
 
 
-    print(f"Combined Weekly Max Value  : {total_value}")
+    print(f"{total_value}")
     print()
 
-    for i in range(len(monthly_task_value)):
-        print(f"C.Month {i + 1} Max Value : {len(combined_monthly_task_value[i])}")
-        print(f"Month {i + 1} Max Value   : {len(monthly_task_value[i])}")
+    # Print Month Max Value
+    print(f"C.Month Max Value :", end = " ")
+    for i in range(len(combined_monthly_task_value)):
+        if i != len(combined_monthly_task_value) - 1:
+            print(f"{len(combined_monthly_task_value[i])},", end = " ")
 
-
-    print()
-    for i in range(len(weekly_task_value)):
-        print(f"C.Weekly {i + 1} Max Value : {len(combined_weekly_task_value[i])}")
-        print(f"Weekly {i + 1} Max Value   : {len(weekly_task_value[i])}")
-        print()
-
+        elif i == len(combined_monthly_task_value) - 1:
+            print(f"{len(combined_monthly_task_value[i])}")
     
+    
+    print(f"Month Max Value   :", end = " ")
+    for i in range(len(monthly_task_value)):
+        if i != len(monthly_task_value) - 1:
+            print(f"{len(monthly_task_value[i])},", end = " ")
+
+        elif i == len(monthly_task_value) - 1:
+            print(f"{len(monthly_task_value[i])}")
+    
+
+    # Print Weekly Max Value
+    print()
+    print(f"C.Weekly Max Value :", end = " ")
+    for i in range(len(combined_weekly_task_value)):
+        if i != len(combined_weekly_task_value) - 1:
+            print(f"{len(combined_weekly_task_value[i])},", end = " ")
+
+        elif i == len(combined_weekly_task_value) - 1:
+            print(f"{len(combined_weekly_task_value[i])}")
+
+
+    print(f"Weekly Max Value   :", end = " ")
+    for i in range(len(weekly_task_value)):
+        if i != len(weekly_task_value) - 1:
+            print(f"{len(weekly_task_value[i])},", end = " ")
+
+        elif i == len(weekly_task_value) - 1:
+            print(f"{len(weekly_task_value[i])}")
+    
+
     # Print Current Value
+    # Combined Current Value
+    print()
+    print()
+    print()
     combined_task_current_value = 0
     for i in range(len(combined_task_value)):
         if combined_task_value[i] != "":
             combined_task_current_value += 1
 
 
-    print(f"Combined Task Current Value    : {combined_task_current_value}")
+    print(f"Combined Current Value : {combined_task_current_value},", end = " ")
 
     combined_monthly_task_current_value = 0
     for wb in range(len(wb_bulanan)):
@@ -452,7 +484,7 @@ def check_validity():
                 combined_monthly_task_current_value += 1
 
 
-    print(f"Combined Monthly Current Value : {combined_monthly_task_current_value}")
+    print(f"{combined_monthly_task_current_value},", end = " ")
 
     combined_weekly_task_current_value = 0
     for wb in range(len(wb_mingguan)):
@@ -461,43 +493,74 @@ def check_validity():
                 combined_weekly_task_current_value += 1
 
 
-    print(f"Combined Weekly Current Value  : {combined_weekly_task_current_value}")
+    print(f"{combined_weekly_task_current_value}")
     print()
 
-    
+    # Monthly Current Value
+    print(f"C.Month Current Value :", end = " ")
     for wb in range(len(wb_bulanan)):
         combined_monthly_task_current_value = 0
         for i in range(len(combined_monthly_task_value[wb])):
             if combined_monthly_task_value[wb][i] != "":
                 combined_monthly_task_current_value += 1
 
-        print(f"C.Month {wb + 1} Current Value : {combined_monthly_task_current_value}")
-
+        if wb != len(wb_bulanan) - 1:
+            print(f"{combined_monthly_task_current_value},", end = " ")
+        
+        elif wb == len(wb_bulanan) - 1:
+            print(f"{combined_monthly_task_current_value}")
+        
+    
+    print(f"Month Current Value   :", end = " ")
+    for wb in range(len(wb_bulanan)):
         monthly_task_current_value = 0
         for i in range(len(monthly_task_value[wb])):
             if monthly_task_value[wb][i] != "":
                 monthly_task_current_value += 1
 
-        print(f"Month {wb + 1} Current Value   : {monthly_task_current_value}")
-        print()
-    
 
+        if wb != len(wb_bulanan) - 1:
+            print(f"{monthly_task_current_value},", end = " ")
+        
+        elif wb == len(wb_bulanan) - 1:
+            print(f"{monthly_task_current_value}")
+        
+    
+    print()
+    
+    # Weekly Current Value
+    print(f"C.Weekly Current Value :", end = " ")
     for wb in range(len(wb_mingguan)):
         combined_weekly_task_current_value = 0
         for i in range(len(combined_weekly_task_value[wb])):
             if combined_weekly_task_value[wb][i] != "":
                 combined_weekly_task_current_value += 1
 
-        print(f"C.Weekly {wb + 1} Current Value : {combined_weekly_task_current_value}")
 
+        if wb != len(wb_mingguan) - 1:
+            print(f"{combined_weekly_task_current_value},", end = " ")
+
+        elif wb == len(wb_mingguan) - 1:
+            print(f"{combined_weekly_task_current_value}")
+
+
+    print(f"Weekly Current Value   :", end = " ")
+    for wb in range(len(wb_mingguan)):
         weekly_task_current_value = 0
         for i in range(len(weekly_task_value[wb])):
             if weekly_task_value[wb][i] != "":
                 weekly_task_current_value += 1
 
-        print(f"Weekly {wb + 1} Current Value   : {weekly_task_current_value}")
-        print()
+        
+        if wb != len(wb_mingguan) - 1:
+            print(f"{weekly_task_current_value},", end = " ")
 
+        elif wb == len(wb_mingguan) - 1:
+            print(f"{weekly_task_current_value}")
+
+
+    print()
+        
 
 write_table_names()
 write_table_value()
