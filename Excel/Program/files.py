@@ -4,12 +4,14 @@ wb_mingguan_file = [
     "Excel/Mingguan/Excel/List Tugas Minggu Ke-2 (2 Agustus 2021 - 8 Agustus 2021).xlsx",
     "Excel/Mingguan/Excel/List Tugas Minggu Ke-3 (9 Agustus 2021 - 15 Agustus 2021).xlsx",
     "Excel/Mingguan/Excel/List Tugas Minggu Ke-4 (16 Agustus 2021 - 22 Agustus 2021).xlsx",
-    "Excel/Mingguan/Excel/List Tugas Minggu Ke-5 (23 Agustus 2021 - 29 Agustus 2021).xlsx"
+    "Excel/Mingguan/Excel/List Tugas Minggu Ke-5 (23 Agustus 2021 - 29 Agustus 2021).xlsx",
+    "Excel/Mingguan/Excel/List Tugas Minggu Ke-6 (30 Agustus 2021 - 5 September 2021).xlsx"
 ]
 
 global wb_bulanan_file
 wb_bulanan_file = [
-    "Excel/Bulanan/Excel/List Tugas Bulanan Ke-1 (26 Juli 2021 - 29 Agustus 2021).xlsx"
+    "Excel/Bulanan/Excel/List Tugas Bulanan Ke-1 (26 Juli 2021 - 29 Agustus 2021).xlsx",
+    "Excel/Bulanan/Excel/List Tugas Bulanan Ke-2 (30 Juli 2021 - 27 September 2021).xlsx"
 ]
 
 global wb_mingguan_image_name
@@ -18,21 +20,30 @@ wb_mingguan_image_name = [
     "Image List Tugas Minggu Ke-2",
     "Image List Tugas Minggu Ke-3",
     "Image List Tugas Minggu Ke-4",
-    "Image List Tugas Minggu Ke-5"
+    "Image List Tugas Minggu Ke-5",
+    "Image List Tugas Minggu Ke-6"
 ]
 
 global wb_bulanan_image_name
 wb_bulanan_image_name = [
     "Image List Tugas Bulan Ke-1"
+    "Image List Tugas Bulan Ke-2"
 ]
 
 global weekly_task_start_column_range, weekly_task_end_column_range
-weekly_task_start_column_range = [3, 8, 16, 23, 26]
-weekly_task_end_column_range   = [8, 16, 23, 26, 34]
+weekly_task_start_column_range = [3, 8, 16, 23, 26, 34]
+weekly_task_end_column_range   = [8, 16, 23, 26, 34, 38]
 
 global monthly_task_start_column_range,monthly_task_end_column_range
-monthly_task_start_column_range = [3]
-monthly_task_end_column_range   = [34]
+monthly_task_start_column_range = [3, 34]
+monthly_task_end_column_range   = [34, 38]
+
+global wb_bulanan_start_container, wb_bulanan_end_container
+wb_bulanan_start_container = [1, 6]
+wb_bulanan_end_container   = [6, 7]
+
+global wb_bulanan_subtract
+wb_bulanan_subtract = [0, 31]
 
 global combined_task_range
-combined_task_range = "A1:AG42"
+combined_task_range = "A1:AI42"

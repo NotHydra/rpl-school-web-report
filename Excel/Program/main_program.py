@@ -1,6 +1,6 @@
 import openpyxl
 from openpyxl.styles import *
-from files import wb_mingguan_file, wb_bulanan_file, weekly_task_start_column_range, weekly_task_end_column_range, monthly_task_start_column_range, monthly_task_end_column_range
+from files import wb_mingguan_file, wb_bulanan_file, weekly_task_start_column_range, weekly_task_end_column_range, monthly_task_start_column_range, monthly_task_end_column_range, wb_bulanan_start_container, wb_bulanan_end_container, wb_bulanan_subtract
 
 def write_table_names():
     wb_names = openpyxl.load_workbook("Excel/Names.xlsx")
@@ -193,22 +193,39 @@ def write_table_value():
     
 
     for wb in range(len(wb_bulanan)):
-        for i in range(len(weekly_task_start_column_range)): 
+        for i in range(wb_bulanan_start_container[wb] - 1, wb_bulanan_end_container[wb] - 1): 
+            if wb == 0:
+                start_column = weekly_task_start_column_range[i]
+                end_column = start_column
+        
+            elif wb == 1:
+                start_column = weekly_task_start_column_range[i] - wb_bulanan_subtract[wb]
+                end_column = start_column
+
             j = weekly_task_start_column_range[i]
             while j != weekly_task_end_column_range[i]:
                 try:
-                    wb_bulanan[wb].active.unmerge_cells(start_row = 1, start_column = weekly_task_start_column_range[i], end_row = 1, end_column = j)
-                
+                    wb_bulanan[wb].active.unmerge_cells(start_row = 1, start_column = start_column, end_row = 1, end_column = end_column)
+    
                 except:
                     pass
-
+                
+                end_column += 1
                 j += 1
 
 
     for wb in range(len(wb_bulanan)):
-        for i in range(len(weekly_task_start_column_range)):
+        for i in range(wb_bulanan_start_container[wb] - 1, wb_bulanan_end_container[wb] - 1):
+            if wb == 0:
+                start_column = weekly_task_start_column_range[i]
+                end_column = weekly_task_end_column_range[i] - 1
+        
+            elif wb == 1:
+                start_column = weekly_task_start_column_range[i] - wb_bulanan_subtract[wb]
+                end_column = weekly_task_end_column_range[i] - weekly_task_start_column_range[i] + 2
+
             try:
-                wb_bulanan[wb].active.merge_cells(start_row = 1, start_column = weekly_task_start_column_range[i], end_row = 1, end_column = weekly_task_end_column_range[i] - 1)  
+                wb_bulanan[wb].active.merge_cells(start_row = 1, start_column = start_column, end_row = 1, end_column = end_column)  
 
             except:
                 pass
@@ -282,30 +299,46 @@ def write_table_value():
             for j in range(3, (monthly_task_end_column_range[wb] - monthly_task_start_column_range[wb] + 3)):
                 if wb_bulanan[wb].active.cell(row = i, column = j).value == "ü":
                     wb_bulanan[wb].active.cell(row = i, column = j).font = wingdings_font
+        
 
-                    
         l = 0
-        for k in range(len(wb_mingguan)):
+        for k in range(wb_bulanan_start_container[wb] - 1, wb_bulanan_end_container[wb] - 1):
+            if wb == 0:
+                start_column = weekly_task_start_column_range[k]
+                end_column = weekly_task_end_column_range[k]
+
+            elif wb == 1:
+                start_column = weekly_task_start_column_range[k] - wb_bulanan_subtract[wb]
+                end_column = weekly_task_end_column_range[k] - weekly_task_start_column_range[k] + 3
+
             for i in range(1, 39):
-                for j in range(weekly_task_start_column_range[k], (weekly_task_end_column_range[k])):
-                    wb_bulanan[wb].active.cell(row = i, column = j).fill = light_color_fill[l]
+                for j in range(start_column, end_column):
+                    wb_bulanan[wb].active.cell(row = i, column = j).fill = light_color_fill[l]  
             l += 1
 
-            if l >= 4 :
-                l = 0
-
+            if l >= 4:
+                l = 0 
         
+
         l = 0
-        for k in range(len(wb_mingguan)):
+        for k in range(wb_bulanan_start_container[wb] - 1, wb_bulanan_end_container[wb] - 1):
+            if wb == 0:
+                start_column = weekly_task_start_column_range[k]
+                end_column = weekly_task_end_column_range[k]
+            
+            elif wb == 1:
+                start_column = weekly_task_start_column_range[k] - wb_bulanan_subtract[wb]
+                end_column = weekly_task_end_column_range[k] - weekly_task_start_column_range[k] + 3
+
             for i in range(4, 39):
-                for j in range(weekly_task_start_column_range[k], (weekly_task_end_column_range[k])):
+                for j in range(start_column, end_column):
                     if j % 2 == 0:
                         wb_bulanan[wb].active.cell(row = i, column = j).fill = dark_color_fill[l]
             l += 1
 
             if l >= 4 :
                 l = 0
-            
+
 
     # Save Workbook
     for i in range(len(wb_mingguan_file)):
@@ -376,7 +409,7 @@ def check_validity():
     for wb in range(len(wb_bulanan)):
         temp_value_list = []
         for i in range(4, 39):
-            for j in range(3, monthly_task_end_column_range[wb] - weekly_task_start_column_range[wb] + 3):
+            for j in range(3, monthly_task_end_column_range[wb] - monthly_task_start_column_range[wb] + 3):
                 temp_value = wb_bulanan[wb].active.cell(row = i, column = j).value
 
                 if temp_value == None:
