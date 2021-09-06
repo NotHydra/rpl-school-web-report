@@ -309,7 +309,7 @@ def write_table_value():
 
             elif wb == 1:
                 start_column = weekly_task_start_column_range[k] - wb_bulanan_subtract[wb]
-                end_column = weekly_task_end_column_range[k] - weekly_task_start_column_range[k] + 3
+                end_column = weekly_task_end_column_range[k] - wb_bulanan_subtract[wb]
 
             for i in range(1, 39):
                 for j in range(start_column, end_column):
@@ -328,7 +328,7 @@ def write_table_value():
             
             elif wb == 1:
                 start_column = weekly_task_start_column_range[k] - wb_bulanan_subtract[wb]
-                end_column = weekly_task_end_column_range[k] - weekly_task_start_column_range[k] + 3
+                end_column = weekly_task_end_column_range[k] - wb_bulanan_subtract[wb]
 
             for i in range(4, 39):
                 for j in range(start_column, end_column):
