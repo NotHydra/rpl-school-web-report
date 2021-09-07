@@ -4,13 +4,13 @@
 }
 
 body{
-    font-family: "Roboto-Bold";
-    font-size: 22px;
     background-color: #181818;
     color: #FFFFFF;
+    font-family: "Roboto-Bold";
+    font-size: 22px;
 
     width: auto;
-    height: auto;
+    height: 100%;
 }
 
 .main_container{
@@ -19,6 +19,7 @@ body{
     white-space: nowrap;
 
     width: 100%;
+    height: calc(32px + 1vw);
     position: fixed;
     top: 0;
     left: 0;
@@ -56,19 +57,10 @@ body{
 .main_icon_item{
     min-height: 26px;
     max-height: 48px;
+    margin-left: 5px;
     margin-right: 5px;
     height: 53px;
     line-height: 53px;
-}
-
-.main_icon_image{
-    min-width: 26px;
-    max-width: 100%;
-}
-
-#main_icon_image_id{
-    display: flex;
-    align-items: center;
 }
 
 .main_other_container{
@@ -105,7 +97,7 @@ body{
     color: white;
 
     position: relative;
-    top: 75px;
+    top: 60px;
 
     
 }
