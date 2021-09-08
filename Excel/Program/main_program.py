@@ -223,6 +223,7 @@ def write_table_value():
             elif wb == 1:
                 start_column = weekly_task_start_column_range[i] - wb_bulanan_subtract[wb]
                 end_column = weekly_task_end_column_range[i] - weekly_task_start_column_range[i] + 2
+                end_column = start_column + (weekly_task_end_column_range[i] - weekly_task_start_column_range[i]) - 1
 
             try:
                 wb_bulanan[wb].active.merge_cells(start_row = 1, start_column = start_column, end_row = 1, end_column = end_column)  
