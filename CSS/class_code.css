@@ -123,3 +123,12 @@ body{
     min-width: 155px;  
     max-width: 30%;
 }
+
+.header_text{
+    font-size: calc(12px + 1vw);
+    text-align:center;
+
+    margin: 0 auto;
+    min-width: 155px;  
+    max-width: 30%;
+}
