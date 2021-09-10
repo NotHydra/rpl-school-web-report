@@ -129,6 +129,10 @@ body{
     align-content: center;
 }
 
+.tugas_file_secondary_container{
+    position: relative;
+}
+
 .tugas_file_item{
     background-color: #383838;
     color: white;
@@ -168,6 +172,18 @@ body{
     width: 172px;
 
     text-align: center;
+}
+
+.tugas_file_item_icon{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 36px;
+    transition: opacity 200ms;
+}
+
+.tugas_file_item_icon:hover{
+    opacity: 75%;
 }
 
 /*
