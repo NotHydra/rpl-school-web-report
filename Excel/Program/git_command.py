@@ -32,4 +32,5 @@ commit_name = "?"
 print()
 GitCommand.git_add()
 GitCommand.git_commit()
+GitCommand.git_push()
 
