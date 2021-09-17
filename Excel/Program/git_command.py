@@ -1,5 +1,6 @@
-from os import truncate
+from os import popen, truncate
 import subprocess
+from subprocess import Popen
 
 class GitCommand:
     def run(*args):
@@ -23,12 +24,11 @@ class GitCommand:
     
     def git_push():
         GitCommand.run("push", "origin", "main")
-        subprocess.check_call("RizkyHydra")
         print("Pushing File")
-    
+        
 
-is_file_update = True
-commit_name = "?"
+is_file_update = False
+commit_name = "Git Command Automation"
 
 print()
 GitCommand.git_add()
