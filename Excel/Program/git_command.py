@@ -23,8 +23,9 @@ class GitCommand:
     
     def git_push():
         GitCommand.run("push", "origin", "main")
+        subprocess.check_call("RizkyHydra")
         print("Pushing File")
-        
+    
 
 is_file_update = True
 commit_name = "?"
