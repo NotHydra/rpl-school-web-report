@@ -1,6 +1,4 @@
-from os import popen, truncate
 import subprocess
-from subprocess import Popen
 
 class GitCommand:
     def run(*args):
@@ -13,6 +11,9 @@ class GitCommand:
 
     
     def git_commit():
+        is_file_update = True
+        commit_name = ""
+
         if is_file_update == False:
             GitCommand.run("commit", "-m", f"{commit_name}")
             print("Comitting File")
@@ -26,9 +27,6 @@ class GitCommand:
         GitCommand.run("push", "origin", "main")
         print("Pushing File")
         
-
-is_file_update = False
-commit_name = "Git Command Automation"
 
 print()
 GitCommand.git_add()
