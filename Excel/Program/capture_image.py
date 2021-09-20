@@ -13,4 +13,4 @@ def run_capture_image():
     excel2img.export_img("Excel/List Tugas Gabunggan.xlsx", "Excel/Image List Tugas Gabunggan.png", "Sheet1", f"Sheet1!{combined_task_range}")
 
 
-run_capture_image
+run_capture_image()
