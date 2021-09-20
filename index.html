@@ -4,30 +4,29 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>XI-RPL SMKN2</title>
+        <title>Web Laporan</title>
+
         <link rel="icon" href="Image/RPL Icon/white_theme_rpl_icon.png" type="image/x-icon">
 
         <link rel="stylesheet" href="CSS/index.css">
+        
     </head>
 
     <body>
-        <!--Main Container-->
         <div class="main_container">
-            <!--Icon-->
             <a href="index.html" style="text-decoration: none; color: white; width: 100%; cursor: default;">
                 <div class="main_icon_container">
                     <div class="main_icon_item_container">
                         <div class="main_icon_item">
                             XI-RPL
                         </div>
-
+    
                     </div>
     
                 </div>
-
+    
             </a>
 
-            <!--Other-->
             <div class="main_other_container">
                 <div class="main_other_item">
                     <a href="index.html" style="text-decoration: none; color: white;">Home</a>
@@ -36,213 +35,60 @@
                 <div class="main_other_item">
                     <a href="HTML/class_code.html" style="text-decoration: none; color: white;">Class code</a>
                 </div>
-
-                <div class="main_other_item">
-                    <a href="HTML/what_is_rpl.html" style="text-decoration: none; color: white;">What is RPL</a>
-                </div>
         
                 <div class="main_other_item">
                     <a href="HTML/about_us.html" style="text-decoration: none; color: white;">About us</a>
                 </div>
-
+    
             </div>
+
+        </div>
+        
+        <div class="main_image_container">
+            <img class="main_item_image" src="" alt="Image">
+            
+            <text class="main_item_text">
+                Website Laporan
+                <text id="main_item_class_name">XI-RPL</text>
+            </text>
+           
+        </div>
+
+        <div class="content_container">
+            <div>
+                <input type="checkbox" id="weekly_checkbox"/> 
+                <label class="content_item" for="weekly_checkbox" onclick="check_checkbox_value('weekly')">Laporan Mingguan</label>
+                <div id="weekly_list_container">
+                    <a href="HTML/File/Mingguan/list_tugas_mingguan_1.html"><div class="content_item">Laporan Mingguan Ke-1</div></a>
+                    <a href="HTML/File/Mingguan/list_tugas_mingguan_2.html"><div class="content_item">Laporan Mingguan Ke-2</div></a>
+                    <a href="HTML/File/Mingguan/list_tugas_mingguan_3.html"><div class="content_item">Laporan Mingguan Ke-3</div></a>
+                    <a href="HTML/File/Mingguan/list_tugas_mingguan_4.html"><div class="content_item">Laporan Mingguan Ke-4</div></a>
+                    <a href="HTML/File/Mingguan/list_tugas_mingguan_5.html"><div class="content_item">Laporan Mingguan Ke-5</div></a>
+                    <a href="HTML/File/Mingguan/list_tugas_mingguan_6.html"><div class="content_item">Laporan Mingguan Ke-6</div></a>
+                    <a href="HTML/File/Mingguan/list_tugas_mingguan_7.html"><div class="content_item">Laporan Mingguan Ke-7</div></a>
+                    <a href="HTML/File/Mingguan/list_tugas_mingguan_8.html"><div class="content_item">Laporan Mingguan Ke-8</div></a>
+                    <a href="HTML/File/Mingguan/list_tugas_mingguan_9.html"><div class="content_item">Laporan Mingguan Ke-9</div></a>
+                    
+                </div>
+                
+            </div>
+
+            <div>
+                <input type="checkbox" id="monthly_checkbox"/> 
+                <label class="content_item" for="monthly_checkbox" onclick="check_checkbox_value('monthly')">Laporan Bulanan</label>
+                <div id="monthly_list_container">
+                    <a href="HTML/File/Bulanan/list_tugas_bulanan_1.html"><div class="content_item">Laporan Bulanan Ke-1</div></a>
+                    <a href="HTML/File/Bulanan/list_tugas_bulanan_2.html"><div class="content_item">Laporan Bulanan Ke-2</div></a>
+                    
+                </div>
+                
+            </div>
+
+            <a href="HTML/File/list_tugas_gabunggan.html"><div class="content_item">Laporan Gabunggan</div></a>
             
         </div>
 
-        <!--Tugas-->
-        <!--Mingguan-->
-        <div class="tugas_text_container">
-            <h2 class="tugas_text_item">TUGAS MINGGUAN</h2>
-        </div>
-
-        <div class="tugas_file_container">
-            <div class="tugas_file_secondary_container">
-                <a href= "HTML/File/Mingguan/list_tugas_mingguan_1.html" style="text-decoration: none;">
-                    <div class="tugas_file_item">
-                        <img class="tugas_file_item_image" src="Image/Logo/Excel.png" alt="Excel Logo">            
-                        <text class="tugas_file_item_text">Minggu Ke-1</text>
-                    
-                    </div>
-                
-                </a>
-
-                <a href="Excel/Mingguan/Excel/List Tugas Minggu Ke-1 (26 Juli 2021 -  1 Agustus 2021).xlsx" download><img class="tugas_file_item_icon" src="Image/Icon/File_Download.png" alt="File Dowload Icon"></a>
-
-            </div>
-
-            <div class="tugas_file_secondary_container">
-                <a href= "HTML/File/Mingguan/list_tugas_mingguan_2.html" style="text-decoration: none;">
-                    <div class="tugas_file_item">
-                        <img class="tugas_file_item_image" src="Image/Logo/Excel.png" alt="Excel Logo">            
-                        <text class="tugas_file_item_text">Minggu Ke-2</text>
-                    
-                    </div>
-                
-                </a>
-
-                <a href="Excel/Mingguan/Excel/List Tugas Minggu Ke-2 (2 Agustus 2021 - 8 Agustus 2021).xlsx" download><img class="tugas_file_item_icon" src="Image/Icon/File_Download.png" alt="File Dowload Icon"></a>
-
-            </div>
-
-            <div class="tugas_file_secondary_container">
-                <a href="HTML/File/Mingguan/list_tugas_mingguan_3.html" style="text-decoration: none;">
-                    <div class="tugas_file_item">
-                        <img class="tugas_file_item_image" src="Image/Logo/Excel.png" alt="Excel Logo">            
-                        <text class="tugas_file_item_text">Minggu Ke-3</text>
-                    
-                    </div>
-                
-                </a>
-
-                <a href="Excel/Mingguan/Excel/List Tugas Minggu Ke-3 (9 Agustus 2021 - 15 Agustus 2021).xlsx" download><img class="tugas_file_item_icon" src="Image/Icon/File_Download.png" alt="File Dowload Icon"></a>
-
-            </div>
-
-            <div class="tugas_file_secondary_container">
-                <a href= "HTML/File/Mingguan/list_tugas_mingguan_4.html" style="text-decoration: none;">
-                    <div class="tugas_file_item">
-                        <img class="tugas_file_item_image" src="Image/Logo/Excel.png" alt="Excel Logo">            
-                        <text class="tugas_file_item_text">Minggu Ke-4</text>
-                    
-                    </div>
-                
-                </a>
-
-                <a href="Excel/Mingguan/Excel/List Tugas Minggu Ke-4 (16 Agustus 2021 - 22 Agustus 2021).xlsx" download><img class="tugas_file_item_icon" src="Image/Icon/File_Download.png" alt="File Dowload Icon"></a>
-
-            </div>
-
-            <div class="tugas_file_secondary_container">
-                <a href= "HTML/File/Mingguan/list_tugas_mingguan_5.html" style="text-decoration: none;">
-                    <div class="tugas_file_item">
-                        <img class="tugas_file_item_image" src="Image/Logo/Excel.png" alt="Excel Logo">            
-                        <text class="tugas_file_item_text">Minggu Ke-5</text>
-                    
-                    </div>
-                
-                </a>
-
-                <a href="Excel/Mingguan/Excel/List Tugas Minggu Ke-5 (23 Agustus 2021 - 29 Agustus 2021).xlsx" download><img class="tugas_file_item_icon" src="Image/Icon/File_Download.png" alt="File Dowload Icon"></a>
-
-            </div>
-
-            <div class="tugas_file_secondary_container">
-                <a href= "HTML/File/Mingguan/list_tugas_mingguan_6.html" style="text-decoration: none;">
-                    <div class="tugas_file_item">
-                        <img class="tugas_file_item_image" src="Image/Logo/Excel.png" alt="Excel Logo">            
-                        <text class="tugas_file_item_text">Minggu Ke-6</text>
-                    
-                    </div>
-                
-                </a>
-
-                <a href="Excel/Mingguan/Excel/List Tugas Minggu Ke-6 (30 Agustus 2021 - 5 September 2021).xlsx" download><img class="tugas_file_item_icon" src="Image/Icon/File_Download.png" alt="File Dowload Icon"></a>
-
-            </div>
-
-            <div class="tugas_file_secondary_container">
-                <a href= "HTML/File/Mingguan/list_tugas_mingguan_7.html" style="text-decoration: none;">
-                    <div class="tugas_file_item">
-                        <img class="tugas_file_item_image" src="Image/Logo/Excel.png" alt="Excel Logo">            
-                        <text class="tugas_file_item_text">Minggu Ke-7</text>
-                    
-                    </div>
-                
-                </a>
-
-                <a href="Excel/Mingguan/Excel/List Tugas Minggu Ke-7 (6 September 2021 - 12 September 2021).xlsx" download><img class="tugas_file_item_icon" src="Image/Icon/File_Download.png" alt="File Dowload Icon"></a>
-
-            </div>
-
-            <div class="tugas_file_secondary_container">
-                <a href= "HTML/File/Mingguan/list_tugas_mingguan_8.html" style="text-decoration: none;">
-                    <div class="tugas_file_item">
-                        <img class="tugas_file_item_image" src="Image/Logo/Excel.png" alt="Excel Logo">            
-                        <text class="tugas_file_item_text">Minggu Ke-8</text>
-                    
-                    </div>
-                
-                </a>
-
-                <a href="Excel/Mingguan/Excel/List Tugas Minggu Ke-8 (13 September 2021 - 19 September 2021).xlsx" download><img class="tugas_file_item_icon" src="Image/Icon/File_Download.png" alt="File Dowload Icon"></a>
-
-            </div>
-
-            <div class="tugas_file_secondary_container">
-                <a href= "HTML/File/Mingguan/list_tugas_mingguan_9.html" style="text-decoration: none;">
-                    <div class="tugas_file_item">
-                        <img class="tugas_file_item_image" src="Image/Logo/Excel.png" alt="Excel Logo">            
-                        <text class="tugas_file_item_text">Minggu Ke-9</text>
-                    
-                    </div>
-                
-                </a>
-
-                <a href="Excel/Mingguan/Excel/List Tugas Minggu Ke-9 (20 September 2021 - 26 September 2021).xlsx" download><img class="tugas_file_item_icon" src="Image/Icon/File_Download.png" alt="File Dowload Icon"></a>
-
-            </div>
-
-        </div>
-        
-        <!--Bulanan-->
-        <div class="tugas_text_container">
-            <h2 class="tugas_text_item">TUGAS BULANAN</h2>
-        </div>
-
-        <div class="tugas_file_container">
-            <div class="tugas_file_secondary_container">
-                <a href= "HTML/File/Bulanan/list_tugas_bulanan_1.html" style="text-decoration: none;">
-                    <div class="tugas_file_item">
-                        <img class="tugas_file_item_image" src="Image/Logo/Excel.png" alt="Excel Logo">            
-                        <text class="tugas_file_item_text">Bulan Ke-1</text>
-                    
-                    </div>
-                
-                </a>
-
-                <a href="Excel/Bulanan/Excel/List Tugas Bulanan Ke-1 (26 Juli 2021 - 29 Agustus 2021).xlsx" download><img class="tugas_file_item_icon" src="Image/Icon/File_Download.png" alt="File Dowload Icon"></a>
-
-            </div>
-
-            <div class="tugas_file_secondary_container">
-                <a href= "HTML/File/Bulanan/list_tugas_bulanan_2.html" style="text-decoration: none;">
-                    <div class="tugas_file_item">
-                        <img class="tugas_file_item_image" src="Image/Logo/Excel.png" alt="Excel Logo">            
-                        <text class="tugas_file_item_text">Bulan Ke-2</text>
-                    
-                    </div>
-                
-                </a>
-
-                <a href="Excel/Bulanan/Excel/List Tugas Bulanan Ke-2 (30 Juli 2021 - 27 September 2021).xlsx" download><img class="tugas_file_item_icon" src="Image/Icon/File_Download.png" alt="File Dowload Icon"></a>
-
-            </div>
-
-        </div>
-
-        
-
-        <!--Gabunggan-->
-        <div class="tugas_text_container">
-            <h2 class="tugas_text_item">TUGAS GABUNGGAN</h2>
-        </div>
-
-        <div class="tugas_file_container">
-            <div class="tugas_file_secondary_container">
-                <a href= "HTML/File/list_tugas_gabunggan.html" style="text-decoration: none;">
-                    <div class="tugas_file_item">
-                        <img class="tugas_file_item_image" src="Image/Logo/Excel.png" alt="Excel Logo">            
-                        <text class="tugas_file_item_text">Gabunggan</text>
-                    
-                    </div>
-                
-                </a>
-    
-                <a href="Excel/List Tugas Gabunggan.xlsx" download><img class="tugas_file_item_icon" src="Image/Icon/File_Download.png" alt="File Dowload Icon"></a>
-    
-            </div>
-                
-        </div>
+        <script src="JS/index.js"></script>
 
     </body>
 

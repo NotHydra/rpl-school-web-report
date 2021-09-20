@@ -4,16 +4,16 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Class code - XI-RPL SMKN2</title>
+        <title>Class code - Web Laporan</title>
+
         <link rel="icon" href="../Image/RPL Icon/white_theme_rpl_icon.png" type="image/x-icon">
 
         <link rel="stylesheet" href="../CSS/class_code.css">
+
     </head>
 
     <body>
-        <!--Main Container-->
         <div class="main_container">
-            <!--Icon-->
             <a href="../index.html" style="text-decoration: none; color: white; width: 100%; cursor: default;">
                 <div class="main_icon_container">
                     <div class="main_icon_item_container">
@@ -27,7 +27,6 @@
 
             </a>
 
-            <!--Other-->
             <div class="main_other_container">
                 <div class="main_other_item">
                     <a href="../index.html" style="text-decoration: none; color: white;">Home</a>
@@ -35,10 +34,6 @@
                 
                 <div class="main_other_item">
                     <a href="class_code.html" style="text-decoration: none; color: white;">Class code</a>
-                </div>
-
-                <div class="main_other_item">
-                    <a href="what_is_rpl.html" style="text-decoration: none; color: white;">What is RPL</a>
                 </div>
         
                 <div class="main_other_item">
@@ -49,32 +44,48 @@
             
         </div>
 
-        <!--Content-->
-        <div class="text_container">
-            <h2 class="text_header">Class code</h2>
-
-            <p class="header_text">Access Code Google Classroom</p>
-            <p class="text_paragraph">
-                - MAT   : qn6rotb <br><br>
-                - BING  : ul6jirp <br><br>
-                - PKK   : <a href="https://classroom.google.com/c/Mzg0MDA5ODMzODQz?cjc=cntwtvz" style="color: #527dff;">Link</a> <br><br>
-                - PKN   : <a href="https://classroom.google.com/c/Mzg2ODc0MDk5ODU2?cjc=253cfwt" style="color: #527dff;">Link</a> <br><br>
-                - PWPB  : <a href="https://classroom.google.com/c/MzcyOTI5ODY2ODg3/a/Mzc0OTg1MTQyMjY4/details" style="color: #527dff;">Link</a> <br><br>
-                - BINDO : <a href="https://classroom.google.com/c/MTE4MjQ0NDI1MDg5?cjc=aie3qha" style="color: #527dff;">Link</a> <br><br>
-            </p>
-            <br>
-            <p class="header_text">Access Code Schoology</p>
-            <p class="text_paragraph">
-                - BASDA : VKN6-T5PW-W6SW8 <br><br>
-                - PPL   : RNB5-XZ3X-VWP7X <br><br>
-                - PBO   : Q4DC-6KMT-MJT6Z <br><br>
-                - BING  : N9CP-PR7M-ZWCN5 <br><br>
-                - PAI   : SNRD-C7Q9-5452B <br><br>
-            </p>
-                
-
+        <div class="main_image_container">
+            <img class="main_item_image" src="" alt="Image">
+            
+            <text class="main_item_text">
+                Class Code
+            </text>
+           
         </div>
 
+        <div class="content_container">
+            <div>
+                <input type="checkbox" id="classroom_checkbox"/> 
+                <label class="content_item" id="content_item_header" for="classroom_checkbox" onclick="check_checkbox_value('classroom')">Access Code Google Classroom</label>
+                <div id="classroom_list_container">
+                    <div class="content_item">MAT   : qn6rotb</div>
+                    <div class="content_item">BING  : ul6jirp</div>
+                    <div class="content_item">PKK   : <a href="https://classroom.google.com/c/Mzg0MDA5ODMzODQz?cjc=cntwtvz" style="color: #527dff;">Link</a></div>
+                    <div class="content_item">PKN   : <a href="https://classroom.google.com/c/Mzg2ODc0MDk5ODU2?cjc=253cfwt" style="color: #527dff;">Link</a></div>
+                    <div class="content_item">PWPB  : <a href="https://classroom.google.com/c/MzcyOTI5ODY2ODg3/a/Mzc0OTg1MTQyMjY4/details" style="color: #527dff;">Link</a></div>
+                    <div class="content_item">BINDO : <a href="https://classroom.google.com/c/MTE4MjQ0NDI1MDg5?cjc=aie3qha" style="color: #527dff;">Link</a></div>
+                    
+                </div>
+                
+            </div>
+
+            <div>
+                <input type="checkbox" id="schoology_checkbox"/> 
+                <label class="content_item" id="content_item_header" for="schoology_checkbox" onclick="check_checkbox_value('schoology')">Access Code Schoology</label>
+                <div id="schoology_list_container">
+                    <div class="content_item">BASDA : VKN6-T5PW-W6SW8</div>
+                    <div class="content_item">PPL   : RNB5-XZ3X-VWP7X</div>
+                    <div class="content_item">PBO   : Q4DC-6KMT-MJT6Z</div>
+                    <div class="content_item">BING  : N9CP-PR7M-ZWCN5</div>
+                    <div class="content_item">PAI   : SNRD-C7Q9-5452B</div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <script src="../JS/other.js"></script>
     </body>
 
 </html>

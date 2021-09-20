@@ -1,25 +1,30 @@
 @font-face {
-    font-family: "Roboto-Bold";
+    font-family: "Roboto";
     src: url(../Font/Roboto/Roboto-Bold.ttf);
 }
 
-body{
-    background-color: #181818;
-    color: #FFFFFF;
-    font-family: "Roboto-Bold";
-    font-size: 22px;
+html{
+    width: 100%;
+}
 
-    width: auto;
-    height: 100%;
+body{
+    font-family: "Roboto";
+    background-color: #181818;
+    color: white;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
 }
 
 .main_container{
     background-color: #383838;
-    font-size: calc(8px + 1vw);
+    font-size: calc(1.5vw + 6px);
     white-space: nowrap;
 
     width: 100%;
-    height: calc(32px + 1vw);
+    height: calc(1.5vw + 16px);
     position: fixed;
     top: 0;
     left: 0;
@@ -97,7 +102,7 @@ body{
     background-color: white;
 
     position: relative;
-    top: 45px;
+    top: calc(1.5vw + 16px);
 
     height: calc(100% - 85px);
 
