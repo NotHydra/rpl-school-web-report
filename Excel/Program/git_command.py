@@ -12,7 +12,7 @@ class GitCommand:
     
     def git_commit():
         is_file_update = False
-        commit_name = "Cursor Set To Default At Main Image Container & File Update"
+        commit_name = "Main Image Container Bigger On Smaller Res Device"
 
         if is_file_update == False:
             GitCommand.run("commit", "-m", f"{commit_name}")

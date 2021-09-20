@@ -100,7 +100,7 @@ body{
 
 .main_image_container{
     margin-top: calc(1.5vw + 16px);
-    height: 15vw;
+    height: calc(10vw + 75px);
     min-height: 50px;
 
     cursor: default;
