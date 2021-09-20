@@ -11,8 +11,8 @@ class GitCommand:
 
     
     def git_commit():
-        is_file_update = True
-        commit_name = ""
+        is_file_update = False
+        commit_name = "Cursor Set To Default At Main Image Container & File Update"
 
         if is_file_update == False:
             GitCommand.run("commit", "-m", f"{commit_name}")

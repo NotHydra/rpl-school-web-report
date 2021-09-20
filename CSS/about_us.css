@@ -102,6 +102,8 @@ body{
     margin-top: calc(1.5vw + 16px);
     height: 15vw;
     min-height: 50px;
+
+    cursor: default;
 }
 
 .main_item_text{
