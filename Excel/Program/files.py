@@ -52,4 +52,4 @@ global wb_bulanan_subtract
 wb_bulanan_subtract = [0, 31]
 
 global combined_task_range
-combined_task_range = "A1:AU42"
+combined_task_range = "A1:AV42"
