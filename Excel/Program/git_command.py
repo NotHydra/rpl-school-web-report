@@ -11,8 +11,8 @@ class GitCommand:
 
     
     def git_commit():
-        is_file_update = True
-        commit_name = "Main Image Container Bigger On Smaller Res Device"
+        is_file_update = False
+        commit_name = "Week 9 In Month 2 Text Correction & File Update"
 
         if is_file_update == False:
             GitCommand.run("commit", "-m", f"{commit_name}")
