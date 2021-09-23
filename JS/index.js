@@ -16,7 +16,6 @@ function check_checkbox_value(report_type){
 }
 
 random_number_main_item_image = get_random_number(1, 141)
-console.log(random_number_main_item_image)
 
 if (random_number_main_item_image > 0 && random_number_main_item_image <= 20){
     image_in_main_item_image = "1.jpg"

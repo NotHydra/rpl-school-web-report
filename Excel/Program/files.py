@@ -38,11 +38,11 @@ wb_bulanan_image_name = [
 
 global weekly_task_start_column_range, weekly_task_end_column_range
 weekly_task_start_column_range = [3, 8, 16, 23, 26, 34, 39, 42, 47]
-weekly_task_end_column_range   = [8, 16, 23, 26, 34, 39, 42, 47, 51]
+weekly_task_end_column_range   = [8, 16, 23, 26, 34, 39, 42, 47, 52]
 
 global monthly_task_start_column_range,monthly_task_end_column_range
 monthly_task_start_column_range = [3, 34]
-monthly_task_end_column_range   = [34, 51]
+monthly_task_end_column_range   = [34, 52]
 
 global wb_bulanan_start_container, wb_bulanan_end_container # How much week it contains
 wb_bulanan_start_container = [1, 6]
@@ -52,4 +52,4 @@ global wb_bulanan_subtract
 wb_bulanan_subtract = [0, 31]
 
 global combined_task_range
-combined_task_range = "A1:AX42"
+combined_task_range = "A1:AY42"
