@@ -11,7 +11,7 @@ class GitCommand:
 
     
     def git_commit():
-        is_file_update = False
+        is_file_update = True
         commit_name = "Combined Task Report Image Bug Fixed"
 
         if is_file_update == False:
