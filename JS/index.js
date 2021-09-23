@@ -7,10 +7,12 @@ function check_checkbox_value(report_type){
 
     if (checkbox_value == null){
         document.getElementById(`${report_type}_list_container`).style.display = "block";
+        document.getElementById(`up_angle_to_down_${report_type}`).style.transform = "rotate(180deg)";
     }
 
     if (checkbox_value != null){
         document.getElementById(`${report_type}_list_container`).style.display = "none";
+        document.getElementById(`up_angle_to_down_${report_type}`).style.transform = "rotate(0deg)";
     }
 
 }

@@ -169,6 +169,16 @@ body{
     opacity: 0.5;
 }
 
+#up_angle_to_down_weekly{
+    transform: rotate(0deg);
+    transition: transform 600ms;
+}
+
+#up_angle_to_down_monthly{
+    transform: rotate(0deg);
+    transition: transform 600ms;
+}
+
 #weekly_list_container{
     padding-left: calc(1.5vw + 6px);
     margin-left: 0px;

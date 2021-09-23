@@ -169,6 +169,16 @@ body{
     opacity: 0.5;
 }
 
+#up_angle_to_down_classroom{
+    transform: rotate(0deg);
+    transition: transform 600ms;
+}
+
+#up_angle_to_down_schoology{
+    transform: rotate(0deg);
+    transition: transform 600ms;
+}
+
 #classroom_list_container{
     padding-left: calc(1.5vw + 6px);
     margin-left: 0px;

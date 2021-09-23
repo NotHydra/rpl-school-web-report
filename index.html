@@ -10,6 +10,7 @@
 
         <link rel="stylesheet" href="CSS/index.css">
         
+        <script src="https://kit.fontawesome.com/a821c44686.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -57,7 +58,12 @@
         <div class="content_container">
             <div>
                 <input type="checkbox" id="weekly_checkbox"/> 
-                <label class="content_item" for="weekly_checkbox" onclick="check_checkbox_value('weekly')">Laporan Mingguan</label>
+                <label class="content_item" for="weekly_checkbox" onclick="check_checkbox_value('weekly')">
+                    <i class="fas fa-angle-up" id="up_angle_to_down_weekly"></i>
+                    Laporan Mingguan
+
+                </label>
+                
                 <div id="weekly_list_container">
                     <a href="HTML/File/Mingguan/list_tugas_mingguan_1.html"><div class="content_item">Laporan Mingguan Ke-1</div></a>
                     <a href="HTML/File/Mingguan/list_tugas_mingguan_2.html"><div class="content_item">Laporan Mingguan Ke-2</div></a>
@@ -75,7 +81,12 @@
 
             <div>
                 <input type="checkbox" id="monthly_checkbox"/> 
-                <label class="content_item" for="monthly_checkbox" onclick="check_checkbox_value('monthly')">Laporan Bulanan</label>
+                <label class="content_item" for="monthly_checkbox" onclick="check_checkbox_value('monthly')">
+                    <i class="fas fa-angle-up" id="up_angle_to_down_monthly"></i>
+                    Laporan Bulanan
+                
+                </label>
+                
                 <div id="monthly_list_container">
                     <a href="HTML/File/Bulanan/list_tugas_bulanan_1.html"><div class="content_item">Laporan Bulanan Ke-1</div></a>
                     <a href="HTML/File/Bulanan/list_tugas_bulanan_2.html"><div class="content_item">Laporan Bulanan Ke-2</div></a>
