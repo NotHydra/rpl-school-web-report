@@ -11,7 +11,7 @@ class GitCommand:
 
     
     def git_commit():
-        is_file_update = False
+        is_file_update = True
         commit_name = "Angle Up To Down Animation & Other Page Some Banner Not Showing Bug Fixed"
 
         if is_file_update == False:
