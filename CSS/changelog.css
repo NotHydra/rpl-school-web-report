@@ -3,6 +3,24 @@
     src: url(../Font/Roboto/Roboto-Bold.ttf);
 }
 
+::-webkit-scrollbar{
+    width: calc(0.3vw + 3px);
+    height: calc(0.3vw + 3px);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #777272;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #575454;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #282828;
+}
+
 html{
     width: 100%;
 }
@@ -215,8 +233,8 @@ body{
 .content_container{
     width: 100%;
     margin-top: 15px;
-
-    text-align: justify;
+    
+    white-space: nowrap;
 }
 
 .content_container input{
@@ -248,6 +266,10 @@ body{
 
 #content_item_header:hover{
     opacity: 0.5;
+}
+
+.version_list_container div{
+    overflow: auto;
 }
 
 #up_angle_to_down_version_beta{

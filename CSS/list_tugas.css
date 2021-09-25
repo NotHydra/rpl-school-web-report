@@ -3,6 +3,24 @@
     src: url(../Font/Roboto/Roboto-Bold.ttf);
 }
 
+::-webkit-scrollbar{
+    width: calc(0.3vw + 3px);
+    height: calc(0.3vw + 3px);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #777272;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #575454;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #282828;
+}
+
 html{
     width: 100%;
 }
@@ -152,7 +170,7 @@ body{
 
     border: 3px solid #383838;
 
-    overflow: scroll;
+    overflow: auto;
 }
 
 .item{
