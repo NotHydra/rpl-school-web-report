@@ -38,7 +38,7 @@ body{
 
 .main_container{
     background-color: #282828;
-    font-size: calc(1.5vw + 6px);
+    font-size: calc(1.5vw + 12px);
 
     position: fixed;
     top: 0;
@@ -46,7 +46,7 @@ body{
     right: 0;
     z-index: 100;
 
-    height: calc(1.5vw + 16px);
+    height: calc(1.5vw + 22px);
     width: 100%;
 
     cursor: default;
@@ -62,7 +62,7 @@ body{
 }
 
 .main_container_item_other{
-    margin-right: 5px;
+    margin-right: 0px;
 }
 
 .main_container a{
@@ -81,13 +81,14 @@ body{
 }
 
 .main_container_item_label{
-    margin-right: 10px;
+    margin-right: 1px;
 
     border-radius: 50%;
 }
 
 #main_container_item_bars{
-    padding: 6px;
+    padding: 3px;
+    margin-right: calc(0.5vw + 1px);
 
     cursor: pointer;
 
@@ -103,9 +104,9 @@ body{
 #bars_container{
     background-color: #282828;
     box-shadow: -3px 0px 5px #181818;
-    font-size: calc(1.5vw + 6px);
+    font-size: calc(1.5vw + 12px);
     
-    padding-top: calc(0.5vw + 3px);
+    padding-top: calc(0.75vw + 0px);
 
     height: 100%;
 
@@ -127,8 +128,8 @@ body{
     text-decoration: none;
 
     padding: calc(0.25vw + 4px);
-    padding-left: calc(1.5vw + 6px);
-    margin-left: calc(0.5vw + 6px);
+    padding-left: calc(1vw + 6px);
+    margin-left: calc(0.5vw + 4px);
 
     cursor: pointer;
 
@@ -161,7 +162,7 @@ body{
 }
 
 .main_image_container{
-    margin-top: calc(1.5vw + 16px);
+    margin-top: calc(1.5vw + 22px);
     height: calc(10vw + 75px);
     min-height: 50px;
 
@@ -169,10 +170,10 @@ body{
 }
 
 .main_item_text{
-    font-size: calc(3vw + 12px);
+    font-size: calc(3vw + 18px);
 
     position: absolute;
-    top: calc(1.5vw + 16px);
+    top: calc(1.5vw + 22px);
     left: 0;
 
     width: 100%;
@@ -199,7 +200,7 @@ body{
     color: white;
 
     position: relative;
-    top: calc(0.5vw + 5px);
+    top: calc(0.5vw + 8px);
 }
 
 .profile_photo_container{
@@ -208,7 +209,7 @@ body{
     min-width: 120px;
     max-width: 10%;
     margin: 0 auto;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
 .profile_photo{
@@ -219,7 +220,7 @@ body{
 }
 
 .text_paragraph{
-    font-size: calc(1.5vw + 4px);
+    font-size: calc(1vw + 10px);
     text-align: justify;
     
     margin: 0 auto;
@@ -230,7 +231,7 @@ body{
 }
 
 .text_contact_me{
-    font-size: calc(1.5vw + 4px);
+    font-size: calc(1vw + 10px);
 
     margin: 0 auto;
     margin-top: 15px;

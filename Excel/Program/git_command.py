@@ -12,7 +12,7 @@ class GitCommand:
     
     def git_commit():
         is_file_update = False
-        commit_name = "Content Text Justified In Changelog Page"
+        commit_name = "Bigger Font Size For Lower Screen Resolution & Improved The Responsiveness Of The Web"
 
         if is_file_update == False:
             GitCommand.run("commit", "-m", f"{commit_name}")
