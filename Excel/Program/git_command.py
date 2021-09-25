@@ -12,7 +12,7 @@ class GitCommand:
     
     def git_commit():
         is_file_update = False
-        commit_name = "Changelog Page Completed"
+        commit_name = "Content Text Justified In Changelog Page"
 
         if is_file_update == False:
             GitCommand.run("commit", "-m", f"{commit_name}")
