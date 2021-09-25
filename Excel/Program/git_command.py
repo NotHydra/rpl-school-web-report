@@ -11,8 +11,8 @@ class GitCommand:
 
     
     def git_commit():
-        is_file_update = True
-        commit_name = "Bars Menu & Changelog Page"
+        is_file_update = False
+        commit_name = "Changelog Page Completed"
 
         if is_file_update == False:
             GitCommand.run("commit", "-m", f"{commit_name}")

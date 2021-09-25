@@ -35,3 +35,5 @@ V.2.0.3 Combined Report Image Bug Fixed
 V.2.0.4 More Image Banner & Super Rare Banner Easter Egg
 V.2.0.5 Angle Up & Down Animation & Some Image Banner on other page not showing bug fixed
 V.2.0.6 Optimize code on navigation bar
+V.2.0.7 Bars Menu Created
+V.2.0.8 Changelog Page Created
