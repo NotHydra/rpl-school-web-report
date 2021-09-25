@@ -31,6 +31,8 @@ body{
     height: calc(1.5vw + 16px);
     width: 100%;
 
+    cursor: default;
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -54,6 +56,90 @@ body{
 
 .main_container a:hover{
     opacity: 0.5;
+}
+
+#bars_checkbox{
+    display: none;
+}
+
+.main_container_item_label{
+    margin-right: 10px;
+
+    border-radius: 50%;
+}
+
+#main_container_item_bars{
+    padding: 6px;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+
+    transition: 200ms;
+}
+
+#main_container_item_bars:hover{
+    opacity: 0.5;
+}
+
+#bars_container{
+    background-color: #282828;
+    box-shadow: -3px 0px 5px #181818;
+    font-size: calc(1.5vw + 6px);
+    
+    padding-top: calc(0.5vw + 3px);
+
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    right: -275px;
+    z-index: 150;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 450ms;
+}
+
+.bars_menu_container_item{
+    background-color: #282828;
+    color: white;
+    text-align: end;
+    text-decoration: none;
+
+    padding: calc(0.25vw + 4px);
+    padding-left: calc(1.5vw + 6px);
+    margin-left: calc(0.5vw + 6px);
+
+    cursor: pointer;
+
+    transition: background-color 200ms;
+
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.bars_menu_container_item:hover{
+    background-color: #212121;
+}
+
+#bars_menu_container_icon_item{
+    text-align: center;
+    width: calc(2vw + 8px);
+}
+
+#bars_invinsible_label{
+    display: none;
+}
+
+.bars_invinsible_label_item{
+    position: fixed; 
+    top: 0; 
+    z-index: 149;
+
+    height: 100%;
+    width: 100%;
 }
 
 .item_container{

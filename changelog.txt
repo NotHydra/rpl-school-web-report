@@ -1,0 +1,37 @@
+V.Beta Website Foundation
+V.Beta Python Main Program Write To Monthly File
+V.Beta Python Main Program Merge Cell On Monthly File and Style It
+V.Beta Python Capture Image and Directory Files
+V.Beta Python Directory Files contains Weekly and Monthly Column Range, Main Program Unmerge File and fixed merge cell bug
+V.Beta About Us Page, Gabunggan Capture Image, Directory Files Contains Gabunggan Range
+V.Beta View File By Downloading
+V.Beta Unmerge and Merge Cell Bug Fixed
+V.Beta main.html main.css file changes to index.html index.css
+
+V.1.0.0 Website Release
+V.1.0.1 Check Validity
+V.1.0.2 Improve Check Validity Visual
+V.1.0.3 Month Merge & Unmerge Bug Fixed, Code optimization
+V.1.0.4 About Us Text Change
+V.1.0.5 About Us Text Change Again
+V.1.0.6 Report File is now able to be seen without downloading
+V.1.0.7 Code in Report File Optimize
+V.1.0.8 Viewing Size in report file is much smaller
+V.1.0.9 Class Code is added
+V.1.1.0 Merge Bug Fixed
+V.1.1.1 Visual in Class Code Improved
+V.1.1.2 Download Feature
+V.1.1.3 Higher Excel Logo Resolution
+V.1.1.4 Python Last Time Modified Program
+V.1.1.5 Python Program optimization
+V.1.1.6 Git Command Automation
+V.1.1.7 Git Push Command Automation
+V.1.1.8 Git Command Optimize
+
+V.2.0.0 GUI Update
+V.2.0.1 Cursor Set To Default At Image banner
+V.2.0.2 Image Banner Responsive Optimize
+V.2.0.3 Combined Report Image Bug Fixed
+V.2.0.4 More Image Banner & Super Rare Banner Easter Egg
+V.2.0.5 Angle Up & Down Animation & Some Image Banner on other page not showing bug fixed
+V.2.0.6 Optimize code on navigation bar

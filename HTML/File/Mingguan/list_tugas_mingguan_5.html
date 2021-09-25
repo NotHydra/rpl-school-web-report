@@ -9,7 +9,8 @@
         <link rel="icon" href="../../../Image/RPL Icon/white_theme_rpl_icon.png" type="image/x-icon">
         
         <link rel="stylesheet" href="../../../CSS/list_tugas.css">
-    
+        
+        <script src="https://kit.fontawesome.com/a821c44686.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -18,10 +19,28 @@
             
             <div>
                 <a class="main_container_item_other" href="../../../index.html">Home</a>
-                <a class="main_container_item_other" href="../../class_code.html">Class code</a>
-                <a class="main_container_item_other" href="../../about_us.html">About us</a>
+                
+                <input type="checkbox" id="bars_checkbox"/> 
+                <label class="main_container_item_label" for="bars_checkbox" onclick="check_checkbox_value('bars')">
+                    <i class="fas fa-bars" id="main_container_item_bars"></i>
+
+                </label>
+                
             </div>
 
+        </div>
+
+        <div id="bars_container">
+            <a href="../../class_code.html" class="bars_menu_container_item">Class code <i class="fas fa-clipboard-list" id="bars_menu_container_icon_item"></i></a>
+            <a href="../../changelog.html" class="bars_menu_container_item">Changelog <i class="fab fa-buffer" id="bars_menu_container_icon_item"></i></a>
+            <a href="../../about_us.html" class="bars_menu_container_item">About us <i class="fas fa-address-book" id="bars_menu_container_icon_item"></i></a>
+            
+        </div>
+
+        <div id="bars_invinsible_label">
+            <input type="checkbox" id="bars_checkbox"/> 
+            <label class="bars_invinsible_label_item" for="bars_checkbox" onclick="check_checkbox_value('bars')"></label>
+            
         </div>
         
         <!--Content-->
@@ -30,6 +49,7 @@
             
         </div>
 
+        <script src="../../../JS/list_tugas.js"></script>
     </body>
 
 </html>
