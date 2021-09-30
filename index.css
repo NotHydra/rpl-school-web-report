@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Roboto";
-    src: url(../Font/Roboto/Roboto-Bold.ttf);
+    src: url(Font/Roboto/Roboto-Bold.ttf);
 }
 
 ::-webkit-scrollbar{
@@ -36,6 +36,11 @@ body{
     padding: 0;
 }
 
+body input{
+    display: none;
+}
+
+/* Navigation Bar */
 .main_container{
     background-color: #282828;
     font-size: calc(1.5vw + 12px);
@@ -65,14 +70,12 @@ body{
     margin-right: 0px;
 }
 
-.main_container a{
-    color: white;
-    text-decoration: none;
-
+.main_container label{
     transition: opacity 200ms;
+    cursor: pointer;
 }
 
-.main_container a:hover{
+.main_container label:hover{
     opacity: 0.5;
 }
 
@@ -125,7 +128,6 @@ body{
     background-color: #282828;
     color: white;
     text-align: end;
-    text-decoration: none;
 
     padding: calc(0.25vw + 4px);
     padding-left: calc(1vw + 6px);
@@ -161,6 +163,7 @@ body{
     width: 100%;
 }
 
+/* Image Banner */
 .main_image_container{
     margin-top: calc(1.5vw + 22px);
     height: calc(10vw + 75px);
@@ -200,19 +203,24 @@ body{
     object-fit:cover;
 }
 
+/* Main Style For Content */
 .content_container{
     width: 100%;
     margin-top: 15px;
+
+    white-space: nowrap;
 }
 
-.content_container input{
-    display: none;
+.content_container a{
+    text-decoration: none;
 }
 
 .content_item{
     font-size: calc(1.5vw + 12px);
     background-color: #282828;
     color: white;
+
+    overflow: auto;
 
     display: block;
 
@@ -232,12 +240,24 @@ body{
     opacity: 0.5;
 }
 
-#up_angle_to_down_weekly{
-    transform: rotate(0deg);
-    transition: transform 600ms;
+.cursor_default div{
+    cursor: default;
 }
 
-#up_angle_to_down_monthly{
+.cursor_default div:hover{
+    opacity: 1;
+}
+
+.cursor_default div a{
+    text-decoration: underline;
+    transition: opacity 200ms;
+}
+
+.cursor_default div a:hover{
+    opacity: 0.5;
+}
+
+#up_angle_to_down_weekly{
     transform: rotate(0deg);
     transition: transform 600ms;
 }
@@ -249,6 +269,11 @@ body{
     display: none;
 }
 
+#up_angle_to_down_monthly{
+    transform: rotate(0deg);
+    transition: transform 600ms;
+}
+
 #monthly_list_container{
     padding-left: calc(1.25vw + 12px);
     margin-left: 0px;
@@ -256,6 +281,180 @@ body{
     display: none;
 }
 
-.content_container a{
-    text-decoration: none;
+#up_angle_to_down_classroom{
+    transform: rotate(0deg);
+    transition: transform 600ms;
+}
+
+#classroom_list_container{
+    padding-left: calc(1.25vw + 12px);
+    margin-left: 0px;
+
+    display: none;
+}
+
+#up_angle_to_down_schoology{
+    transform: rotate(0deg);
+    transition: transform 600ms;
+}
+
+#schoology_list_container{
+    padding-left: calc(1.25vw + 12px);
+    margin-left: 0px;
+
+    display: none;
+}
+
+#up_angle_to_down_version_beta{
+    transform: rotate(0deg);
+    transition: transform 600ms;
+}
+
+#version_beta_list_container{
+    padding-left: calc(1.25vw + 12px);
+    margin-left: 0px;
+
+    display: none;
+}
+
+#up_angle_to_down_version_1{
+    transform: rotate(0deg);
+    transition: transform 600ms;
+}
+
+#version_1_list_container{
+    padding-left: calc(1.25vw + 12px);
+    margin-left: 0px;
+
+    display: none;
+}
+
+#up_angle_to_down_version_2{
+    transform: rotate(0deg);
+    transition: transform 600ms;
+}
+
+#version_2_list_container{
+    padding-left: calc(1.25vw + 12px);
+    margin-left: 0px;
+
+    display: none;
+}
+
+/* Style For Contributor */
+.text_container{
+    color: white;
+
+    position: relative;
+    top: calc(0.5vw + 8px);
+}
+
+.profile_photo_container{
+    text-align: center;
+
+    min-width: 120px;
+    max-width: 10%;
+    margin: 0 auto;
+    margin-bottom: 0px;
+}
+
+.profile_photo{
+    max-width: 100%;
+
+    border: none;
+    border-radius: 50%;
+}
+
+.text_paragraph{
+    font-size: calc(1vw + 10px);
+    text-align: justify;
+    
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 155px;  
+    max-width: 50%;
+}
+
+.text_contact_me{
+    font-size: calc(1vw + 10px);
+
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.logo_container{
+    min-width: 155px;
+    max-width: 40%;
+    height: fit-content;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo_item{
+    cursor: pointer;
+
+    margin-left: 3px;
+    margin-right: 3px;
+    min-width: 25px;
+    max-width: 4vw;
+
+    border: none;
+    border-radius: 50%;
+
+    transition: opacity 150ms;
+}
+
+.logo_item:hover{
+    opacity: 50%;
+}
+
+/* Style For Report Assignment */
+.item_container{
+    background-color: white;
+
+    position: relative;
+    top: calc(1.5vw + 16px);
+
+    height: calc(100% - 85px);
+
+    border: 3px solid #383838;
+
+    overflow: auto;
+}
+
+.item{
+    height: 600px;
+}
+
+/* Container Display */
+#container_image_banner{
+    display: block;
+}
+
+#container_home{
+    display: block;
+}
+
+#container_report_assignment{
+    display: none;
+}
+
+#container_class_code{
+    display: none;
+}
+
+#container_changelog{
+    display: none;
+}
+
+#container_contributor{
+    display: none;
 }
