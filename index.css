@@ -341,6 +341,18 @@ body input{
     display: none;
 }
 
+#up_angle_to_down_version_3{
+    transform: rotate(0deg);
+    transition: transform 600ms;
+}
+
+#version_3_list_container{
+    padding-left: calc(1.25vw + 12px);
+    margin-left: 0px;
+
+    display: none;
+}
+
 /* Style For Contributor */
 .text_container{
     color: white;
