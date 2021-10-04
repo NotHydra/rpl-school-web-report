@@ -8,17 +8,23 @@
 
         <link rel="icon" href="Image/RPL Icon/white_theme_rpl_icon.png" type="image/x-icon">
 
-        <link rel="stylesheet" href="CSS/index.css">
+        <link rel="stylesheet" href="index.css">
         
         <script src="https://kit.fontawesome.com/a821c44686.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <div class="main_container">
-            <a class="main_container_item_icon" href="index.html">XI-RPL</a>
+            <input type="checkbox" id="home_checkbox"/> 
+            <label class="main_container_item_icon" for="home_checkbox" onclick="check_checkbox_value_container('home')">
+                XI-RPL
+            </label>
             
             <div>
-                <a class="main_container_item_other" href="index.html">Home</a>
+                <input type="checkbox" id="home_checkbox"/> 
+                <label class="main_container_item_icon" for="home_checkbox" onclick="check_checkbox_value_container('home')">
+                    Home
+                </label>
                 
                 <input type="checkbox" id="bars_checkbox"/> 
                 <label class="main_container_item_label" for="bars_checkbox" onclick="check_checkbox_value('bars')">
@@ -31,9 +37,26 @@
         </div>
 
         <div id="bars_container">
-            <a href="HTML/class_code.html" class="bars_menu_container_item">Class code <i class="fas fa-clipboard-list" id="bars_menu_container_icon_item"></i></a>
-            <a href="HTML/changelog.html" class="bars_menu_container_item">Changelog <i class="fab fa-buffer" id="bars_menu_container_icon_item"></i></a>
-            <a href="HTML/contributor.html" class="bars_menu_container_item">Contributor <i class="fas fa-address-book" id="bars_menu_container_icon_item"></i></a>
+            <input type="checkbox" id="class_code_checkbox"/> 
+            <label class="bars_menu_container_item" for="class_code_checkbox" onclick="check_checkbox_value_container('class_code')">
+                Class code
+                <i class="fas fa-clipboard-list" id="bars_menu_container_icon_item"></i>
+            </label>
+
+            <input type="checkbox" id="changelog_checkbox"/> 
+            <label class="bars_menu_container_item" for="changelog_checkbox" onclick="check_checkbox_value_container('changelog')">
+                Changelog
+                <i class="fab fa-buffer" id="bars_menu_container_icon_item"></i>
+
+            </label>
+
+            <input type="checkbox" id="contributor_checkbox"/> 
+            <label class="bars_menu_container_item" for="contributor_checkbox" onclick="check_checkbox_value_container('contributor')">
+                Contributor
+                <i class="fas fa-address-book" id="bars_menu_container_icon_item"></i>
+
+            </label>
+
             
         </div>
 
@@ -43,17 +66,17 @@
             
         </div>
         
-        <div class="main_image_container">
+        <div class="main_image_container" id="container_image_banner">
             <img class="main_item_image" src="" alt="Image">
             
             <text class="main_item_text">
-                Website Laporan
+                <text id="main_item_class_header">Website Laporan</text>
                 <text id="main_item_class_name">XI-RPL</text>
             </text>
            
         </div>
 
-        <div class="content_container">
+        <div class="content_container" id="container_home">
             <div>
                 <input type="checkbox" id="weekly_checkbox"/> 
                 <label class="content_item" for="weekly_checkbox" onclick="check_checkbox_value('weekly')">
@@ -63,17 +86,17 @@
                 </label>
                 
                 <div id="weekly_list_container">
-                    <a href="HTML/File/Mingguan/list_tugas_mingguan_1.html"><div class="content_item">Laporan Mingguan Ke-1</div></a>
-                    <a href="HTML/File/Mingguan/list_tugas_mingguan_2.html"><div class="content_item">Laporan Mingguan Ke-2</div></a>
-                    <a href="HTML/File/Mingguan/list_tugas_mingguan_3.html"><div class="content_item">Laporan Mingguan Ke-3</div></a>
-                    <a href="HTML/File/Mingguan/list_tugas_mingguan_4.html"><div class="content_item">Laporan Mingguan Ke-4</div></a>
-                    <a href="HTML/File/Mingguan/list_tugas_mingguan_5.html"><div class="content_item">Laporan Mingguan Ke-5</div></a>
-                    <a href="HTML/File/Mingguan/list_tugas_mingguan_6.html"><div class="content_item">Laporan Mingguan Ke-6</div></a>
-                    <a href="HTML/File/Mingguan/list_tugas_mingguan_7.html"><div class="content_item">Laporan Mingguan Ke-7</div></a>
-                    <a href="HTML/File/Mingguan/list_tugas_mingguan_8.html"><div class="content_item">Laporan Mingguan Ke-8</div></a>
-                    <a href="HTML/File/Mingguan/list_tugas_mingguan_9.html"><div class="content_item">Laporan Mingguan Ke-9</div></a>
-                    <a href="HTML/File/Mingguan/list_tugas_mingguan_10.html"><div class="content_item">Laporan Mingguan Ke-10</div></a>
-                    <a href="HTML/File/Mingguan/list_tugas_mingguan_11.html"><div class="content_item">Laporan Mingguan Ke-11</div></a>
+                    <label class="content_item" onclick="report_assignment_image('weekly', '1')">Laporan Mingguan Ke-1</label>
+                    <label class="content_item" onclick="report_assignment_image('weekly', '2')">Laporan Mingguan Ke-2</label>
+                    <label class="content_item" onclick="report_assignment_image('weekly', '3')">Laporan Mingguan Ke-3</label>
+                    <label class="content_item" onclick="report_assignment_image('weekly', '4')">Laporan Mingguan Ke-4</label>
+                    <label class="content_item" onclick="report_assignment_image('weekly', '5')">Laporan Mingguan Ke-5</label>
+                    <label class="content_item" onclick="report_assignment_image('weekly', '6')">Laporan Mingguan Ke-6</label>
+                    <label class="content_item" onclick="report_assignment_image('weekly', '7')">Laporan Mingguan Ke-7</label>
+                    <label class="content_item" onclick="report_assignment_image('weekly', '8')">Laporan Mingguan Ke-8</label>
+                    <label class="content_item" onclick="report_assignment_image('weekly', '9')">Laporan Mingguan Ke-9</label>
+                    <label class="content_item" onclick="report_assignment_image('weekly', '10')">Laporan Mingguan Ke-10</label>
+                    <label class="content_item" onclick="report_assignment_image('weekly', '11')">Laporan Mingguan Ke-11</label>
                     
                 </div>
                 
@@ -88,19 +111,207 @@
                 </label>
                 
                 <div id="monthly_list_container">
-                    <a href="HTML/File/Bulanan/list_tugas_bulanan_1.html"><div class="content_item">Laporan Bulanan Ke-1</div></a>
-                    <a href="HTML/File/Bulanan/list_tugas_bulanan_2.html"><div class="content_item">Laporan Bulanan Ke-2</div></a>
-                    <a href="HTML/File/Bulanan/list_tugas_bulanan_3.html"><div class="content_item">Laporan Bulanan Ke-3</div></a>
+                    <label class="content_item" onclick="report_assignment_image('monthly', '1')">Laporan Bulanan Ke-1</label>
+                    <label class="content_item" onclick="report_assignment_image('monthly', '2')">Laporan Bulanan Ke-2</label>
+                    <label class="content_item" onclick="report_assignment_image('monthly', '3')">Laporan Bulanan Ke-3</label>
+
+                </div>
+                
+            </div>
+
+            <label class="content_item" onclick="report_assignment_image('combined', '1')">Laporan Gabunggan</label>
+            
+        </div>
+
+        <div class="item_container" id="container_report_assignment">
+            <img class="item" id="item_image" src="" alt="Image">
+            
+        </div>
+
+        <div class="content_container" id="container_class_code">
+            <div>
+                <input type="checkbox" id="classroom_checkbox"/> 
+                <label class="content_item" for="classroom_checkbox" onclick="check_checkbox_value('classroom')">
+                    <i class="fas fa-angle-up" id="up_angle_to_down_classroom"></i>
+                    Access Code Google Classroom
+                
+                </label>
+                
+                <div class="cursor_default" id="classroom_list_container">
+                    <div class="content_item">MAT   : qn6rotb</div>
+                    <div class="content_item">BING  : ul6jirp</div>
+                    <div class="content_item">PKK   : <a href="https://classroom.google.com/c/Mzg0MDA5ODMzODQz?cjc=cntwtvz" style="color: #527dff;">Link</a></div>
+                    <div class="content_item">PKN   : <a href="https://classroom.google.com/c/Mzg2ODc0MDk5ODU2?cjc=253cfwt" style="color: #527dff;">Link</a></div>
+                    <div class="content_item">PWPB  : <a href="https://classroom.google.com/c/MzcyOTI5ODY2ODg3/a/Mzc0OTg1MTQyMjY4/details" style="color: #527dff;">Link</a></div>
+                    <div class="content_item">BINDO : <a href="https://classroom.google.com/c/MTE4MjQ0NDI1MDg5?cjc=aie3qha" style="color: #527dff;">Link</a></div>
                     
                 </div>
                 
             </div>
 
-            <a href="HTML/File/list_tugas_gabunggan.html"><div class="content_item">Laporan Gabunggan</div></a>
+            <div>
+                <input type="checkbox" id="schoology_checkbox"/> 
+                <label class="content_item" for="schoology_checkbox" onclick="check_checkbox_value('schoology')">
+                    <i class="fas fa-angle-up" id="up_angle_to_down_schoology"></i>
+                    Access Code Schoology
+                
+                </label>
+                
+                <div class="cursor_default" id="schoology_list_container">
+                    <div class="content_item">BASDA : VKN6-T5PW-W6SW8</div>
+                    <div class="content_item">PPL   : RNB5-XZ3X-VWP7X</div>
+                    <div class="content_item">PBO   : Q4DC-6KMT-MJT6Z</div>
+                    <div class="content_item">BING  : N9CP-PR7M-ZWCN5</div>
+                    <div class="content_item">PAI   : SNRD-C7Q9-5452B</div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="content_container" id="container_changelog">
+            <div>
+                <input type="checkbox" id="version_beta_checkbox"/> 
+                <label class="content_item" for="version_beta_checkbox" onclick="check_checkbox_value('version_beta')">
+                    <i class="fas fa-angle-up" id="up_angle_to_down_version_beta"></i>
+                    Beta
+                
+                </label>
+                
+                <div class="cursor_default" id="version_beta_list_container">
+                    <div class="content_item">Beta 0.1 Website Base Foundation</div>
+                    <div class="content_item">Beta 0.2 Python Write To Monthly File Program Created</div>
+                    <div class="content_item">Beta 0.3 Python Merge Cell On Monthly File & Style It Program Created</div>
+                    <div class="content_item">Beta 0.4 Python Capture Image & Directory Files Program Created</div>
+                    <div class="content_item">Beta 0.5 Python Directory Files Program Now Contains Weekly & Monthly Column Range, Unmerge File Program Created & Merge Cell Program Bug Fixed</div>
+                    <div class="content_item">Beta 0.6 About Us Page Created, Capture Image Program Improved & Directory Files Contains Combined Range</div>
+                    <div class="content_item">Beta 0.7 View File By Downloading</div>
+                    <div class="content_item">Beta 0.8 Unmerge & Merge Cell Program Bug Fixed</div>
+                    <div class="content_item">Beta 0.9 Some File Names Changes</div>
+
+                </div>
+                
+            </div>
+
+            <div>
+                <input type="checkbox" id="version_1_checkbox"/> 
+                <label class="content_item" for="version_1_checkbox" onclick="check_checkbox_value('version_1')">
+                    <i class="fas fa-angle-up" id="up_angle_to_down_version_1"></i>
+                    Version 1
+                
+                </label>
+                
+                <div class="cursor_default" id="version_1_list_container">
+                    <div class="content_item">V.1.0.0 Website Release</div>
+                    <div class="content_item">V.1.0.1 Python Check Validity Program</div>
+                    <div class="content_item">V.1.0.2 Python Check Validity Program Visual Improved</div>
+                    <div class="content_item">V.1.0.3 Code optimization, Python Month Merge & Unmerge Program Bug Fixed</div>
+                    <div class="content_item">V.1.0.4 About Us Page Text Change</div>
+                    <div class="content_item">V.1.0.5 About Us Page Text Change Again</div>
+                    <div class="content_item">V.1.0.6 Report File Is Now Able To Be Seen Without Downloading</div>
+                    <div class="content_item">V.1.0.7 Code In Report File Optimize</div>
+                    <div class="content_item">V.1.0.8 Viewing Size In Report File Is Much Smaller</div>
+                    <div class="content_item">V.1.0.9 Class Code Page Is Added</div>
+                    <div class="content_item">V.1.1.0 Python Merge Program Bug Fixed</div>
+                    <div class="content_item">V.1.1.1 Class Code Page Visual Improved</div>
+                    <div class="content_item">V.1.1.2 Download Report File Feature Is Added</div>
+                    <div class="content_item">V.1.1.3 Excel Logo Has Better Resolution</div>
+                    <div class="content_item">V.1.1.4 Python Last Time Modified Program Created</div>
+                    <div class="content_item">V.1.1.5 Python Program Optimization</div>
+                    <div class="content_item">V.1.1.6 Git Command Automation Created</div>
+                    <div class="content_item">V.1.1.7 Git Push Command Automation Added</div>
+                    <div class="content_item">V.1.1.8 Git Command Optimize</div>       
+                    
+                </div>
+                
+            </div>
+
+            <div>
+                <input type="checkbox" id="version_2_checkbox"/> 
+                <label class="content_item" for="version_2_checkbox" onclick="check_checkbox_value('version_2')">
+                    <i class="fas fa-angle-up" id="up_angle_to_down_version_2"></i>
+                    Version 2
+                
+                </label>
+                
+                <div class="cursor_default" id="version_2_list_container">
+                    <div class="content_item">V.2.0.0 GUI Update</div>
+                    <div class="content_item">V.2.0.1 Cursor Set To Default At Image Banner</div>
+                    <div class="content_item">V.2.0.2 Image Banner Responsiveness Improved</div>
+                    <div class="content_item">V.2.0.3 Combined Report Image Bug Fixed</div>
+                    <div class="content_item">V.2.0.4 More Image Banner & Super Rare Banner Easter Egg (1 In 140 Chances)</div>
+                    <div class="content_item">V.2.0.5 Some Image Banner On Other Page Not Showing Bug Fixed, Angle Up & Down Animation Created</div>
+                    <div class="content_item">V.2.0.6 Optimize Code On Navigation Bar</div>
+                    <div class="content_item">V.2.0.7 Bars Menu Created</div>
+                    <div class="content_item">V.2.0.8 Changelog Page Created</div>
+                    <div class="content_item">V.2.0.9 Changelog Page Content Text Justified</div>
+                    <div class="content_item">V.2.1.0 Custom Scrollbar Created & Justified Text In Changelog Page Removed</div>
+                    <div class="content_item">V.2.1.1 Bigger Font Size For Lower Screen Resolution & Improved The Responsiveness Of The Web</div>
+                    <div class="content_item">V.2.1.2 About Us Page Is Now Changed To Contributor Page</div>
+                    
+                </div>
+                
+            </div>
+
+            <div>
+                <input type="checkbox" id="version_3_checkbox"/> 
+                <label class="content_item" for="version_3_checkbox" onclick="check_checkbox_value('version_3')">
+                    <i class="fas fa-angle-up" id="up_angle_to_down_version_3"></i>
+                    Version 3
+                
+                </label>
+                
+                <div class="cursor_default" id="version_3_list_container">
+                    <div class="content_item">V.3.0.0 Compress Code Using JS & Optimized Some Code</div>
+                    <div class="content_item">V.3.0.1 Fixed Combined Assignment Report Not Showing Bug</div>
+                    <div class="content_item">V.3.0.2 Optimized Code For Writing Monthly Excel Files</div>
+                
+                </div>
+                
+            </div>
             
         </div>
 
-        <script src="JS/index.js"></script>
+        <div class="text_container" id="container_contributor">
+            <div class="profile_photo_container">
+                <img class="profile_photo" src="Image/Profile Photo/Rizky_Profile_Photo.png" alt="Rizky Profile Photo">
+            </div>
+
+            <p class="text_paragraph">
+                Hello! My name is Rizky Irswanda, you can call me Rizky.
+                I’m currently a second-grade student of a Vocational High School with a major in Software Engineer.
+                I have an interest in game development especially using the Unity Game Engine
+            </p>
+
+            <div class="text_contact_me">Contact me:</div>
+            
+            <div class="logo_container">
+                <a href="https://twitter.com/NotHydra8" target="_blank">
+                    <img class="logo_item" src="Image/Logo/Twitter.png" alt="Twitter Logo">
+                </a>
+                
+                <a href="https://www.instagram.com/not_irswanda/" target="_blank">
+                    <img class="logo_item" src="Image/Logo/Instagram.png" alt="Instagram Logo">
+                </a>
+
+                <a href="https://www.youtube.com/channel/UCgBsqSBQSFMp46v0TjWRvEg/videos" target="_blank">
+                    <img class="logo_item" src="Image/Logo/Youtube.png" alt="Youtube Logo">
+                </a>
+
+                <a href = "mailto: rizky.irswanda115@gmail.com">
+                    <img class="logo_item" src="Image/Logo/Gmail.png" alt="Gmail Logo">
+                </a>
+
+                <a href = "https://github.com/NotHydra" target="_blank">
+                    <img class="logo_item" src="Image/Logo/Github.png" alt="Github Logo">
+                </a>
+                
+            </div>
+
+        </div>
+
+        <script src="index.js"></script>
 
     </body>
 
