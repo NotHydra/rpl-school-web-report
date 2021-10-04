@@ -44,5 +44,3 @@ def write_json_file():
     json_file = open("Excel/List Last Time Modified.json", "w")
     json_file.write(json_value_to_write)
     json_file.close()
-
-write_json_file()
