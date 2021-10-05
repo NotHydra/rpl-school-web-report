@@ -1,8 +1,8 @@
 import openpyxl
 from openpyxl.styles import *
-from files import wb_mingguan_file, wb_bulanan_file, weekly_task_start_column_range, weekly_task_end_column_range, monthly_task_start_column_range, monthly_task_end_column_range, wb_bulanan_start_container, wb_bulanan_end_container, wb_bulanan_subtract
+from files import wb_mingguan_file, wb_bulanan_file, weekly_task_start_column_range, weekly_task_end_column_range, monthly_task_start_column_range, monthly_task_end_column_range, wb_bulanan_start_container, wb_bulanan_end_container
 from capture_image import run_capture_image
-from write_json import write_json_file
+from write_to_json_file import write_json_file
 
 def write_table_names():
     wb_names = openpyxl.load_workbook("Excel/Names.xlsx")
@@ -196,7 +196,7 @@ def write_table_value():
 
     for wb in range(len(wb_bulanan)):
         for i in range(wb_bulanan_start_container[wb] - 1, wb_bulanan_end_container[wb] - 1): 
-            start_column = weekly_task_start_column_range[i] - wb_bulanan_subtract[wb]
+            start_column = weekly_task_start_column_range[i] - (monthly_task_start_column_range[wb] - 3)
             end_column = start_column            
 
             j = weekly_task_start_column_range[i]
@@ -218,7 +218,7 @@ def write_table_value():
                 end_column = weekly_task_end_column_range[i] - 1
         
             elif wb != 0:
-                start_column = weekly_task_start_column_range[i] - wb_bulanan_subtract[wb]
+                start_column = weekly_task_start_column_range[i] - (monthly_task_start_column_range[wb] - 3)
                 end_column = start_column + (weekly_task_end_column_range[i] - weekly_task_start_column_range[i]) - 1
 
 
@@ -301,8 +301,8 @@ def write_table_value():
 
         l = 0
         for k in range(wb_bulanan_start_container[wb] - 1, wb_bulanan_end_container[wb] - 1):
-            start_column = weekly_task_start_column_range[k] - wb_bulanan_subtract[wb]
-            end_column = weekly_task_end_column_range[k] - wb_bulanan_subtract[wb]
+            start_column = weekly_task_start_column_range[k] - (monthly_task_start_column_range[wb] - 3)
+            end_column = weekly_task_end_column_range[k] - (monthly_task_start_column_range[wb] - 3)
 
             for i in range(1, 39):
                 for j in range(start_column, end_column):
@@ -315,8 +315,8 @@ def write_table_value():
 
         l = 0
         for k in range(wb_bulanan_start_container[wb] - 1, wb_bulanan_end_container[wb] - 1):
-            start_column = weekly_task_start_column_range[k] - wb_bulanan_subtract[wb]
-            end_column = weekly_task_end_column_range[k] - wb_bulanan_subtract[wb]
+            start_column = weekly_task_start_column_range[k] - (monthly_task_start_column_range[wb] - 3)
+            end_column = weekly_task_end_column_range[k] - (monthly_task_start_column_range[wb] - 3)
 
             for i in range(4, 39):
                 for j in range(start_column, end_column):

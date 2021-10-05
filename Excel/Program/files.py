@@ -56,8 +56,5 @@ global wb_bulanan_start_container, wb_bulanan_end_container # How much week it c
 wb_bulanan_start_container = [1, 6,  11]
 wb_bulanan_end_container   = [6, 11, 12]
 
-global wb_bulanan_subtract
-wb_bulanan_subtract = [0, 31, 56]
-
 global combined_task_range
 combined_task_range = "A1:BG42"
