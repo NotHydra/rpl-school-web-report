@@ -50,7 +50,7 @@ function check_checkbox_value(report_type){
         }
 
         try{
-            document.getElementById(`${report_type}_container`).style.right = "-275px"
+            document.getElementById(`${report_type}_container`).style.right = "-300px"
             document.getElementById(`${report_type}_invinsible_label`).style.display = "none";
         }
         
