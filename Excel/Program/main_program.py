@@ -3,6 +3,7 @@ from openpyxl.styles import *
 from files import wb_mingguan_file, wb_bulanan_file, weekly_task_start_column_range, weekly_task_end_column_range, monthly_task_start_column_range, monthly_task_end_column_range, wb_bulanan_start_container, wb_bulanan_end_container
 from capture_image import run_capture_image
 from write_to_json_file import write_json_file
+from wanted_list_program import run_wanted_list
 
 def write_table_names():
     wb_names = openpyxl.load_workbook("Excel/Names.xlsx")
@@ -590,3 +591,5 @@ check_validity()
 run_capture_image()
 
 write_json_file()
+
+run_wanted_list()

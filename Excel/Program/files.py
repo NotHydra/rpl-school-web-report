@@ -60,3 +60,42 @@ wb_bulanan_end_container   = [6, 11, 13]
 
 global combined_task_range
 combined_task_range = "A1:BK42"
+
+global list_of_students_name
+list_of_students_name= [
+    "Abu Abdirrahman Zenky",
+    "Alief Faza Rizqi Adi Jaya",
+    "Alief Mastari",
+    "Arif Fathurrahman",
+    "Cindy Anastasya Kurniawan Oey",
+    "Cleolia Jasmine Nasution",
+    "Dian Fitriani Aulia",
+    "Dinda Fatchus Sabila Fa'izatur Rahmah",
+    "Dinda Nur Apriani",
+    "Farhan Nur Aliani",
+    "Hesal Adrian",
+    "Keatryn Kezia P. Sihombing",
+    "Mohammad Ilham Saputra",
+    "Muhammad Akbar Ariq Jeconia Lesmana",
+    "Muhammad Asmaul Adam",
+    "Muhammad Athala Romero",
+    "Muhammad Farhan",
+    "Muhammad Ilham Dzaki",
+    "Muhammad Ridwan",
+    "Muhammad Saputra",
+    "Muhammad Yusuf",
+    "Nasywa Mawaddah",
+    "Natasya Indah Salsabila",
+    "Nicholas Davin Yang",
+    "Nouridza Juniansah Ridhan",
+    "O'neil Kerry Laurent",
+    "Rafli Febryan",
+    "Raihan Pratama Putra",
+    "Rizky Irswanda Ramadhana",
+    "Salsabila Nur Fairuz",
+    "Shabrina Cahyani",
+    "Silvana Putri Ariani",
+    "T.S Firdaus",
+    "Usama Fadlillah",
+    "Yehezkiel Dio Sinolungan"
+]
