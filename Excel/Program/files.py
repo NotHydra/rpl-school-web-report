@@ -13,7 +13,8 @@ wb_mingguan_file = [
     "Excel/Mingguan/Excel/List Tugas Minggu Ke-10 (27 September 2021 - 3 Oktober 2021).xlsx",
 
     "Excel/Mingguan/Excel/List Tugas Minggu Ke-11 (4 Oktober 2021 - 10 Oktober 2021).xlsx",
-    "Excel/Mingguan/Excel/List Tugas Minggu Ke-12 (11 Oktober 2021 - 17 Oktober 2021).xlsx"
+    "Excel/Mingguan/Excel/List Tugas Minggu Ke-12 (11 Oktober 2021 - 17 Oktober 2021).xlsx",
+    "Excel/Mingguan/Excel/List Tugas Minggu Ke-13 (18 Oktober 2021 - 24 Oktober 2021).xlsx"
 ]
 
 global wb_bulanan_file
@@ -36,7 +37,8 @@ wb_mingguan_image_name = [
     "Image List Tugas Minggu Ke-9",
     "Image List Tugas Minggu Ke-10",
     "Image List Tugas Minggu Ke-11",
-    "Image List Tugas Minggu Ke-12"
+    "Image List Tugas Minggu Ke-12",
+    "Image List Tugas Minggu Ke-13"
 ]
 
 global wb_bulanan_image_name
@@ -47,19 +49,19 @@ wb_bulanan_image_name = [
 ]
 
 global weekly_task_start_column_range, weekly_task_end_column_range
-weekly_task_start_column_range = [3, 8,  16, 23, 26, 34, 39, 42, 47, 53, 59, 63]
-weekly_task_end_column_range   = [8, 16, 23, 26, 34, 39, 42, 47, 53, 59, 63, 64]
+weekly_task_start_column_range = [3, 8,  16, 23, 26, 34, 39, 42, 47, 53, 59, 63, 64]
+weekly_task_end_column_range   = [8, 16, 23, 26, 34, 39, 42, 47, 53, 59, 63, 64, 65]
 
 global monthly_task_start_column_range,monthly_task_end_column_range
 monthly_task_start_column_range = [3,  34, 59]
-monthly_task_end_column_range   = [34, 59, 64]
+monthly_task_end_column_range   = [34, 59, 65]
 
 global wb_bulanan_start_container, wb_bulanan_end_container # How much week it contains
 wb_bulanan_start_container = [1, 6,  11]
-wb_bulanan_end_container   = [6, 11, 13]
+wb_bulanan_end_container   = [6, 11, 14]
 
 global combined_task_range
-combined_task_range = "A1:BK42"
+combined_task_range = "A1:BL42"
 
 global list_of_students_name
 list_of_students_name= [
