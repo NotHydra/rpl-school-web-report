@@ -80,6 +80,6 @@ def run_wanted_list():
     f = open("Excel\Program\Wanted List\sorted_list_of_student_assignment.txt", "w")
 
     for i in range(len(list_of_total_assignment_per_student)):
-        f.write(f"{list_of_students_name[list_of_total_assignment_per_student[i][1] - 1]} ({list_of_total_assignment_per_student[i][1]}), Total Laporan : {list_of_total_assignment_per_student[i][0]} \n\n")
+        f.write(f"{i+1}. {list_of_students_name[list_of_total_assignment_per_student[i][1] - 1]} ({list_of_total_assignment_per_student[i][1]}), Total Laporan : {list_of_total_assignment_per_student[i][0]} \n\n")
 
     f.close()
