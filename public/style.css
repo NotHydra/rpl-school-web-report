@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./Font/Roboto/Roboto-Bold.ttf);
+}
+
+body {
+  background-color: #181818;
+  font-family: "Roboto";
+  color: white;
+  height: 10000px;
+  margin: 0;
+  padding: 0;
+}
+
+body a {
+  color: white;
+  text-decoration: none;
+}
+
+body .nav_content_container {
+  background-color: #282828;
+  -webkit-box-shadow: 3px 0px 5px #181818;
+          box-shadow: 3px 0px 5px #181818;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: 450ms;
+  transition: 450ms;
+}
+
+body .nav_content_container i, body .nav_content_container text {
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+
+body .nav_content_container .nav_content_item_container {
+  font-size: 30px;
+  width: 32px;
+  height: 36px;
+  padding: 8px;
+  padding-left: 24px;
+  margin-right: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-transition: background-color 200ms, width 450ms;
+  transition: background-color 200ms, width 450ms;
+}
+
+body .nav_content_container .nav_content_item_container .nav_content_icon_container {
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .nav_content_container .nav_content_item_container text {
+  margin-left: 15px;
+  display: none;
+}
+
+body .nav_content_container .nav_content_item_container:hover {
+  background-color: #212121;
+}
+
+body .nav_content_container .nav_content_item_container:hover i {
+  opacity: 0.5;
+}
+
+body .nav_content_container .nav_content_item_container:hover text {
+  opacity: 0.5;
+}
+
+body .nav_content_invisible_div_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
