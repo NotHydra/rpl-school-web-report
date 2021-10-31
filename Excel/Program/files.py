@@ -103,3 +103,11 @@ list_of_students_name= [
     "Usama Fadlillah",
     "Yehezkiel Dio Sinolungan"
 ]
+
+global list_of_non_muslim_students
+list_of_non_muslim_students = [
+    "Keatryn Kezia P. Sihombing",
+    "Nicholas Davin Yang",
+    "O'neil Kerry Laurent",
+    "Yehezkiel Dio Sinolungan"
+]
