@@ -1,5 +1,5 @@
 import excel2img
-from files import *
+from files import wb_mingguan_file, wb_bulanan_file, wb_mingguan_image_name, wb_bulanan_image_name, combined_task_range
 
 def run_capture_image():
     for i in range(len(wb_mingguan_file)):
