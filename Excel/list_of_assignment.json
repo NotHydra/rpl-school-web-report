@@ -5,7 +5,7 @@
 		"assignment_lesson_count": 1,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 1,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
@@ -18,7 +18,7 @@
 		"assignment_lesson_count": 1,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 1,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
@@ -31,7 +31,7 @@
 		"assignment_lesson_count": 1,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": false,
+		"assignment_is_for_muslim": true,
 		"assignment_in_week": 1,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
@@ -44,12 +44,12 @@
 		"assignment_lesson_count": 1,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 1,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 34,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 5,
@@ -57,7 +57,7 @@
 		"assignment_lesson_count": 1,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 1,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
@@ -70,7 +70,7 @@
 		"assignment_lesson_count": 2,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 2,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
@@ -83,12 +83,12 @@
 		"assignment_lesson_count": 1,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 2,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 34,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 8,
@@ -96,12 +96,12 @@
 		"assignment_lesson_count": 2,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 2,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 34,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 9,
@@ -109,12 +109,12 @@
 		"assignment_lesson_count": 1,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 2,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 34,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 10,
@@ -122,12 +122,12 @@
 		"assignment_lesson_count": 1,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 2,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 34,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 11,
@@ -135,7 +135,7 @@
 		"assignment_lesson_count": 2,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": false,
+		"assignment_is_for_muslim": true,
 		"assignment_in_week": 2,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
@@ -148,12 +148,12 @@
 		"assignment_lesson_count": 2,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 2,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 34,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 13,
@@ -161,7 +161,7 @@
 		"assignment_lesson_count": 1,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 2,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
@@ -174,12 +174,12 @@
 		"assignment_lesson_count": 3,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 3,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 34,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 15,
@@ -187,12 +187,12 @@
 		"assignment_lesson_count": 2,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 3,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 34,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 16,
@@ -200,12 +200,12 @@
 		"assignment_lesson_count": 3,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 3,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 34,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 17,
@@ -213,12 +213,12 @@
 		"assignment_lesson_count": 3,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": false,
+		"assignment_is_for_muslim": true,
 		"assignment_in_week": 3,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 32,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, null, 2, 2, null, 2, 2, 2, 2, 3]
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, 0, 2, 2, 0, 2, 2, 2, 2, 3]
 	},
 	{
 		"assignment_id": 18,
@@ -226,12 +226,12 @@
 		"assignment_lesson_count": 3,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 3,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 32,
-		"assignment_done": [2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null]
+		"assignment_done": [2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0]
 	},
 	{
 		"assignment_id": 19,
@@ -239,12 +239,12 @@
 		"assignment_lesson_count": 2,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 3,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 32,
-		"assignment_done": [2, 2, 2, 2, 2, null, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 2, 2, 0, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 20,
@@ -252,42 +252,16 @@
 		"assignment_lesson_count": 1,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 3,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 29,
-		"assignment_done": [2, 2, 2, 2, 2, null, 2, null, 2, null, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, null, 2, 2, 2, 2, 2, 2, null]
+		"assignment_done": [2, 2, 2, 2, 2, 0, 2, 0, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 0]
 	},
 	{
 		"assignment_id": 21,
 		"assignment_lesson_name": "MAT",
-		"assignment_lesson_count": 4,
-		"assignment_description": null,
-		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
-		"assignment_in_week": 4,
-		"assignment_in_month": 1,
-		"assignment_has_due_date": null,
-		"assignment_total_done": 33,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2]
-	},
-	{
-		"assignment_id": 22,
-		"assignment_lesson_name": "PKN",
-		"assignment_lesson_count": 4,
-		"assignment_description": null,
-		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
-		"assignment_in_week": 4,
-		"assignment_in_month": 1,
-		"assignment_has_due_date": null,
-		"assignment_total_done": 27,
-		"assignment_done": [2, 2, 2, null, 2, 2, 2, null, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, null, null, 2, 2, 2, null, 2, null, null, 2, 2, 2, 2, 2, 2, 2]
-	},
-	{
-		"assignment_id": 23,
-		"assignment_lesson_name": "PAI",
 		"assignment_lesson_count": 4,
 		"assignment_description": null,
 		"assignment_picture": null,
@@ -296,7 +270,33 @@
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 33,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, null, 2, 2, 2, 2, 2, 2, 2, 3]
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2]
+	},
+	{
+		"assignment_id": 22,
+		"assignment_lesson_name": "PKN",
+		"assignment_lesson_count": 4,
+		"assignment_description": null,
+		"assignment_picture": null,
+		"assignment_is_for_muslim": false,
+		"assignment_in_week": 4,
+		"assignment_in_month": 1,
+		"assignment_has_due_date": null,
+		"assignment_total_done": 27,
+		"assignment_done": [2, 2, 2, 0, 2, 2, 2, 0, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 0, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2]
+	},
+	{
+		"assignment_id": 23,
+		"assignment_lesson_name": "PAI",
+		"assignment_lesson_count": 4,
+		"assignment_description": null,
+		"assignment_picture": null,
+		"assignment_is_for_muslim": true,
+		"assignment_in_week": 4,
+		"assignment_in_month": 1,
+		"assignment_has_due_date": null,
+		"assignment_total_done": 33,
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, 0, 2, 2, 2, 2, 2, 2, 2, 3]
 	},
 	{
 		"assignment_id": 24,
@@ -304,12 +304,12 @@
 		"assignment_lesson_count": 5,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 5,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 32,
-		"assignment_done": [2, 2, 2, null, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 0, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 25,
@@ -317,12 +317,12 @@
 		"assignment_lesson_count": 4,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 5,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 33,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 26,
@@ -330,7 +330,7 @@
 		"assignment_lesson_count": 2,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 5,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
@@ -343,12 +343,12 @@
 		"assignment_lesson_count": 3,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 5,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 30,
-		"assignment_done": [2, 2, 2, 2, 2, null, 2, null, 2, null, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 2, 2, 0, 2, 0, 2, 0, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 28,
@@ -356,12 +356,12 @@
 		"assignment_lesson_count": 5,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": false,
+		"assignment_is_for_muslim": true,
 		"assignment_in_week": 5,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 34,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 3]
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 3]
 	},
 	{
 		"assignment_id": 29,
@@ -369,12 +369,12 @@
 		"assignment_lesson_count": 3,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 5,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 31,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, null, 2, null, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 0, 2, 0, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 30,
@@ -382,12 +382,12 @@
 		"assignment_lesson_count": 2,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 5,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 26,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, 2, 2, 2, 2, null, null, 2, 2, 2, 2, null, null, 2, 2, 2, 2, 2, null, null, 2, 2, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 31,
@@ -395,12 +395,12 @@
 		"assignment_lesson_count": 2,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 5,
 		"assignment_in_month": 1,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 28,
-		"assignment_done": [2, 2, 2, 2, 2, null, 2, null, 2, null, 2, 2, 2, 2, null, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, null]
+		"assignment_done": [2, 2, 2, 2, 2, 0, 2, 0, 2, 0, 2, 2, 2, 2, 0, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 0]
 	},
 	{
 		"assignment_id": 32,
@@ -408,12 +408,12 @@
 		"assignment_lesson_count": 6,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 6,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 28,
-		"assignment_done": [2, 2, 2, 2, 2, null, 2, null, 2, null, 2, 2, 2, null, null, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, null, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 2, 2, 0, 2, 0, 2, 0, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 0, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 33,
@@ -421,12 +421,12 @@
 		"assignment_lesson_count": 2,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 6,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 31,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, null, 2, null, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 0, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 34,
@@ -434,12 +434,12 @@
 		"assignment_lesson_count": 6,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": false,
+		"assignment_is_for_muslim": true,
 		"assignment_in_week": 6,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 33,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, null, 2, 2, 2, 2, 2, 2, 2, 3]
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, 0, 2, 2, 2, 2, 2, 2, 2, 3]
 	},
 	{
 		"assignment_id": 35,
@@ -447,12 +447,12 @@
 		"assignment_lesson_count": 4,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 6,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 30,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, null, 2, null, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, null, 2, 2, null, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 0, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 0, 2, 2, 0, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 36,
@@ -460,12 +460,12 @@
 		"assignment_lesson_count": 3,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 6,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 24,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, null, 2, 2, 2, null, null, 2, 2, 2, 2, null, null, 2, 2, 2, 2, 2, null, 2, 2, null, 2, 2, 2, 2, null]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 2, 0, 0, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 0, 2, 2, 0, 2, 2, 2, 2, 0]
 	},
 	{
 		"assignment_id": 37,
@@ -473,12 +473,12 @@
 		"assignment_lesson_count": 7,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 7,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 29,
-		"assignment_done": [2, 2, 2, 2, 2, null, 2, null, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, null, 2, 2, null, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 2, 2, 0, 2, 0, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 0, 2, 2, 0, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 38,
@@ -486,12 +486,12 @@
 		"assignment_lesson_count": 4,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 7,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 33,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 39,
@@ -499,12 +499,12 @@
 		"assignment_lesson_count": 7,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": false,
+		"assignment_is_for_muslim": true,
 		"assignment_in_week": 7,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 34,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, 2, 2, 2, null, 2, 2, 2, 2, 3]
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, 2, 2, 2, 0, 2, 2, 2, 2, 3]
 	},
 	{
 		"assignment_id": 40,
@@ -512,12 +512,12 @@
 		"assignment_lesson_count": 8,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 8,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 26,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, null, 2, 2, 2, 2, null, 2, 2, 2, 2, null, null, 2, 2, 2, 2, 2, null, 2, 2, null, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 2, 2, 0, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 0, 2, 2, 0, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 41,
@@ -525,12 +525,12 @@
 		"assignment_lesson_count": 3,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 8,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 24,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, null, 2, 2, 2, null, null, 2, 2, 2, 2, null, null, 2, 2, 2, null, 2, null, 2, 2, null, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 2, 0, 0, 2, 2, 2, 2, 0, 0, 2, 2, 2, 0, 2, 0, 2, 2, 0, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 42,
@@ -538,12 +538,12 @@
 		"assignment_lesson_count": 8,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": false,
+		"assignment_is_for_muslim": true,
 		"assignment_in_week": 8,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 34,
-		"assignment_done": [2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 3]
+		"assignment_done": [2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 3]
 	},
 	{
 		"assignment_id": 43,
@@ -551,12 +551,12 @@
 		"assignment_lesson_count": 5,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 8,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 28,
-		"assignment_done": [2, 2, 2, 2, 2, null, 2, null, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, null, null, 2, 2, 2, 2, 2, 2, null, 2, 2, null, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 2, 2, 0, 2, 0, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 0, 2, 2, 0, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 44,
@@ -564,12 +564,12 @@
 		"assignment_lesson_count": 4,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 8,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 24,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, null, 2, 2, 2, null, null, 2, 2, 2, 2, null, null, 2, 2, 2, 2, 2, null, null, 2, null, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 2, 0, 0, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 0, 0, 2, 0, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 45,
@@ -577,12 +577,12 @@
 		"assignment_lesson_count": 9,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 9,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 23,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, null, 2, 2, 2, null, null, 2, 2, 2, 2, null, null, 2, 2, 2, 2, 2, null, null, 2, null, 2, 2, 2, 2, null]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 2, 0, 0, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 0, 0, 2, 0, 2, 2, 2, 2, 0]
 	},
 	{
 		"assignment_id": 46,
@@ -590,12 +590,12 @@
 		"assignment_lesson_count": 1,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 9,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 28,
-		"assignment_done": [2, 2, 2, null, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, null, null, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, null]
+		"assignment_done": [2, 2, 2, 0, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 0]
 	},
 	{
 		"assignment_id": 47,
@@ -603,12 +603,12 @@
 		"assignment_lesson_count": 5,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 9,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 27,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, null, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, null, 2, 2, 2, 2, 2, null, 2, 2, null, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 0, 2, 2, 0, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 48,
@@ -616,12 +616,12 @@
 		"assignment_lesson_count": 9,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": false,
+		"assignment_is_for_muslim": true,
 		"assignment_in_week": 9,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 31,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, null, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 3]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 3]
 	},
 	{
 		"assignment_id": 49,
@@ -629,12 +629,12 @@
 		"assignment_lesson_count": 6,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 9,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 24,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, null, 2, 2, 2, 2, null, 2, 2, 2, null, null, null, 2, 2, 2, 2, 2, null, null, 2, null, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 2, 2, 0, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 2, 0, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 50,
@@ -642,12 +642,12 @@
 		"assignment_lesson_count": 5,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 9,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 23,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, null, 2, 2, 2, null, null, 2, 2, 2, 2, null, null, 2, 2, 2, null, 2, null, null, 2, null, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 2, 0, 0, 2, 2, 2, 2, 0, 0, 2, 2, 2, 0, 2, 0, 0, 2, 0, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 51,
@@ -655,12 +655,12 @@
 		"assignment_lesson_count": 10,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 10,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 21,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, null, 2, 2, 2, null, null, 2, 2, null, 2, null, null, 2, 2, 2, 2, 2, null, null, 2, null, 2, null, 2, 2, null]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 2, 0, 0, 2, 2, 0, 2, 0, 0, 2, 2, 2, 2, 2, 0, 0, 2, 0, 2, 0, 2, 2, 0]
 	},
 	{
 		"assignment_id": 52,
@@ -668,12 +668,12 @@
 		"assignment_lesson_count": 5,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 10,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 29,
-		"assignment_done": [2, 2, 2, 2, 2, null, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, null, 2, 2, 2, 2, null, 2, null, null, 2, 2, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 0, 2, 2, 2, 2, 0, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 53,
@@ -681,12 +681,12 @@
 		"assignment_lesson_count": 6,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 10,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 22,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, null, 2, 2, 2, null, null, 2, 2, 2, 2, null, null, 2, 2, 2, null, 2, null, null, 2, null, 2, 2, 2, 2, null]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 2, 0, 0, 2, 2, 2, 2, 0, 0, 2, 2, 2, 0, 2, 0, 0, 2, 0, 2, 2, 2, 2, 0]
 	},
 	{
 		"assignment_id": 54,
@@ -694,12 +694,12 @@
 		"assignment_lesson_count": 10,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": false,
+		"assignment_is_for_muslim": true,
 		"assignment_in_week": 10,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 18,
-		"assignment_done": [null, 2, 2, null, 2, null, 2, null, 2, null, 2, 3, null, 2, null, 2, null, null, null, 2, null, null, 2, 3, null, 3, null, null, 2, null, 2, null, 2, 2, 3]
+		"assignment_done": [0, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 3, 0, 2, 0, 2, 0, 0, 0, 2, 0, 0, 2, 3, 0, 3, 0, 0, 2, 0, 2, 0, 2, 2, 3]
 	},
 	{
 		"assignment_id": 55,
@@ -707,12 +707,12 @@
 		"assignment_lesson_count": 6,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 10,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 17,
-		"assignment_done": [2, null, 2, null, 2, null, 2, null, 2, null, 2, 2, null, null, null, 2, 2, null, 2, null, null, 2, 2, 2, null, null, null, null, 2, null, 2, null, 2, 2, null]
+		"assignment_done": [2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 0, 0, 0, 2, 2, 0, 2, 0, 0, 2, 2, 2, 0, 0, 0, 0, 2, 0, 2, 0, 2, 2, 0]
 	},
 	{
 		"assignment_id": 56,
@@ -720,12 +720,12 @@
 		"assignment_lesson_count": 5,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 10,
 		"assignment_in_month": 2,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 26,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, null, 2, 2, 2, 2, 2, 2, 2, 2, 2, null, null, 2, 2, 2, 2, 2, null, null, 2, null, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 0, 0, 2, 0, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 57,
@@ -733,12 +733,12 @@
 		"assignment_lesson_count": 11,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 11,
 		"assignment_in_month": 3,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 22,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, null, 2, 2, null, null, null, 2, 2, null, 2, null, null, 2, 2, 2, 2, 2, null, 2, 2, null, 2, 2, 2, 2, null]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 0, 0, 0, 2, 2, 0, 2, 0, 0, 2, 2, 2, 2, 2, 0, 2, 2, 0, 2, 2, 2, 2, 0]
 	},
 	{
 		"assignment_id": 58,
@@ -746,12 +746,12 @@
 		"assignment_lesson_count": 3,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 11,
 		"assignment_in_month": 3,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 20,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, null, 2, 2, null, null, null, 2, 2, null, 2, null, null, 2, 2, 2, null, 2, null, null, 2, null, 2, null, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 0, 0, 0, 2, 2, 0, 2, 0, 0, 2, 2, 2, 0, 2, 0, 0, 2, 0, 2, 0, 2, 2, 2]
 	},
 	{
 		"assignment_id": 59,
@@ -759,12 +759,12 @@
 		"assignment_lesson_count": 7,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 11,
 		"assignment_in_month": 3,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 24,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, null, 2, 2, 2, 2, 2, 2, 2, null, null, null, null, 2, 2, 2, 2, 2, null, null, 2, null, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 2, 0, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 60,
@@ -772,12 +772,12 @@
 		"assignment_lesson_count": 11,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": false,
+		"assignment_is_for_muslim": true,
 		"assignment_in_week": 11,
 		"assignment_in_month": 3,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 30,
-		"assignment_done": [2, 2, 2, null, 2, 2, 2, null, 2, null, 2, 3, 2, null, 2, 2, 2, 2, 2, 2, null, 2, 2, 3, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 3]
+		"assignment_done": [2, 2, 2, 0, 2, 2, 2, 0, 2, 0, 2, 3, 2, 0, 2, 2, 2, 2, 2, 2, 0, 2, 2, 3, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 3]
 	},
 	{
 		"assignment_id": 61,
@@ -785,12 +785,12 @@
 		"assignment_lesson_count": 12,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 12,
 		"assignment_in_month": 3,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 21,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, null, 2, 2, null, null, null, 2, 2, null, null, null, null, 2, 2, 2, 2, 2, null, 2, 2, null, 2, 2, 2, 2, null]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 0, 0, 0, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 2, 2, 0, 2, 2, 2, 2, 0]
 	},
 	{
 		"assignment_id": 62,
@@ -798,12 +798,12 @@
 		"assignment_lesson_count": 13,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 13,
 		"assignment_in_month": 3,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 20,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, null, 2, 2, null, null, null, 2, 2, null, 2, null, null, 2, 2, 2, 2, 2, null, null, 2, null, 2, 2, 2, null, null]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 0, 0, 0, 2, 2, 0, 2, 0, 0, 2, 2, 2, 2, 2, 0, 0, 2, 0, 2, 2, 2, 0, 0]
 	},
 	{
 		"assignment_id": 63,
@@ -811,12 +811,12 @@
 		"assignment_lesson_count": 3,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 13,
 		"assignment_in_month": 3,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 24,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, null, 2, 2, 2, null, 2, 2, 2, null, 2, null, null, 2, 2, 2, 2, 2, null, 2, 2, null, 2, 2, 2, 2, null]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 2, 0, 2, 2, 2, 0, 2, 0, 0, 2, 2, 2, 2, 2, 0, 2, 2, 0, 2, 2, 2, 2, 0]
 	},
 	{
 		"assignment_id": 64,
@@ -824,12 +824,12 @@
 		"assignment_lesson_count": 8,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 13,
 		"assignment_in_month": 3,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 27,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, 2, 2, 2, 2, 2, 2, 2, null, 2, 2, 2, 2, null, null, 2, 2, 2, null, 2, null, null, 2, 2, 2, 2, 2, 2, 2]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 0, 0, 2, 2, 2, 0, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2]
 	},
 	{
 		"assignment_id": 65,
@@ -837,12 +837,12 @@
 		"assignment_lesson_count": 14,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 14,
 		"assignment_in_month": 3,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 16,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, null, 2, 2, null, null, null, null, 2, null, null, null, null, 2, 2, null, 2, 2, null, null, 2, null, null, null, 2, 2, null]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 2, 0, 2, 2, 0, 0, 2, 0, 0, 0, 2, 2, 0]
 	},
 	{
 		"assignment_id": 66,
@@ -850,12 +850,12 @@
 		"assignment_lesson_count": 7,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 14,
 		"assignment_in_month": 3,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 19,
-		"assignment_done": [2, 2, 2, null, 2, null, 2, null, 2, null, 2, 2, null, 2, null, 2, 2, null, null, null, null, 2, 2, 2, null, null, null, null, 2, null, 2, 2, 2, 2, null]
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 2, 2, 0, 2, 0, 2, 2, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 2, 0, 2, 2, 2, 2, 0]
 	},
 	{
 		"assignment_id": 67,
@@ -863,12 +863,12 @@
 		"assignment_lesson_count": 4,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 14,
 		"assignment_in_month": 3,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 8,
-		"assignment_done": [2, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 2, null, 2, null, null, null, 2, null, null, null, null, null, 2, null, null, null, 2, 2, 2]
+		"assignment_done": [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2, 0, 0, 0, 2, 2, 2]
 	},
 	{
 		"assignment_id": 68,
@@ -876,12 +876,12 @@
 		"assignment_lesson_count": 7,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 14,
 		"assignment_in_month": 3,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 20,
-		"assignment_done": [2, null, 2, null, 2, null, 2, null, null, null, 2, 2, 2, 2, null, 2, 2, null, 2, null, null, 2, 2, 2, 2, null, null, null, 2, null, 2, 2, 2, 2, null]
+		"assignment_done": [2, 0, 2, 0, 2, 0, 2, 0, 0, 0, 2, 2, 2, 2, 0, 2, 2, 0, 2, 0, 0, 2, 2, 2, 2, 0, 0, 0, 2, 0, 2, 2, 2, 2, 0]
 	},
 	{
 		"assignment_id": 69,
@@ -889,11 +889,11 @@
 		"assignment_lesson_count": 15,
 		"assignment_description": null,
 		"assignment_picture": null,
-		"assignment_is_for_muslim": true,
+		"assignment_is_for_muslim": false,
 		"assignment_in_week": 15,
 		"assignment_in_month": 4,
 		"assignment_has_due_date": null,
 		"assignment_total_done": 1,
-		"assignment_done": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 2, null, null, null, null, null, null, null, null, null, null, null, null]
+		"assignment_done": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 	}
 ]

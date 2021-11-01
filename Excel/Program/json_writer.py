@@ -65,7 +65,7 @@ def run_json_writer():
 
         for j in range(len(list_of_student_array[i][4])):
             if list_of_student_array[i][4][j] == None:
-                json_file.write('null')
+                json_file.write('0')
             
             elif list_of_student_array[i][4][j] == "ü":
                 json_file.write('2')
@@ -116,9 +116,9 @@ def run_json_writer():
         assignment_description = None
         assignment_picture = None
 
-        assignment_is_for_muslim = True
+        assignment_is_for_muslim = False
         if assignment_lesson_name == "PAI":
-            assignment_is_for_muslim = False
+            assignment_is_for_muslim = True
 
         for k in range(len(weekly_task_start_column_range)):
             for j in range(weekly_task_start_column_range[k]-2, weekly_task_end_column_range[k]-2):
@@ -187,7 +187,7 @@ def run_json_writer():
         
         for j in range(len(list_of_assignment_array[i][10])):
             if list_of_assignment_array[i][10][j] == None:
-                json_file.write('null')
+                json_file.write('0')
             
             elif list_of_assignment_array[i][10][j] == "ü":
                 json_file.write('2')
@@ -209,4 +209,37 @@ def run_json_writer():
 
     json_file.write("]")
     json_file.close()
+
+
+    # For Assignment Range JSON
+    # Set the variables needed
+    list_of_assignment_weekly_range_array = []
+    for i in range(len(weekly_task_start_column_range)):
+        temp_range_value = weekly_task_end_column_range[i] - weekly_task_start_column_range[i]
+        list_of_assignment_weekly_range_array.append(temp_range_value)
+
+
+    print(list_of_assignment_weekly_range_array)
+
+
+    list_of_assignment_monthly_range_array = []
+    for i in range(len(monthly_task_start_column_range)):
+        temp_range_value = monthly_task_end_column_range[i] - monthly_task_start_column_range[i]
+        list_of_assignment_monthly_range_array.append(temp_range_value)
+
+
+    # Write to Student JSON file
+    json_file = open("Excel/list_of_assignment_range.json", "w")
+    json_file.write("{\n")
+
+    json_file.write(f'\t"weekly": {list_of_assignment_weekly_range_array},\n')
+    json_file.write(f'\t"monthly": {list_of_assignment_monthly_range_array}\n')
+
+    json_file.write("}")
+    json_file.close()
+
+    
+
+
+run_json_writer()
 
