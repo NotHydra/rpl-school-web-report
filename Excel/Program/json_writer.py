@@ -219,9 +219,6 @@ def run_json_writer():
         list_of_assignment_weekly_range_array.append(temp_range_value)
 
 
-    print(list_of_assignment_weekly_range_array)
-
-
     list_of_assignment_monthly_range_array = []
     for i in range(len(monthly_task_start_column_range)):
         temp_range_value = monthly_task_end_column_range[i] - monthly_task_start_column_range[i]
