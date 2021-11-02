@@ -1,102 +1,80 @@
 <div class="nav_content_container">
-    <div class="nav_content_item_container" onclick="menu_bar_function()">
-        <div class="nav_content_icon_container">
-            <i class="fa-solid fa-bars"></i>
-        </div> 
-        <text class="nav_content_text_container">Menu</text>
+    <div class="nav_content_item" onclick="bars_menu_function()">
+        <div class="nav_content_item_bar"><i class="fa-solid fa-bars"></i></div>
+        <a href="/home"><div class="nav_content_item_text">XI-RPL</div></a>
     </div>
 
-    <a href="/home">
-        <div class="nav_content_item_container">
-            <div class="nav_content_icon_container">
-                <i class="fa-solid fa-house"></i>
-            </div> 
-            <text class="nav_content_text_container">Home</text>
-        </div>
-    </a>
-
-    <a href="/assignment">
-        <div class="nav_content_item_container">
-            <div class="nav_content_icon_container">
-                <i class="fa-solid fa-clipboard-list"></i>
-            </div> 
-            <text class="nav_content_text_container">Assignment</text>
-        </div>
-    </a>
-
-    <a href="/classcode">
-        <div class="nav_content_item_container">
-            <div class="nav_content_icon_container">
-                <i class="fa-solid fa-school"></i>
-            </div> 
-            <text class="nav_content_text_container">Class Code</text>
-        </div>
-    </a>
-
-    <a href="/leaderboard">
-        <div class="nav_content_item_container">
-            <div class="nav_content_icon_container">
-                <i class="fa-solid fa-chart-bar"></i>
-            </div> 
-            <text class="nav_content_text_container">Leaderboard</text>
-        </div>
-    </a>
-
-    <a href="/statistics">
-        <div class="nav_content_item_container">
-            <div class="nav_content_icon_container">
-                <i class="fa-solid fa-chart-line"></i>
-            </div> 
-            <text class="nav_content_text_container">Statistics</text>
-        </div>
-    </a>
-
-    <a href="/changelog">
-        <div class="nav_content_item_container">
-            <div class="nav_content_icon_container">
-                <i class="fa-brands fa-buffer"></i>
-            </div> 
-            <text class="nav_content_text_container">Changelog</text>
-        </div>
-    </a>
-
-    <a href="/contributor">
-        <div class="nav_content_item_container">
-            <div class="nav_content_icon_container">
-                <i class="fa-solid fa-address-book"></i>
-            </div> 
-            <text class="nav_content_text_container">Contributor</text>
-        </div>
-    </a>
+    <div class="nav_content_profile">
+        <div class="nav_content_profile_text">Rizky Irswanda Ramadhana</div>
+        <img src="Image\Profile Photo\Rizky_Profile_Photo.png" alt="profile_picture">
+    </div>
 
 </div>
 
-<div class="nav_content_invisible_div_container" onclick="menu_bar_function()"></div>
+<div class="nav_content_bars_menu_container">
+    <% for(let i = 0; i < 7; i++) {%>
+        <a class="nav_content_bars_menu_item_container" href="">
+            <div class="nav_content_bars_menu_item">
+                <div class="nav_content_bars_menu_item_icon"><i></i></div>
+                <div class="nav_content_bars_menu_item_text"></div>
+            </div>
+        </a>
+    <% } %>
+    
+</div>
+
+<div class="nav_content_bars_menu_invinsible_container" onclick="bars_menu_function()"></div>
 
 <script>
-    let menu_bar_active = false
-    function menu_bar_function(){
-        if (menu_bar_active == false){
-            for(let i = 0; i < 8; i++){
-                document.getElementsByClassName('nav_content_item_container')[i].style.width = "225px";
-                document.getElementsByClassName('nav_content_text_container')[i].style.display = "block";
-            }
+    const bars_menu_link_array = [
+        "home",
+        "assignment",
+        "classcode",
+        "leaderboard",
+        "statistics",
+        "changelog",
+        "contributor"
+    ];
 
-            document.getElementsByClassName('nav_content_invisible_div_container')[0].style.display = "block"
-                
-            menu_bar_active = true
+    const bars_menu_icon_array = [
+        "fa-solid fa-house",
+        "fa-solid fa-clipboard-list",
+        "fa-solid fa-school",
+        "fa-solid fa-chart-bar",
+        "fa-solid fa-chart-line",
+        "fa-brands fa-buffer",
+        "fa-solid fa-address-book"
+    ];
+
+    const bars_menu_name_array = [
+        "Home",
+        "Assignment",
+        "Class Code",
+        "Leaderboard",
+        "Statistics",
+        "Changelog",
+        "Contributor"
+    ];
+
+    for(let i = 0; i < bars_menu_icon_array.length; i++){
+        document.getElementsByClassName("nav_content_bars_menu_item_container")[i].href = `/${bars_menu_link_array[i]}`;
+        document.getElementsByTagName("i")[i+1].className = bars_menu_icon_array[i];
+        document.getElementsByClassName("nav_content_bars_menu_item_text")[i].innerHTML = bars_menu_name_array[i];
+    };
+
+    let bars_menu_active = false;
+    function bars_menu_function(){
+        if (bars_menu_active == false){
+            bars_menu_active = true;
+            document.getElementsByClassName("nav_content_bars_menu_container")[0].style.left = 0;
+            document.getElementsByClassName("nav_content_bars_menu_invinsible_container")[0].style.display = "block";
+            
         }
 
-        else if (menu_bar_active == true){
-            for(let i = 0; i < 8; i++){
-                document.getElementsByClassName('nav_content_item_container')[i].style.width = "32px";
-                setTimeout(() => {document.getElementsByClassName('nav_content_text_container')[i].style.display = "none";}, 450);
-            }
-
-            document.getElementsByClassName('nav_content_invisible_div_container')[0].style.display = "none"
-
-            menu_bar_active = false;
-        }   
-    
-    }
+        else if (bars_menu_active == true){
+            bars_menu_active = false;
+            document.getElementsByClassName("nav_content_bars_menu_container")[0].style.left = "-300px";
+            document.getElementsByClassName("nav_content_bars_menu_invinsible_container")[0].style.display = "none";
+        };
+    };
 </script>

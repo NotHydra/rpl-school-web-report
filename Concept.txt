@@ -4,7 +4,7 @@ Home <i class="fa-solid fa-house"></i>
 Assignmnet <i class="fa-solid fa-clipboard-list"></i>
 Class Code <i class="fa-solid fa-school"></i>
 Leaderboard <i class="fa-solid fa-chart-bar"></i>
-Statisctic <i class="fa-solid fa-chart-line"></i>
+Statistic <i class="fa-solid fa-chart-line"></i>
 Changelog <i class="fa-brands fa-buffer"></i>
 Contributor <i class="fa-solid fa-address-book"></i>
 
@@ -12,7 +12,14 @@ Contributor <i class="fa-solid fa-address-book"></i>
 student_id: Int
 student_name: Str
 student_is_muslim: Bool
+student_total_assignment_done
 student_total_assignment_done: Int
+student_assignment_done : []
+	possible value:
+	0 = None,
+	1 = Red Checkmark,
+	2 = Black Chechmark,
+	3 = NON-MUS
 
 <Assignment Class's Object>
 assignment_id: Int
@@ -24,6 +31,7 @@ assignment_is_for_muslim: Bool
 assignment_in_week: Int
 assignment_in_month: Int
 assignment_has_due_date: Bool
+assignment_total_done : int
 assignment_done: [ ]
 	possible value:
 	0 = None,
