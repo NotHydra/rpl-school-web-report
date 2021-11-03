@@ -1,6 +1,6 @@
 import openpyxl
 import json
-from files import weekly_task_start_column_range, weekly_task_end_column_range, monthly_task_start_column_range, monthly_task_end_column_range, list_of_students_name, list_of_non_muslim_students
+from files import weekly_task_start_column_range, weekly_task_end_column_range, monthly_task_start_column_range, monthly_task_end_column_range, list_of_students_name, list_of_non_muslim_students, wb_bulanan_end_container
 
 def run_json_writer():
     wb_combined = openpyxl.load_workbook("Excel/List Tugas Gabunggan.xlsx")
@@ -230,13 +230,17 @@ def run_json_writer():
     json_file.write("{\n")
 
     json_file.write(f'\t"weekly": {list_of_assignment_weekly_range_array},\n')
-    json_file.write(f'\t"monthly": {list_of_assignment_monthly_range_array}\n')
+    json_file.write(f'\t"monthly": {list_of_assignment_monthly_range_array},\n')
+    json_file.write(f'\t"weeks_in_month": [1, ')
+    
+    for i in range(len(wb_bulanan_end_container)):
+        if i != len(wb_bulanan_end_container)-1:
+            json_file.write(f'{wb_bulanan_end_container[i]}, ')
+        
+        else:
+            json_file.write(f'{wb_bulanan_end_container[i]}')
+    
+    json_file.write(f']\n')
 
     json_file.write("}")
     json_file.close()
-
-    
-
-
-run_json_writer()
-
