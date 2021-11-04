@@ -57,18 +57,18 @@ wb_bulanan_image_name = [
 
 global weekly_task_start_column_range, weekly_task_end_column_range
 weekly_task_start_column_range = [3, 8,  16, 23, 26, 34, 39, 42, 47, 53, 59, 63, 64, 67, 71]
-weekly_task_end_column_range   = [8, 16, 23, 26, 34, 39, 42, 47, 53, 59, 63, 64, 67, 71, 75]
+weekly_task_end_column_range   = [8, 16, 23, 26, 34, 39, 42, 47, 53, 59, 63, 64, 67, 71, 76]
 
 global monthly_task_start_column_range,monthly_task_end_column_range
 monthly_task_start_column_range = [3,  34, 59, 71]
-monthly_task_end_column_range   = [34, 59, 71, 75]
+monthly_task_end_column_range   = [34, 59, 71, 76]
 
 global wb_bulanan_start_container, wb_bulanan_end_container # How much week it contains
 wb_bulanan_start_container = [1, 6,  11, 15]
 wb_bulanan_end_container   = [6, 11, 15, 16]
 
 global combined_task_range
-combined_task_range = "A1:BV42"
+combined_task_range = "A1:BW42"
 
 global list_of_students_name
 list_of_students_name= [
