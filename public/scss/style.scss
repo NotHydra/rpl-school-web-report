@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(./../Font/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Wingding";
+    src: url(./../Font/wingding.ttf);
+}
+
+::-webkit-scrollbar{
+    width: calc(0.3vw + 7px);
+    height: calc(0.3vw + 7px);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #777272;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #575454;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #282828;
+}
+
+::-webkit-scrollbar-corner{
+    background-color: #282828;
+
+}
+
+html{
+    height: 98%;
+}
+
+body{
+    background-color: #181818;
+    font-family: "Roboto";
+    color: white;
+    white-space: nowrap;
+
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    a{
+        text-decoration: none;
+        color: white;
+        cursor: default;
+    }
+
+    @import "nav.scss";
+    @import "home.scss";
+}
+
+// *{
+//     border: 1px solid yellow;
+// }

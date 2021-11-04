@@ -41,7 +41,7 @@
                             
                             <!-- Week -->
                             <% for(let i = 0; i < list_of_assignment_range_data.weekly.length; i++) {%> 
-                                <th class="home_content_table_<%= i+1 %>"  colspan="<%= list_of_assignment_range_data.weekly[i] %>">Minggu Ke-<%= i+1 %></th>
+                                <th class="home_content_table_<%= i+1 %> home_content_table_disable"  colspan="<%= list_of_assignment_range_data.weekly[i] %>">Minggu Ke-<%= i+1 %></th>
                             <% } %>
                         </tr>
         
@@ -49,7 +49,7 @@
                             <!-- Task Count -->
                             <% for(let j = 0; j < list_of_assignment_range_data.weekly.length; j++) {%>
                                 <% for(let i = 0; i < list_of_assignment_range_data.weekly[j]; i++) {%>
-                                    <th class="home_content_table_<%= j+1 %>">Tugas <%= i+1 %></th>
+                                    <th class="home_content_table_<%= j+1 %> home_content_table_disable">Tugas <%= i+1 %></th>
                                 <% } %>
                             <% } %>
                         </tr>
@@ -59,7 +59,7 @@
                             <% k = 0 %>
                             <% for(let j = 0; j < list_of_assignment_range_data.weekly.length; j++) {%>
                                 <% for(let i = 0; i < list_of_assignment_range_data.weekly[j]; i++) {%>
-                                    <th class="home_content_table_<%= j+1 %>"><%= list_of_assignment_data[k].assignment_lesson_name %><%= list_of_assignment_data[k].assignment_lesson_count %></th>
+                                    <th class="home_content_table_<%= j+1 %> home_content_table_disable"><%= list_of_assignment_data[k].assignment_lesson_name %><%= list_of_assignment_data[k].assignment_lesson_count %></th>
                                     <% k += 1%>
                                 <% } %>
                             <% } %>
@@ -80,10 +80,10 @@
                                     <% for(let j = 0; j < list_of_assignment_range_data.weekly.length; j++) {%>
                                         <% for(let k = 0; k < list_of_assignment_range_data.weekly[j]; k++) {%>
                                             <% if (list_of_student_data[i].student_assignment_done[l] == "NON-MUS") {%>
-                                                <td class="home_content_table_<%= j+1 %>" style="font-family: 'Roboto';"><%= list_of_student_data[i].student_assignment_done[l] %></td> 
+                                                <td class="home_content_table_<%= j+1 %> home_content_table_disable" style="font-family: 'Roboto';"><%= list_of_student_data[i].student_assignment_done[l] %></td> 
                                                 <% l += 1 %>
                                             <% } else {%>
-                                                <td class="home_content_table_<%= j+1 %>" style="font-family: 'Wingding';"><%= list_of_student_data[i].student_assignment_done[l] %></td> 
+                                                <td class="home_content_table_<%= j+1 %> home_content_table_disable" style="font-family: 'Wingding';"><%= list_of_student_data[i].student_assignment_done[l] %></td> 
                                                 <% l += 1 %>
                                             <% } %>
                                             
@@ -159,8 +159,7 @@
                 disable_report()
                 enable_report(option_box_value_type, option_box_value_number)
             }
-
-            disable_report()
+            
             enable_report("W", "<%= list_of_assignment_range_data.weekly.length%>")
 
         </script>
