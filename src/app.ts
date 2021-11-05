@@ -54,32 +54,32 @@ fs.readFile(`./json_file/list_of_student.json`, 'utf-8', (err, jsonString)=> {
             });
 
             app.get('/assignment', (req: Request, res: Response) => {
-                res.render('assignment', { title: 'Assignment', list_of_student_data, list_of_assignment_data, list_of_assignment_range_data });
+                res.render('assignment', { title: 'Assignment', list_of_student_data });
                 console.log("Assignment is being requested")
             });
             
             app.get('/classcode', (req: Request, res: Response) => {
-                res.render('classcode', { title: 'Class Code', list_of_student_data, list_of_assignment_data, list_of_assignment_range_data });
+                res.render('classcode', { title: 'Class Code', list_of_student_data });
                 console.log("Class Code is being requested")
             });
             
             app.get('/leaderboard', (req: Request, res: Response) => {
-                res.render('leaderboard', { title: 'Leaderboard', list_of_student_data, list_of_assignment_data, list_of_assignment_range_data  });
+                res.render('leaderboard', { title: 'Leaderboard', list_of_student_data });
                 console.log("Leaderboard is being requested")
             });
             
             app.get('/statistics', (req: Request, res: Response) => {
-                res.render('statistics', { title: 'Statistics', list_of_student_data, list_of_assignment_data, list_of_assignment_range_data  });
+                res.render('statistics', { title: 'Statistics', list_of_student_data });
                 console.log("Statistics is being requested")
             });
             
             app.get('/changelog', (req: Request, res: Response) => {
-                res.render('changelog', { title: 'Changelog', list_of_student_data, list_of_assignment_data, list_of_assignment_range_data  });
+                res.render('changelog', { title: 'Changelog', list_of_student_data });
                 console.log("Changelog is being requested")
             });
             
             app.get('/contributor', (req: Request, res: Response) => {
-                res.render('contributor', { title: 'Contributor', list_of_student_data, list_of_assignment_data, list_of_assignment_range_data  });
+                res.render('contributor', { title: 'Contributor', list_of_student_data });
                 console.log("Contributor is being requested")
             });
         });

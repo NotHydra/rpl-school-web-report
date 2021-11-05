@@ -1,0 +1,85 @@
+.classcode_content_container {
+  margin-top: calc(0.5vw + 7.5px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.classcode_content_container .classcode_content_item_container {
+  min-width: 200px;
+  width: calc(80vw + 20px);
+}
+
+.classcode_content_container .classcode_content_item_container .classcode_content_item {
+  background-color: #282828;
+  font-size: calc(1vw + 10px);
+  white-space: nowrap;
+  margin-bottom: calc(0.5vw + 7.5px);
+  padding: calc(0.5vw + 10px) calc(0.5vw + 7.5px);
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+
+.classcode_content_container .classcode_content_item_container .classcode_content_item:hover {
+  opacity: 0.5;
+}
+
+.classcode_content_container .classcode_content_item_container .classcode_content_item .classcode_content_icon_text {
+  font-size: calc(1vw + 12px);
+}
+
+.classcode_content_container .classcode_content_item_container .classcode_content_list {
+  margin-left: calc(1vw + 25px);
+}
+
+.classcode_content_container .classcode_content_item_container .classcode_content_list .classcode_content_list_item {
+  background-color: #282828;
+  font-size: calc(1vw + 10px);
+  white-space: nowrap;
+  overflow: auto;
+  margin-bottom: calc(0.5vw + 7.5px);
+  padding: calc(0.5vw + 10px) calc(0.5vw + 7.5px);
+  border-radius: 8px;
+}
+
+.classcode_content_container .classcode_content_item_container .classcode_content_list .classcode_content_list_item a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.classcode_content_container .classcode_content_item_container #classcode_content_list_google_classroom {
+  display: none;
+}
+
+.classcode_content_container .classcode_content_item_container #classcode_content_icon_google_classroom {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
+}
+
+.classcode_content_container .classcode_content_item_container #classcode_content_list_schoology {
+  display: none;
+}
+
+.classcode_content_container .classcode_content_item_container #classcode_content_icon_schoology {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
+}
+/*# sourceMappingURL=classcode.css.map */

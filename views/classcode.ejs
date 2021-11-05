@@ -5,6 +5,65 @@
     <body>
         <%- include('./partials/nav.ejs') %>
 
+        <div class="classcode_content_container">
+            <div class="classcode_content_item_container">
+                <div class="classcode_content_item" onclick="list_funtion('google_classroom')">
+                    <i class="fa-solid fa-angle-up" id="classcode_content_icon_google_classroom"></i>
+                    Access Code Google Classroom
+                </div>
+
+                <div class="classcode_content_list" id="classcode_content_list_google_classroom">
+                    <div class="classcode_content_list_item">MAT   : qn6rotb</div>
+                    <div class="classcode_content_list_item">BING  : ul6jirp</div>
+                    <div class="classcode_content_list_item">PKK   : <a href="https://classroom.google.com/c/Mzg0MDA5ODMzODQz?cjc=cntwtvz" style="color: #527dff;">Link</a></div>
+                    <div class="classcode_content_list_item">PKN   : <a href="https://classroom.google.com/c/Mzg2ODc0MDk5ODU2?cjc=253cfwt" style="color: #527dff;">Link</a></div>
+                    <div class="classcode_content_list_item">PWPB  : <a href="https://classroom.google.com/c/MzcyOTI5ODY2ODg3/a/Mzc0OTg1MTQyMjY4/details" style="color: #527dff;">Link</a></div>
+                    <div class="classcode_content_list_item">BINDO : <a href="https://classroom.google.com/c/MTE4MjQ0NDI1MDg5?cjc=aie3qha" style="color: #527dff;">Link</a></div>
+                    
+                </div>
+    
+                <div class="classcode_content_item" onclick="list_funtion('schoology')">
+                    <i class="fa-solid fa-angle-up" id="classcode_content_icon_schoology"></i>
+                    Access Code Schoology
+                </div>
+
+                <div class="classcode_content_list" id="classcode_content_list_schoology">
+                    <div class="classcode_content_list_item">BASDA : VKN6-T5PW-W6SW8</div>
+                    <div class="classcode_content_list_item">PPL   : RNB5-XZ3X-VWP7X</div>
+                    <div class="classcode_content_list_item">PBO   : Q4DC-6KMT-MJT6Z</div>
+                    <div class="classcode_content_list_item">BING  : N9CP-PR7M-ZWCN5</div>
+                    <div class="classcode_content_list_item">PAI   : SNRD-C7Q9-5452B</div>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+
+        <script>
+            let type_list = ["google_classroom", "schoology"]
+            let active_type_list = [false, false]
+
+            function list_funtion(type){
+                for(let i = 0; i < type_list.length; i++){
+                    if (type == type_list[i]){
+                        if (active_type_list[i] == false){
+                            document.querySelector(`#classcode_content_list_${type}`).style.display = "block"
+                            document.querySelector(`#classcode_content_icon_${type}`).style.transform = "rotate(180deg)";
+                            active_type_list[i] = true
+                        }
+
+                        else if (active_type_list[i] == true){
+                            document.querySelector(`#classcode_content_list_${type}`).style.display = "none"
+                            document.querySelector(`#classcode_content_icon_${type}`).style.transform = "rotate(0deg)";
+                            active_type_list[i] = false
+                        }
+                    }
+                }
+            }
+
+        </script>
+
     </body>
 
 </html>
