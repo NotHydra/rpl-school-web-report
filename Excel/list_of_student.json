@@ -3,8 +3,8 @@
 		"student_id": 1,
 		"student_name": "Abu Abdirrahman Zenky",
 		"student_is_muslim": true ,
-		"student_total_asssignment_done": "70",
-		"student_assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 0, 2]
+		"student_total_asssignment_done": "71",
+		"student_assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2]
 	},
 	{
 		"student_id": 2,
@@ -17,8 +17,8 @@
 		"student_id": 3,
 		"student_name": "Alief Mastari",
 		"student_is_muslim": true ,
-		"student_total_asssignment_done": "71",
-		"student_assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 0, 2]
+		"student_total_asssignment_done": "72",
+		"student_assignment_done": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2]
 	},
 	{
 		"student_id": 4,
@@ -178,8 +178,8 @@
 		"student_id": 26,
 		"student_name": "O'neil Kerry Laurent",
 		"student_is_muslim": false ,
-		"student_total_asssignment_done": "65",
-		"student_assignment_done": [2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 3, 2, 2, 3, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 3, 0, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 3]
+		"student_total_asssignment_done": "69",
+		"student_assignment_done": [2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 3, 2, 2, 3, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 3, 0, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 0, 2, 0, 2, 2, 2, 0, 3]
 	},
 	{
 		"student_id": 27,
