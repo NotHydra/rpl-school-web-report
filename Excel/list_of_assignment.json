@@ -932,8 +932,8 @@
 		"assignment_in_week": 15,
 		"assignment_in_month": 4,
 		"assignment_has_due_date": null,
-		"assignment_total_done": 10,
-		"assignment_done": [0, 0, 2, 0, 0, 0, 2, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 2, 0, 2, 0, 2, 2, 0]
+		"assignment_total_done": 11,
+		"assignment_done": [0, 0, 2, 0, 2, 0, 2, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 2, 0, 2, 0, 2, 2, 0]
 	},
 	{
 		"assignment_id": 73,
@@ -958,8 +958,8 @@
 		"assignment_in_week": 16,
 		"assignment_in_month": 4,
 		"assignment_has_due_date": null,
-		"assignment_total_done": 8,
-		"assignment_done": [0, 0, 2, 0, 0, 0, 2, 0, 2, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 2, 0, 2, 0, 0, 0, 0]
+		"assignment_total_done": 10,
+		"assignment_done": [0, 0, 2, 0, 0, 0, 2, 0, 2, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 2, 2, 0, 2, 0, 0, 0, 2, 0, 2, 0, 2, 0, 0]
 	},
 	{
 		"assignment_id": 75,
@@ -986,5 +986,44 @@
 		"assignment_has_due_date": null,
 		"assignment_total_done": 3,
 		"assignment_done": [0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0]
+	},
+	{
+		"assignment_id": 77,
+		"assignment_lesson_name": "PPL",
+		"assignment_lesson_count": 4,
+		"assignment_description": null,
+		"assignment_picture": null,
+		"assignment_is_for_muslim": false,
+		"assignment_in_week": 16,
+		"assignment_in_month": 4,
+		"assignment_has_due_date": null,
+		"assignment_total_done": 3,
+		"assignment_done": [0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0]
+	},
+	{
+		"assignment_id": 78,
+		"assignment_lesson_name": "PJOK",
+		"assignment_lesson_count": 2,
+		"assignment_description": null,
+		"assignment_picture": null,
+		"assignment_is_for_muslim": false,
+		"assignment_in_week": 16,
+		"assignment_in_month": 4,
+		"assignment_has_due_date": null,
+		"assignment_total_done": 0,
+		"assignment_done": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+	},
+	{
+		"assignment_id": 79,
+		"assignment_lesson_name": "PKN",
+		"assignment_lesson_count": 6,
+		"assignment_description": null,
+		"assignment_picture": null,
+		"assignment_is_for_muslim": false,
+		"assignment_in_week": 16,
+		"assignment_in_month": 4,
+		"assignment_has_due_date": null,
+		"assignment_total_done": 0,
+		"assignment_done": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 	}
 ]
