@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+
+    <body>
+        <!-- Info -->
+        <div>Current Week  : <%= list_of_assignment_range_data.weekly.length%> </div>
+        <div>Current Month : <%= list_of_assignment_range_data.monthly.length%> </div>
+
+        <!-- Add -->
+        <form action="/add_assignment" method="POST">
+            <div>
+                <label for="lesson_name">Lesson Name</label>
+                <select name="lesson_name" id="lesson_name" required> 
+                    <option value="" disabled selected hidden>Lesson</option>
+
+                    <% let list_of_lesson_name = ["MAT", "PPL", "PBO", "PAI", "PKN", "PWPB", "BINDO", "BASDA", "BING", "PKK", "PJOK"] %>
+                    <% for(let i = 0; i < list_of_lesson_name.length; i++) {%>
+                        <option value="<%= list_of_lesson_name[i] %>"><%= list_of_lesson_name[i] %></option>
+                    <% } %>  
+                    
+                </select>
+
+            </div>
+
+            <button type="submit">Add Assignment</button>
+
+        </form>
+
+        <form action="/add_week" method="POST">
+            <button type="submit">Add Week</button>
+
+        </form>
+
+        <form action="/add_month" method="POST">
+            <button type="submit">Add Month</button>
+
+        </form>
+
+        <!-- Delete --> <!-- Only use this if wrongly add one of the three submit -->
+        <form action="/delete_assignment" method="POST">
+            <button type="submit">Delete Assignment</button>
+
+        </form>
+
+        <form action="/delete_week" method="POST">
+            <button type="submit">Delete Week</button>
+
+        </form>
+
+        <form action="/delete_month" method="POST">
+            <button type="submit">Delete Month</button>
+
+        </form>
+
+        <!-- Report -->
+        <form action="/check_report" method="POST">
+            <div>
+                <% let list_of_student_name = [] %>
+                <% for(let i = 0; i < list_of_student_data.length; i++) {%>
+                    <% list_of_student_name.push(list_of_student_data[i].student_name) %>
+                <% } %>
+
+                <% let list_of_assignment_name = [] %>
+                <% for(let i = 0; i < list_of_assignment_data.length; i++) {%>
+                    <% list_of_assignment_name.push(String(list_of_assignment_data[i].assignment_lesson_name) + String(list_of_assignment_data[i].assignment_lesson_count)) %>
+                <% } %>
+
+                <label for="student_name">Student Name</label>
+                <select name="student_name" id="student_name" required> 
+                    <option value="" disabled selected hidden>Name</option>
+
+                    <% for(let i = 0; i < list_of_student_name.length; i++) {%>
+                        <option value="<%= i %>"><%= list_of_student_name[i] %></option>
+                    <% } %>
+                                      
+                </select>
+
+                <label for="assignment_name">Assignment Name</label>
+                <select name="assignment_name" id="assignment_name" required> 
+                    <option value="" disabled selected hidden>Name</option>
+
+                    <% let k = 0 %>
+                    <% for(let i = 0; i < list_of_assignment_range_data.weekly.length; i++) {%>
+                        <optgroup label="Minggu <%= i+1 %>">
+                            <% if(i == 0) {%>
+                                <% for(let j = 0; j < list_of_assignment_range_data.weekly[i]; j++) {%>
+                                    <option value="<%= k %>" ><%= list_of_assignment_name[k] %></option>
+
+                                    <% k += 1 %>
+                                <% } %>
+                            <% } %>
+
+                            <% if(i != 0) {%>
+                                <% for(let j = list_of_assignment_range_data.weekly[i-1]; j < list_of_assignment_range_data.weekly[i-1] + list_of_assignment_range_data.weekly[i]; j++) {%>
+                                    <option value="<%= k %>" ><%= list_of_assignment_name[k] %></option>
+    
+                                    <% k += 1 %>
+                                <% } %>
+                            <% } %>
+                            
+                        </optgroup>
+                    <% } %>
+                                      
+                </select>
+
+            </div>
+            
+            <button type="submit" name="report_action" value="check">Check Report</button>
+            <button type="submit" name="report_action" value="uncheck">Uncheck Report</button>
+
+        </form>
+
+    </body> 
+
+</html>

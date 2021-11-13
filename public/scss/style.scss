@@ -56,7 +56,16 @@ body{
     @import "home.scss";
     @import "classcode.scss";
     @import "changelog.scss";
-   
+
+    .operator_page_create_assignment_container{
+        .operator_page_create_assignment_item{
+            select{
+                &:invalid{
+                    color: gray;
+                }
+            }
+        }
+    }
 }
 
 // *{

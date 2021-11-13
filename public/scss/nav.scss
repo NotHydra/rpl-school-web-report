@@ -1,6 +1,9 @@
 .nav_content_container{
     background-color: #282828;
 
+    padding-top: calc(0.25vw + 2.5px); // 10px
+    padding-bottom: calc(0.25vw + 2.5px); // 10px
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,27 +45,6 @@
                 opacity: 0.5;
             }
         }   
-    }
-
-    .nav_content_profile{
-        margin: calc(0.25vw + 2.5px); // 5px
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .nav_content_profile_text{
-            font-size: calc(1vw + 15px); // 25px
-            margin-right: calc(0.25vw + 3px); // 10px
-        }
-
-        img{
-            width: calc(1.75vw + 15px); // 36px
-            height: calc(1.75vw + 15px); // 36px
-
-            border: calc(0.1vw + 1px) solid white; 
-            border-radius: 50%;
-        }
     }
 }
 

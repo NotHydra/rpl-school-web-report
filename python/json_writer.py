@@ -3,7 +3,7 @@ import json
 from files import weekly_task_start_column_range, weekly_task_end_column_range, monthly_task_start_column_range, monthly_task_end_column_range, list_of_students_name, list_of_non_muslim_students, wb_bulanan_end_container
 
 def run_json_writer():
-    wb_combined = openpyxl.load_workbook("excel/List Tugas Gabunggan.xlsx")
+    wb_combined = openpyxl.load_workbook("python/List Tugas Gabunggan.xlsx")
 
     start_column_range = weekly_task_start_column_range[0]
     end_colum_range = weekly_task_end_column_range[len(weekly_task_end_column_range)-1]
@@ -244,3 +244,6 @@ def run_json_writer():
 
     json_file.write("}")
     json_file.close()
+
+
+run_json_writer()

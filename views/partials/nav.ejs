@@ -4,14 +4,6 @@
         <a href="/home"><div class="nav_content_item_text">XI-RPL</div></a>
     </div>
 
-    <div class="nav_content_profile">
-        <% let profile_name_string = list_of_student_data[28].student_name %>
-        <% let profile_name_array = profile_name_string.split(" ")%>
-
-        <div class="nav_content_profile_text"><%= profile_name_array[0] %> <%= profile_name_array[1] %></div>
-        <img src="Image\Profile Photo\Rizky_Profile_Photo.png" alt="profile_picture">
-    </div>
-
 </div>
 
 <div class="nav_content_bars_menu_container">
@@ -31,7 +23,6 @@
 <script>
     const bars_menu_link_array = [
         "home",
-        "assignment",
         "classcode",
         "leaderboard",
         "statistics",
@@ -41,7 +32,6 @@
 
     const bars_menu_icon_array = [
         "fa-solid fa-house",
-        "fa-solid fa-clipboard-list",
         "fa-solid fa-school",
         "fa-solid fa-chart-bar",
         "fa-solid fa-chart-line",
@@ -51,7 +41,6 @@
 
     const bars_menu_name_array = [
         "Home",
-        "Assignment",
         "Class Code",
         "Leaderboard",
         "Statistics",

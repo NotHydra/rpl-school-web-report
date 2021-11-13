@@ -52,6 +52,8 @@ body a {
 
 body .nav_content_container {
   background-color: #282828;
+  padding-top: calc(0.25vw + 2.5px);
+  padding-bottom: calc(0.25vw + 2.5px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,31 +113,6 @@ body .nav_content_container .nav_content_item .nav_content_item_text {
 
 body .nav_content_container .nav_content_item .nav_content_item_text:hover {
   opacity: 0.5;
-}
-
-body .nav_content_container .nav_content_profile {
-  margin: calc(0.25vw + 2.5px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .nav_content_container .nav_content_profile .nav_content_profile_text {
-  font-size: calc(1vw + 15px);
-  margin-right: calc(0.25vw + 3px);
-}
-
-body .nav_content_container .nav_content_profile img {
-  width: calc(1.75vw + 15px);
-  height: calc(1.75vw + 15px);
-  border: calc(0.1vw + 1px) solid white;
-  border-radius: 50%;
 }
 
 body .nav_content_bars_menu_container {
@@ -544,5 +521,9 @@ body .changelog_content_container .changelog_content_item_container #changelog_c
   transition: -webkit-transform 600ms;
   transition: transform 600ms;
   transition: transform 600ms, -webkit-transform 600ms;
+}
+
+body .operator_page_create_assignment_container .operator_page_create_assignment_item select:invalid {
+  color: gray;
 }
 /*# sourceMappingURL=style.css.map */

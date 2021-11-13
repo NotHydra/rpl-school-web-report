@@ -1,33 +1,3 @@
-global wb_mingguan_file
-wb_mingguan_file = [
-    "List Tugas Minggu Ke-1 (26 Juli 2021 -  1 Agustus 2021).xlsx",
-    "List Tugas Minggu Ke-2 (2 Agustus 2021 - 8 Agustus 2021).xlsx",
-    "List Tugas Minggu Ke-3 (9 Agustus 2021 - 15 Agustus 2021).xlsx",
-    "List Tugas Minggu Ke-4 (16 Agustus 2021 - 22 Agustus 2021).xlsx",
-    "List Tugas Minggu Ke-5 (23 Agustus 2021 - 29 Agustus 2021).xlsx",
-    
-    "List Tugas Minggu Ke-6 (30 Agustus 2021 - 5 September 2021).xlsx",
-    "List Tugas Minggu Ke-7 (6 September 2021 - 12 September 2021).xlsx",
-    "List Tugas Minggu Ke-8 (13 September 2021 - 19 September 2021).xlsx",
-    "List Tugas Minggu Ke-9 (20 September 2021 - 26 September 2021).xlsx",
-    "List Tugas Minggu Ke-10 (27 September 2021 - 3 Oktober 2021).xlsx",
-
-    "List Tugas Minggu Ke-11 (4 Oktober 2021 - 10 Oktober 2021).xlsx",
-    "List Tugas Minggu Ke-12 (11 Oktober 2021 - 17 Oktober 2021).xlsx",
-    "List Tugas Minggu Ke-13 (18 Oktober 2021 - 24 Oktober 2021).xlsx",
-    "List Tugas Minggu Ke-14 (25 Oktober 2021 - 31 Oktober 2021).xlsx",
-
-    "List Tugas Minggu Ke-15 (1 November 2021 - 7 November 2021).xlsx"
-]
-
-global wb_bulanan_file
-wb_bulanan_file = [
-    "List Tugas Bulanan Ke-1 (26 Juli 2021 - 29 Agustus 2021).xlsx",
-    "List Tugas Bulanan Ke-2 (30 Agustus 2021 - 3 Oktober 2021).xlsx",
-    "List Tugas Bulanan Ke-3 (4 Oktober 2021 - 31 November 2021).xlsx",
-    "List Tugas Bulanan Ke-4 (1 November 2021 - 5 December 2021).xlsx",
-]
-
 global weekly_task_start_column_range, weekly_task_end_column_range
 weekly_task_start_column_range = [3, 8,  16, 23, 26, 34, 39, 42, 47, 53, 59, 63, 64, 67, 71]
 weekly_task_end_column_range   = [8, 16, 23, 26, 34, 39, 42, 47, 53, 59, 63, 64, 67, 71, 76]

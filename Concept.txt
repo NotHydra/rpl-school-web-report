@@ -38,3 +38,17 @@ assignment_done: [ ]
 	1 = Red Checkmark,
 	2 = Black Chechmark,
 	3 = NON-MUS
+
+
+Done:
+assignment_lesson_name
+assignment_in_week : weekly += 1
+assignment_in_month : monthly += 1
+
+student_assignment_done
+
+student_assignment_done fixed the not get translated bug
+
+Not Done:
+weeks_in_month
+
