@@ -7,7 +7,7 @@ app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended:false }))
 app.use(express.static('public'))
 
-const port:number = 3000
+const port:any = process.env.PORT || 5000
 app.listen(port, () => {console.log(`Listening in port ${port}`)})
 
 fs.readFile(`./json_file/list_of_student.json`, 'utf-8', (err, jsonString)=> {
