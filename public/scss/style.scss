@@ -57,15 +57,88 @@ body{
     @import "classcode.scss";
     @import "changelog.scss";
 
-    .operator_page_create_assignment_container{
-        .operator_page_create_assignment_item{
-            select{
-                &:invalid{
-                    color: gray;
+    .operator_content_container{
+        margin-top: calc(0.5vw + 7.5px);
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .operator_content_item_container{
+            min-width: 200px;
+            width: calc(80vw + 20px);
+
+            .operator_content_item{
+                background-color: #282828;
+                font-size: calc(1vw + 10px);
+                white-space: nowrap;
+                
+                margin-bottom: calc(0.5vw + 7.5px); 
+                padding: calc(0.5vw + 10px) calc(0.5vw + 7.5px);
+    
+                border-radius: 8px;
+
+                .operator_conten_option_box{
+                    display: flex;
+                    flex-direction: column;
+
+                    label{
+                        margin-bottom: calc(0.25vw + 2.5px);
+                    }
+
+                    select{
+                        background-color: #1f1f1f;
+                        color: white;
+                        font-size: calc(1vw + 10px);
+                        white-space: nowrap;
+                        appearance: none;
+        
+                        padding: calc(0.25vw + 2.5px);
+                        margin-bottom: calc(0.25vw + 2.5px);
+        
+                        cursor: pointer;
+        
+                        border: 1px solid #282828;
+                        border-radius: 8px;
+        
+                        transition: opacity 200ms;
+                        
+                        &:invalid{
+                            color: gray;
+                        }
+
+                        &:focus{
+                            border: 1px solid #282828;
+                        }
+        
+                        &:hover{
+                            opacity: 0.5;
+                        }
+                    }
+                }
+
+                button{
+                    background-color: #1f1f1f;
+                    color: white;
+                    font-size: calc(1vw + 10px);
+                    white-space: nowrap;
+
+                    padding: calc(0.5vw + 5px);
+
+                    cursor: pointer;
+
+                    border: 1px solid #282828;
+                    border-radius: 8px;
+
+                    transition: opacity 200ms;
+
+                    &:hover{
+                        opacity: 0.5;
+                    }
                 }
             }
         }
-    }
+    }    
 }
 
 // *{

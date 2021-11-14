@@ -1,236 +1,258 @@
-import exp from "constants";
-import express, { Application, Request, Response, NextFunction} from "express";
-import fs from "fs";
-import { json } from "stream/consumers";
+import express, { Application, Request, Response, NextFunction} from "express"
+import fs from "fs"
 
-const app: Application = express();
+const app: Application = express()
 
-app.set('view engine', 'ejs');
+app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended:false }))
 app.use(express.static('public'))
 
-const port:number = 3000;
-app.listen(port, () => {console.log(`Listening in port ${port}`)});
+const port:number = 3000
+app.listen(port, () => {console.log(`Listening in port ${port}`)})
 
 fs.readFile(`./json_file/list_of_student.json`, 'utf-8', (err, jsonString)=> {
-    var list_of_student_data = JSON.parse(jsonString);
+    var list_of_student_data = JSON.parse(jsonString)
 
     fs.readFile(`./json_file/list_of_assignment.json`, 'utf-8', (err, jsonString)=> {
-        var list_of_assignment_data = JSON.parse(jsonString);
+        var list_of_assignment_data = JSON.parse(jsonString)
 
         fs.readFile(`./json_file/list_of_assignment_range.json`, 'utf-8', (err, jsonString)=> {
-            var list_of_assignment_range_data = JSON.parse(jsonString);
+            var list_of_assignment_range_data = JSON.parse(jsonString)
 
-            translate_data(list_of_assignment_data, list_of_student_data);
+            translate_data(list_of_assignment_data, list_of_student_data)
 
             app.get('/', (req: Request, res: Response) => {
-                res.redirect('/home');
+                res.redirect('/home')
                 console.log("Redirecting to home")
-            });
+            })
             
             app.get('/home', (req: Request, res: Response) => {
-                res.render('home', { title: 'Home', list_of_student_data, list_of_assignment_data, list_of_assignment_range_data });
+                res.render('home', { title: 'Home', list_of_student_data, list_of_assignment_data, list_of_assignment_range_data })
                 console.log("Home is being requested")
-            });
+            })
             
             app.get('/classcode', (req: Request, res: Response) => {
-                res.render('classcode', { title: 'Class Code', list_of_student_data });
+                res.render('classcode', { title: 'Class Code', list_of_student_data })
                 console.log("Class Code is being requested")
-            });
+            })
             
             app.get('/leaderboard', (req: Request, res: Response) => {
-                res.render('leaderboard', { title: 'Leaderboard', list_of_student_data });
+                res.render('leaderboard', { title: 'Leaderboard', list_of_student_data })
                 console.log("Leaderboard is being requested")
-            });
+            })
             
             app.get('/statistics', (req: Request, res: Response) => {
-                res.render('statistics', { title: 'Statistics', list_of_student_data });
+                res.render('statistics', { title: 'Statistics', list_of_student_data })
                 console.log("Statistics is being requested")
-            });
+            })
             
             app.get('/changelog', (req: Request, res: Response) => {
-                res.render('changelog', { title: 'Changelog', list_of_student_data });
+                res.render('changelog', { title: 'Changelog', list_of_student_data })
                 console.log("Changelog is being requested")
-            });
+            })
             
             app.get('/contributor', (req: Request, res: Response) => {
-                res.render('contributor', { title: 'Contributor', list_of_student_data });
+                res.render('contributor', { title: 'Contributor', list_of_student_data })
                 console.log("Contributor is being requested")
-            });
+            })
 
-            app.get('/operator', (req: Request, res: Response) => {
-                res.render('operator', { title: 'Operator', list_of_student_data, list_of_assignment_data, list_of_assignment_range_data});
-                console.log("Operator is being requested")
-            });
+            fs.readFile(`./json_file/operator_history.json`, 'utf-8', (err, jsonString)=> {
+                var operator_history_data = JSON.parse(jsonString)
+                
+                app.get('/operator', (req: Request, res: Response) => {
+                    res.render('operator', { title: 'Operator', list_of_student_data, list_of_assignment_data, list_of_assignment_range_data, operator_history_data })
+                    console.log("Operator is being requested")
+                })
 
-            app.post('/add_assignment', (req: Request, res: Response) => {
-                try {
-                    let new_object_for_list_of_assignment = create_new_object_for_list_of_assignment(list_of_assignment_data, list_of_assignment_range_data, req);
+                app.post('/operator_assignment', (req: Request, res: Response) => {
+                    try {
+                        if(req.body.operator_assignment_action == 'add'){
+                            let new_object_for_list_of_assignment = create_new_object_for_list_of_assignment(list_of_assignment_data, list_of_assignment_range_data, req)
+    
+                            update_object_for_list_of_student(list_of_student_data, req)
+                            update_object_for_list_of_assignment(list_of_assignment_data, new_object_for_list_of_assignment)
+                            update_object_for_list_of_assignment_range(list_of_assignment_range_data, req)
+        
+                            update_json_file(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data)
+                            
+                            let data = `Added Assignment (${new_object_for_list_of_assignment.assignment_id}|${new_object_for_list_of_assignment.assignment_lesson_name}${new_object_for_list_of_assignment.assignment_lesson_count}|${new_object_for_list_of_assignment.assignment_in_week}|${new_object_for_list_of_assignment.assignment_in_month})`
+                            update_history('changes', data, operator_history_data)
+                        }
 
-                    update_object_for_list_of_student(list_of_student_data, req)
-                    update_object_for_list_of_assignment(list_of_assignment_data, new_object_for_list_of_assignment)
-                    update_object_for_list_of_assignment_range(list_of_assignment_range_data, req);
+                        else if(req.body.operator_assignment_action == 'delete'){
+                            let latest_changes = operator_history_data.changes[operator_history_data.changes.length-1].split(" ")
 
-                    update_json_file(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data)
+                            if(latest_changes[0] == 'Added' && latest_changes[1] == 'Assignment'){
+                                for(let i = 0; i < list_of_student_data.length; i++){
+                                    list_of_student_data[i].student_assignment_done.pop()
+                                }
+            
+                                list_of_assignment_data.pop()
+            
+                                list_of_assignment_range_data.weekly[list_of_assignment_range_data.weekly.length- 1] -= 1
+                                list_of_assignment_range_data.monthly[list_of_assignment_range_data.monthly.length- 1] -= 1
+                                
+                                update_json_file(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data)
+                                operator_history_data.changes.pop()
+                                fs.writeFile('./json_file/operator_history.json', JSON.stringify(operator_history_data, null, 4), err => {if (err) console.log(err)})
+                            }
+                        }
+                        
+                        res.redirect('/operator')
+                    }
                     
-                    console.log()
-                    console.log('Added New Assignment')
-                    console.log(`ID    : ${new_object_for_list_of_assignment.assignment_id}`)
-                    console.log(`Name  : ${new_object_for_list_of_assignment.assignment_lesson_name}${new_object_for_list_of_assignment.assignment_lesson_count}`)
-                    console.log(`Week  : ${new_object_for_list_of_assignment.assignment_in_week}`)
-                    console.log(`Month : ${new_object_for_list_of_assignment.assignment_in_month}`)
-                    console.log()
-
-                    res.redirect('/operator')
-                }
-                
-                catch (err) {
-                    console.log(err)
-                }
-                
-            });
-
-            app.post('/add_week', (req: Request, res: Response) => {
-                try {
-                    list_of_assignment_range_data.weekly.push(0)
-                    list_of_assignment_range_data.weeks_in_month[list_of_assignment_range_data.weeks_in_month.length-1] += 1
-                    
-                    update_json_file(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data)
-
-                    res.redirect('/operator')
-                }
-                
-                catch (err) {
-                    console.log(err)
-                }
-                
-            });
-
-            app.post('/add_month', (req: Request, res: Response) => {
-                try {
-                    list_of_assignment_range_data.weekly.push(0)
-                    list_of_assignment_range_data.monthly.push(0)
-                    list_of_assignment_range_data.weeks_in_month.push(list_of_assignment_range_data.weeks_in_month[list_of_assignment_range_data.weeks_in_month.length-1]+1)
-
-                    update_json_file(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data)
-
-                    res.redirect('/operator')
-                }
-                
-                catch (err) {
-                    console.log(err)
-                }
-                
-            });
-
-            app.post('/delete_assignment', (req: Request, res: Response) => {
-                try {
-                    for(let i = 0; i < list_of_student_data.length; i++){
-                        list_of_student_data[i].student_assignment_done.pop()
+                    catch (err) {
+                        console.log(err)
                     }
 
-                    list_of_assignment_data.pop()
+                })
+    
+                app.post('/operator_week', (req: Request, res: Response) => {
+                    try {
+                        if(req.body.operator_week_action == 'add'){
+                            list_of_assignment_range_data.weekly.push(0)
+                            list_of_assignment_range_data.weeks_in_month[list_of_assignment_range_data.weeks_in_month.length-1] += 1
+                            
+                            update_json_file(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data)
+        
+                            let data = `Added Week`
+                            update_history('changes', data, operator_history_data)
+                        }
 
-                    list_of_assignment_range_data.weekly[list_of_assignment_range_data.weekly.length- 1] -= 1;
-                    list_of_assignment_range_data.monthly[list_of_assignment_range_data.monthly.length- 1] -= 1;
+                        else if(req.body.operator_week_action == 'delete'){
+                            let latest_changes = operator_history_data.changes[operator_history_data.changes.length-1].split(" ")
+
+                            if(latest_changes[0] == 'Added' && latest_changes[1] == 'Week'){
+                                list_of_assignment_range_data.weekly.pop()
+                                list_of_assignment_range_data.weeks_in_month[list_of_assignment_range_data.weeks_in_month.length-1] -= 1
+            
+                                update_json_file(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data)
+                                operator_history_data.changes.pop()
+                                fs.writeFile('./json_file/operator_history.json', JSON.stringify(operator_history_data, null, 4), err => {if (err) console.log(err)})
+                            }
+                        }
+
+                        res.redirect('/operator')
+                    }
                     
-                    update_json_file(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data)
-
-                    res.redirect('/operator')
-                }
-                
-                catch (err) {
-                    console.log(err)
-                }
-                
-            });
-
-            app.post('/delete_week', (req: Request, res: Response) => {
-                try {
-                    list_of_assignment_range_data.weekly.pop()
-                    list_of_assignment_range_data.weeks_in_month[list_of_assignment_range_data.weeks_in_month.length-1] -= 1
-
-                    update_json_file(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data)
-
-                    res.redirect('/operator')
-                }
-                
-                catch (err) {
-                    console.log(err)
-                }
-                
-            });
-
-            app.post('/delete_month', (req: Request, res: Response) => {
-                try {
-                    list_of_assignment_range_data.weekly.pop()
-                    list_of_assignment_range_data.monthly.pop()
-                    list_of_assignment_range_data.weeks_in_month.pop()
-
-                    update_json_file(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data)
-
-                    res.redirect('/operator')
-                }
-                
-                catch (err) {
-                    console.log(err)
-                }
-                
-            });
-
-            app.post('/check_report', (req: Request, res: Response) => {
-                try {
-                    if(req.body.report_action == 'check'){
-                        list_of_student_data[req.body.student_name].student_assignment_done[req.body.assignment_name] = 'ü'
-                        list_of_assignment_data[req.body.assignment_name].assignment_done[req.body.student_name] = 'ü'
+                    catch (err) {
+                        console.log(err)
                     }
-
-                    else if(req.body.report_action == 'uncheck'){
-                        list_of_student_data[req.body.student_name].student_assignment_done[req.body.assignment_name] = null
-                        list_of_assignment_data[req.body.assignment_name].assignment_done[req.body.student_name] = null
-                    }
-
-                    if(list_of_student_data[req.body.student_name].student_is_muslim == false && list_of_assignment_data[req.body.assignment_name].assignment_is_for_muslim == true){
-                        list_of_student_data[req.body.student_name].student_assignment_done[req.body.assignment_name] = 'NON-MUS'
-                        list_of_assignment_data[req.body.assignment_name].assignment_done[req.body.student_name] = 'NON-MUS'
-                    }
-
-                    update_json_file(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data)
                     
-                    res.redirect('/operator')
-                }
-                
-                catch (err) {
-                    console.log(err)
-                }
-                
-            });
-        });
-    });
-});
+                })
+
+                app.post('/operator_month', (req: Request, res: Response) => {
+                    try {
+                        if(req.body.operator_month_action == 'add'){
+                            list_of_assignment_range_data.weekly.push(0)
+                            list_of_assignment_range_data.monthly.push(0)
+                            list_of_assignment_range_data.weeks_in_month.push(list_of_assignment_range_data.weeks_in_month[list_of_assignment_range_data.weeks_in_month.length-1]+1)
+        
+                            update_json_file(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data)
+        
+                            let data = `Added Month`
+                            update_history('changes', data, operator_history_data)
+                        }
+
+                        else if(req.body.operator_month_action == 'delete'){
+                            let latest_changes = operator_history_data.changes[operator_history_data.changes.length-1].split(" ")
+
+                            if(latest_changes[0] == 'Added' && latest_changes[1] == 'Month'){
+                                list_of_assignment_range_data.weekly.pop()
+                                list_of_assignment_range_data.monthly.pop()
+                                list_of_assignment_range_data.weeks_in_month.pop()
+            
+                                update_json_file(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data)
+                                operator_history_data.changes.pop()
+                                fs.writeFile('./json_file/operator_history.json', JSON.stringify(operator_history_data, null, 4), err => {if (err) console.log(err)})
+                            }
+                        }
+
+                        res.redirect('/operator')
+                    }
+                    
+                    catch (err) {
+                        console.log(err)
+                    }
+                    
+                })
+
+                app.post('/check_report', (req: Request, res: Response) => {
+                    try {
+                        if(req.body.report_action == 'check'){
+                            if(list_of_student_data[req.body.student_name].student_is_muslim == false && list_of_assignment_data[req.body.assignment_name].assignment_is_for_muslim == true){
+                                list_of_student_data[req.body.student_name].student_assignment_done[req.body.assignment_name] = 'NON-MUS'
+                                list_of_assignment_data[req.body.assignment_name].assignment_done[req.body.student_name] = 'NON-MUS'
+        
+                                let data = `Tried To Change ${list_of_student_data[req.body.student_name].student_name} ${list_of_assignment_data[req.body.assignment_name].assignment_lesson_name}${list_of_assignment_data[req.body.assignment_name].assignment_lesson_count}`
+                                update_history('reports', data, operator_history_data)
+                            }
+    
+                            else{
+                                list_of_student_data[req.body.student_name].student_assignment_done[req.body.assignment_name] = 'ü'
+                                list_of_assignment_data[req.body.assignment_name].assignment_done[req.body.student_name] = 'ü'
+        
+                                let data = `Check ${list_of_student_data[req.body.student_name].student_name} ${list_of_assignment_data[req.body.assignment_name].assignment_lesson_name}${list_of_assignment_data[req.body.assignment_name].assignment_lesson_count}`
+                                update_history('reports', data, operator_history_data)
+                            }
+                        }
+    
+                        else if(req.body.report_action == 'uncheck'){
+                            if(list_of_student_data[req.body.student_name].student_is_muslim == false && list_of_assignment_data[req.body.assignment_name].assignment_is_for_muslim == true){
+                                list_of_student_data[req.body.student_name].student_assignment_done[req.body.assignment_name] = 'NON-MUS'
+                                list_of_assignment_data[req.body.assignment_name].assignment_done[req.body.student_name] = 'NON-MUS'
+        
+                                let data = `Tried To Change ${list_of_student_data[req.body.student_name].student_name} ${list_of_assignment_data[req.body.assignment_name].assignment_lesson_name}${list_of_assignment_data[req.body.assignment_name].assignment_lesson_count}`
+                                update_history('reports', data, operator_history_data)
+                            }
+    
+                            else {
+                                list_of_student_data[req.body.student_name].student_assignment_done[req.body.assignment_name] = null
+                                list_of_assignment_data[req.body.assignment_name].assignment_done[req.body.student_name] = null
+    
+                                let data = `Uncheck ${list_of_student_data[req.body.student_name].student_name} ${list_of_assignment_data[req.body.assignment_name].assignment_lesson_name}${list_of_assignment_data[req.body.assignment_name].assignment_lesson_count}`
+                                update_history('reports', data, operator_history_data)
+                            }
+                        }
+    
+                        update_json_file(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data)
+                        
+                        res.redirect('/operator')
+                    }
+                    
+                    catch (err) {
+                        console.log(err)
+                    }
+                    
+                })
+
+            })          
+        })
+    })
+})
 
 
 function translate_data(list_of_assignment_data: any, list_of_student_data: any) {
     for (let i = 0; i < list_of_assignment_data.length; i++) {
         for (let j = 0; j < list_of_student_data.length; j++) {
             if (list_of_assignment_data[i].assignment_done[j] == 0) {
-                list_of_assignment_data[i].assignment_done[j] = null;
-                list_of_student_data[j].student_assignment_done[i] = null;
+                list_of_assignment_data[i].assignment_done[j] = null
+                list_of_student_data[j].student_assignment_done[i] = null
             }
 
             if (list_of_assignment_data[i].assignment_done[j] == 1) {
-                list_of_assignment_data[i].assignment_done[j] = "ü";
-                list_of_student_data[j].student_assignment_done[i] = "ü";
+                list_of_assignment_data[i].assignment_done[j] = "ü"
+                list_of_student_data[j].student_assignment_done[i] = "ü"
             }
 
             if (list_of_assignment_data[i].assignment_done[j] == 2) {
-                list_of_assignment_data[i].assignment_done[j] = "ü";
-                list_of_student_data[j].student_assignment_done[i] = "ü";
+                list_of_assignment_data[i].assignment_done[j] = "ü"
+                list_of_student_data[j].student_assignment_done[i] = "ü"
             }
 
             if (list_of_assignment_data[i].assignment_done[j] == 3) {
-                list_of_assignment_data[i].assignment_done[j] = "NON-MUS";
-                list_of_student_data[j].student_assignment_done[i] = "NON-MUS";
+                list_of_assignment_data[i].assignment_done[j] = "NON-MUS"
+                list_of_student_data[j].student_assignment_done[i] = "NON-MUS"
             }
         }
     }
@@ -240,19 +262,19 @@ function detranslate_data(list_of_assignment_data: any, list_of_student_data: an
     for (let i = 0; i < list_of_assignment_data.length; i++) {
         for (let j = 0; j < list_of_assignment_data[0].assignment_done.length; j++) {
             if (list_of_assignment_data[i].assignment_done[j] == "NON-MUS") {
-                list_of_assignment_data[i].assignment_done[j] = 3;
+                list_of_assignment_data[i].assignment_done[j] = 3
             }
 
             if (list_of_assignment_data[i].assignment_done[j] == "ü") {
-                list_of_assignment_data[i].assignment_done[j] = 2;
+                list_of_assignment_data[i].assignment_done[j] = 2
             }
 
             if (list_of_assignment_data[i].assignment_done[j] == "ü") {
-                list_of_assignment_data[i].assignment_done[j] = 1;
+                list_of_assignment_data[i].assignment_done[j] = 1
             }
 
             if (list_of_assignment_data[i].assignment_done[j] == null) {
-                list_of_assignment_data[i].assignment_done[j] = 0;
+                list_of_assignment_data[i].assignment_done[j] = 0
             }
         }
     }
@@ -260,35 +282,35 @@ function detranslate_data(list_of_assignment_data: any, list_of_student_data: an
     for (let i = 0; i < list_of_student_data.length; i++) {
         for (let j = 0; j < list_of_student_data[0].student_assignment_done.length; j++) {
             if (list_of_student_data[i].student_assignment_done[j] == "NON-MUS") {
-                list_of_student_data[i].student_assignment_done[j] = 3;
+                list_of_student_data[i].student_assignment_done[j] = 3
             }
 
             if (list_of_student_data[i].student_assignment_done[j] == "ü") {
-                list_of_student_data[i].student_assignment_done[j] = 2;
+                list_of_student_data[i].student_assignment_done[j] = 2
             }
 
             if (list_of_student_data[i].student_assignment_done[j] == "ü") {
-                list_of_student_data[i].student_assignment_done[j] = 1;
+                list_of_student_data[i].student_assignment_done[j] = 1
             }
 
             if (list_of_student_data[i].student_assignment_done[j] == null) {
-                list_of_student_data[i].student_assignment_done[j] = 0;
+                list_of_student_data[i].student_assignment_done[j] = 0
             }
         }
     }
 }
 
 function create_new_object_for_list_of_assignment(list_of_assignment_data: any, list_of_assignment_range_data: any , req:any) {
-    let lesson_count = 0;
+    let lesson_count = 0
     for (let i = 0; i < list_of_assignment_data.length; i++) {
         if (req.body.lesson_name == list_of_assignment_data[i].assignment_lesson_name) {
-            lesson_count += 1;
+            lesson_count += 1
         }
     }
 
-    let lesson_for_muslim = false;
+    let lesson_for_muslim = false
     if (req.body.lesson_name == "PAI") {
-        lesson_for_muslim = true;
+        lesson_for_muslim = true
     }
 
     let new_object_for_list_of_assignment = {
@@ -304,7 +326,7 @@ function create_new_object_for_list_of_assignment(list_of_assignment_data: any, 
         "assignment_total_done": 0,
         "assignment_done": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     };
-    return new_object_for_list_of_assignment;
+    return new_object_for_list_of_assignment
 }
 
 function update_object_for_list_of_student(list_of_student_data:any, req:any){
@@ -331,8 +353,8 @@ function update_object_for_list_of_assignment(list_of_assignment_data:any, new_o
 }
 
 function update_object_for_list_of_assignment_range(list_of_assignment_range_data: any, req:any) {
-    list_of_assignment_range_data.weekly[list_of_assignment_range_data.weekly.length - 1] += 1;
-    list_of_assignment_range_data.monthly[list_of_assignment_range_data.monthly.length - 1] += 1;
+    list_of_assignment_range_data.weekly[list_of_assignment_range_data.weekly.length - 1] += 1
+    list_of_assignment_range_data.monthly[list_of_assignment_range_data.monthly.length - 1] += 1
 
     // Add 1 value to every data in weekly range
     for(let i = 0; i < list_of_assignment_range_data.weekly.length; i++){
@@ -380,8 +402,20 @@ function update_object_for_list_of_assignment_range(list_of_assignment_range_dat
 
 function update_json_file(list_of_student_data:any, list_of_assignment_data:any, list_of_assignment_range_data:any){
     detranslate_data(list_of_assignment_data, list_of_student_data)
-    fs.writeFile('./json_file/list_of_student.json', JSON.stringify(list_of_student_data, null, 4), err => {if (err) console.log(err)});
-    fs.writeFile('./json_file/list_of_assignment.json', JSON.stringify(list_of_assignment_data, null, 4), err => { if (err) console.log(err)});
-    fs.writeFile('./json_file/list_of_assignment_range.json', JSON.stringify(list_of_assignment_range_data, null, 4), err => {if (err) console.log(err)});
+    fs.writeFile('./json_file/list_of_student.json', JSON.stringify(list_of_student_data, null, 4), err => {if (err) console.log(err)})
+    fs.writeFile('./json_file/list_of_assignment.json', JSON.stringify(list_of_assignment_data, null, 4), err => { if (err) console.log(err)})
+    fs.writeFile('./json_file/list_of_assignment_range.json', JSON.stringify(list_of_assignment_range_data, null, 4), err => {if (err) console.log(err)})
     translate_data(list_of_assignment_data, list_of_student_data)
+}
+
+function  update_history(type:string, data:string, operator_history_data:any){
+    if (type == 'changes'){
+        operator_history_data.changes.push(data)
+    }
+
+    else if (type == 'reports'){
+        operator_history_data.reports.push(data)
+    }
+
+    fs.writeFile('./json_file/operator_history.json', JSON.stringify(operator_history_data, null, 4), err => {if (err) console.log(err)})
 }

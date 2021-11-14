@@ -27,7 +27,6 @@
             white-space: nowrap;
 
             padding: calc(0.5vw + 10px) calc(0.5vw + 7.5px); // 20px 15px
-            
         }
 
         .home_content_option_box{
@@ -38,7 +37,7 @@
                 white-space: nowrap;
                 appearance: none;
 
-                padding: calc(0.5vw + 5px); // 10px
+                padding: calc(0.25vw + 2.5px); // 10px
 
                 cursor: pointer;
 
@@ -71,6 +70,7 @@
         overflow: auto;
 
         border-top: 4px solid #282828;
+        border-left: 4px solid #282828;
         border-bottom: 4px solid #282828;
         
         table{
@@ -91,7 +91,6 @@
                         vertical-align:middle;
 
                         border-bottom: 4px solid #282828;
-                        border-left: 4px solid #282828;
                         border-right: 4px solid #282828;
                     }
                 }
@@ -106,7 +105,6 @@
                         padding: calc(0.5vw + 5px); // 10px
 
                         border-top: 4px solid #282828;
-                        border-left: 4px solid #282828;
                         border-right: 4px solid #282828;
                     }
     

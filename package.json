@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "run-JS": "node dist/app.js",
+    "start": "node dist/app.js",
     "run-TS": "nodemon src/app.ts",
     "build": "tsc -p ."
   },
