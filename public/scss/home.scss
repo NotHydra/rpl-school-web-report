@@ -22,36 +22,49 @@
         justify-content: flex-start;
         align-items: center;
 
-        .home_content_option_text{
-            font-size: calc(1vw + 10px); // 20px
-            white-space: nowrap;
-
-            padding: calc(0.5vw + 10px) calc(0.5vw + 7.5px); // 20px 15px
+        @media (max-width: 950px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
         }
 
-        .home_content_option_box{
-            select{
-                background-color: #1f1f1f;
-                color: white;
+        .home_content_file_option_box_container{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            .home_content_option_text{
                 font-size: calc(1vw + 10px); // 20px
                 white-space: nowrap;
-                appearance: none;
-
-                padding: calc(0.25vw + 2.5px); // 10px
-
-                cursor: pointer;
-
-                border: 1px solid #282828;
-                border-radius: 8px;
-
-                transition: opacity 200ms;
-
-                &:focus{
+    
+                padding: calc(0.5vw + 10px) calc(0.5vw + 7.5px); // 20px 15px
+            }
+    
+            .home_content_option_box{
+                select{
+                    background-color: #1f1f1f;
+                    color: white;
+                    font-size: calc(1vw + 10px); // 20px
+                    white-space: nowrap;
+                    appearance: none;
+    
+                    padding: calc(0.25vw + 2.5px); // 10px
+    
+                    cursor: pointer;
+    
                     border: 1px solid #282828;
-                }
-
-                &:hover{
-                    opacity: 0.5;
+                    border-radius: 8px;
+    
+                    transition: opacity 200ms;
+    
+                    &:focus{
+                        border: 1px solid #282828;
+                    }
+    
+                    &:hover{
+                        opacity: 0.5;
+                    }
                 }
             }
         }
@@ -105,6 +118,7 @@
                         padding: calc(0.5vw + 5px); // 10px
 
                         border-top: 4px solid #282828;
+                        border-bottom: 4px solid #282828;
                         border-right: 4px solid #282828;
                     }
     
@@ -123,6 +137,10 @@
             }
 
             .home_content_table_disable{
+                display: none;
+            }
+
+            .home_content_student_report_disable{
                 display: none;
             }
         }   

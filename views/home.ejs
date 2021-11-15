@@ -7,26 +7,48 @@
 
         <div class="home_content_container">
             <div class="home_content_option_container">
-                <label for="home_content_option_box" class="home_content_option_text">
-                    File :
-                </label>
+                <div class="home_content_file_option_box_container">
+                    <label for="home_content_file_option_box" class="home_content_option_text">
+                        File :
+                    </label>
 
-                <div class="home_content_option_box">
-                    <select onchange="option_box()" name="home_content_option_box" id="home_content_option_box">
-                        <% for(let i = 0; i < list_of_assignment_range_data.weekly.length; i++) {%>
-                            <% if (i == list_of_assignment_range_data.weekly.length-1) {%>
-                                <option value="W<%= i+1 %>" selected="selected">List Tugas Minggu Ke-<%= i+1 %></option>
-                            <% } else {%>
-                                <option value="W<%= i+1 %>">List Tugas Minggu Ke-<%= i+1 %></option>
+                    <div class="home_content_option_box">
+                        <select onchange="file_option_box()" name="home_content_file_option_box" id="home_content_file_option_box">
+                            <% for(let i = 0; i < list_of_assignment_range_data.weekly.length; i++) {%>
+                                <% if (i == list_of_assignment_range_data.weekly.length-1) {%>
+                                    <option value="W<%= i+1 %>" selected="selected">List Tugas Minggu Ke-<%= i+1 %></option>
+                                <% } else {%>
+                                    <option value="W<%= i+1 %>">List Tugas Minggu Ke-<%= i+1 %></option>
+                                <% } %>
                             <% } %>
-                        <% } %>
+    
+                            <% for(let i = 0; i < list_of_assignment_range_data.monthly.length; i++) {%>
+                                <option value="M<%= i+1 %>">List Tugas Bulan Ke-<%= i+1 %></option>
+                            <% } %>
+    
+                            <option value="C1">List Tugas Gabunggan</option>
+                        </select>
+    
+                    </div>
+                </div>
+                
+                <div class="home_content_file_option_box_container">
+                    <label for="home_content_student_report_option_box" class="home_content_option_text">
+                        Student :
+                    </label>
+    
+                    <div class="home_content_option_box">
+                        <select onchange="student_report_option_box()" name="home_content_student_report_option_box" id="home_content_student_report_option_box">
+                            <option value="all" selected>All</option>
+                            <% for(let i = 0; i < list_of_student_data.length; i++) {%>
+                                <% let student_name = list_of_student_data[i].student_name.split(" ")  %>
+                                <option value="<%= i %>"><%= student_name[0] %> <%= student_name[1] %></option>
+                            <% } %>
+                        
+                        </select>
+    
+                    </div>
 
-                        <% for(let i = 0; i < list_of_assignment_range_data.monthly.length; i++) {%>
-                            <option value="M<%= i+1 %>">List Tugas Bulan Ke-<%= i+1 %></option>
-                        <% } %>
-
-                        <option value="C1">List Tugas Gabunggan</option>
-                    </select>
                 </div>
 
             </div>
@@ -70,7 +92,7 @@
                     <tbody>
                         <!-- Content -->
                             <% for(let i = 0; i < list_of_student_data.length; i++) {%>
-                                <tr>
+                                <tr class="home_content_student_report">
                                     <!-- ID & Name -->
                                         <td><%= list_of_student_data[i].student_id %>.</td>
                                         <td id="td_text_align_left"><%= list_of_student_data[i].student_name %></td>
@@ -151,13 +173,38 @@
                 }
             }
 
-            function option_box(){
-                let option_box_value = document.getElementById("home_content_option_box").value;
-                let option_box_value_type = option_box_value.replace(/[0-9]/g, '')
-                let option_box_value_number = option_box_value.replace(/[A-Z]/g, '')
+            function file_option_box(){
+                let file_option_box_value = document.getElementById("home_content_file_option_box").value;
+                let file_option_box_value_type = file_option_box_value.replace(/[0-9]/g, '')
+                let file_option_box_value_number = file_option_box_value.replace(/[A-Z]/g, '')
 
                 disable_report()
-                enable_report(option_box_value_type, option_box_value_number)
+                enable_report(file_option_box_value_type, file_option_box_value_number)
+            }
+
+            function disable_student_report(){
+                let elements = document.getElementsByClassName(`home_content_student_report`)
+                for(let i = 0; i < parseInt("<%= list_of_student_data.length %>"); i++){
+                    elements[i].classList.add("home_content_student_report_disable");
+                }
+            }
+
+            function student_report_option_box(){
+                disable_student_report()
+                
+                let elements = document.getElementsByClassName(`home_content_student_report`)
+                let student_report_option_box_value = document.getElementById("home_content_student_report_option_box").value;
+
+                if(student_report_option_box_value == "all"){
+                    for(let i = 0; i < parseInt("<%= list_of_student_data.length %>"); i++){
+                        elements[i].classList.remove("home_content_student_report_disable");
+                    }
+                }
+
+                else {
+                    elements[student_report_option_box_value].classList.remove("home_content_student_report_disable");
+                }
+
             }
             
             enable_report("W", "<%= list_of_assignment_range_data.weekly.length%>")
