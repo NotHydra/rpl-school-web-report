@@ -39,10 +39,10 @@
     
                     <div class="home_content_option_box">
                         <select onchange="student_report_option_box()" name="home_content_student_report_option_box" id="home_content_student_report_option_box">
-                            <option value="all" selected>All</option>
+                            <option class="student_report_option" value="all" selected>All</option>
                             <% for(let i = 0; i < list_of_student_data.length; i++) {%>
                                 <% let student_name = list_of_student_data[i].student_name.split(" ")  %>
-                                <option value="<%= i %>"><%= student_name[0] %> <%= student_name[1] %></option>
+                                <option class="student_report_option" value="<%= i %>"><%= student_name[0] %> <%= student_name[1] %></option>
                             <% } %>
                         
                         </select>
@@ -205,9 +205,22 @@
                     elements[student_report_option_box_value].classList.remove("home_content_student_report_disable");
                 }
 
+                localStorage.setItem('student_report', student_report_option_box_value )
             }
-            
+
+            function set_student_report(){
+                if (localStorage.getItem('student_report') == 'all' || localStorage.getItem('student_report') == null){
+                    document.getElementsByClassName('student_report_option')[0].selected = 'selected'
+                }
+
+                else {
+                    document.getElementsByClassName('student_report_option')[parseInt(localStorage.getItem('student_report')) + 1].selected = 'selected'
+                }
+            }
+
             enable_report("W", "<%= list_of_assignment_range_data.weekly.length%>")
+            set_student_report()
+            student_report_option_box()
 
         </script>
         
