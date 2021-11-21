@@ -1036,8 +1036,8 @@
 		"assignment_in_week": 17,
 		"assignment_in_month": 4,
 		"assignment_has_due_date": null,
-		"assignment_total_done": 10,
-		"assignment_done": [2, 2, 2, 0, 0, 0, 2, 0, 2, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2, 0, 0, 2, 2, 0, 0]
+		"assignment_total_done": 12,
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 2, 0, 0, 2, 2, 0, 0]
 	},
 	{
 		"assignment_id": 81,
@@ -1049,8 +1049,8 @@
 		"assignment_in_week": 17,
 		"assignment_in_month": 4,
 		"assignment_has_due_date": null,
-		"assignment_total_done": 10,
-		"assignment_done": [2, 2, 2, 0, 0, 0, 2, 0, 2, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 2, 0, 0, 2, 2, 0, 0]
+		"assignment_total_done": 12,
+		"assignment_done": [2, 2, 2, 0, 2, 0, 2, 0, 2, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 2, 0, 0, 2, 2, 0, 0]
 	},
 	{
 		"assignment_id": 82,
@@ -1062,7 +1062,7 @@
 		"assignment_in_week": 17,
 		"assignment_in_month": 4,
 		"assignment_has_due_date": null,
-		"assignment_total_done": 9,
-		"assignment_done": [2, 0, 2, 0, 0, 0, 2, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0]
+		"assignment_total_done": 11,
+		"assignment_done": [2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0]
 	}
 ]
