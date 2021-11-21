@@ -11,9 +11,15 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "mongoose": "^6.0.13"
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.0.13",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.14"

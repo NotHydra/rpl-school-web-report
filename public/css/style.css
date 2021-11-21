@@ -581,12 +581,13 @@ body .operator_content_container .operator_content_item_container .operator_cont
   background-color: #282828;
   font-size: calc(1vw + 10px);
   white-space: nowrap;
+  overflow: auto;
   margin-bottom: calc(0.5vw + 7.5px);
   padding: calc(0.5vw + 10px) calc(0.5vw + 7.5px);
   border-radius: 8px;
 }
 
-body .operator_content_container .operator_content_item_container .operator_content_item .operator_conten_option_box {
+body .operator_content_container .operator_content_item_container .operator_content_item .operator_content_option_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -596,11 +597,11 @@ body .operator_content_container .operator_content_item_container .operator_cont
           flex-direction: column;
 }
 
-body .operator_content_container .operator_content_item_container .operator_content_item .operator_conten_option_box label {
+body .operator_content_container .operator_content_item_container .operator_content_item .operator_content_option_box label {
   margin-bottom: calc(0.25vw + 2.5px);
 }
 
-body .operator_content_container .operator_content_item_container .operator_content_item .operator_conten_option_box select {
+body .operator_content_container .operator_content_item_container .operator_content_item .operator_content_option_box select {
   background-color: #1f1f1f;
   color: white;
   font-size: calc(1vw + 10px);
@@ -617,15 +618,54 @@ body .operator_content_container .operator_content_item_container .operator_cont
   transition: opacity 200ms;
 }
 
-body .operator_content_container .operator_content_item_container .operator_content_item .operator_conten_option_box select:invalid {
+body .operator_content_container .operator_content_item_container .operator_content_item .operator_content_option_box select:invalid {
   color: gray;
 }
 
-body .operator_content_container .operator_content_item_container .operator_content_item .operator_conten_option_box select:focus {
+body .operator_content_container .operator_content_item_container .operator_content_item .operator_content_option_box select:focus {
   border: 1px solid #282828;
 }
 
-body .operator_content_container .operator_content_item_container .operator_content_item .operator_conten_option_box select:hover {
+body .operator_content_container .operator_content_item_container .operator_content_item .operator_content_option_box select:hover {
+  opacity: 0.5;
+}
+
+body .operator_content_container .operator_content_item_container .operator_content_item .operator_content_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .operator_content_container .operator_content_item_container .operator_content_item .operator_content_input label {
+  margin-bottom: calc(0.25vw + 2.5px);
+}
+
+body .operator_content_container .operator_content_item_container .operator_content_item .operator_content_input input {
+  background-color: #1f1f1f;
+  color: white;
+  font-size: calc(1vw + 10px);
+  white-space: nowrap;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: calc(0.25vw + 2.5px);
+  margin-bottom: calc(0.25vw + 2.5px);
+  cursor: pointer;
+  border: 1px solid #282828;
+  border-radius: 8px;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+
+body .operator_content_container .operator_content_item_container .operator_content_item .operator_content_input input:focus {
+  border: 1px solid #282828;
+}
+
+body .operator_content_container .operator_content_item_container .operator_content_item .operator_content_input input:hover {
   opacity: 0.5;
 }
 

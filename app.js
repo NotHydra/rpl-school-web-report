@@ -1,13 +1,36 @@
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config()
+}
+
 const express = require('express')
 const mongoose = require('mongoose')
+const passport = require('passport')
+const flash = require('express-flash')
+const session = require('express-session')
+const methodOverride = require('method-override')
+
 const Student = require('./Models/student_model')
 const Assignment = require('./Models/assignment_model')
 const Assignment_Range = require('./Models/assignment_range_model')
 const Operator_History = require('./Models/operator_history_model')
+const User = require('./Models/user_model')
 
 const app = express()
-const dbURI = 'mongodb+srv://Hydra:UjidwtkA7TTJ9A1g@rpl-class-web-database.2rqk3.mongodb.net/RPL-Class-Web?retryWrites=true&w=majority'
+app.set('view engine', 'ejs')
+app.use(express.urlencoded({ extended:false }))
+app.use(express.static('public'))
+app.use(flash())
+app.use(session({
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false
+}))
 
+app.use(passport.initialize())
+app.use(passport.session()) 
+app.use(methodOverride('_method'))
+
+const dbURI = 'mongodb+srv://Hydra:UjidwtkA7TTJ9A1g@rpl-class-web-database.2rqk3.mongodb.net/RPL-Class-Web?retryWrites=true&w=majority'
 mongoose.connect(process.env.MONGODB_URI || dbURI)
     .then((result) => {
         const port = process.env.PORT || 5000
@@ -16,9 +39,19 @@ mongoose.connect(process.env.MONGODB_URI || dbURI)
 
     .catch((err) => console.log(err))
 
-app.set('view engine', 'ejs')
-app.use(express.urlencoded({ extended:false }))
-app.use(express.static('public'))
+
+var users
+User.find()
+    .then((result) => {
+        users = result  
+
+        const initializePassport = require('./passport-config')
+        initializePassport(
+            passport,
+            username => users.find(user => user.username === username),
+            id => users.find(user => user.id === id)
+        )
+    })
 
 function translate_data(list_of_assignment_data, list_of_student_data) {
     for (let i = 0; i < list_of_assignment_data.length; i++) {
@@ -273,6 +306,22 @@ function update_history(type, data, operator_history_data){
         .catch((err) => console.log(err))
 }
 
+function checkAuthenticated(req, res, next) {
+    if (req.isAuthenticated()) {
+        return next()
+    }
+
+    res.redirect('/login')
+}
+
+function checkNotAuthenticated(req, res, next) {
+    if (req.isAuthenticated()) {
+        return res.redirect('/operator')
+    }
+
+    next()
+}
+
 function find_data_collection(){
     Student.find()
         .then((result) => {
@@ -300,7 +349,7 @@ function find_data_collection(){
 function run_program(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data, operator_history_data){
     translate_data(list_of_assignment_data, list_of_student_data)
 
-    //#region Get Request
+    //#region Request
     app.get('/', (req, res) => {
         res.redirect('/home')
         console.log("Redirecting to home")
@@ -336,15 +385,15 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
         console.log("Contributor is being requested")
     })
 
-    app.get('/operator', (req, res) => {
+    //#endregion Request
+
+    //#region Operator Request
+    app.get('/operator', checkAuthenticated, (req, res) => {
         res.render('operator', { title: 'Operator', list_of_student_data, list_of_assignment_data, list_of_assignment_range_data, operator_history_data })
         console.log("Operator is being requested")
     })
 
-    //#endregion Get
-
-    //#region Post Request
-    app.post('/operator_assignment', (req, res) => {
+    app.post('/operator_assignment', checkAuthenticated, (req, res) => {
         try {
             if(req.body.operator_assignment_action == 'add'){
                 let new_object_for_list_of_assignment = create_new_object_for_list_of_assignment(list_of_assignment_data, list_of_assignment_range_data, req)
@@ -368,7 +417,7 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
                     }
 
                     list_of_assignment_data.pop()
-                    Assignment.findOneAndRemove({assignment_id: list_of_assignment_data.length})
+                    Assignment.findOneAndRemove({assignment_id: list_of_assignment_data.length+1})
                         .catch((err) => console.log(err))
 
                     list_of_assignment_range_data.weekly[list_of_assignment_range_data.weekly.length- 1] -= 1
@@ -391,7 +440,7 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
 
     })
 
-    app.post('/operator_week', (req, res) => {
+    app.post('/operator_week', checkAuthenticated, (req, res) => {
         try {
             if(req.body.operator_week_action == 'add'){
                 list_of_assignment_range_data.weekly.push(0)
@@ -427,7 +476,7 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
         
     })
 
-    app.post('/operator_month', (req, res) => {
+    app.post('/operator_month', checkAuthenticated, (req, res) => {
         try {
             if(req.body.operator_month_action == 'add'){
                 list_of_assignment_range_data.weekly.push(0)
@@ -465,7 +514,7 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
         
     })
 
-    app.post('/check_report', (req, res) => {
+    app.post('/check_report', checkAuthenticated, (req, res) => {
         try {
             if(req.body.report_action == 'check'){
                 if(list_of_student_data[req.body.student_name].student_is_muslim == false && list_of_assignment_data[req.body.assignment_name].assignment_is_for_muslim == true){
@@ -514,7 +563,26 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
         
     })
     
-    //#endregion Post Request
+    //#endregion Operator Request
+
+    //#region Login
+    app.get('/login', checkNotAuthenticated, (req, res) => {
+        res.render('login', { title: 'Login'})
+        console.log("Login is being requested")
+    })
+
+    app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
+        successRedirect: '/operator',
+        failureRedirect: '/login',
+        failureFlash: true
+    }))
+
+    app.delete('/logout', (req, res) => {
+        req.logOut()
+        res.redirect('/login')
+    })
+
+    //#endregion Login
 }
 
 find_data_collection()

@@ -16,7 +16,7 @@
     
                 <!-- Assignment -->
                 <form class="operator_content_item" action="/operator_assignment" method="POST">
-                    <div class="operator_conten_option_box">
+                    <div class="operator_content_option_box">
                         <label for="lesson_name">Assignment Name : </label>
                         <select name="lesson_name" id="lesson_name" required> 
                             <option value="" disabled selected hidden>Name</option>
@@ -55,7 +55,7 @@
     
                 <!-- Reports -->
                 <form class="operator_content_item" action="/check_report" method="POST">
-                    <div class="operator_conten_option_box">
+                    <div class="operator_content_option_box">
                         <% let list_of_student_name = [] %>
                         <% for(let i = 0; i < list_of_student_data.length; i++) {%>
                             <% list_of_student_name.push(list_of_student_data[i].student_name) %>
@@ -108,6 +108,12 @@
                     
                     <button type="submit" name="report_action" value="check">Check Report</button>
                     <button type="submit" name="report_action" value="uncheck">Uncheck Report</button>
+    
+                </form>
+                
+                <!-- Log Out -->
+                <form class="operator_content_item" action="/logout?_method=DELETE" method="POST">
+                    <button type="submit">Log Out</button>
     
                 </form>
 
