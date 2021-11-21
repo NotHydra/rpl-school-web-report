@@ -8,7 +8,7 @@ const Operator_History = require('./Models/operator_history_model')
 const app = express()
 const dbURI = 'mongodb+srv://Hydra:UjidwtkA7TTJ9A1g@rpl-class-web-database.2rqk3.mongodb.net/RPL-Class-Web?retryWrites=true&w=majority'
 
-mongoose.connect(dbURI)
+mongoose.connect(process.env.MONGODB_URI || dbURI)
     .then((result) => {
         const port = process.env.PORT || 5000
         app.listen(port, () => {console.log(`Listening in port ${port}`)})
