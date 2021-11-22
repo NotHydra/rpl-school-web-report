@@ -1,5 +1,10 @@
 .nav_content_container {
   background-color: #282828;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
   padding-top: calc(0.25vw + 2.5px);
   padding-bottom: calc(0.25vw + 2.5px);
   display: -webkit-box;
@@ -72,7 +77,7 @@
   top: 0;
   left: -300px;
   bottom: 0;
-  z-index: 100;
+  z-index: 101;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -1,9 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/head.ejs') %>
-
+    <head>
+        <%- include('./partials/head.ejs') %>
+    </head>
+    
     <body>
         <%- include('./partials/nav.ejs') %>
+
+        <div class="contributor_content_container">
+            <div class="contributor_content_item_container">
+                <% list_of_link_for_logo = [ ["https://www.instagram.com/not_irswanda/", "mailto: rizky.irswanda115@gmail.com", "https://github.com/NotHydra"], ["mailto: farhanmuhammad25420@gmail.com", "https://github.com/sorystia1"] ] %>
+
+                <% list_of_image_for_logo = [ ["Instagram", "Gmail", "Github"], ["Gmail", "Github"] ] %> 
+
+                <div class="contributor_content_item">        
+                    <div class="contributor_content_item_image">
+                        <img src="Image/Profile Photo/Rizky_Profile_Photo.png">
+                    </div>
+
+                    <div class="contributor_content_item_text">
+                        Hello! My name is Rizky Irswanda, you can call me Rizky.
+                        I’m currently a second-grade student of a Vocational High School with a major in Software Engineer.
+                        I have an interest in game development especially using the Unity Game Engine.
+                    </div>
+
+                    <div class="contributor_content_item_logo">
+                        <% for(let i = 0; i < list_of_link_for_logo[0].length; i++) {%>
+                            <a href=<%= list_of_link_for_logo[0][i] %> target = _blank>
+                                <img src="Image/Logo/<%= list_of_image_for_logo[0][i] %>.png">
+                            </a>
+
+                        <% } %>
+
+                    </div>
+                    
+                    <div class="contributor_content_item_image">
+                        <img src="Image/Profile Photo/Farhan_Profile_Photo.png">
+                    </div>
+
+                    <div class="contributor_content_item_text">
+                        Name's Muhammad Farhan, usually called Farhan.
+                        A weeb that is also a game enthusiast, I don't really like to work but I'll do my best when needed.
+                        A fledgeling programmer that has too much in-door activities,
+                        also I'm Irswanda's classmate.  
+                    </div>
+
+                    <div class="contributor_content_item_logo">
+                        <% for(let i = 0; i < list_of_link_for_logo[1].length; i++) {%>
+                            <a href=<%= list_of_link_for_logo[1][i] %> target = _blank>
+                                <img src="Image/Logo/<%= list_of_image_for_logo[1][i] %>.png">
+                            </a>
+
+                        <% } %>
+
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
 
     </body>
 

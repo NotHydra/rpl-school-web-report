@@ -32,9 +32,9 @@ app.use(methodOverride('_method'))
 
 const dbURI = 'mongodb+srv://Hydra:UjidwtkA7TTJ9A1g@rpl-class-web-database.2rqk3.mongodb.net/RPL-Class-Web?retryWrites=true&w=majority'
 mongoose.connect(process.env.MONGODB_URI || dbURI)
-    .then((result) => {
+    .then(() => {
         const port = process.env.PORT || 5000
-        app.listen(port, () => {console.log(`Listening in port ${port}`)})
+        app.listen(port, () => {console.log(`Listening in http://localhost:${port}`)})
     })
 
     .catch((err) => console.log(err))
@@ -53,6 +53,7 @@ User.find()
         )
     })
 
+    
 function translate_data(list_of_assignment_data, list_of_student_data) {
     for (let i = 0; i < list_of_assignment_data.length; i++) {
         for (let j = 0; j < list_of_student_data.length; j++) {
@@ -259,7 +260,7 @@ function update_json_file(list_of_student_data, list_of_assignment_data, list_of
     
     function update_assignment_data(j){
         if(j < list_of_assignment_data.length){
-            Assignment.findOneAndUpdate({assignment_id: i+1}, {assignment_total_done: list_of_assignment_data[i].assignment_total_done, assignment_done: list_of_assignment_data[i].assignment_done})
+            Assignment.findOneAndUpdate({assignment_id: j+1}, {assignment_total_done: list_of_assignment_data[j].assignment_total_done, assignment_done: list_of_assignment_data[j].assignment_done})
                 .then(() =>{
                     j += 1
                     console.log("Assignment", j)
