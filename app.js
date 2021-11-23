@@ -302,9 +302,6 @@ function update_history(type, data, operator_history_data){
     else if (type == 'reports'){
         operator_history_data.reports.push(data)
     }
-
-    Operator_History.findOneAndUpdate({id: 1}, {changes: operator_history_data.changes, reports: operator_history_data.reports})
-        .catch((err) => console.log(err))
 }
 
 function checkAuthenticated(req, res, next) {
@@ -447,8 +444,6 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
                 list_of_assignment_range_data.weekly.push(0)
                 list_of_assignment_range_data.weeks_in_month[list_of_assignment_range_data.weeks_in_month.length-1] += 1
                 
-                update_json_file(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data)
-
                 let data = `Added Week`
                 update_history('changes', data, operator_history_data)
             }
@@ -460,15 +455,20 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
                     list_of_assignment_range_data.weekly.pop()
                     list_of_assignment_range_data.weeks_in_month[list_of_assignment_range_data.weeks_in_month.length-1] -= 1
 
-                    update_json_file(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data)
-
                     operator_history_data.changes.pop()
-                    Operator_History.findOneAndUpdate({id: 1}, {changes: operator_history_data.changes, reports: operator_history_data.reports})
-                        .catch((err) => console.log(err))
                 }
             }
 
-            res.redirect('/operator')
+            Assignment_Range.findOneAndUpdate({id: 1}, {
+                weekly: list_of_assignment_range_data.weekly,
+                monthly: list_of_assignment_range_data.monthly,
+                weeks_in_month: list_of_assignment_range_data.weeks_in_month
+            })
+                .then(() => {
+                    Operator_History.findOneAndUpdate({id: 1}, {changes: operator_history_data.changes, reports: operator_history_data.reports})
+
+                    res.redirect('/operator')
+                })
         }
         
         catch (err) {
@@ -479,12 +479,11 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
 
     app.post('/operator_month', checkAuthenticated, (req, res) => {
         try {
+            
             if(req.body.operator_month_action == 'add'){
                 list_of_assignment_range_data.weekly.push(0)
                 list_of_assignment_range_data.monthly.push(0)
                 list_of_assignment_range_data.weeks_in_month.push(list_of_assignment_range_data.weeks_in_month[list_of_assignment_range_data.weeks_in_month.length-1]+1)
-
-                update_json_file(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data)
 
                 let data = `Added Month`
                 update_history('changes', data, operator_history_data)
@@ -498,15 +497,20 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
                     list_of_assignment_range_data.monthly.pop()
                     list_of_assignment_range_data.weeks_in_month.pop()
 
-                    update_json_file(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data)
-
                     operator_history_data.changes.pop()
-                    Operator_History.findOneAndUpdate({id: 1}, {changes: operator_history_data.changes, reports: operator_history_data.reports})
-                        .catch((err) => console.log(err))
                 }
             }
 
-            res.redirect('/operator')
+            Assignment_Range.findOneAndUpdate({id: 1}, {
+                weekly: list_of_assignment_range_data.weekly,
+                monthly: list_of_assignment_range_data.monthly,
+                weeks_in_month: list_of_assignment_range_data.weeks_in_month
+            })
+                .then(() => {
+                    Operator_History.findOneAndUpdate({id: 1}, {changes: operator_history_data.changes, reports: operator_history_data.reports})
+
+                    res.redirect('/operator')
+                })
         }
         
         catch (err) {
@@ -517,13 +521,14 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
 
     app.post('/check_report', checkAuthenticated, (req, res) => {
         try {
+            let data
+
             if(req.body.report_action == 'check'){
                 if(list_of_student_data[req.body.student_name].student_is_muslim == false && list_of_assignment_data[req.body.assignment_name].assignment_is_for_muslim == true){
                     list_of_student_data[req.body.student_name].student_assignment_done[req.body.assignment_name] = 'NON-MUS'
                     list_of_assignment_data[req.body.assignment_name].assignment_done[req.body.student_name] = 'NON-MUS'
 
-                    let data = `Tried To Change ${list_of_student_data[req.body.student_name].student_name} ${list_of_assignment_data[req.body.assignment_name].assignment_lesson_name}${list_of_assignment_data[req.body.assignment_name].assignment_lesson_count}`
-                    update_history('reports', data, operator_history_data)
+                    data = `Tried To Change ${list_of_student_data[req.body.student_name].student_name} ${list_of_assignment_data[req.body.assignment_name].assignment_lesson_name}${list_of_assignment_data[req.body.assignment_name].assignment_lesson_count}`
                 }
 
                 else{
@@ -531,8 +536,7 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
                     list_of_assignment_data[req.body.assignment_name].assignment_done[req.body.student_name] = 'ü'
                     list_of_assignment_data[req.body.assignment_name].assignment_total_done += 1
 
-                    let data = `Check ${list_of_student_data[req.body.student_name].student_name} ${list_of_assignment_data[req.body.assignment_name].assignment_lesson_name}${list_of_assignment_data[req.body.assignment_name].assignment_lesson_count}`
-                    update_history('reports', data, operator_history_data)
+                    data = `Check ${list_of_student_data[req.body.student_name].student_name} ${list_of_assignment_data[req.body.assignment_name].assignment_lesson_name}${list_of_assignment_data[req.body.assignment_name].assignment_lesson_count}`
                 }
             }
 
@@ -541,8 +545,7 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
                     list_of_student_data[req.body.student_name].student_assignment_done[req.body.assignment_name] = 'NON-MUS'
                     list_of_assignment_data[req.body.assignment_name].assignment_done[req.body.student_name] = 'NON-MUS'
 
-                    let data = `Tried To Change ${list_of_student_data[req.body.student_name].student_name} ${list_of_assignment_data[req.body.assignment_name].assignment_lesson_name}${list_of_assignment_data[req.body.assignment_name].assignment_lesson_count}`
-                    update_history('reports', data, operator_history_data)
+                    data = `Tried To Change ${list_of_student_data[req.body.student_name].student_name} ${list_of_assignment_data[req.body.assignment_name].assignment_lesson_name}${list_of_assignment_data[req.body.assignment_name].assignment_lesson_count}`
                 }
 
                 else {
@@ -550,14 +553,22 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
                     list_of_assignment_data[req.body.assignment_name].assignment_done[req.body.student_name] = null
                     list_of_assignment_data[req.body.assignment_name].assignment_total_done -= 1
 
-                    let data = `Uncheck ${list_of_student_data[req.body.student_name].student_name} ${list_of_assignment_data[req.body.assignment_name].assignment_lesson_name}${list_of_assignment_data[req.body.assignment_name].assignment_lesson_count}`
-                    update_history('reports', data, operator_history_data)
+                    data = `Uncheck ${list_of_student_data[req.body.student_name].student_name} ${list_of_assignment_data[req.body.assignment_name].assignment_lesson_name}${list_of_assignment_data[req.body.assignment_name].assignment_lesson_count}`
                 }
             }
 
-            update_json_file(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data)
-            
-            res.redirect('/operator')
+            detranslate_data(list_of_assignment_data, list_of_student_data)
+            Student.findOneAndUpdate({student_id: (parseInt(req.body.student_name) + 1)}, {student_total_asssignment_done: list_of_student_data[req.body.student_name].student_total_asssignment_done, student_assignment_done: list_of_student_data[req.body.student_name].student_assignment_done})
+                .then(() => {
+                    Assignment.findOneAndUpdate({assignment_id: (parseInt(req.body.assignment_name) + 1)}, {assignment_total_done: list_of_assignment_data[req.body.assignment_name].assignment_total_done, assignment_done: list_of_assignment_data[req.body.assignment_name].assignment_done})
+                        .then(() => {
+                            update_history('reports', data, operator_history_data)
+                            
+                            translate_data(list_of_assignment_data, list_of_student_data)
+
+                            res.redirect('/operator')
+                        })
+                })
         }
         
         catch (err) {

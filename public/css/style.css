@@ -864,10 +864,10 @@ body .statistics_content_container .statistics_content_item_container .statistic
 
 body .statistics_content_container .statistics_content_item_container .statistics_content_item .statistics_content_item_text {
   background-color: #282828;
-  font-size: calc(1vw + 10px);
+  font-size: calc(1vw + 7px);
   text-align: center;
   white-space: nowrap;
-  min-width: 250px;
+  min-width: 200px;
   width: calc(30vw + 20px);
   margin-bottom: calc(0.5vw + 7.5px);
   padding: calc(0.5vw + 10px) calc(0.5vw + 7.5px);
