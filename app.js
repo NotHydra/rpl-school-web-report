@@ -529,6 +529,7 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
                 else{
                     list_of_student_data[req.body.student_name].student_assignment_done[req.body.assignment_name] = 'ü'
                     list_of_assignment_data[req.body.assignment_name].assignment_done[req.body.student_name] = 'ü'
+                    list_of_assignment_data[req.body.assignment_name].assignment_total_done += 1
 
                     let data = `Check ${list_of_student_data[req.body.student_name].student_name} ${list_of_assignment_data[req.body.assignment_name].assignment_lesson_name}${list_of_assignment_data[req.body.assignment_name].assignment_lesson_count}`
                     update_history('reports', data, operator_history_data)
@@ -547,6 +548,7 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
                 else {
                     list_of_student_data[req.body.student_name].student_assignment_done[req.body.assignment_name] = null
                     list_of_assignment_data[req.body.assignment_name].assignment_done[req.body.student_name] = null
+                    list_of_assignment_data[req.body.assignment_name].assignment_total_done -= 1
 
                     let data = `Uncheck ${list_of_student_data[req.body.student_name].student_name} ${list_of_assignment_data[req.body.assignment_name].assignment_lesson_name}${list_of_assignment_data[req.body.assignment_name].assignment_lesson_count}`
                     update_history('reports', data, operator_history_data)
