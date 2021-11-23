@@ -372,7 +372,7 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
     })
     
     app.get('/statistics', (req, res) => {
-        res.render('statistics', { title: 'Statistics', list_of_student_data })
+        res.render('statistics', { title: 'Statistics', list_of_student_data, list_of_assignment_range_data })
         console.log("Statistics is being requested")
     })
     
