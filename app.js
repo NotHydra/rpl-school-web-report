@@ -14,6 +14,7 @@ const Assignment = require('./Models/assignment_model')
 const Assignment_Range = require('./Models/assignment_range_model')
 const Operator_History = require('./Models/operator_history_model')
 const User = require('./Models/user_model')
+const Request_Counter = require('./Models/request_counter_model')
 
 const app = express()
 app.set('view engine', 'ejs')
@@ -304,6 +305,53 @@ function update_history(type, data, operator_history_data){
     }
 }
 
+function request_counter(page){
+    Request_Counter.find()
+        .then((result) => {
+            let request_counter_data = result[0]
+
+            if (page == "home") {
+                request_counter_data.home += 1
+                Request_Counter.findOneAndUpdate({id: 1}, {home: request_counter_data.home}).then(() => console.log(`Home : ${request_counter_data.home}`))
+            }
+
+            else if (page == "classcode") {
+                request_counter_data.classcode += 1
+                Request_Counter.findOneAndUpdate({id: 1}, {classcode: request_counter_data.classcode}).then(() => console.log(`Classcode : ${request_counter_data.classcode}`))
+            }
+
+            else if (page == "leaderboard") {
+                request_counter_data.leaderboard += 1
+                Request_Counter.findOneAndUpdate({id: 1}, {leaderboard: request_counter_data.leaderboard}).then(() => console.log(`Leaderboard : ${request_counter_data.leaderboard}`))
+            }
+
+            else if (page == "statistics") {
+                request_counter_data.statistics += 1
+                Request_Counter.findOneAndUpdate({id: 1}, {statistics: request_counter_data.statistics}).then(() => console.log(`Statistics : ${request_counter_data.statistics}`))
+            }
+
+            else if (page == "changelog") {
+                request_counter_data.changelog += 1
+                Request_Counter.findOneAndUpdate({id: 1}, {changelog: request_counter_data.changelog}).then(() => console.log(`Changelog : ${request_counter_data.changelog}`))
+            }
+
+            else if (page == "contributor") {
+                request_counter_data.contributor += 1
+                Request_Counter.findOneAndUpdate({id: 1}, {contributor: request_counter_data.contributor}).then(() => console.log(`Contributor : ${request_counter_data.contributor}`))
+            }
+
+            else if (page == "operator") {
+                request_counter_data.operator += 1
+                Request_Counter.findOneAndUpdate({id: 1}, {operator: request_counter_data.operator}).then(() => console.log(`Operator : ${request_counter_data.operator}`))
+            }
+
+            else if (page == "login") {
+                request_counter_data.login += 1
+                Request_Counter.findOneAndUpdate({id: 1}, {login: request_counter_data.login}).then(() => console.log(`Login : ${request_counter_data.login}`))
+            }
+        })
+}
+
 function checkAuthenticated(req, res, next) {
     if (req.isAuthenticated()) {
         return next()
@@ -348,47 +396,61 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
     translate_data(list_of_assignment_data, list_of_student_data)
 
     //#region Request
+    app.get('', (req, res) => {
+        res.redirect('/home')
+    })
+
     app.get('/', (req, res) => {
         res.redirect('/home')
-        console.log("Redirecting to home")
     })
     
     app.get('/home', (req, res) => {
         res.render('home', { title: 'Home', list_of_student_data, list_of_assignment_data, list_of_assignment_range_data })
-        console.log("Home is being requested")
+        
+        request_counter("home")
     })
     
     app.get('/classcode', (req, res) => {
         res.render('classcode', { title: 'Class Code', list_of_student_data })
-        console.log("Class Code is being requested")
+
+        request_counter("classcode")
     })
     
     app.get('/leaderboard', (req, res) => {
         res.render('leaderboard', { title: 'Leaderboard', list_of_student_data })
-        console.log("Leaderboard is being requested")
+
+        request_counter("leaderboard")
     })
     
     app.get('/statistics', (req, res) => {
         res.render('statistics', { title: 'Statistics', list_of_student_data, list_of_assignment_range_data })
-        console.log("Statistics is being requested")
+
+        request_counter("statistics")
     })
     
     app.get('/changelog', (req, res) => {
         res.render('changelog', { title: 'Changelog', list_of_student_data })
-        console.log("Changelog is being requested")
+
+        request_counter("changelog")
     })
     
     app.get('/contributor', (req, res) => {
         res.render('contributor', { title: 'Contributor', list_of_student_data })
-        console.log("Contributor is being requested")
+
+        request_counter("contributor")
     })
+
+    app.use((req, res) =>{
+        res.status(404).send("404");
+    });
 
     //#endregion Request
 
     //#region Operator Request
     app.get('/operator', checkAuthenticated, (req, res) => {
         res.render('operator', { title: 'Operator', list_of_student_data, list_of_assignment_data, list_of_assignment_range_data, operator_history_data })
-        console.log("Operator is being requested")
+
+        request_counter("operator")
     })
 
     app.post('/operator_assignment', checkAuthenticated, (req, res) => {
@@ -582,7 +644,8 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
     //#region Login
     app.get('/login', checkNotAuthenticated, (req, res) => {
         res.render('login', { title: 'Login'})
-        console.log("Login is being requested")
+
+        request_counter("login")
     })
 
     app.post('/login', checkNotAuthenticated, passport.authenticate('local', {

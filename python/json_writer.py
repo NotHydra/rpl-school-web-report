@@ -229,6 +229,7 @@ def run_json_writer():
     json_file = open("json_file/list_of_assignment_range.json", "w")
     json_file.write("{\n")
 
+    json_file.write(f'\t"id": 1,\n')
     json_file.write(f'\t"weekly": {list_of_assignment_weekly_range_array},\n')
     json_file.write(f'\t"monthly": {list_of_assignment_monthly_range_array},\n')
     json_file.write(f'\t"weeks_in_month": [1, ')
