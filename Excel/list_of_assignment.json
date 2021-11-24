@@ -1062,7 +1062,20 @@
 		"assignment_in_week": 17,
 		"assignment_in_month": 4,
 		"assignment_has_due_date": null,
-		"assignment_total_done": 13,
-		"assignment_done": [2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 2, 0, 2, 0, 2, 0, 0]
+		"assignment_total_done": 14,
+		"assignment_done": [2, 0, 2, 0, 2, 0, 2, 0, 2, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 0, 0, 0, 2, 0, 2, 0, 2, 0, 0]
+	},
+	{
+		"assignment_id": 83,
+		"assignment_lesson_name": "PPL",
+		"assignment_lesson_count": 5,
+		"assignment_description": null,
+		"assignment_picture": null,
+		"assignment_is_for_muslim": false,
+		"assignment_in_week": 18,
+		"assignment_in_month": 4,
+		"assignment_has_due_date": null,
+		"assignment_total_done": 1,
+		"assignment_done": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0]
 	}
 ]

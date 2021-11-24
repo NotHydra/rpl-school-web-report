@@ -19,8 +19,8 @@ wb_mingguan_file = [
 
     "Excel/Mingguan/Excel/List Tugas Minggu Ke-15 (1 November 2021 - 7 November 2021).xlsx",
     "Excel/Mingguan/Excel/List Tugas Minggu Ke-16 (8 November 2021 - 14 November 2021).xlsx",
-    "Excel/Mingguan/Excel/List Tugas Minggu Ke-17 (15 November 2021 - 21 November 2021).xlsx"
-    
+    "Excel/Mingguan/Excel/List Tugas Minggu Ke-17 (15 November 2021 - 21 November 2021).xlsx",
+    "Excel/Mingguan/Excel/List Tugas Minggu Ke-18 (22 November 2021 - 28 November 2021).xlsx"
 ]
 
 global wb_bulanan_file
@@ -28,7 +28,7 @@ wb_bulanan_file = [
     "Excel/Bulanan/Excel/List Tugas Bulanan Ke-1 (26 Juli 2021 - 29 Agustus 2021).xlsx",
     "Excel/Bulanan/Excel/List Tugas Bulanan Ke-2 (30 Agustus 2021 - 3 Oktober 2021).xlsx",
     "Excel/Bulanan/Excel/List Tugas Bulanan Ke-3 (4 Oktober 2021 - 31 November 2021).xlsx",
-    "Excel/Bulanan/Excel/List Tugas Bulanan Ke-4 (1 November 2021 - 5 December 2021).xlsx",
+    "Excel/Bulanan/Excel/List Tugas Bulanan Ke-4 (1 November 2021 - 5 December 2021).xlsx"
 ]
 
 global wb_mingguan_image_name
@@ -49,7 +49,8 @@ wb_mingguan_image_name = [
     "Image List Tugas Minggu Ke-14",
     "Image List Tugas Minggu Ke-15",
     "Image List Tugas Minggu Ke-16",
-    "Image List Tugas Minggu Ke-17"
+    "Image List Tugas Minggu Ke-17",
+    "Image List Tugas Minggu Ke-18"
 ]
 
 global wb_bulanan_image_name
@@ -61,19 +62,19 @@ wb_bulanan_image_name = [
 ]
 
 global weekly_task_start_column_range, weekly_task_end_column_range
-weekly_task_start_column_range = [3, 8,  16, 23, 26, 34, 39, 42, 47, 53, 59, 63, 64, 67, 71, 76, 82]
-weekly_task_end_column_range   = [8, 16, 23, 26, 34, 39, 42, 47, 53, 59, 63, 64, 67, 71, 76, 82, 85]
+weekly_task_start_column_range = [3, 8,  16, 23, 26, 34, 39, 42, 47, 53, 59, 63, 64, 67, 71, 76, 82, 85]
+weekly_task_end_column_range   = [8, 16, 23, 26, 34, 39, 42, 47, 53, 59, 63, 64, 67, 71, 76, 82, 85, 86]
 
 global monthly_task_start_column_range,monthly_task_end_column_range
 monthly_task_start_column_range = [3,  34, 59, 71]
-monthly_task_end_column_range   = [34, 59, 71, 85]
+monthly_task_end_column_range   = [34, 59, 71, 86]
 
 global wb_bulanan_start_container, wb_bulanan_end_container # How much week it contains
 wb_bulanan_start_container = [1, 6,  11, 15]
-wb_bulanan_end_container   = [6, 11, 15, 18]
+wb_bulanan_end_container   = [6, 11, 15, 19]
 
 global combined_task_range
-combined_task_range = "A1:CF42"
+combined_task_range = "A1:CG42"
 
 global list_of_students_name
 list_of_students_name= [
