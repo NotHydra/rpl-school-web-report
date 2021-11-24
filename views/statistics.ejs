@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./partials/head.ejs') %>
+
+    <!-- #region Percentage Of Reports  -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <% let maximum_total_report = 35 * (list_of_student_data[0].student_assignment_done.length) %>
+
+    <% let current_total_report = 0 %>
+    <% for(let i = 0; i < list_of_student_data.length; i++) {%>
+        <% for(let j = 0; j < list_of_student_data[0].student_assignment_done.length; j++) {%>
+            <% if(list_of_student_data[i].student_assignment_done[j] == 'ü' || list_of_student_data[i].student_assignment_done[j] == 'NON-MUS') {%>
+                <% current_total_report += 1 %>
+
+            <% } %>
+            
+        <% } %>
+
+    <% } %>
+
+    <script> let maximum_total_report_for_script = parseInt("<%= maximum_total_report %>") </script>
+    <script> let current_total_report_for_script = parseInt("<%= current_total_report %>") </script>
+
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Reports', 'Percentage'],
+          ['Received', current_total_report_for_script],
+          ['Not Received', maximum_total_report_for_script - current_total_report_for_script]
+        ]);
+
+        var options = {
+          backgroundColor: "transparent",
+          fontName: "Roboto",	
+          legend: {
+            textStyle: {
+              color: "white",
+            },
+            position: 'labeled'
+          },
+          pieHole: 0.4,
+          chartArea: {'width': '90%', 'height': '100%'}
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementsByClassName('donutchart')[0]);
+        chart.draw(data, options);
+      }
+    </script>
+
+    <!--#endregion -->
+
+    <!-- #region Total Assignment Per Week   -->
+    <script> let total_weekly_assignment_for_script = [['Week', 'Total Assignment'], ] </script>
+
+    <% for(let i = 0; i < list_of_assignment_range_data.weekly.length; i++) {%>
+        <% temp_value = list_of_assignment_range_data.weekly[i] %>
+        <script>total_weekly_assignment_for_script.push(["Week <%= i+1 %>", parseInt("<%= temp_value %>")]) </script>
+            
+    <% } %>
+
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable(
+          total_weekly_assignment_for_script
+        );
+
+        var options = {
+          backgroundColor: "transparent",
+          fontName: "Roboto",	
+          legend: {
+            textStyle: {
+              color: "white",
+            },
+            position: 'labeled'
+          },
+          pieHole: 0.4,
+          chartArea: {'width': '90%', 'height': '100%'}
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementsByClassName('donutchart')[1]);
+        chart.draw(data, options);
+      }
+    </script>
+    
+    <!--#endregion -->
+
+    <!-- #region Total Assignment Per Month  -->
+    <script> let total_monthly_assignment_for_script = [['Month', 'Total Assignment'], ] </script>
+    
+    <% for(let i = 0; i < list_of_assignment_range_data.monthly.length; i++) {%>
+        <% temp_value = list_of_assignment_range_data.monthly[i] %>
+        <script>total_monthly_assignment_for_script.push(["Month <%= i+1 %>", parseInt("<%= temp_value %>")]) </script>
+            
+    <% } %>
+
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable(
+          total_monthly_assignment_for_script
+        );
+
+        var options = {
+          backgroundColor: "transparent",
+          fontName: "Roboto",	
+          legend: {
+            textStyle: {
+              color: "white",
+            },
+            position: 'labeled'
+          },
+          pieHole: 0.4,
+          chartArea: {'width': '90%', 'height': '100%'}
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementsByClassName('donutchart')[2]);
+        chart.draw(data, options);
+      }
+    </script>
+
+    <!--#endregion -->
+
+  </head>
+
+  <body>
+    <%- include('./partials/nav.ejs') %>
+    
+    <div class="statistics_content_container">
+      <div class="statistics_content_item_container">
+          <div class="statistics_content_item">
+            <div class="statistics_content_item_text">Percentage of Reports</div>
+            <div class="donutchart" style="width: calc(24vw + 180px); height: calc(15vw + 75px);"></div>
+
+          </div>
+          
+          <div class="statistics_content_item">
+            <div class="statistics_content_item_text">Percentage of Total Assignments Per Week</div>
+            <div class="donutchart" style="width: calc(24vw + 180px); height: calc(15vw + 75px);"></div>
+
+          </div>
+
+          <div class="statistics_content_item">
+            <div class="statistics_content_item_text">Percentage of Total Assignments Per Month</div>
+            <div class="donutchart" style="width: calc(24vw + 180px); height: calc(15vw + 75px);"></div>
+
+          </div>
+
+      </div>
+
+    </div>
+  
+  </body>
+
+</html>

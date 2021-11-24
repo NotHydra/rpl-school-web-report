@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('./partials/head.ejs') %>
+
+        <% var splited_student_name = [] %>
+        <% for(let i = 0; i < list_of_student_data.length; i++) { %>
+            <% temp_value = (list_of_student_data[i].student_name).split(" ") %>
+            <% splited_student_name.push(temp_value)%>
+        <% } %>   
+
+        <% var unsorted_student_data = [] %>
+        <% for(let i = 0; i < list_of_student_data.length; i++) {%>
+            <% let k = 0 %>
+            <% for(let j = 0; j < list_of_student_data[i].student_assignment_done.length; j++) {%>
+                <% if(list_of_student_data[i].student_assignment_done[j] == 'ü' || list_of_student_data[i].student_assignment_done[j] == 'NON-MUS') {%>
+                    <% k += 1 %>
+
+                <% } %>
+
+            <% } %> 
+            
+            <% let temp_value = [`${splited_student_name[i][0]} ${splited_student_name[i][1]}`, k] %>
+            <% unsorted_student_data.push(temp_value) %>
+        <% } %>
+
+        <% unsorted_student_data[25][0] = 'Oneil Kerry' %>
+
+        <% var sorted_student_data = unsorted_student_data.sort(function(a, b){return b[1] - a[1]}); %>  
+
+        <script> var student_data_in_script = [['Name', 'Total Assignment Done', { role: "style" } ]] </script>
+        <% for(let i = 0; i < sorted_student_data.length; i++) {%>
+            <script> student_data_in_script.push([("<%= sorted_student_data[i][0] %>"), parseInt("<%= sorted_student_data[i][1] %>"), "#282828"]) </script>
+
+        <% } %>
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+            google.charts.load("current", {packages:["corechart"]});
+            google.charts.setOnLoadCallback(drawStuff);
+
+            function drawStuff() {
+                var data = google.visualization.arrayToDataTable(
+                    student_data_in_script
+                );
+                
+                var view = new google.visualization.DataView(data);
+                view.setColumns([
+                    0,
+                    1, 
+                        {
+                            calc: "stringify",
+                            sourceColumn: 1,
+                            type: "string",
+                            role: "annotation"
+                        },
+                    2
+                ]);
+
+                var options = {
+                    backgroundColor: "black",
+                    fontName: "Roboto",	
+                    legend: { position: 'none' },
+                    bars: 'horizontal',
+                    hAxis: {
+                        textStyle:{color: 'white'}
+                    },
+                    vAxis: {
+                        textStyle:{color: 'white'}
+                    },
+                    chartArea: {'width': '75%', 'height': '95%'}
+                };
+                
+                var chart = new google.visualization.BarChart(document.getElementById("leaderboard_data"));
+                chart.draw(view, options);
+            };
+        </script>
+
+    </head>
+    
+    <body>
+        <%- include('./partials/nav.ejs') %>
+
+        <div class="leaderboard_content_container">
+            <div class="leaderboard_content_item_container">
+                <div class="leaderboard_content_item">        
+                    <div id="leaderboard_data" style="width: 1500px; height: 2000px;"></div>
+        
+                </div>
+                
+            </div>
+
+        </div>
+        
+    </body>
+
+</html>
