@@ -440,10 +440,6 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
         request_counter("contributor")
     })
 
-    app.use((req, res) =>{
-        res.status(404).send("404");
-    });
-
     //#endregion Request
 
     //#region Operator Request
@@ -660,6 +656,10 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
     })
 
     //#endregion Login
+
+    app.use((req, res) =>{
+        res.status(404).send("404");
+    });
 }
 
 find_data_collection()
