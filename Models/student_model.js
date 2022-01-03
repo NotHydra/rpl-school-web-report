@@ -18,7 +18,7 @@ const student_schema = new Schema({
     },
     
     student_total_asssignment_done: {
-        type: String,
+        type: Number,
         required: true
     },
 

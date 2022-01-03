@@ -59,7 +59,7 @@ def run_json_writer():
         elif list_of_student_array[i][2] == False:
             json_file.write(f'\t\t"student_is_muslim": false ,\n')
 
-        json_file.write(f'\t\t"student_total_asssignment_done": "{list_of_student_array[i][3]}",\n')
+        json_file.write(f'\t\t"student_total_asssignment_done": {list_of_student_array[i][3]},\n')
 
         json_file.write('\t\t"student_assignment_done": [')
 

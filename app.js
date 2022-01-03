@@ -591,6 +591,7 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
 
                 else{
                     list_of_student_data[req.body.student_name].student_assignment_done[req.body.assignment_name] = 'ü'
+                    list_of_student_data[req.body.student_name].student_total_asssignment_done += 1
                     list_of_assignment_data[req.body.assignment_name].assignment_done[req.body.student_name] = 'ü'
                     list_of_assignment_data[req.body.assignment_name].assignment_total_done += 1
 
@@ -608,6 +609,7 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
 
                 else {
                     list_of_student_data[req.body.student_name].student_assignment_done[req.body.assignment_name] = null
+                    list_of_student_data[req.body.student_name].student_total_asssignment_done -= 1
                     list_of_assignment_data[req.body.assignment_name].assignment_done[req.body.student_name] = null
                     list_of_assignment_data[req.body.assignment_name].assignment_total_done -= 1
 
