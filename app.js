@@ -462,6 +462,8 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
                 
                 let data = `Added Assignment (${new_object_for_list_of_assignment.assignment_id}|${new_object_for_list_of_assignment.assignment_lesson_name}${new_object_for_list_of_assignment.assignment_lesson_count}|${new_object_for_list_of_assignment.assignment_in_week}|${new_object_for_list_of_assignment.assignment_in_month})`
                 update_history('changes', data, operator_history_data)
+                Operator_History.findOneAndUpdate({id: 1}, {changes: operator_history_data.changes, reports: operator_history_data.reports})
+                    .catch((err) => console.log(err))
             }
 
             else if(req.body.operator_assignment_action == 'delete'){
@@ -524,6 +526,7 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
             })
                 .then(() => {
                     Operator_History.findOneAndUpdate({id: 1}, {changes: operator_history_data.changes, reports: operator_history_data.reports})
+                        .catch((err) => console.log(err))
 
                     res.redirect('/operator')
                 })
@@ -623,10 +626,11 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
                     Assignment.findOneAndUpdate({assignment_id: (parseInt(req.body.assignment_name) + 1)}, {assignment_total_done: list_of_assignment_data[req.body.assignment_name].assignment_total_done, assignment_done: list_of_assignment_data[req.body.assignment_name].assignment_done})
                         .then(() => {
                             update_history('reports', data, operator_history_data)
-                            
-                            translate_data(list_of_assignment_data, list_of_student_data)
-
-                            res.redirect('/operator')
+                            Operator_History.findOneAndUpdate({id: 1}, {changes: operator_history_data.changes, reports: operator_history_data.reports})
+                                .then(() => {
+                                    translate_data(list_of_assignment_data, list_of_student_data)
+                                    res.redirect('/operator')
+                                })
                         })
                 })
         }
