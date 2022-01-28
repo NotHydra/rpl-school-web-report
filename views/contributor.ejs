@@ -1,66 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <%- include('./partials/head.ejs') %>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contributors</title>
     
-    <body>
-        <%- include('./partials/nav.ejs') %>
+    <link rel="stylesheet" href="/styles/css/hamburgers.min.css">
+    <link rel="stylesheet" href="/styles/css/index.css">
 
-        <div class="contributor_content_container">
-            <div class="contributor_content_item_container">
-                <% list_of_link_for_logo = [ ["https://www.instagram.com/not_irswanda/", "mailto: rizky.irswanda115@gmail.com", "https://github.com/NotHydra"], ["mailto: farhanmuhammad25420@gmail.com", "https://github.com/sorystia1"] ] %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <%- include('./partials/navbar.ejs') %>
 
-                <% list_of_image_for_logo = [ ["Instagram", "Gmail", "Github"], ["Gmail", "Github"] ] %> 
-
-                <div class="contributor_content_item">        
-                    <div class="contributor_content_item_image">
-                        <img src="Image/Profile Photo/Rizky_Profile_Photo.png">
-                    </div>
-
-                    <div class="contributor_content_item_text">
-                        Hello! My name is Rizky Irswanda, you can call me Rizky.
-                        I’m currently a second-grade student of a Vocational High School with a major in Software Engineer.
-                        I have an interest in game development especially using the Unity Game Engine.
-                    </div>
-
-                    <div class="contributor_content_item_logo">
-                        <% for(let i = 0; i < list_of_link_for_logo[0].length; i++) {%>
-                            <a href=<%= list_of_link_for_logo[0][i] %> target = _blank>
-                                <img src="Image/Logo/<%= list_of_image_for_logo[0][i] %>.png">
-                            </a>
-
-                        <% } %>
-
-                    </div>
-                    
-                    <div class="contributor_content_item_image">
-                        <img src="Image/Profile Photo/Farhan_Profile_Photo.png">
-                    </div>
-
-                    <div class="contributor_content_item_text">
-                        Name's Muhammad Farhan, usually called Farhan.
-                        A weeb that is also a game enthusiast, I don't really like to work but I'll do my best when needed.
-                        A fledgeling programmer that has too much in-door activities,
-                        also I'm Irswanda's classmate.  
-                    </div>
-
-                    <div class="contributor_content_item_logo">
-                        <% for(let i = 0; i < list_of_link_for_logo[1].length; i++) {%>
-                            <a href=<%= list_of_link_for_logo[1][i] %> target = _blank>
-                                <img src="Image/Logo/<%= list_of_image_for_logo[1][i] %>.png">
-                            </a>
-
-                        <% } %>
-
-                    </div>
-
-                </div>
-                
+        <div class="section">
+            <div class="box">
+                <h1 class="title">
+                    Contributors
+                </h1>
             </div>
 
+            <!-- <hr class="seperator"> -->
+
+            <div class="contributors">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="columns">
+                            <div class="column is-1">
+                                <figure class="image">
+                                    <img src="/Image/Profile Photo/Rizky_Profile_Photo.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="column is-10">
+                                <h1 class="title">
+                                    Rizky Irswanda
+                                </h1>
+                                <p class="subtitle">
+                                    Hello! My name is Rizky Irswanda, you can call me Rizky. I'm currently a second-grade student of a Vocational High School with a major in Software Engineer. 
+                                    I have an interest in game development especially using the Unity Game Engine.
+                                </p>
+                                <p class="subtitle socials">
+                                    <%  rizky_socials_link = ["https://www.instagram.com/not_irswanda/", "mailto: rizky.irswanda115@gmail.com", "https://github.com/NotHydra"]  %> 
+                                    <%  rizky_socials_icon = ["instagram", "google", "github"] %> 
+            
+                                    <% rizky_socials_link.forEach((element, index) => { %>
+                                        <a href="<%= element %>">
+                                            <span class="is-icon">
+                                                <i class="fab fa-<%= rizky_socials_icon[index] %> fa-lg"></i>
+                                            </span>
+                                        </a>
+                                    <% }); %>
+                                </p>
+                            </div>
+                        </div>  
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="columns">
+                            <div class="column is-1">
+                                <figure class="image">
+                                    <img src="/Image/Profile Photo/Farhan_Profile_Photo.png" alt="">
+                                </figure>
+                            </div>
+                            <div class="column is-10">
+                                <h1 class="title">
+                                    Muhammad Farhan
+                                </h1>
+                                <p class="subtitle">
+                                    Name's Muhammad Farhan, usually called Farhan. A weeb that is also a game enthusiast, I don't really like to work but I'll do my best when needed. 
+                                    A fledgeling programmer that has too much in-door activities, also I'm Irswanda's classmate.
+                                </p>
+                                <p class="subtitle socials">
+                                    <%  farhan_socials_link = ["mailto: farhanmuhammad25420@gmail.com", "https://github.com/sorystia1"]  %> 
+                                    <%  farhan_socials_icon = ["google", "github"] %> 
+            
+                                    <% farhan_socials_link.forEach((element, index) => { %>
+                                        <a href="<%= element %>">
+                                            <span class="is-icon">
+                                                <i class="fab fa-<%= farhan_socials_icon[index] %> fa-lg"></i>
+                                            </span>
+                                        </a>
+                                    <% }); %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="columns">
+                            <div class="column is-1">
+                                <figure class="image">
+                                    <img src="/Image/Profile Photo/Dio_Profile_Photo.jpg" alt="">
+                                </figure>
+                            </div>
+                            <div class="column is-10">
+                                <h1 class="title">
+                                    Yehezkiel Dio
+                                </h1>
+                                <p class="subtitle">
+                                    I'm Yehezkiel Dio, an Indonesian-based web developer with over two years of experience. 
+                                    I specialize in full-stack development and interface design. Currently, a vocational software engineering student. I go by the name Liz on the internet.
+                                </p>
+                                <p class="subtitle socials">
+                                    <%  dio_socials_link = ["https://www.instagram.com/yhezkiel.dio/", "https://discord.com/users/327849142774923266", "https://github.com/yehezkieldio"]  %> 
+                                    <%  dio_socials_icon = ["instagram", "discord", "github"] %> 
+    
+                                    <% dio_socials_link.forEach((element, index) => { %>
+                                        <a href="<%= element %>">
+                                            <span class="is-icon">
+                                                <i class="fab fa-<%= dio_socials_icon[index] %> fa-lg"></i>
+                                            </span>
+                                        </a>
+                                    <% }); %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 
-    </body>
-
+</body>
 </html>

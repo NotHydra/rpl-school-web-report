@@ -32,7 +32,7 @@ app.use(passport.session())
 app.use(methodOverride('_method'))
 
 const dbURI = 'mongodb+srv://Hydra:UjidwtkA7TTJ9A1g@rpl-class-web-database.2rqk3.mongodb.net/RPL-Class-Web?retryWrites=true&w=majority'
-mongoose.connect(process.env.MONGODB_URI || dbURI)
+mongoose.connect(process.env.MONGODB_URI || dbURI)  
     .then(() => {
         const port = process.env.PORT || 5000
         app.listen(port, () => {console.log(`Listening in http://localhost:${port}`)})
@@ -331,13 +331,21 @@ function request_counter(page){
             }
 
             else if (page == "changelog") {
-                request_counter_data.changelog += 1
-                Request_Counter.findOneAndUpdate({id: 1}, {changelog: request_counter_data.changelog}).then(() => console.log(`Changelog : ${request_counter_data.changelog}`))
+                try {
+                    request_counter_data.changelog += 1
+                    Request_Counter.findOneAndUpdate({id: 1}, {changelog: request_counter_data.changelog}).then(() => console.log(`Changelog : ${request_counter_data.changelog}`))
+                } catch(error) {
+                    console.log(error)
+                }
             }
 
             else if (page == "contributor") {
-                request_counter_data.contributor += 1
-                Request_Counter.findOneAndUpdate({id: 1}, {contributor: request_counter_data.contributor}).then(() => console.log(`Contributor : ${request_counter_data.contributor}`))
+                try {
+                    request_counter_data.contributor += 1
+                    Request_Counter.findOneAndUpdate({id: 1}, {contributor: request_counter_data.contributor}).then(() => console.log(`Contributor : ${request_counter_data.contributor}`))
+                } catch(error) {
+                    console.log(error)
+                }
             }
 
             else if (page == "operator") {
