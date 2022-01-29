@@ -143,6 +143,31 @@ html, body {
     margin-left: 8px;
 }
 
+.is-icon {
+    color: #cfd4d2;
+}
+
+.changelog {
+    .card {
+        .card-header {
+            .card-header-title {
+                @include font-style(24px, normal, normal, 600);
+                color: #cfd4d2;
+            }
+        }
+    }
+    ul {
+        li {
+            padding: 8px;
+        }
+    }
+}
+
+.release-tag {
+    background: #202020 !important;
+    color: #cfd4d2 !important;
+}
+
 .socials {
     font-size: 0;
     .is-icon:nth-child(1) {
@@ -227,6 +252,14 @@ html, body {
                     }
                 }
             }
+        }
+    }
+}
+
+.changelog {
+    ul {
+        li {
+            color: #8e9c97;
         }
     }
 }

@@ -89,6 +89,27 @@ html, body {
   margin-left: 8px;
 }
 
+.is-icon {
+  color: #cfd4d2;
+}
+
+.changelog .card .card-header .card-header-title {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: 600;
+  color: #cfd4d2;
+}
+.changelog ul li {
+  padding: 8px;
+}
+
+.release-tag {
+  background: #202020 !important;
+  color: #cfd4d2 !important;
+}
+
 .socials {
   font-size: 0;
 }
@@ -154,6 +175,10 @@ html, body {
 }
 .navigation--overlay-content-socials .image:hover, .navigation--overlay-content-socials .image:active {
   filter: brightness(60%);
+}
+
+.changelog ul li {
+  color: #8e9c97;
 }
 
 /*# sourceMappingURL=index.css.map */
