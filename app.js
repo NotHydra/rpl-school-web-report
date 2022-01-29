@@ -132,8 +132,12 @@ function create_new_object_for_list_of_assignment(list_of_assignment_data, list_
     }
 
     let lesson_for_muslim = false
+    let value_of_assignment_total_done = 0
+    let value_of_assignment_done = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     if (req.body.lesson_name == "PAI") {
         lesson_for_muslim = true
+        value_of_assignment_total_done = 4
+        value_of_assignment_done = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "NON-MUS", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "NON-MUS", 0, "NON-MUS", 0, 0, 0, 0, 0, 0, 0, 0, "NON-MUS"]
     }
 
     let new_object_for_list_of_assignment = {
@@ -146,8 +150,8 @@ function create_new_object_for_list_of_assignment(list_of_assignment_data, list_
         "assignment_in_week": list_of_assignment_range_data.weekly.length,
         "assignment_in_month": list_of_assignment_range_data.monthly.length,
         "assignment_has_due_date": null,
-        "assignment_total_done": 0,
-        "assignment_done": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        "assignment_total_done": value_of_assignment_total_done,
+        "assignment_done": value_of_assignment_done
     };
 
     const assignment = new Assignment({
@@ -160,8 +164,8 @@ function create_new_object_for_list_of_assignment(list_of_assignment_data, list_
         assignment_in_week: list_of_assignment_range_data.weekly.length,
         assignment_in_month: list_of_assignment_range_data.monthly.length,
         assignment_has_due_date: null,
-        assignment_total_done: 0,
-        assignment_done: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        assignment_total_done: value_of_assignment_total_done,
+        assignment_done: value_of_assignment_done
     })
 
     assignment.save()
@@ -174,6 +178,8 @@ function update_object_for_list_of_student(list_of_student_data, req){
     for(let i = 0; i < list_of_student_data.length; i++){
         if(req.body.lesson_name == "PAI" && list_of_student_data[i].student_is_muslim == false ){
             list_of_student_data[i].student_assignment_done.push("NON-MUS")
+            list_of_student_data[i].student_total_asssignment_done += 1
+            
         }
         
         else if(req.body.lesson_name == "PAI" && list_of_student_data[i].student_is_muslim == true ){
@@ -369,11 +375,11 @@ function checkNotAuthenticated(req, res, next) {
 }
 
 function find_data_collection(){
-    Student.find()
+    Student.find().sort({ student_id: 'asc' })
         .then((result) => {
             var list_of_student_data = result
 
-            Assignment.find()
+            Assignment.find().sort({ assignment_id: 'asc' })
                 .then((result) => {
                     var list_of_assignment_data = result
 
@@ -394,7 +400,7 @@ function find_data_collection(){
 
 function run_program(list_of_student_data, list_of_assignment_data, list_of_assignment_range_data, operator_history_data){
     translate_data(list_of_assignment_data, list_of_student_data)
-
+    
     //#region Request
     app.get('', (req, res) => {
         res.redirect('/home')

@@ -1,6 +1,6 @@
 {
 	"id": 1,
-	"weekly": [1],
-	"monthly": [1],
-	"weeks_in_month": [1, 2]
+	"weekly": [1, 9, 5, 3],
+	"monthly": [18],
+	"weeks_in_month": [1, 5]
 }
