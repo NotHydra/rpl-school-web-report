@@ -22,7 +22,19 @@ html, body {
   color: #e8f1ff;
 }
 
-.contributors {
+.donutchart {
+  overflow: hidden;
+  position: relative;
+}
+@media only screen and (max-width: 600px) {
+  .donutchart {
+    display: inline-block;
+  }
+}
+
+.contributors,
+.changelog,
+.statistics {
   padding-top: 24px;
 }
 

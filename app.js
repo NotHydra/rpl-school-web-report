@@ -41,6 +41,7 @@ mongoose.connect(process.env.MONGODB_URI || dbURI)
     .catch((err) => console.log(err))
 
 
+
 var users
 User.find()
     .then((result) => {
@@ -312,6 +313,10 @@ function update_history(type, data, operator_history_data){
 }
 
 function request_counter(page){
+    if (process.env.NODE_ENV === 'development') {
+        return
+    }
+    
     Request_Counter.find()
         .then((result) => {
             let request_counter_data = result[0]
@@ -332,8 +337,12 @@ function request_counter(page){
             }
 
             else if (page == "statistics") {
-                request_counter_data.statistics += 1
-                Request_Counter.findOneAndUpdate({id: 1}, {statistics: request_counter_data.statistics}).then(() => console.log(`Statistics : ${request_counter_data.statistics}`))
+                try {
+                    request_counter_data.statistics += 1
+                    Request_Counter.findOneAndUpdate({id: 1}, {statistics: request_counter_data.statistics}).then(() => console.log(`Statistics : ${request_counter_data.statistics}`))
+                } catch(error) {
+                    console.log(error)
+                }
             }
 
             else if (page == "changelog") {
@@ -437,6 +446,7 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
     })
     
     app.get('/statistics', (req, res) => {
+
         res.render('statistics', { title: 'Statistics', list_of_student_data, list_of_assignment_range_data })
 
         request_counter("statistics")
