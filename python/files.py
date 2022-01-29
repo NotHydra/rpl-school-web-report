@@ -1,14 +1,14 @@
 global weekly_task_start_column_range, weekly_task_end_column_range
-weekly_task_start_column_range = [3]
-weekly_task_end_column_range   = [4]
+weekly_task_start_column_range = [3, 4, 13, 18]
+weekly_task_end_column_range   = [4, 13, 18, 21]
 
 global monthly_task_start_column_range,monthly_task_end_column_range
 monthly_task_start_column_range = [3]
-monthly_task_end_column_range   = [4]
+monthly_task_end_column_range   = [21]
 
 global wb_bulanan_start_container, wb_bulanan_end_container # How much week it contains
 wb_bulanan_start_container = [1]
-wb_bulanan_end_container   = [2]
+wb_bulanan_end_container   = [5]
 
 global list_of_students_name
 list_of_students_name= [
