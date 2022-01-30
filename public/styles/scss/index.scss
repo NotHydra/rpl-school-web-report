@@ -108,9 +108,33 @@ html, body {
 
 }
 
+#leaderboard_data {
+    width: auto;
+    height: 1600px;
+    display: block;
+
+    @include breakpoint(extra_small_devices) {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+// #leaderboard_data {
+//     width: auto;
+//     height: 1600px;
+//     display: block;
+
+//     @include breakpoint(extra_small_devices) {
+//         width: 1600px;
+//         white-space: nowrap;
+//     }
+// }
+
 .contributors,
 .changelog,
-.statistics {
+.statistics,
+.leaderboard {
     padding-top: 24px;
 }
 .card {
