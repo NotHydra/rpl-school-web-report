@@ -1,231 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <%- include('./partials/head.ejs') %>
-    </head>
-    
-    <body>
-        <%- include('./partials/nav.ejs') %>
+<head>
+    <%- include('partials/head', { title: "Home" }); %>
 
-        <div class="home_content_container">
-            <div class="home_content_option_container">
-                <div class="home_content_file_option_box_container">
-                    <label for="home_content_file_option_box" class="home_content_option_text">
-                        File :
-                    </label>
+</head>
+<body>
 
-                    <div class="home_content_option_box">
-                        <select onchange="file_option_box()" name="home_content_file_option_box" id="home_content_file_option_box">
-                            <% for(let i = 0; i < list_of_assignment_range_data.weekly.length; i++) {%>
-                                <% if (i == list_of_assignment_range_data.weekly.length-1) {%>
-                                    <option value="W<%= i+1 %>" selected="selected">List Tugas Minggu Ke-<%= i+1 %></option>
-                                <% } else {%>
-                                    <option value="W<%= i+1 %>">List Tugas Minggu Ke-<%= i+1 %></option>
-                                <% } %>
-                            <% } %>
-    
-                            <% for(let i = 0; i < list_of_assignment_range_data.monthly.length; i++) {%>
-                                <option value="M<%= i+1 %>">List Tugas Bulan Ke-<%= i+1 %></option>
-                            <% } %>
-    
-                            <option value="C1">List Tugas Gabunggan</option>
-                        </select>
-    
-                    </div>
-                </div>
-                
-                <div class="home_content_file_option_box_container">
-                    <label for="home_content_student_report_option_box" class="home_content_option_text">
-                        Student :
-                    </label>
-    
-                    <div class="home_content_option_box">
-                        <select onchange="student_report_option_box()" name="home_content_student_report_option_box" id="home_content_student_report_option_box">
-                            <option class="student_report_option" value="all" selected>All</option>
-                            <% for(let i = 0; i < list_of_student_data.length; i++) {%>
-                                <% let student_name = list_of_student_data[i].student_name.split(" ")  %>
-                                <option class="student_report_option" value="<%= i %>"><%= student_name[0] %> <%= student_name[1] %></option>
-                            <% } %>
-                        
-                        </select>
-    
-                    </div>
+    <div class="container">
 
-                </div>
+        <%- include('./partials/navbar.ejs') %>
 
-            </div>
 
-            <div class="home_content_table_container">
-                <table>
-                    <thead>
-                        <tr>
-                            <!-- Number & Name -->
-                            <th rowspan="3">No.</th>
-                            <th rowspan="3">Name</th>
-                            
-                            <!-- Week -->
-                            <% for(let i = 0; i < list_of_assignment_range_data.weekly.length; i++) {%> 
-                                <th class="home_content_table_<%= i+1 %> home_content_table_disable"  colspan="<%= list_of_assignment_range_data.weekly[i] %>">Minggu Ke-<%= i+1 %></th>
-                            <% } %>
-                        </tr>
-        
-                        <tr>
-                            <!-- Task Count -->
-                            <% for(let j = 0; j < list_of_assignment_range_data.weekly.length; j++) {%>
-                                <% for(let i = 0; i < list_of_assignment_range_data.weekly[j]; i++) {%>
-                                    <th class="home_content_table_<%= j+1 %> home_content_table_disable">Tugas <%= i+1 %></th>
-                                <% } %>
-                            <% } %>
-                        </tr>
-        
-                        <tr>
-                            <!-- Task Name -->
-                            <% k = 0 %>
-                            <% for(let j = 0; j < list_of_assignment_range_data.weekly.length; j++) {%>
-                                <% for(let i = 0; i < list_of_assignment_range_data.weekly[j]; i++) {%>
-                                    <th class="home_content_table_<%= j+1 %> home_content_table_disable"><%= list_of_assignment_data[k].assignment_lesson_name %><%= list_of_assignment_data[k].assignment_lesson_count %></th>
-                                    <% k += 1%>
-                                <% } %>
-                            <% } %>
-                        </tr>
-        
-                    </thead>
-        
-                    <tbody>
-                        <!-- Content -->
-                            <% for(let i = 0; i < list_of_student_data.length; i++) {%>
-                                <tr class="home_content_student_report">
-                                    <!-- ID & Name -->
-                                        <td><%= list_of_student_data[i].student_id %>.</td>
-                                        <td id="td_text_align_left"><%= list_of_student_data[i].student_name %></td>
-            
-                                    <!-- Report -->
-                                    <% l = 0 %>
-                                    <% for(let j = 0; j < list_of_assignment_range_data.weekly.length; j++) {%>
-                                        <% for(let k = 0; k < list_of_assignment_range_data.weekly[j]; k++) {%>
-                                            <% if (list_of_student_data[i].student_assignment_done[l] == "NON-MUS") {%>
-                                                <td class="home_content_table_<%= j+1 %> home_content_table_disable" style="font-family: 'Roboto';"><%= list_of_student_data[i].student_assignment_done[l] %></td> 
-                                                <% l += 1 %>
-                                            <% } else {%>
-                                                <td class="home_content_table_<%= j+1 %> home_content_table_disable" style="font-family: 'Wingding';"><%= list_of_student_data[i].student_assignment_done[l] %></td> 
-                                                <% l += 1 %>
+        <div class="section">
+            <div class="home">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                              <label class="label">File:</label>
+                            </div>
+                            <div class="field-body">
+                              <div class="field">
+                                <div class="control">
+                                        <select onchange="file_option_box()" name="home_content_file_option_box" id="home_content_file_option_box" class="select is-medium">
+                                            <% for(let i = 0; i < list_of_assignment_range_data.weekly.length; i++) {%>
+                                                <% if (i == list_of_assignment_range_data.weekly.length-1) {%>
+                                                    <option value="W<%= i+1 %>" selected="selected">List Tugas Minggu Ke-<%= i+1 %></option>
+                                                <% } else {%>
+                                                    <option value="W<%= i+1 %>">List Tugas Minggu Ke-<%= i+1 %></option>
+                                                <% } %>
                                             <% } %>
-                                            
-                                        <% } %>
-                                    <% } %>
-                                </tr>
-                            <% } %>
-                    </tbody>
-        
-                </table>
-        
-            </div>
-        
-        </div>
-
-        <script>
-            function disable_report(){
-                for(let i = 0; i < parseInt("<%= list_of_assignment_range_data.weekly.length %>"); i++){
-                    let elements = document.getElementsByClassName(`home_content_table_${i+1}`)
-                    for(let i = 0; i < elements.length; i++){
-                        elements[i].classList.add("home_content_table_disable");
-                    }
-                }
-                
-            }
-
-            function enable_report(type, number){
-                number = parseInt(number)
-
-                if (type == "W") {
-                    let elements = document.getElementsByClassName(`home_content_table_${number}`)
-                    for(let i = 0; i < elements.length; i++){
-                        elements[i].classList.remove("home_content_table_disable");
-                    }
-                }
-
-                if (type == "M") {
-                    let weeks_in_month = "<%= list_of_assignment_range_data.weeks_in_month %>".split(",");
                     
-                    if (number == 2){
-                        for(let j = 6; j < 11; j++){
-                            let elements = document.getElementsByClassName(`home_content_table_${j}`)
-                            for(let i = 0; i < elements.length; i++){
-                                elements[i].classList.remove("home_content_table_disable");
-                            }
-                        }
+                                            <% for(let i = 0; i < list_of_assignment_range_data.monthly.length; i++) {%>
+                                                <option value="M<%= i+1 %>">List Tugas Bulan Ke-<%= i+1 %></option>
+                                            <% } %>
+                    
+                                            <option value="C1">List Tugas Gabunggan</option>
+                                        </select>
+                                  </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                              <label class="label">Student: </label>
+                            </div>
+                            <div class="field-body">
+                              <div class="field">
+                                <div class="control">
+                                    <select onchange="student_report_option_box()" name="home_content_student_report_option_box" id="home_content_student_report_option_box" class="select is-medium">
+                                        <option class="student_report_option" value="all" selected>All</option>
+                                        <% for(let i = 0; i < list_of_student_data.length; i++) {%>
+                                            <% let student_name = list_of_student_data[i].student_name.split(" ")  %>
+                                            <option class="student_report_option" value="<%= i %>"><%= student_name[0] %> <%= student_name[1] %></option>
+                                        <% } %>
+                                    
+                                    </select>
+                                  </div>
+                              </div>
+                              
+                            </div>
+                          </div>
+                    </div>
+                </div>
 
-                    } else {
-                        for(let j = weeks_in_month[number-1]; j < weeks_in_month[number]; j++){
-                            let elements = document.getElementsByClassName(`home_content_table_${j}`)
-                            for(let i = 0; i < elements.length; i++){
-                                elements[i].classList.remove("home_content_table_disable");
-                            }
+                <div class="card">
+                    <div class="card-content">
+                        <div class="table-container">
+                            <table class="table is-bordered is-narrow is-fullwidth">
+                                <thead>
+                                    <tr>
+                                        <!-- Number & Name -->
+                                        <th rowspan="3">No.</th>
+                                        <th rowspan="3">Name</th>
+                                        
+                                        <!-- Week -->
+                                        <% for(let i = 0; i < list_of_assignment_range_data.weekly.length; i++) {%> 
+                                            <th class="home_content_table_<%= i+1 %> home_content_table_disable"  colspan="<%= list_of_assignment_range_data.weekly[i] %>">Minggu Ke-<%= i+1 %></th>
+                                        <% } %>
+                                    </tr>
+    
+                                    <tr>
+                                        <!-- Task Count -->
+                                        <% for(let j = 0; j < list_of_assignment_range_data.weekly.length; j++) {%>
+                                            <% for(let i = 0; i < list_of_assignment_range_data.weekly[j]; i++) {%>
+                                                <th class="home_content_table_<%= j+1 %> home_content_table_disable">Tugas <%= i+1 %></th>
+                                            <% } %>
+                                        <% } %>
+                                    </tr>
+    
+                                    <tr>
+                                        <!-- Task Name -->
+                                        <% k = 0 %>
+                                        <% for(let j = 0; j < list_of_assignment_range_data.weekly.length; j++) {%>
+                                            <% for(let i = 0; i < list_of_assignment_range_data.weekly[j]; i++) {%>
+                                                <th class="home_content_table_<%= j+1 %> home_content_table_disable"><%= list_of_assignment_data[k].assignment_lesson_name %><%= list_of_assignment_data[k].assignment_lesson_count %></th>
+                                                <% k += 1%>
+                                            <% } %>
+                                        <% } %>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                     <!-- Content -->
+                                <% for(let i = 0; i < list_of_student_data.length; i++) {%>
+                                    <tr class="home_content_student_report">
+                                        <!-- ID & Name -->
+                                            <td><%= list_of_student_data[i].student_id %>.</td>
+                                            <td id="td_text_align_left"><%= list_of_student_data[i].student_name %></td>
+                
+                                        <!-- Report -->
+                                        <% l = 0 %>
+                                        <% for(let j = 0; j < list_of_assignment_range_data.weekly.length; j++) {%>
+                                            <% for(let k = 0; k < list_of_assignment_range_data.weekly[j]; k++) {%>
+                                                <% if (list_of_student_data[i].student_assignment_done[l] == "NON-MUS") {%>
+                                                    <td class="home_content_table_<%= j+1 %> home_content_table_disable" style="font-family: 'DM Sans';"><%= list_of_student_data[i].student_assignment_done[l] %></td> 
+                                                    <% l += 1 %>
+                                                <% } else {%>
+                                                    <td class="home_content_table_<%= j+1 %> home_content_table_disable" style="font-family: 'DM Sans';"><%= list_of_student_data[i].student_assignment_done[l] %></td> 
+                                                    <% l += 1 %>
+                                                <% } %>
+                                                
+                                            <% } %>
+                                        <% } %>
+                                    </tr>
+                                <% } %>
+                                </tbody>
+    
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function disable_report(){
+            for(let i = 0; i < parseInt("<%= list_of_assignment_range_data.weekly.length %>"); i++){
+                let elements = document.getElementsByClassName(`home_content_table_${i+1}`)
+                for(let i = 0; i < elements.length; i++){
+                    elements[i].classList.add("home_content_table_disable");
+                }
+            }
+            
+        }
+        function enable_report(type, number){
+            number = parseInt(number)
+            if (type == "W") {
+                let elements = document.getElementsByClassName(`home_content_table_${number}`)
+                for(let i = 0; i < elements.length; i++){
+                    elements[i].classList.remove("home_content_table_disable");
+                }
+            }
+            if (type == "M") {
+                let weeks_in_month = "<%= list_of_assignment_range_data.weeks_in_month %>".split(",");
+                
+                if (number == 2){
+                    for(let j = 6; j < 11; j++){
+                        let elements = document.getElementsByClassName(`home_content_table_${j}`)
+                        for(let i = 0; i < elements.length; i++){
+                            elements[i].classList.remove("home_content_table_disable");
                         }
                     }
-                }
-                
-                if (type == "C") {
-                    for(let j = 0; j < parseInt("<%= list_of_assignment_range_data.weekly.length %>"); j++){
-                        let elements = document.getElementsByClassName(`home_content_table_${j+1}`)
+                } else {
+                    for(let j = weeks_in_month[number-1]; j < weeks_in_month[number]; j++){
+                        let elements = document.getElementsByClassName(`home_content_table_${j}`)
                         for(let i = 0; i < elements.length; i++){
                             elements[i].classList.remove("home_content_table_disable");
                         }
                     }
                 }
             }
-
-            function file_option_box(){
-                let file_option_box_value = document.getElementById("home_content_file_option_box").value;
-                let file_option_box_value_type = file_option_box_value.replace(/[0-9]/g, '')
-                let file_option_box_value_number = file_option_box_value.replace(/[A-Z]/g, '')
-
-                disable_report()
-                enable_report(file_option_box_value_type, file_option_box_value_number)
-            }
-
-            function disable_student_report(){
-                let elements = document.getElementsByClassName(`home_content_student_report`)
-                for(let i = 0; i < parseInt("<%= list_of_student_data.length %>"); i++){
-                    elements[i].classList.add("home_content_student_report_disable");
-                }
-            }
-
-            function student_report_option_box(){
-                disable_student_report()
-                
-                let elements = document.getElementsByClassName(`home_content_student_report`)
-                let student_report_option_box_value = document.getElementById("home_content_student_report_option_box").value;
-
-                if(student_report_option_box_value == "all"){
-                    for(let i = 0; i < parseInt("<%= list_of_student_data.length %>"); i++){
-                        elements[i].classList.remove("home_content_student_report_disable");
+            
+            if (type == "C") {
+                for(let j = 0; j < parseInt("<%= list_of_assignment_range_data.weekly.length %>"); j++){
+                    let elements = document.getElementsByClassName(`home_content_table_${j+1}`)
+                    for(let i = 0; i < elements.length; i++){
+                        elements[i].classList.remove("home_content_table_disable");
                     }
                 }
-
-                else {
-                    elements[student_report_option_box_value].classList.remove("home_content_student_report_disable");
-                }
-
-                localStorage.setItem('student_report', student_report_option_box_value )
             }
-
-            function set_student_report(){
-                if (localStorage.getItem('student_report') == 'all' || localStorage.getItem('student_report') == null){
-                    document.getElementsByClassName('student_report_option')[0].selected = 'selected'
-                }
-
-                else {
-                    document.getElementsByClassName('student_report_option')[parseInt(localStorage.getItem('student_report')) + 1].selected = 'selected'
+        }
+        function file_option_box(){
+            let file_option_box_value = document.getElementById("home_content_file_option_box").value;
+            let file_option_box_value_type = file_option_box_value.replace(/[0-9]/g, '')
+            let file_option_box_value_number = file_option_box_value.replace(/[A-Z]/g, '')
+            disable_report()
+            enable_report(file_option_box_value_type, file_option_box_value_number)
+        }
+        function disable_student_report(){
+            let elements = document.getElementsByClassName(`home_content_student_report`)
+            for(let i = 0; i < parseInt("<%= list_of_student_data.length %>"); i++){
+                elements[i].classList.add("home_content_student_report_disable");
+            }
+        }
+        function student_report_option_box(){
+            disable_student_report()
+            
+            let elements = document.getElementsByClassName(`home_content_student_report`)
+            let student_report_option_box_value = document.getElementById("home_content_student_report_option_box").value;
+            if(student_report_option_box_value == "all"){
+                for(let i = 0; i < parseInt("<%= list_of_student_data.length %>"); i++){
+                    elements[i].classList.remove("home_content_student_report_disable");
                 }
             }
+            else {
+                elements[student_report_option_box_value].classList.remove("home_content_student_report_disable");
+            }
+            localStorage.setItem('student_report', student_report_option_box_value )
+        }
+        function set_student_report(){
+            if (localStorage.getItem('student_report') == 'all' || localStorage.getItem('student_report') == null){
+                document.getElementsByClassName('student_report_option')[0].selected = 'selected'
+            }
+            else {
+                document.getElementsByClassName('student_report_option')[parseInt(localStorage.getItem('student_report')) + 1].selected = 'selected'
+            }
+        }
+        enable_report("W", "<%= list_of_assignment_range_data.weekly.length%>")
+        set_student_report()
+        student_report_option_box()
+    </script>
 
-            enable_report("W", "<%= list_of_assignment_range_data.weekly.length%>")
-            set_student_report()
-            student_report_option_box()
-
-        </script>
-        
-    </body>
-
+</body>
 </html>

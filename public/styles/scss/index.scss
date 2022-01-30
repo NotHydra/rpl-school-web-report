@@ -182,6 +182,52 @@ a {
     }
 }
 
+.home {
+    .field {
+        .field-label {
+            .label {
+                text-align: left !important;
+            }
+        }
+    }
+
+    // .table {
+    //     display: block;
+    //     overflow-x: auto;
+    //     white-space: nowrap;
+    // }
+}
+
+.select {
+    background: #242424;
+    color: #cfd4d2;
+    font-family: "DM Sans", sans-serif;
+    // padding: 18px;
+}
+
+.table {
+    color: #cfd4d2;
+    background: #242424;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+    thead {
+        th {
+            text-align: center;
+            color: #cfd4d2;
+        }
+    }
+}
+
+.home_content_table_disable{
+    display: none;
+}
+
+.home_content_student_report_disable{
+    display: none;
+}
+
 .input {
     &:focus, &:is-focused, &:active, &:is-active {
         box-shadow: none;

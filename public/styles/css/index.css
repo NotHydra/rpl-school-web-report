@@ -105,6 +105,35 @@ a:hover, a:active {
   color: #99cfe0;
 }
 
+.home .field .field-label .label {
+  text-align: left !important;
+}
+
+.select {
+  background: #242424;
+  color: #cfd4d2;
+  font-family: "DM Sans", sans-serif;
+}
+
+.table {
+  color: #cfd4d2;
+  background: #242424;
+  margin-left: auto;
+  margin-right: auto;
+}
+.table thead th {
+  text-align: center;
+  color: #cfd4d2;
+}
+
+.home_content_table_disable {
+  display: none;
+}
+
+.home_content_student_report_disable {
+  display: none;
+}
+
 .input:focus, .input:is-focused, .input:active, .input:is-active {
   box-shadow: none;
   border-color: #242424;
