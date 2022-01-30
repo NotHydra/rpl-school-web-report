@@ -48,7 +48,8 @@ html, body {
 .contributors,
 .changelog,
 .statistics,
-.leaderboard {
+.leaderboard,
+.classcode {
   padding-top: 24px;
 }
 
@@ -81,6 +82,41 @@ html, body {
     letter-spacing: normal;
     font-weight: 600;
   }
+}
+
+input[type=text], textarea {
+  background-color: #242424 !important;
+}
+
+.label {
+  color: #cfd4d2 !important;
+  margin-right: 8px;
+}
+
+.schoology-code, .google-code {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+a {
+  color: #ADD8E6;
+}
+a:hover, a:active {
+  color: #99cfe0;
+}
+
+.input:focus, .input:is-focused, .input:active, .input:is-active {
+  box-shadow: none;
+  border-color: #242424;
+  color: #cfd4d2;
+}
+
+::-webkit-input-placeholder {
+  color: #cfd4d2 !important;
+}
+
+::-webkit-input-value {
+  color: #cfd4d2 !important;
 }
 
 .box {
