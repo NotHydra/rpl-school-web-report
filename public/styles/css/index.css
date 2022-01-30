@@ -49,7 +49,9 @@ html, body {
 .changelog,
 .statistics,
 .leaderboard,
-.classcode {
+.classcode,
+.login,
+.operator {
   padding-top: 24px;
 }
 
@@ -108,6 +110,10 @@ a:hover, a:active {
 .home .field .field-label .label {
   text-align: left !important;
 }
+.home .table {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .select {
   background: #242424;
@@ -115,11 +121,38 @@ a:hover, a:active {
   font-family: "DM Sans", sans-serif;
 }
 
+.login .custom-input, .operator .custom-input {
+  width: 260px;
+  background: #393b3b;
+  border-radius: 8px;
+  color: #cfd4d2;
+  font-family: "DM Sans", sans-serif;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  border: 0;
+  outline: 0;
+  padding: 12px 18px;
+}
+.login input:-webkit-autofill,
+.login input:-webkit-autofill:hover,
+.login input:-webkit-autofill:focus, .operator input:-webkit-autofill,
+.operator input:-webkit-autofill:hover,
+.operator input:-webkit-autofill:focus {
+  background: #393b3b !important;
+}
+.login .field .field-label .label, .operator .field .field-label .label {
+  text-align: left !important;
+}
+
+.operator .table {
+  text-align: left !important;
+}
+.operator .assignment .select {
+  width: 100%;
+}
+
 .table {
   color: #cfd4d2;
   background: #242424;
-  margin-left: auto;
-  margin-right: auto;
 }
 .table thead th {
   text-align: center;
@@ -134,18 +167,19 @@ a:hover, a:active {
   display: none;
 }
 
-.input:focus, .input:is-focused, .input:active, .input:is-active {
-  box-shadow: none;
-  border-color: #242424;
-  color: #cfd4d2;
-}
-
 ::-webkit-input-placeholder {
   color: #cfd4d2 !important;
 }
 
 ::-webkit-input-value {
   color: #cfd4d2 !important;
+}
+
+select option {
+  background: #242424;
+}
+select option:hover {
+  background: #171717 !important;
 }
 
 .box {
@@ -270,6 +304,33 @@ a:hover, a:active {
 
 .changelog ul li {
   color: #8e9c97;
+}
+
+.call-to-action {
+  display: inline-block;
+  background: inherit;
+  font: inherit;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+  margin: 0.2rem;
+  font-family: "DM Sans", sans-serif;
+}
+.call-to-action-primary {
+  position: relative;
+  transition: 0.3s;
+  background: #393b3b;
+  box-shadow: 0 0 0.625rem 0.125rem rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 14px 30px;
+  color: #cfd4d2;
+  font-weight: 450;
+}
+.call-to-action-primary:hover {
+  background: #464848;
+  color: #cfd4d2;
 }
 
 /*# sourceMappingURL=index.css.map */

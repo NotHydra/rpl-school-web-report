@@ -135,7 +135,9 @@ html, body {
 .changelog,
 .statistics,
 .leaderboard,
-.classcode {
+.classcode,
+.login,
+.operator {
     padding-top: 24px;
 }
 .card {
@@ -191,6 +193,11 @@ a {
         }
     }
 
+    .table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     // .table {
     //     display: block;
     //     overflow-x: auto;
@@ -205,11 +212,51 @@ a {
     // padding: 18px;
 }
 
+.login, .operator {
+    .custom-input {
+        width: 260px;
+        background: #393b3b;
+        border-radius: 8px;
+        color: #cfd4d2;
+        font-family: "DM Sans", sans-serif;
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
+        border: 0;
+        outline: 0;
+        padding: 12px 18px;
+        
+        
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus {
+        background: #393b3b !important;
+    }
+    .field {
+        .field-label {
+            .label {
+                text-align: left !important;
+            }
+        }
+    }
+}
+
+.operator {
+    .table {
+        text-align: left !important;
+    }
+
+    .assignment {
+        .select {
+            width: 100%;
+        }
+    }
+}
+
 .table {
     color: #cfd4d2;
     background: #242424;
-    margin-left: auto;
-    margin-right: auto;
+    
 
     
     thead {
@@ -228,19 +275,28 @@ a {
     display: none;
 }
 
-.input {
-    &:focus, &:is-focused, &:active, &:is-active {
-        box-shadow: none;
-        border-color: #242424;
-        color: #cfd4d2;
-    }
-}
+// .input {
+//     &:focus, &:is-focused, &:active, &:is-active {
+//         box-shadow: none;
+//         border-color: #242424;
+//         color: #cfd4d2;
+//     }
+// }
 ::-webkit-input-placeholder{
     color: #cfd4d2 !important;
 }
 
 ::-webkit-input-value {
     color: #cfd4d2 !important;
+}
+
+select {
+    option {
+        background: #242424;
+    }
+    option:hover {
+        background: darken($color: #242424, $amount: 5) !important;
+    }
 }
 
 .box {
@@ -386,6 +442,40 @@ a {
     ul {
         li {
             color: #8e9c97;
+        }
+    }
+}
+
+.call-to-action {
+    display: inline-block;
+    background: inherit;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+
+    margin: 0.2rem;
+
+    font-family: "DM Sans", sans-serif;
+
+    &-primary {
+        position: relative;
+        transition: 0.3s;
+        background: #393b3b;
+        box-shadow: 0 0 0.625rem 0.125rem rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        padding: 14px 30px;
+
+        color: #cfd4d2;
+        
+        font-weight: 450;
+
+        &:hover {
+            background: lighten($color: #393b3b, $amount: 5);
+            color: #cfd4d2;
+
         }
     }
 }
