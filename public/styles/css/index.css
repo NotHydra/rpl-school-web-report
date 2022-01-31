@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Karla:wght@300;400;500&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css");
+html, body {
+  font-family: "DM Sans", sans-serif;
+  background: #161616;
+}
+
+.container {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.navbar {
+  background: #161616;
+}
+.navbar .navbar-title {
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: 700;
+  color: #e8f1ff;
+}
+
+.donutchart {
+  overflow: hidden;
+  position: relative;
+}
+@media only screen and (max-width: 600px) {
+  .donutchart {
+    display: inline-block;
+  }
+}
+
+#leaderboard_data {
+  width: auto;
+  height: 1600px;
+  display: block;
+}
+@media only screen and (max-width: 600px) {
+  #leaderboard_data {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+.contributors,
+.changelog,
+.statistics,
+.leaderboard,
+.classcode,
+.login,
+.operator {
+  padding-top: 24px;
+}
+
+.card {
+  background: #242424;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.card .card-content .title {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.1666666667;
+  letter-spacing: normal;
+  font-weight: 600;
+  color: #cfd4d2;
+}
+.card .card-content .subtitle {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: normal;
+  font-weight: 400;
+  color: #8e9c97;
+}
+@media only screen and (max-width: 600px) {
+  .card .card-content .title {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.8333333333;
+    letter-spacing: normal;
+    font-weight: 600;
+  }
+}
+
+input[type=text], textarea {
+  background-color: #242424 !important;
+}
+
+.label {
+  color: #cfd4d2 !important;
+  margin-right: 8px;
+}
+
+.schoology-code, .google-code {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+a {
+  color: #ADD8E6;
+}
+a:hover, a:active {
+  color: #99cfe0;
+}
+
+.home .field .field-label .label {
+  text-align: left !important;
+}
+.home .table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.select {
+  background: #242424;
+  color: #cfd4d2;
+  font-family: "DM Sans", sans-serif;
+}
+
+.login .custom-input, .operator .custom-input {
+  width: 260px;
+  background: #393b3b;
+  border-radius: 8px;
+  color: #cfd4d2;
+  font-family: "DM Sans", sans-serif;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  border: 0;
+  outline: 0;
+  padding: 12px 18px;
+}
+.login input:-webkit-autofill,
+.login input:-webkit-autofill:hover,
+.login input:-webkit-autofill:focus, .operator input:-webkit-autofill,
+.operator input:-webkit-autofill:hover,
+.operator input:-webkit-autofill:focus {
+  background: #393b3b !important;
+}
+.login .field .field-label .label, .operator .field .field-label .label {
+  text-align: left !important;
+}
+
+.operator .table {
+  text-align: left !important;
+}
+.operator .assignment .select {
+  width: 100%;
+}
+
+.table {
+  color: #cfd4d2;
+  background: #242424;
+}
+.table thead th {
+  text-align: center;
+  color: #cfd4d2;
+}
+
+.home_content_table_disable {
+  display: none;
+}
+
+.home_content_student_report_disable {
+  display: none;
+}
+
+::-webkit-input-placeholder {
+  color: #cfd4d2 !important;
+}
+
+::-webkit-input-value {
+  color: #cfd4d2 !important;
+}
+
+select option {
+  background: #242424;
+}
+select option:hover {
+  background: #171717 !important;
+}
+
+.box {
+  background: #242424;
+}
+.box .title {
+  font-size: 28px;
+  font-size: 1.75rem;
+  line-height: 1;
+  letter-spacing: normal;
+  font-weight: 700;
+  color: #cfd4d2;
+}
+.box .subtitle {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: normal;
+  font-weight: 400;
+  color: #8e9c97;
+}
+
+.seperator {
+  margin-top: 44px;
+  margin-bottom: 44px;
+  height: 2px;
+  background-color: #242424;
+  border: none;
+}
+
+.is-icon-text {
+  margin-left: 8px;
+}
+
+.is-icon {
+  color: #cfd4d2;
+}
+
+.changelog .card .card-header .card-header-title {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: 600;
+  color: #cfd4d2;
+}
+.changelog ul li {
+  padding: 8px;
+}
+
+.release-tag {
+  background: #202020 !important;
+  color: #cfd4d2 !important;
+}
+
+.socials {
+  font-size: 0;
+}
+.socials .is-icon:nth-child(1) {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.socials .is-icon {
+  margin-right: 10px;
+  margin-left: 10px;
+  display: inline-block;
+  transition: transform 0.3s ease-out;
+  color: #8e9c97;
+}
+.socials .is-icon:hover {
+  color: #cfd4d2;
+}
+
+.navigation--overlay {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  display: none;
+  opacity: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  transition: opacity 1s ease-out;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+.navigation--overlay-logo {
+  transform: scale(2.5, 2.5);
+}
+.navigation--overlay-content {
+  width: 100%;
+  margin-top: 1.875rem;
+  padding: 1.125rem;
+}
+.navigation--overlay-content-list-item {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  font-size: 1.375rem;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.navigation--overlay-content-list-item:hover {
+  color: #bfbfbf;
+}
+@media only screen and (max-width: 600px) {
+  .navigation--overlay-content-list-item {
+    border-bottom: 0.06rem solid #8f909425;
+  }
+}
+.navigation--overlay-content-socials {
+  margin-top: 1.375rem;
+}
+.navigation--overlay-content-socials .image {
+  transition: 0.3s;
+}
+.navigation--overlay-content-socials .image:hover, .navigation--overlay-content-socials .image:active {
+  filter: brightness(60%);
+}
+
+.changelog ul li {
+  color: #8e9c97;
+}
+
+.call-to-action {
+  display: inline-block;
+  background: inherit;
+  font: inherit;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  transition: all 200ms ease-in;
+  cursor: pointer;
+  margin: 0.2rem;
+  font-family: "DM Sans", sans-serif;
+}
+.call-to-action-primary {
+  position: relative;
+  transition: 0.3s;
+  background: #393b3b;
+  box-shadow: 0 0 0.625rem 0.125rem rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 14px 30px;
+  color: #cfd4d2;
+  font-weight: 450;
+}
+.call-to-action-primary:hover {
+  background: #464848;
+  color: #cfd4d2;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <%- include('./partials/head.ejs') %>
+<head>
+    <%- include('partials/head', { title: "Leaderboard" }); %>
 
-        <% var splited_student_name = [] %>
+    <% var splited_student_name = [] %>
         <% for(let i = 0; i < list_of_student_data.length; i++) { %>
             <% temp_value = (list_of_student_data[i].student_name).split(" ") %>
             <% splited_student_name.push(temp_value)%>
@@ -15,9 +15,7 @@
             <% for(let j = 0; j < list_of_student_data[i].student_assignment_done.length; j++) {%>
                 <% if(list_of_student_data[i].student_assignment_done[j] == 'ü' || list_of_student_data[i].student_assignment_done[j] == 'NON-MUS') {%>
                     <% k += 1 %>
-
                 <% } %>
-
             <% } %> 
             
             <% let temp_value = [`${splited_student_name[i][0]} ${splited_student_name[i][1]}`, k] %>
@@ -31,14 +29,12 @@
         <script> var student_data_in_script = [['Name', 'Total Assignment Done', { role: "style" } ]] </script>
         <% for(let i = 0; i < sorted_student_data.length; i++) {%>
             <script> student_data_in_script.push([("<%= sorted_student_data[i][0] %>"), parseInt("<%= sorted_student_data[i][1] %>"), "#282828"]) </script>
-
         <% } %>
 
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript">
             google.charts.load("current", {packages:["corechart"]});
             google.charts.setOnLoadCallback(drawStuff);
-
             function drawStuff() {
                 var data = google.visualization.arrayToDataTable(
                     student_data_in_script
@@ -56,10 +52,9 @@
                         },
                     2
                 ]);
-
                 var options = {
                     backgroundColor: "black",
-                    fontName: "Roboto",	
+                    fontName: "DM Sans",
                     legend: { position: 'none' },
                     bars: 'horizontal',
                     hAxis: {
@@ -75,23 +70,38 @@
                 chart.draw(view, options);
             };
         </script>
+</head>
+<body>
 
-    </head>
-    
-    <body>
-        <%- include('./partials/nav.ejs') %>
+    <div class="container">
+        <%- include('./partials/navbar.ejs') %>
 
-        <div class="leaderboard_content_container">
-            <div class="leaderboard_content_item_container">
-                <div class="leaderboard_content_item">        
-                    <div id="leaderboard_data" style="width: 1500px; height: 2000px;"></div>
-        
+        <div class="section">
+            <div class="box">
+                <h1 class="title">
+                    Leaderboard
+                </h1>
+                <p class="subtitle">
+                    Karena terbatasan pada browser berbasis mobile/hp silakan liat halaman ini dalam mode desktop.
+                </p>
+            </div>
+
+            <div class="leaderboard">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="leaderboard-wrapper">
+                            <div id="leaderboard_data"></div>
+                        </div>
+
+                    </div>
                 </div>
-                
+
             </div>
 
         </div>
-        
-    </body>
 
+    </div>
+
+
+</body>
 </html>

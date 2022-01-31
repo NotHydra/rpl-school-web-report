@@ -32,13 +32,14 @@ app.use(passport.session())
 app.use(methodOverride('_method'))
 
 const dbURI = 'mongodb+srv://Hydra:UjidwtkA7TTJ9A1g@rpl-class-web-database.2rqk3.mongodb.net/RPL-Class-Web?retryWrites=true&w=majority'
-mongoose.connect(process.env.MONGODB_URI || dbURI)
+mongoose.connect(process.env.MONGODB_URI || dbURI)  
     .then(() => {
         const port = process.env.PORT || 5000
         app.listen(port, () => {console.log(`Listening in http://localhost:${port}`)})
     })
 
     .catch((err) => console.log(err))
+
 
 
 var users
@@ -312,6 +313,10 @@ function update_history(type, data, operator_history_data){
 }
 
 function request_counter(page){
+    if (process.env.NODE_ENV === 'development') {
+        return
+    }
+    
     Request_Counter.find()
         .then((result) => {
             let request_counter_data = result[0]
@@ -332,18 +337,30 @@ function request_counter(page){
             }
 
             else if (page == "statistics") {
-                request_counter_data.statistics += 1
-                Request_Counter.findOneAndUpdate({id: 1}, {statistics: request_counter_data.statistics}).then(() => console.log(`Statistics : ${request_counter_data.statistics}`))
+                try {
+                    request_counter_data.statistics += 1
+                    Request_Counter.findOneAndUpdate({id: 1}, {statistics: request_counter_data.statistics}).then(() => console.log(`Statistics : ${request_counter_data.statistics}`))
+                } catch(error) {
+                    console.log(error)
+                }
             }
 
             else if (page == "changelog") {
-                request_counter_data.changelog += 1
-                Request_Counter.findOneAndUpdate({id: 1}, {changelog: request_counter_data.changelog}).then(() => console.log(`Changelog : ${request_counter_data.changelog}`))
+                try {
+                    request_counter_data.changelog += 1
+                    Request_Counter.findOneAndUpdate({id: 1}, {changelog: request_counter_data.changelog}).then(() => console.log(`Changelog : ${request_counter_data.changelog}`))
+                } catch(error) {
+                    console.log(error)
+                }
             }
 
             else if (page == "contributor") {
-                request_counter_data.contributor += 1
-                Request_Counter.findOneAndUpdate({id: 1}, {contributor: request_counter_data.contributor}).then(() => console.log(`Contributor : ${request_counter_data.contributor}`))
+                try {
+                    request_counter_data.contributor += 1
+                    Request_Counter.findOneAndUpdate({id: 1}, {contributor: request_counter_data.contributor}).then(() => console.log(`Contributor : ${request_counter_data.contributor}`))
+                } catch(error) {
+                    console.log(error)
+                }
             }
 
             else if (page == "operator") {
@@ -429,6 +446,7 @@ function run_program(list_of_student_data, list_of_assignment_data, list_of_assi
     })
     
     app.get('/statistics', (req, res) => {
+
         res.render('statistics', { title: 'Statistics', list_of_student_data, list_of_assignment_range_data })
 
         request_counter("statistics")
