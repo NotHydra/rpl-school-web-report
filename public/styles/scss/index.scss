@@ -112,6 +112,7 @@ html, body {
     width: auto;
     height: 1600px;
     display: block;
+    white-space: nowrap;
 
     @include breakpoint(extra_small_devices) {
         display: block;
@@ -203,6 +204,11 @@ a {
     //     overflow-x: auto;
     //     white-space: nowrap;
     // }
+}
+
+.table-container {
+    white-space: nowrap;
+    overflow-x: auto;
 }
 
 .select {
