@@ -209,6 +209,18 @@ a {
 .table-container {
     white-space: nowrap;
     overflow-x: auto;
+
+    .table {
+
+        thead {
+            tr {
+                th {
+                    text-align: center;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
 }
 
 .select {

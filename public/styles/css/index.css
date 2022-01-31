@@ -120,6 +120,10 @@ a:hover, a:active {
   white-space: nowrap;
   overflow-x: auto;
 }
+.table-container .table thead tr th {
+  text-align: center;
+  vertical-align: middle;
+}
 
 .select {
   background: #242424;
