@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--suppress ALL -->
 <html lang="en">
 <head>
     <%- include('partials/head', { title: "Class Code" }); %>
@@ -32,51 +33,83 @@
                     <div class="card-content">
                         <h1 class="title">Google Classroom</h1>
 
-                        <div class="mat google-code">
+                        <div class="google-code">
                             <div class="field has-addons">
-                                <label class="label">MAT</label>
                                 <div class="control">
-                                    <input id="basda" class="input is-static" type="text" placeholder="<%= mat_code %>" readonly>
-                                </div>
-                                <div class="control">
-                                    <a class="button btn" data-clipboard-text="<%= mat_code %>">Copy</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bing google-code">
-                            <div class="field has-addons">
-                                <label class="label">BING</label>
-                                <div class="control">
-                                    <input id="basda" class="input is-static" type="text" placeholder="<%= bing_google_code %>" readonly>
-                                </div>
-                                <div class="control">
-                                    <a class="button btn" data-clipboard-text="<%= bing_google_code %>">Copy</a>
+                                    <label for="" class="label">
+                                        MAT
+                                    </label>
+                                    <input type="text" class="custom-input" placeholder="<%= mat_code %>" readonly>
+                                    <button class="copy-button call-to-action call-to-action-primary" data-clipboard-text="<%- mat_code %>">
+                                        <span class="is-icon">
+                                            <i class="fas fa-clipboard fa-lg"></i>
+                                        </span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                         <div class="google-code">
-                            <label class="label">PKK</label>
-                            <p class="subtitle">
-                                <a href="https://classroom.google.com/c/Mzg0MDA5ODMzODQz?cjc=cntwtvz">Link disini</a>
-                            </p>
+                            <div class="field has-addons">
+                                <div class="control">
+                                    <label for="" class="label">
+                                        BING
+                                    </label>
+                                    <input type="text" class="custom-input" placeholder="<%= bing_google_code %>" readonly>
+                                    <button class="copy-button call-to-action call-to-action-primary" data-clipboard-text="<%- bing_google_code %>">
+                                        <span class="is-icon">
+                                            <i class="fas fa-clipboard fa-lg"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                         <div class="google-code">
-                            <label class="label">PKN</label>
-                            <p class="subtitle">
-                                <a href="https://classroom.google.com/c/Mzg2ODc0MDk5ODU2?cjc=253cfwt">Link disini</a>
-                            </p>
+                            <div class="field has-addons">
+                                <div class="control">
+                                    <label for="" class="label">
+                                        PKK
+                                    </label>
+                                    <a href="https://classroom.google.com/c/Mzg0MDA5ODMzODQz?cjc=cntwtvz">
+                                        Link disini
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div class="google-code">
-                            <label class="label">PWPB</label>
-                            <p class="subtitle">
-                                <a href="https://classroom.google.com/c/MzcyOTI5ODY2ODg3/a/Mzc0OTg1MTQyMjY4/details">Link disini</a>
-                            </p>
+                            <div class="field has-addons">
+                                <div class="control">
+                                    <label for="" class="label">
+                                        PKN
+                                    </label>
+                                    <a href="https://classroom.google.com/c/Mzg2ODc0MDk5ODU2?cjc=253cfwt">
+                                        Link disini
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div class="google-code">
-                            <label class="label">BINDO</label>
-                            <p class="subtitle">
-                                <a href="https://classroom.google.com/c/MTE4MjQ0NDI1MDg5?cjc=aie3qha">Link disini</a>
-                            </p>
+                            <div class="field has-addons">
+                                <div class="control">
+                                    <label for="" class="label">
+                                        PWPB
+                                    </label>
+                                    <a href="https://classroom.google.com/c/MzcyOTI5ODY2ODg3/a/Mzc0OTg1MTQyMjY4/details">
+                                        Link disini
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="google-code">
+                            <div class="field has-addons">
+                                <div class="control">
+                                    <label for="" class="label">
+                                        BINDO
+                                    </label>
+                                    <a href="https://classroom.google.com/c/MTE4MjQ0NDI1MDg5?cjc=aie3qha">
+                                        Link disini
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -85,72 +118,90 @@
                         <h1 class="title">
                             Schoology
                         </h1>
-                        <div class="basda schoology-code">
-                            <div class="field has-addons">
-                                <label class="label">MAT</label>
-                                <div class="control">
-                                    <input id="basda" class="input is-static" type="text" placeholder="<%= basda_code %>" readonly>
-                                </div>
-                                <div class="control">
-                                    <a class="button btn" data-clipboard-text="<%= basda_code %>">Copy</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ppl schoology-code">
-                            <div class="field has-addons">
-                                <label class="label">PPL</label>
-                                <div class="control">
-                                    <input id="basda" class="input is-static" type="text" placeholder="<%= ppl_code %>" readonly>
-                                </div>
-                                <div class="control">
-                                    <a class="button btn" data-clipboard-text="<%= ppl_code %>">Copy</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pbo schoology-code">
-                            <div class="field has-addons">
-                                <label class="label">PBO</label>
-                                <div class="control">
-                                    <input id="basda" class="input is-static" type="text" placeholder="<%= pbo_code %>" readonly>
-                                </div>
-                                <div class="control">
-                                    <a class="button btn" data-clipboard-text="<%= pbo_code %>">Copy</a>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="bing schoology-code">
+                        <div class="schoology-code">
                             <div class="field has-addons">
-                                <label class="label">BING</label>
                                 <div class="control">
-                                    <input id="basda" class="input is-static" type="text" placeholder="<%= bing_code %>" readonly>
-                                </div>
-                                <div class="control">
-                                    <a class="button btn" data-clipboard-text="<%= bing_code %>">Copy</a>
+                                    <label for="" class="label">
+                                        BASDA
+                                    </label>
+                                    <input type="text" class="custom-input" placeholder="<%= basda_code %>" readonly>
+                                    <button class="copy-button call-to-action call-to-action-primary" data-clipboard-text="<%- basda_code %>">
+                                        <span class="is-icon">
+                                            <i class="fas fa-clipboard fa-lg"></i>
+                                        </span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="pai schoology-code">
+                        <div class="schoology-code">
                             <div class="field has-addons">
-                                <label class="label">PAI</label>
                                 <div class="control">
-                                    <input id="basda" class="input is-static" type="text" placeholder="<%= pai_code %>" readonly>
+                                    <label for="" class="label">
+                                        PPL
+                                    </label>
+                                    <input type="text" class="custom-input" placeholder="<%= ppl_code %>" readonly>
+                                    <button class="copy-button call-to-action call-to-action-primary" data-clipboard-text="<%- ppl_code %>">
+                                        <span class="is-icon">
+                                            <i class="fas fa-clipboard fa-lg"></i>
+                                        </span>
+                                    </button>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="schoology-code">
+                            <div class="field has-addons">
                                 <div class="control">
-                                    <a class="button btn" data-clipboard-text="<%= pai_code %>">Copy</a>
+                                    <label for="" class="label">
+                                        PBO
+                                    </label>
+                                    <input type="text" class="custom-input" placeholder="<%= pbo_code %>" readonly>
+                                    <button class="copy-button call-to-action call-to-action-primary" data-clipboard-text="<%- pbo_code %>">
+                                        <span class="is-icon">
+                                            <i class="fas fa-clipboard fa-lg"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schoology-code">
+                            <div class="field has-addons">
+                                <div class="control">
+                                    <label for="" class="label">
+                                        BING
+                                    </label>
+                                    <input type="text" class="custom-input" placeholder="<%= bing_code %>" readonly>
+                                    <button class="copy-button call-to-action call-to-action-primary" data-clipboard-text="<%- bing_code %>">
+                                        <span class="is-icon">
+                                            <i class="fas fa-clipboard fa-lg"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schoology-code">
+                            <div class="field has-addons">
+                                <div class="control">
+                                    <label for="" class="label">
+                                        PAI
+                                    </label>
+                                    <input type="text" class="custom-input" placeholder="<%= pai_code %>" readonly>
+                                    <button class="copy-button call-to-action call-to-action-primary" data-clipboard-text="<%- pai_code %>">
+                                        <span class="is-icon">
+                                            <i class="fas fa-clipboard fa-lg"></i>
+                                        </span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 
     <script>
-        new ClipboardJS('.btn');
+        new ClipboardJS(".copy-button");
     </script>
 
 </body>

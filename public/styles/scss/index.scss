@@ -230,7 +230,7 @@ a {
     // padding: 18px;
 }
 
-.login, .operator {
+.login, .operator, .classcode {
     .custom-input {
         width: 260px;
         background: #393b3b;
@@ -255,6 +255,14 @@ a {
             .label {
                 text-align: left !important;
             }
+        }
+    }
+
+    .fa-clipboard {
+        color: #8e9c97;
+
+        &:hover {
+            color: #99cfe0;
         }
     }
 }

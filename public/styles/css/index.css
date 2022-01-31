@@ -131,7 +131,7 @@ a:hover, a:active {
   font-family: "DM Sans", sans-serif;
 }
 
-.login .custom-input, .operator .custom-input {
+.login .custom-input, .operator .custom-input, .classcode .custom-input {
   width: 260px;
   background: #393b3b;
   border-radius: 8px;
@@ -146,11 +146,19 @@ a:hover, a:active {
 .login input:-webkit-autofill:hover,
 .login input:-webkit-autofill:focus, .operator input:-webkit-autofill,
 .operator input:-webkit-autofill:hover,
-.operator input:-webkit-autofill:focus {
+.operator input:-webkit-autofill:focus, .classcode input:-webkit-autofill,
+.classcode input:-webkit-autofill:hover,
+.classcode input:-webkit-autofill:focus {
   background: #393b3b !important;
 }
-.login .field .field-label .label, .operator .field .field-label .label {
+.login .field .field-label .label, .operator .field .field-label .label, .classcode .field .field-label .label {
   text-align: left !important;
+}
+.login .fa-clipboard, .operator .fa-clipboard, .classcode .fa-clipboard {
+  color: #8e9c97;
+}
+.login .fa-clipboard:hover, .operator .fa-clipboard:hover, .classcode .fa-clipboard:hover {
+  color: #99cfe0;
 }
 
 .operator .table {
