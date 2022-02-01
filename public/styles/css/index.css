@@ -36,6 +36,7 @@ html, body {
   width: auto;
   height: 1600px;
   display: block;
+  white-space: nowrap;
 }
 @media only screen and (max-width: 600px) {
   #leaderboard_data {
@@ -115,13 +116,22 @@ a:hover, a:active {
   margin-right: auto;
 }
 
+.table-container {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.table-container .table thead tr th {
+  text-align: center;
+  vertical-align: middle;
+}
+
 .select {
   background: #242424;
   color: #cfd4d2;
   font-family: "DM Sans", sans-serif;
 }
 
-.login .custom-input, .operator .custom-input {
+.login .custom-input, .operator .custom-input, .classcode .custom-input {
   width: 260px;
   background: #393b3b;
   border-radius: 8px;
@@ -136,11 +146,19 @@ a:hover, a:active {
 .login input:-webkit-autofill:hover,
 .login input:-webkit-autofill:focus, .operator input:-webkit-autofill,
 .operator input:-webkit-autofill:hover,
-.operator input:-webkit-autofill:focus {
+.operator input:-webkit-autofill:focus, .classcode input:-webkit-autofill,
+.classcode input:-webkit-autofill:hover,
+.classcode input:-webkit-autofill:focus {
   background: #393b3b !important;
 }
-.login .field .field-label .label, .operator .field .field-label .label {
+.login .field .field-label .label, .operator .field .field-label .label, .classcode .field .field-label .label {
   text-align: left !important;
+}
+.login .fa-clipboard, .operator .fa-clipboard, .classcode .fa-clipboard {
+  color: #8e9c97;
+}
+.login .fa-clipboard:hover, .operator .fa-clipboard:hover, .classcode .fa-clipboard:hover {
+  color: #99cfe0;
 }
 
 .operator .table {
