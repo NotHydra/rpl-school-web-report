@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Karla:wght@300;400;500&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css");
+@font-face {
+  font-family: "Wingding";
+  src: url(./../../Font/wingding.ttf);
+}
 html, body {
   font-family: "DM Sans", sans-serif;
   background: #161616;
@@ -123,6 +127,13 @@ a:hover, a:active {
 .table-container .table thead tr th {
   text-align: center;
   vertical-align: middle;
+}
+.table-container .table tbody tr td {
+  text-align: center;
+  vertical-align: middle;
+}
+.table-container .table tbody tr #td_text_align_left {
+  text-align: left;
 }
 
 .select {

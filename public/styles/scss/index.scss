@@ -3,6 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Karla:wght@300;400;500&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css");
 
+@font-face {
+    font-family: "Wingding";
+    src: url(./../../Font/wingding.ttf);
+}
+
 @mixin breakpoint($point) {
     @if $point == extra_small_devices {
         @media only screen and (max-width: 600px) {
@@ -217,6 +222,19 @@ a {
                 th {
                     text-align: center;
                     vertical-align: middle;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    text-align: center;
+                    vertical-align: middle;
+                }
+
+                #td_text_align_left {
+                    text-align: left;
                 }
             }
         }
