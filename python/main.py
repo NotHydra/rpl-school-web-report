@@ -1,3 +1,4 @@
+import re
 import openpyxl
 import json
 
@@ -192,15 +193,51 @@ class Student():
 
 class Main():
     def main():
-        
         workbook_combined = Excel("./excel/List Tugas gabunggan.xlsx", 1)
         student_2d_array = workbook_combined.get_value_multiple_2d("B4", "AT38")
+        assignment_2d_array = workbook_combined.get_value_multiple_2d("C1", "AT4")
 
-        student_array = Student.get_student(student_2d_array)
+        # student_array = Student.get_student(student_2d_array)
 
-        with open("json/student.json", "w") as outfile:
-            outfile.write(json.dumps(student_array, indent = 4))
+        # with open("json/student.json", "w") as outfile:
+        #     outfile.write(json.dumps(student_array, indent = 4))  
 
+        assignment_array = []
+        for month_index, month in enumerate(assignment_2d_array[0]):
+            if(type(month) != str):
+                month = assignment_2d_array[0][month_index - 1]
+                assignment_2d_array[0][month_index] = month
+
+
+        for week_index, week in enumerate(assignment_2d_array[1]):
+            if(type(week) != str):
+                week = assignment_2d_array[1][week_index - 1]
+                assignment_2d_array[1][week_index] = week
+
+
+        # for assignment_index, assignment in enumerate(assignment_2d_array[3]):
+        #     splitted_assignment = re.split('(\d+)', assignment)
+        #     subject = splitted_assignment[0]
+        #     count = int(splitted_assignment[1])
+
+        #     if(subject == "PAI"):
+        #         is_for_muslim = True
+
+        #     elif(subject != "PAI"):
+        #         is_for_muslim = False 
+
+        #     new_assignment_dict = {
+        #         "id": assignment_index + 1,
+        #         "subject": subject,
+        #         "count": count,
+        #         "week": 1,
+        #         "month": 1,
+        #         "is_for_muslim": is_for_muslim,
+        #         "due_date": None,
+        #         "description": None,
+        #         "picture": None
+        #     }
+            
 
 if(__name__ == "__main__"):
     Main.main()
