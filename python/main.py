@@ -65,38 +65,6 @@ class Excel():
 
         return new_value
 
-    
-    def attributes_string(list_of_attributes: any):
-        attributes_string = ""
-        for i, attribute in enumerate(list_of_attributes):
-            if(i == 0):
-                attributes_string += attribute
-            
-            else:
-                attributes_string += f", {attribute}"
-
-        return attributes_string
-
-
-    def get_value_singular(self, range: any):
-        column, row = Excel.convert_range(range)
-        value = self.workbook_sheet.cell(row = row, column = column).value
-
-        return value
-
-        
-    def get_value_multiple(self, start_range: any, end_range: any):
-        start_column, start_row = Excel.convert_range(start_range)
-        end_column, end_row = Excel.convert_range(end_range)
-        
-        value = []
-        for row in range(start_row, end_row + 1):
-            for column in range(start_column, end_column + 1):
-                temp_value = self.workbook_sheet.cell(row = row, column = column).value
-                value.append(temp_value)
-
-        return value
-
 
     def get_value_multiple_2d(self, start_range: any, end_range: any):
         start_column, start_row = Excel.convert_range(start_range)
@@ -171,18 +139,9 @@ class Student():
     def get_assignment(student):
         assignment_array = []
         for assignment_index, assignment in enumerate(student[1:]):
-            if(assignment == None):
-                assignment = 0
-            
-            elif(assignment == "ü"):
-                assignment = 2
-
-            elif(assignment == "NON-MUS"):
-                assignment = 3
-
             new_assignment_dict = {
                 "id": assignment_index + 1,
-                "status": assignment,
+                "status": Student.convert_assignment_status(assignment),
                 "proof": None
             }
 
@@ -190,6 +149,19 @@ class Student():
 
 
         return assignment_array
+
+
+    def convert_assignment_status(assignment):
+        if(assignment == None):
+            assignment = 0
+            
+        elif(assignment == "ü"):
+            assignment = 2
+
+        elif(assignment == "NON-MUS"):
+            assignment = 3
+
+        return assignment
 
 
 class Assignment():
@@ -272,7 +244,7 @@ class Main():
 
         assignment_array = Assignment.get_assignment(assignment_2d_array)    
         with open("./json/assignment.json", "w") as outfile:
-            outfile.write(json.dumps(assignment_array, indent = 4))  
+            outfile.write(json.dumps(assignment_array, indent = 4)) 
 
 
 if(__name__ == "__main__"):
