@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "name": "string",
+    "is_muslim": true,
+    "assignments": [
+      {
+        "id": 1,
+        "status": 1
+      }
+    ]
+  }
+]
