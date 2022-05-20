@@ -227,17 +227,11 @@ class Assignment():
 
 
         for assignment_index, assignment in enumerate(assignment_2d_array[3]):
-            if(Assignment.get_subject(assignment) == "PAI"):
-                is_for_muslim = True
-
-            elif(Assignment.get_subject(assignment) != "PAI"):
-                is_for_muslim = False 
-
             new_assignment_dict = {
                 "id": assignment_index + 1,
                 "subject": Assignment.get_subject(assignment),
                 "count": Assignment.get_count(assignment),
-                "is_for_muslim": is_for_muslim,
+                "is_for_muslim": True if Assignment.get_subject(assignment) == "PAI" else False,
                 "month": assignment_2d_array[0][assignment_index],
                 "week": assignment_2d_array[1][assignment_index],
                 "due_date": None,
