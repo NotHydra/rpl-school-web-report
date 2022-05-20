@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Param, ParseIntPipe } from '@nestjs/common';
 import { Assignment } from '../schema/assignment.schema';
 import { AssignmentService } from '../service/assignment.service';
 
@@ -9,5 +9,12 @@ export class AssignmentController {
   @Get()
   getAssignmentAll(): Promise<Assignment[]> {
     return this.assignmentService.getAssignmentAll();
+  }
+
+  @Get('/:id')
+  getAssignmentById(
+    @Param('id', new ParseIntPipe()) id: number,
+  ): Promise<Assignment> {
+    return this.assignmentService.getAssignmentById(id);
   }
 }
