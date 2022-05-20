@@ -204,40 +204,66 @@ class Main():
 
         assignment_array = []
         for month_index, month in enumerate(assignment_2d_array[0]):
+            if(type(month) == str):
+                month_count = ""
+                for char in month:
+                    if(char.isdigit()):
+                        month_count += char
+
+
+                assignment_2d_array[0][month_index] = int(month_count)
+
+
             if(type(month) != str):
                 month = assignment_2d_array[0][month_index - 1]
                 assignment_2d_array[0][month_index] = month
-
+        
 
         for week_index, week in enumerate(assignment_2d_array[1]):
+            if(type(week) == str):
+                week_count = ""
+                for char in week:
+                    if(char.isdigit()):
+                        week_count += char
+
+
+                assignment_2d_array[1][week_index] = int(week_count)
+
+            
             if(type(week) != str):
                 week = assignment_2d_array[1][week_index - 1]
                 assignment_2d_array[1][week_index] = week
 
 
-        # for assignment_index, assignment in enumerate(assignment_2d_array[3]):
-        #     splitted_assignment = re.split('(\d+)', assignment)
-        #     subject = splitted_assignment[0]
-        #     count = int(splitted_assignment[1])
+        for assignment_index, assignment in enumerate(assignment_2d_array[3]):
+            splitted_assignment = re.split('(\d+)', assignment)
+            subject = splitted_assignment[0]
+            count = int(splitted_assignment[1])
 
-        #     if(subject == "PAI"):
-        #         is_for_muslim = True
+            if(subject == "PAI"):
+                is_for_muslim = True
 
-        #     elif(subject != "PAI"):
-        #         is_for_muslim = False 
+            elif(subject != "PAI"):
+                is_for_muslim = False 
 
-        #     new_assignment_dict = {
-        #         "id": assignment_index + 1,
-        #         "subject": subject,
-        #         "count": count,
-        #         "week": 1,
-        #         "month": 1,
-        #         "is_for_muslim": is_for_muslim,
-        #         "due_date": None,
-        #         "description": None,
-        #         "picture": None
-        #     }
-            
+            new_assignment_dict = {
+                "id": assignment_index + 1,
+                "subject": subject,
+                "count": count,
+                "is_for_muslim": is_for_muslim,
+                "month": assignment_2d_array[0][assignment_index],
+                "week": assignment_2d_array[1][assignment_index],
+                "due_date": None,
+                "description": None,
+                "picture": None
+            }
+
+            assignment_array.append(new_assignment_dict)
+
+        
+        with open("json/assignment.json", "w") as outfile:
+            outfile.write(json.dumps(assignment_array, indent = 4))  
+
 
 if(__name__ == "__main__"):
     Main.main()

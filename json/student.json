@@ -1,6 +1,189 @@
 [
     {
         "id": 1,
+        "name": null,
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": "MAT1"
+            },
+            {
+                "id": 2,
+                "status": "MAT2"
+            },
+            {
+                "id": 3,
+                "status": "BASDA1"
+            },
+            {
+                "id": 4,
+                "status": "PPL1"
+            },
+            {
+                "id": 5,
+                "status": "PBO1"
+            },
+            {
+                "id": 6,
+                "status": "BINDO1"
+            },
+            {
+                "id": 7,
+                "status": "PKN1"
+            },
+            {
+                "id": 8,
+                "status": "PAI1"
+            },
+            {
+                "id": 9,
+                "status": "BING1"
+            },
+            {
+                "id": 10,
+                "status": "PKK1"
+            },
+            {
+                "id": 11,
+                "status": "MAT3"
+            },
+            {
+                "id": 12,
+                "status": "BASDA2"
+            },
+            {
+                "id": 13,
+                "status": "PKN2"
+            },
+            {
+                "id": 14,
+                "status": "PKK2"
+            },
+            {
+                "id": 15,
+                "status": "PJOK1"
+            },
+            {
+                "id": 16,
+                "status": "MAT4"
+            },
+            {
+                "id": 17,
+                "status": "BASDA3"
+            },
+            {
+                "id": 18,
+                "status": "BINDO2"
+            },
+            {
+                "id": 19,
+                "status": "PAI2"
+            },
+            {
+                "id": 20,
+                "status": "PKK3"
+            },
+            {
+                "id": 21,
+                "status": "MAT5"
+            },
+            {
+                "id": 22,
+                "status": "PPL2"
+            },
+            {
+                "id": 23,
+                "status": "BASDA4"
+            },
+            {
+                "id": 24,
+                "status": "MAT6"
+            },
+            {
+                "id": 25,
+                "status": "PPL3"
+            },
+            {
+                "id": 26,
+                "status": "PBO2"
+            },
+            {
+                "id": 27,
+                "status": "BING2"
+            },
+            {
+                "id": 28,
+                "status": "PKK4"
+            },
+            {
+                "id": 29,
+                "status": "PKK5"
+            },
+            {
+                "id": 30,
+                "status": "PPL4"
+            },
+            {
+                "id": 31,
+                "status": "PBO3"
+            },
+            {
+                "id": 32,
+                "status": "PWPB1"
+            },
+            {
+                "id": 33,
+                "status": "BASDA5"
+            },
+            {
+                "id": 34,
+                "status": "BINDO3"
+            },
+            {
+                "id": 35,
+                "status": "PKK6"
+            },
+            {
+                "id": 36,
+                "status": "MAT7"
+            },
+            {
+                "id": 37,
+                "status": "PPL5"
+            },
+            {
+                "id": 38,
+                "status": "PAI3"
+            },
+            {
+                "id": 39,
+                "status": "PBO4"
+            },
+            {
+                "id": 40,
+                "status": "PKK7"
+            },
+            {
+                "id": 41,
+                "status": "MAT8"
+            },
+            {
+                "id": 42,
+                "status": "PBO5"
+            },
+            {
+                "id": 43,
+                "status": "PBO6"
+            },
+            {
+                "id": 44,
+                "status": "PKK8"
+            }
+        ]
+    },
+    {
+        "id": 2,
         "name": "Abu Abdirrahman Zenky",
         "is_muslim": true,
         "assignment": [
@@ -183,7 +366,7 @@
         ]
     },
     {
-        "id": 2,
+        "id": 3,
         "name": "Alief Faza Rizqi Adi Jaya",
         "is_muslim": true,
         "assignment": [
@@ -366,7 +549,7 @@
         ]
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "Alief Mastari",
         "is_muslim": true,
         "assignment": [
@@ -549,7 +732,7 @@
         ]
     },
     {
-        "id": 4,
+        "id": 5,
         "name": "Arif Fathurrahman",
         "is_muslim": true,
         "assignment": [
@@ -732,7 +915,7 @@
         ]
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "Cindy Anastasya Kurniawan Oey",
         "is_muslim": true,
         "assignment": [
@@ -915,7 +1098,7 @@
         ]
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "Cleolia Jasmine Nasution",
         "is_muslim": true,
         "assignment": [
@@ -1098,7 +1281,7 @@
         ]
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "Dian Fitriani Aulia",
         "is_muslim": true,
         "assignment": [
@@ -1281,7 +1464,7 @@
         ]
     },
     {
-        "id": 8,
+        "id": 9,
         "name": "Dinda Fatchus Sabila Fa'izatur Rahmah",
         "is_muslim": true,
         "assignment": [
@@ -1464,7 +1647,7 @@
         ]
     },
     {
-        "id": 9,
+        "id": 10,
         "name": "Dinda Nur Apriani",
         "is_muslim": true,
         "assignment": [
@@ -1647,7 +1830,7 @@
         ]
     },
     {
-        "id": 10,
+        "id": 11,
         "name": "Farhan Nur Aliani",
         "is_muslim": true,
         "assignment": [
@@ -1830,7 +2013,7 @@
         ]
     },
     {
-        "id": 11,
+        "id": 12,
         "name": "Hesal Adrian",
         "is_muslim": true,
         "assignment": [
@@ -2013,7 +2196,7 @@
         ]
     },
     {
-        "id": 12,
+        "id": 13,
         "name": "Keatryn Kezia P. Sihombing",
         "is_muslim": false,
         "assignment": [
@@ -2196,7 +2379,7 @@
         ]
     },
     {
-        "id": 13,
+        "id": 14,
         "name": "Mohammad Ilham Saputra",
         "is_muslim": true,
         "assignment": [
@@ -2379,7 +2562,7 @@
         ]
     },
     {
-        "id": 14,
+        "id": 15,
         "name": "Muhammad Akbar Ariq Jeconia Lesmana",
         "is_muslim": true,
         "assignment": [
@@ -2562,7 +2745,7 @@
         ]
     },
     {
-        "id": 15,
+        "id": 16,
         "name": "Muhammad Asmaul Adam",
         "is_muslim": true,
         "assignment": [
@@ -2745,7 +2928,7 @@
         ]
     },
     {
-        "id": 16,
+        "id": 17,
         "name": "Muhammad Athala Romero",
         "is_muslim": true,
         "assignment": [
@@ -2928,7 +3111,7 @@
         ]
     },
     {
-        "id": 17,
+        "id": 18,
         "name": "Muhammad Farhan",
         "is_muslim": true,
         "assignment": [
@@ -3111,7 +3294,7 @@
         ]
     },
     {
-        "id": 18,
+        "id": 19,
         "name": "Muhammad Ilham Dzaki",
         "is_muslim": true,
         "assignment": [
@@ -3294,7 +3477,7 @@
         ]
     },
     {
-        "id": 19,
+        "id": 20,
         "name": "Muhammad Ridwan",
         "is_muslim": true,
         "assignment": [
@@ -3477,7 +3660,7 @@
         ]
     },
     {
-        "id": 20,
+        "id": 21,
         "name": "Muhammad Saputra",
         "is_muslim": true,
         "assignment": [
@@ -3660,7 +3843,7 @@
         ]
     },
     {
-        "id": 21,
+        "id": 22,
         "name": "Muhammad Yusuf",
         "is_muslim": true,
         "assignment": [
@@ -3843,7 +4026,7 @@
         ]
     },
     {
-        "id": 22,
+        "id": 23,
         "name": "Nasywa Mawaddah",
         "is_muslim": true,
         "assignment": [
@@ -4026,7 +4209,7 @@
         ]
     },
     {
-        "id": 23,
+        "id": 24,
         "name": "Natasya Indah Salsabila",
         "is_muslim": true,
         "assignment": [
@@ -4209,7 +4392,7 @@
         ]
     },
     {
-        "id": 24,
+        "id": 25,
         "name": "Nicholas Davin Yang",
         "is_muslim": false,
         "assignment": [
@@ -4392,7 +4575,7 @@
         ]
     },
     {
-        "id": 25,
+        "id": 26,
         "name": "Nouridza Juniansah Ridhan",
         "is_muslim": true,
         "assignment": [
@@ -4575,7 +4758,7 @@
         ]
     },
     {
-        "id": 26,
+        "id": 27,
         "name": "O'neil Kerry Laurent",
         "is_muslim": false,
         "assignment": [
@@ -4758,7 +4941,7 @@
         ]
     },
     {
-        "id": 27,
+        "id": 28,
         "name": "Rafli Febryan",
         "is_muslim": true,
         "assignment": [
@@ -4941,7 +5124,7 @@
         ]
     },
     {
-        "id": 28,
+        "id": 29,
         "name": "Raihan Pratama Putra",
         "is_muslim": true,
         "assignment": [
@@ -5124,7 +5307,7 @@
         ]
     },
     {
-        "id": 29,
+        "id": 30,
         "name": "Rizky Irswanda Ramadhana",
         "is_muslim": true,
         "assignment": [
@@ -5307,7 +5490,7 @@
         ]
     },
     {
-        "id": 30,
+        "id": 31,
         "name": "Salsabila Nur Fairuz",
         "is_muslim": true,
         "assignment": [
@@ -5490,7 +5673,7 @@
         ]
     },
     {
-        "id": 31,
+        "id": 32,
         "name": "Shabrina Cahyani",
         "is_muslim": true,
         "assignment": [
@@ -5673,7 +5856,7 @@
         ]
     },
     {
-        "id": 32,
+        "id": 33,
         "name": "Silvana Putri Ariani",
         "is_muslim": true,
         "assignment": [
@@ -5856,7 +6039,7 @@
         ]
     },
     {
-        "id": 33,
+        "id": 34,
         "name": "T.S Firdaus",
         "is_muslim": true,
         "assignment": [
@@ -6039,7 +6222,7 @@
         ]
     },
     {
-        "id": 34,
+        "id": 35,
         "name": "Usama Fadlillah",
         "is_muslim": true,
         "assignment": [
@@ -6194,189 +6377,6 @@
             {
                 "id": 38,
                 "status": 0
-            },
-            {
-                "id": 39,
-                "status": 0
-            },
-            {
-                "id": 40,
-                "status": 0
-            },
-            {
-                "id": 41,
-                "status": 0
-            },
-            {
-                "id": 42,
-                "status": 0
-            },
-            {
-                "id": 43,
-                "status": 0
-            },
-            {
-                "id": 44,
-                "status": 0
-            }
-        ]
-    },
-    {
-        "id": 35,
-        "name": "Yehezkiel Dio Sinolungan",
-        "is_muslim": false,
-        "assignment": [
-            {
-                "id": 1,
-                "status": 0
-            },
-            {
-                "id": 2,
-                "status": 0
-            },
-            {
-                "id": 3,
-                "status": 0
-            },
-            {
-                "id": 4,
-                "status": 0
-            },
-            {
-                "id": 5,
-                "status": 0
-            },
-            {
-                "id": 6,
-                "status": 0
-            },
-            {
-                "id": 7,
-                "status": 0
-            },
-            {
-                "id": 8,
-                "status": 3
-            },
-            {
-                "id": 9,
-                "status": 2
-            },
-            {
-                "id": 10,
-                "status": 0
-            },
-            {
-                "id": 11,
-                "status": 0
-            },
-            {
-                "id": 12,
-                "status": 0
-            },
-            {
-                "id": 13,
-                "status": 0
-            },
-            {
-                "id": 14,
-                "status": 0
-            },
-            {
-                "id": 15,
-                "status": 0
-            },
-            {
-                "id": 16,
-                "status": 0
-            },
-            {
-                "id": 17,
-                "status": 0
-            },
-            {
-                "id": 18,
-                "status": 0
-            },
-            {
-                "id": 19,
-                "status": 3
-            },
-            {
-                "id": 20,
-                "status": 0
-            },
-            {
-                "id": 21,
-                "status": 0
-            },
-            {
-                "id": 22,
-                "status": 0
-            },
-            {
-                "id": 23,
-                "status": 0
-            },
-            {
-                "id": 24,
-                "status": 0
-            },
-            {
-                "id": 25,
-                "status": 0
-            },
-            {
-                "id": 26,
-                "status": 0
-            },
-            {
-                "id": 27,
-                "status": 0
-            },
-            {
-                "id": 28,
-                "status": 0
-            },
-            {
-                "id": 29,
-                "status": 0
-            },
-            {
-                "id": 30,
-                "status": 0
-            },
-            {
-                "id": 31,
-                "status": 0
-            },
-            {
-                "id": 32,
-                "status": 0
-            },
-            {
-                "id": 33,
-                "status": 0
-            },
-            {
-                "id": 34,
-                "status": 0
-            },
-            {
-                "id": 35,
-                "status": 0
-            },
-            {
-                "id": 36,
-                "status": 0
-            },
-            {
-                "id": 37,
-                "status": 0
-            },
-            {
-                "id": 38,
-                "status": 3
             },
             {
                 "id": 39,

@@ -3,9 +3,9 @@
     "id": 1,
     "subject": "string",
     "count": 1,
-    "week": 1,
-    "month": 1,
     "is_for_muslim": false,
+    "month": 1,
+    "week": 1,
     "due_date": "datetime",
     "description": "string",
     "picture": "string"
