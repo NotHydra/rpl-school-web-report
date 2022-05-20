@@ -24,11 +24,17 @@ class Main():
         database_name = "Development"
         
         student_collection = Database.get_collection(mongoDBURI, database_name, "students")
+        assignment_collection = Database.get_collection(mongoDBURI, database_name, "assignments")
 
         student_data = json.load(open("./json/student.json"))
-
+        assignment_data = json.load(open("./json/assignment.json"))
+        
         for student in student_data:
             student_collection.replace_one({"id": student.get("id")}, student, upsert=True)
+
+
+        for assignment in assignment_data:
+            assignment_collection.replace_one({"id": assignment.get("id")}, assignment, upsert=True)
 
     
 Main.main()
