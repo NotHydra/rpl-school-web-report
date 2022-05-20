@@ -194,21 +194,8 @@ class Student():
 class Assignment():
     def get_assignment(assignment_2d_array):
         assignment_array = []        
-        for month_index, month in enumerate(assignment_2d_array[0]):
-            if(type(month) == str):
-                month_count = ""
-                for char in month:
-                    if(char.isdigit()):
-                        month_count += char
 
-
-                assignment_2d_array[0][month_index] = int(month_count)
-
-
-            if(type(month) != str):
-                month = assignment_2d_array[0][month_index - 1]
-                assignment_2d_array[0][month_index] = month
-        
+        Assignment.convert_month_count(assignment_2d_array)
 
         for week_index, week in enumerate(assignment_2d_array[1]):
             if(type(week) == str):
@@ -255,6 +242,22 @@ class Assignment():
         count = int(re.split('(\d+)', assignment)[1])
 
         return count
+
+
+    def convert_month_count(assignment_2d_array):
+        for month_index, month in enumerate(assignment_2d_array[0]):
+            if(type(month) == str):
+                month_count = ""
+                for char in month:
+                    if(char.isdigit()):
+                        month_count += char
+
+
+                assignment_2d_array[0][month_index] = int(month_count)
+
+            elif(type(month) != str):
+                month = assignment_2d_array[0][month_index - 1]
+                assignment_2d_array[0][month_index] = month
 
 
 class Main():
