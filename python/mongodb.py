@@ -16,25 +16,25 @@ class Database():
         return Database.get_database(mongoDBURI, database_name)[collection_name]
 
 
+class Upload():
+    def upload(mongoDBURI, database_name, collection_name, data_path):
+        collection = Database.get_collection(mongoDBURI, database_name, collection_name)
+
+        data_array = json.load(open(data_path))
+
+        for data in data_array:
+            collection.replace_one({"id": data.get("id")}, data, upsert=True)
+
+
 class Main():
     env_value = dotenv_values("./.env")
 
     def main():
         mongoDBURI = Main.env_value.get("MongoDBURI")
         database_name = "Development"
-        
-        student_collection = Database.get_collection(mongoDBURI, database_name, "students")
-        assignment_collection = Database.get_collection(mongoDBURI, database_name, "assignments")
 
-        student_data = json.load(open("./json/student.json"))
-        assignment_data = json.load(open("./json/assignment.json"))
-        
-        for student in student_data:
-            student_collection.replace_one({"id": student.get("id")}, student, upsert=True)
+        Upload.upload(mongoDBURI, database_name, "students", "./json/student.json")
+        Upload.upload(mongoDBURI, database_name, "assignments", "./json/assignment.json")
 
 
-        for assignment in assignment_data:
-            assignment_collection.replace_one({"id": assignment.get("id")}, assignment, upsert=True)
-
-    
 Main.main()
