@@ -234,16 +234,16 @@ class Assignment():
 
 class Main():
     def main():
-        workbook_combined = Excel("./excel/List Tugas gabunggan.xlsx", 1)
+        workbook_combined = Excel("./hardcopy/excel/List Tugas gabunggan.xlsx", 1)
         student_2d_array = workbook_combined.get_value_multiple_2d("B5", "AT39")
         assignment_2d_array = workbook_combined.get_value_multiple_2d("C1", "AT4")
 
         student_array = Student.get_student(student_2d_array)
-        with open("./json/student.json", "w") as outfile:
+        with open("./hardcopy/json/student.json", "w") as outfile:
             outfile.write(json.dumps(student_array, indent = 4))  
 
         assignment_array = Assignment.get_assignment(assignment_2d_array)    
-        with open("./json/assignment.json", "w") as outfile:
+        with open("./hardcopy/json/assignment.json", "w") as outfile:
             outfile.write(json.dumps(assignment_array, indent = 4)) 
 
 

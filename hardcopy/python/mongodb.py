@@ -33,8 +33,8 @@ class Main():
         mongoDBURI = Main.env_value.get("MongoDBURI")
         database_name = "Development"
 
-        Upload.upload(mongoDBURI, database_name, "students", "./json/student.json")
-        Upload.upload(mongoDBURI, database_name, "assignments", "./json/assignment.json")
+        Upload.upload(mongoDBURI, database_name, "students", "./hardcopy/json/student.json")
+        Upload.upload(mongoDBURI, database_name, "assignments", "./hardcopy/json/assignment.json")
 
 
 Main.main()
