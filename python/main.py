@@ -236,7 +236,7 @@ class Assignment():
             new_assignment_dict = {
                 "id": assignment_index + 1,
                 "subject": Assignment.get_subject(assignment),
-                "count": Assignment.get_subject(assignment),
+                "count": Assignment.get_count(assignment),
                 "is_for_muslim": is_for_muslim,
                 "month": assignment_2d_array[0][assignment_index],
                 "week": assignment_2d_array[1][assignment_index],
