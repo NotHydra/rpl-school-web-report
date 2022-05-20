@@ -182,7 +182,8 @@ class Student():
 
             new_assignment_dict = {
                 "id": assignment_index + 1,
-                "status": assignment
+                "status": assignment,
+                "proof": None
             }
 
             assignment_array.append(new_assignment_dict)
