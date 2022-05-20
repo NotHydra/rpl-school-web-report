@@ -227,20 +227,16 @@ class Assignment():
 
 
         for assignment_index, assignment in enumerate(assignment_2d_array[3]):
-            splitted_assignment = re.split('(\d+)', assignment)
-            subject = splitted_assignment[0]
-            count = int(splitted_assignment[1])
-
-            if(subject == "PAI"):
+            if(Assignment.get_subject(assignment) == "PAI"):
                 is_for_muslim = True
 
-            elif(subject != "PAI"):
+            elif(Assignment.get_subject(assignment) != "PAI"):
                 is_for_muslim = False 
 
             new_assignment_dict = {
                 "id": assignment_index + 1,
-                "subject": subject,
-                "count": count,
+                "subject": Assignment.get_subject(assignment),
+                "count": Assignment.get_subject(assignment),
                 "is_for_muslim": is_for_muslim,
                 "month": assignment_2d_array[0][assignment_index],
                 "week": assignment_2d_array[1][assignment_index],
@@ -253,6 +249,18 @@ class Assignment():
 
 
         return assignment_array
+    
+
+    def get_subject(assignment):
+        subject = re.split('(\d+)', assignment)[0]
+
+        return subject
+
+
+    def get_count(assignment):
+        count = int(re.split('(\d+)', assignment)[1])
+
+        return count
 
 
 class Main():
