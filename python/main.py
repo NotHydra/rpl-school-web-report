@@ -193,26 +193,9 @@ class Student():
 
 class Assignment():
     def get_assignment(assignment_2d_array):
-        assignment_array = []        
-
+        assignment_array = []
         Assignment.convert_month_count(assignment_2d_array)
-
-        for week_index, week in enumerate(assignment_2d_array[1]):
-            if(type(week) == str):
-                week_count = ""
-                for char in week:
-                    if(char.isdigit()):
-                        week_count += char
-
-
-                assignment_2d_array[1][week_index] = int(week_count)
-
-            
-            if(type(week) != str):
-                week = assignment_2d_array[1][week_index - 1]
-                assignment_2d_array[1][week_index] = week
-
-
+        Assignment.convert_week_count(assignment_2d_array)
         for assignment_index, assignment in enumerate(assignment_2d_array[3]):
             new_assignment_dict = {
                 "id": assignment_index + 1,
@@ -258,6 +241,22 @@ class Assignment():
             elif(type(month) != str):
                 month = assignment_2d_array[0][month_index - 1]
                 assignment_2d_array[0][month_index] = month
+
+
+    def convert_week_count(assignment_2d_array):
+        for week_index, week in enumerate(assignment_2d_array[1]):
+            if(type(week) == str):
+                week_count = ""
+                for char in week:
+                    if(char.isdigit()):
+                        week_count += char
+
+
+                assignment_2d_array[1][week_index] = int(week_count)
+
+            elif(type(week) != str):
+                week = assignment_2d_array[1][week_index - 1]
+                assignment_2d_array[1][week_index] = week
 
 
 class Main():
