@@ -1,0 +1,7947 @@
+[
+    {
+        "id": 1,
+        "name": "Abu Abdirrahman Zenky",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Alief Faza Rizqi Adi Jaya",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Alief Mastari",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Arif Fathurrahman",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Cindy Anastasya Kurniawan Oey",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 2,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Cleolia Jasmine Nasution",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Dian Fitriani Aulia",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Dinda Fatchus Sabila Fa'izatur Rahmah",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Dinda Nur Apriani",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 2,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Farhan Nur Aliani",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Hesal Adrian",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Keatryn Kezia P. Sihombing",
+        "is_muslim": false,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 3,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 3,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 3,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 2,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Mohammad Ilham Saputra",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Muhammad Akbar Ariq Jeconia Lesmana",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Muhammad Asmaul Adam",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Muhammad Athala Romero",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Muhammad Farhan",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 2,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Muhammad Ilham Dzaki",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Muhammad Ridwan",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Muhammad Saputra",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "name": "Muhammad Yusuf",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "name": "Nasywa Mawaddah",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "name": "Natasya Indah Salsabila",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 2,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "name": "Nicholas Davin Yang",
+        "is_muslim": false,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 3,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 3,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 3,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "name": "Nouridza Juniansah Ridhan",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "name": "O'neil Kerry Laurent",
+        "is_muslim": false,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 3,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 3,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 3,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "name": "Rafli Febryan",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "name": "Raihan Pratama Putra",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "name": "Rizky Irswanda Ramadhana",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 2,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "name": "Salsabila Nur Fairuz",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "name": "Shabrina Cahyani",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "name": "Silvana Putri Ariani",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "name": "T.S Firdaus",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "name": "Usama Fadlillah",
+        "is_muslim": true,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    },
+    {
+        "id": 35,
+        "name": "Yehezkiel Dio Sinolungan",
+        "is_muslim": false,
+        "assignment": [
+            {
+                "id": 1,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 8,
+                "status": 3,
+                "proof": null
+            },
+            {
+                "id": 9,
+                "status": 2,
+                "proof": null
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 15,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 16,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 17,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 18,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 19,
+                "status": 3,
+                "proof": null
+            },
+            {
+                "id": 20,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 21,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 22,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 23,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 24,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 25,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 26,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 27,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 28,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 29,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 30,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 31,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 32,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 33,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 34,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 35,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 36,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 37,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 38,
+                "status": 3,
+                "proof": null
+            },
+            {
+                "id": 39,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 40,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 41,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 42,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 43,
+                "status": 0,
+                "proof": null
+            },
+            {
+                "id": 44,
+                "status": 0,
+                "proof": null
+            }
+        ]
+    }
+]
