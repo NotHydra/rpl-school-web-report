@@ -24,4 +24,15 @@ export class AssignmentController {
   ): Promise<Assignment[]> {
     return this.assignmentService.getAssignmentBySubjectName(name);
   }
+
+  @Get('subject/:name/:count')
+  getAssignmentBySubjectNameAndCount(
+    @Param('name') name: string,
+    @Param('count', new ParseIntPipe()) count: number,
+  ): Promise<Assignment> {
+    return this.assignmentService.getAssignmentBySubjectNameAndCount(
+      name,
+      count,
+    );
+  }
 }

@@ -21,4 +21,13 @@ export class AssignmentService {
   async getAssignmentBySubjectName(name: string): Promise<Assignment[]> {
     return this.assignmentModel.find({ subject: name.toUpperCase() }).exec();
   }
+
+  async getAssignmentBySubjectNameAndCount(
+    name: string,
+    count: number,
+  ): Promise<Assignment> {
+    return this.assignmentModel
+      .findOne({ subject: name.toUpperCase(), count: count })
+      .exec();
+  }
 }
