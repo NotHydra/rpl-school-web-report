@@ -2,7 +2,7 @@ import { Controller, Get, Param, ParseIntPipe } from '@nestjs/common';
 import { Student } from '../schema/student.schema';
 import { StudentService } from '../service/student.service';
 
-@Controller('student')
+@Controller('api/student')
 export class StudentController {
   constructor(private readonly studentService: StudentService) {}
 

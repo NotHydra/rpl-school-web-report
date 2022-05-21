@@ -1,9 +1,8 @@
 import { Controller, Get, Param, ParseIntPipe } from '@nestjs/common';
-import { count } from 'console';
 import { Assignment } from '../schema/assignment.schema';
 import { AssignmentService } from '../service/assignment.service';
 
-@Controller('assignment')
+@Controller('api/assignment')
 export class AssignmentController {
   constructor(private readonly assignmentService: AssignmentService) {}
 
