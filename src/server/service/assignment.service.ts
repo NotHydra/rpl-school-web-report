@@ -34,4 +34,8 @@ export class AssignmentService {
   async getAssignmentByMonth(count: number): Promise<Assignment[]> {
     return this.assignmentModel.find({ month: count }).exec();
   }
+
+  async getAssignmentByWeek(count: number): Promise<Assignment[]> {
+    return this.assignmentModel.find({ week: count }).exec();
+  }
 }

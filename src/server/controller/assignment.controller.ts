@@ -43,4 +43,11 @@ export class AssignmentController {
   ): Promise<Assignment[]> {
     return this.assignmentService.getAssignmentByMonth(count);
   }
+
+  @Get('week/:count')
+  getAssignmentByWeek(
+    @Param('count', new ParseIntPipe()) count: number,
+  ): Promise<Assignment[]> {
+    return this.assignmentService.getAssignmentByWeek(count);
+  }
 }
