@@ -30,4 +30,8 @@ export class AssignmentService {
       .findOne({ subject: name.toUpperCase(), count: count })
       .exec();
   }
+
+  async getAssignmentByMonth(count: number): Promise<Assignment[]> {
+    return this.assignmentModel.find({ month: count }).exec();
+  }
 }

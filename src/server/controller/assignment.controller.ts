@@ -1,4 +1,5 @@
 import { Controller, Get, Param, ParseIntPipe } from '@nestjs/common';
+import { count } from 'console';
 import { Assignment } from '../schema/assignment.schema';
 import { AssignmentService } from '../service/assignment.service';
 
@@ -34,5 +35,12 @@ export class AssignmentController {
       name,
       count,
     );
+  }
+
+  @Get('month/:count')
+  getAssignmentByMonth(
+    @Param('count', new ParseIntPipe()) count: number,
+  ): Promise<Assignment[]> {
+    return this.assignmentService.getAssignmentByMonth(count);
   }
 }
