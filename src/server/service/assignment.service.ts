@@ -15,6 +15,10 @@ export class AssignmentService {
   }
 
   async getAssignmentById(id: number): Promise<Assignment> {
-    return this.assignmentModel.findOne({ id: id });
+    return this.assignmentModel.findOne({ id: id }).exec();
+  }
+
+  async getAssignmentBySubjectName(name: string): Promise<Assignment[]> {
+    return this.assignmentModel.find({ subject: name.toUpperCase() }).exec();
   }
 }

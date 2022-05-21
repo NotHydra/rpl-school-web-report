@@ -17,4 +17,11 @@ export class AssignmentController {
   ): Promise<Assignment> {
     return this.assignmentService.getAssignmentById(id);
   }
+
+  @Get('subject/:name')
+  getAssignmentBySubjectName(
+    @Param('name') name: string,
+  ): Promise<Assignment[]> {
+    return this.assignmentService.getAssignmentBySubjectName(name);
+  }
 }
