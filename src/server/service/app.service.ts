@@ -45,4 +45,36 @@ export class AppService {
 
     return student_data;
   }
+
+  async getStudentAllByAssignmentMonth(count: number) {
+    const assignment_response = await axios.get(
+      `http://localhost:3000/api/assignment/month/${count}`,
+    );
+
+    let assignment_id = [];
+    assignment_response.data.forEach((dict) => {
+      assignment_id.push(dict.id);
+    });
+
+    const student_response = await axios.get(
+      'http://localhost:3000/api/student',
+    );
+
+    let unfiltered_student_data = [];
+    student_response.data.forEach((dict) => unfiltered_student_data.push(dict));
+
+    const student_data = unfiltered_student_data.filter((student) => {
+      const filtered_assignment = student.assignment.filter((assignment) => {
+        if (assignment_id.includes(assignment.id)) {
+          return assignment;
+        }
+      });
+
+      student.assignment = filtered_assignment;
+
+      return student;
+    });
+
+    return student_data;
+  }
 }
