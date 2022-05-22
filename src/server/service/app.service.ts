@@ -1,16 +1,15 @@
-import { HttpService } from '@nestjs/axios';
 import { Injectable } from '@nestjs/common';
-import { map } from 'rxjs';
 import axios from 'axios';
 
 @Injectable()
 export class AppService {
-  constructor(private httpService: HttpService) {}
+  async getStudentAll() {
+    const student_response = await axios.get(
+      'http://localhost:3000/api/student',
+    );
 
-  getStudentAll() {
-    let student_data = this.httpService
-      .get('http://localhost:3000/api/student')
-      .pipe(map((response) => response.data));
+    let student_data = [];
+    student_response.data.forEach((dict) => student_data.push(dict));
 
     return student_data;
   }
