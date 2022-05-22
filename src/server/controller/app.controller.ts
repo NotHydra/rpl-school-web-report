@@ -1,5 +1,4 @@
 import { Controller, Get, Param, ParseIntPipe } from '@nestjs/common';
-import { count } from 'console';
 import { AppService } from '../service/app.service';
 
 @Controller()
@@ -23,6 +22,14 @@ export class AppController {
     @Param('count', new ParseIntPipe()) count: number,
   ) {
     return this.appService.getStudentAllByAssignmentMonth(count);
+  }
+
+  @Get('/student/all/assignment/week/:count/subject/:name')
+  getStudentAllByAssignmentWeekAndSubject(
+    @Param('count', new ParseIntPipe()) count: number,
+    @Param('name') name: string,
+  ) {
+    return this.appService.getStudentAllByAssignmentWeekAndSubject(count, name);
   }
 
   @Get('/student/all/assignment/month/:count/subject/:name')
