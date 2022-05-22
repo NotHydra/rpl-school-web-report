@@ -185,5 +185,17 @@ export class AppService extends AppUtililty {
     return student_data;
   }
 
+  async getStudentIdByAssignmentMonth(id: number, count: number) {
+    let assignment_id = await this.getAssignmentId('month', count);
+    let unfiltered_student_data = await this.getStudentData(id);
+
+    const student_data = this.filterStudentData(
+      unfiltered_student_data,
+      assignment_id,
+    );
+
+    return student_data;
+  }
+
   //#endregion student id
 }

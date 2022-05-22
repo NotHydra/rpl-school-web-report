@@ -73,5 +73,13 @@ export class AppController {
     return this.appService.getStudentIdByAssignmentWeek(id, count);
   }
 
+  @Get('/student/:id/assignment/month/:count/subject/all')
+  getStudentIdByAssignmentMonth(
+    @Param('id', new ParseIntPipe()) id: number,
+    @Param('count', new ParseIntPipe()) count: number,
+  ) {
+    return this.appService.getStudentIdByAssignmentMonth(id, count);
+  }
+
   //#endregion student id
 }
