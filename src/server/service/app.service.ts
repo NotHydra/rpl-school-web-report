@@ -46,6 +46,32 @@ class AppUtililty {
 
     return subject_id;
   }
+
+  filterStudentData(unfiltered_student_data, filter_array) {
+    const student_data = unfiltered_student_data.filter((student) => {
+      const filtered_assignment = student.assignment.filter((assignment) => {
+        if (filter_array.includes(assignment.id)) {
+          return assignment;
+        }
+      });
+
+      student.assignment = filtered_assignment;
+
+      return student;
+    });
+
+    return student_data;
+  }
+
+  filterAssignmentId(unfiltered_assignment_id, filter_array) {
+    const assignment_id = unfiltered_assignment_id.filter((id) => {
+      if (filter_array.includes(id)) {
+        return id;
+      }
+    });
+
+    return assignment_id;
+  }
 }
 
 @Injectable()
@@ -60,17 +86,10 @@ export class AppService extends AppUtililty {
     let subject_id = await this.getSubjectId(name);
     let unfiltered_student_data = await this.getStudentData();
 
-    const student_data = unfiltered_student_data.filter((student) => {
-      const filtered_assignment = student.assignment.filter((assignment) => {
-        if (subject_id.includes(assignment.id)) {
-          return assignment;
-        }
-      });
-
-      student.assignment = filtered_assignment;
-
-      return student;
-    });
+    const student_data = this.filterStudentData(
+      unfiltered_student_data,
+      subject_id,
+    );
 
     return student_data;
   }
@@ -79,17 +98,10 @@ export class AppService extends AppUtililty {
     let assignment_id = await this.getAssignmentId('week', count);
     let unfiltered_student_data = await this.getStudentData();
 
-    const student_data = unfiltered_student_data.filter((student) => {
-      const filtered_assignment = student.assignment.filter((assignment) => {
-        if (assignment_id.includes(assignment.id)) {
-          return assignment;
-        }
-      });
-
-      student.assignment = filtered_assignment;
-
-      return student;
-    });
+    const student_data = this.filterStudentData(
+      unfiltered_student_data,
+      assignment_id,
+    );
 
     return student_data;
   }
@@ -98,17 +110,10 @@ export class AppService extends AppUtililty {
     let assignment_id = await this.getAssignmentId('month', count);
     let unfiltered_student_data = await this.getStudentData();
 
-    const student_data = unfiltered_student_data.filter((student) => {
-      const filtered_assignment = student.assignment.filter((assignment) => {
-        if (assignment_id.includes(assignment.id)) {
-          return assignment;
-        }
-      });
-
-      student.assignment = filtered_assignment;
-
-      return student;
-    });
+    const student_data = this.filterStudentData(
+      unfiltered_student_data,
+      assignment_id,
+    );
 
     return student_data;
   }
@@ -118,23 +123,15 @@ export class AppService extends AppUtililty {
     let unfiltered_assignment_id = await this.getAssignmentId('week', count);
     let unfiltered_student_data = await this.getStudentData();
 
-    const assignment_id = unfiltered_assignment_id.filter((id) => {
-      if (subject_id.includes(id)) {
-        return id;
-      }
-    });
+    const assignment_id = this.filterAssignmentId(
+      unfiltered_assignment_id,
+      subject_id,
+    );
 
-    const student_data = unfiltered_student_data.filter((student) => {
-      const filtered_assignment = student.assignment.filter((assignment) => {
-        if (assignment_id.includes(assignment.id)) {
-          return assignment;
-        }
-      });
-
-      student.assignment = filtered_assignment;
-
-      return student;
-    });
+    const student_data = this.filterStudentData(
+      unfiltered_student_data,
+      assignment_id,
+    );
 
     return student_data;
   }
@@ -144,23 +141,15 @@ export class AppService extends AppUtililty {
     let unfiltered_assignment_id = await this.getAssignmentId('month', count);
     let unfiltered_student_data = await this.getStudentData();
 
-    const assignment_id = unfiltered_assignment_id.filter((id) => {
-      if (subject_id.includes(id)) {
-        return id;
-      }
-    });
+    const assignment_id = this.filterAssignmentId(
+      unfiltered_assignment_id,
+      subject_id,
+    );
 
-    const student_data = unfiltered_student_data.filter((student) => {
-      const filtered_assignment = student.assignment.filter((assignment) => {
-        if (assignment_id.includes(assignment.id)) {
-          return assignment;
-        }
-      });
-
-      student.assignment = filtered_assignment;
-
-      return student;
-    });
+    const student_data = this.filterStudentData(
+      unfiltered_student_data,
+      assignment_id,
+    );
 
     return student_data;
   }
