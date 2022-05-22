@@ -13,7 +13,7 @@ export class StudentService {
     return this.studentModel.find().exec();
   }
 
-  async getStudentById(id: number): Promise<Student> {
-    return this.studentModel.findOne({ id: id }).exec();
+  async getStudentById(id: number): Promise<Student[]> {
+    return this.studentModel.find({ id: id }).exec();
   }
 }

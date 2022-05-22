@@ -14,7 +14,7 @@ export class StudentController {
   @Get('/:id')
   getStudentById(
     @Param('id', new ParseIntPipe()) id: number,
-  ): Promise<Student> {
+  ): Promise<Student[]> {
     return this.studentService.getStudentById(id);
   }
 }

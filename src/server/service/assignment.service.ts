@@ -14,8 +14,8 @@ export class AssignmentService {
     return this.assignmentModel.find().exec();
   }
 
-  async getAssignmentById(id: number): Promise<Assignment> {
-    return this.assignmentModel.findOne({ id: id }).exec();
+  async getAssignmentById(id: number): Promise<Assignment[]> {
+    return this.assignmentModel.find({ id: id }).exec();
   }
 
   async getAssignmentBySubjectName(name: string): Promise<Assignment[]> {
@@ -25,9 +25,9 @@ export class AssignmentService {
   async getAssignmentBySubjectNameAndCount(
     name: string,
     count: number,
-  ): Promise<Assignment> {
+  ): Promise<Assignment[]> {
     return this.assignmentModel
-      .findOne({ subject: name.toUpperCase(), count: count })
+      .find({ subject: name.toUpperCase(), count: count })
       .exec();
   }
 

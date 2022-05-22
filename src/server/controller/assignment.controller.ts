@@ -14,7 +14,7 @@ export class AssignmentController {
   @Get('/:id')
   getAssignmentById(
     @Param('id', new ParseIntPipe()) id: number,
-  ): Promise<Assignment> {
+  ): Promise<Assignment[]> {
     return this.assignmentService.getAssignmentById(id);
   }
 
@@ -29,7 +29,7 @@ export class AssignmentController {
   getAssignmentBySubjectNameAndCount(
     @Param('name') name: string,
     @Param('count', new ParseIntPipe()) count: number,
-  ): Promise<Assignment> {
+  ): Promise<Assignment[]> {
     return this.assignmentService.getAssignmentBySubjectNameAndCount(
       name,
       count,
