@@ -1,9 +1,8 @@
 import { Injectable, Logger } from '@nestjs/common';
 import axios from 'axios';
 
-@Injectable()
-export class AppService {
-  async getStudentAll() {
+class AppUtililty {
+  async getStudentData() {
     const student_response = await axios.get(
       'http://localhost:3000/api/student',
     );
@@ -14,7 +13,28 @@ export class AppService {
     return student_data;
   }
 
-  async getStudentAllByAssignmentSubject(name: string) {
+  async getAssignmentId(type: string, count: number) {
+    let assignment_response;
+
+    if (type == 'week' || type == 'month') {
+      assignment_response = await axios.get(
+        `http://localhost:3000/api/assignment/${type}/${count}`,
+      );
+    } else if (type == 'all') {
+      assignment_response = await axios.get(
+        'http://localhost:3000/api/assignment',
+      );
+    }
+
+    let assignment_id = [];
+    assignment_response.data.forEach((dict) => {
+      assignment_id.push(dict.id);
+    });
+
+    return assignment_id;
+  }
+
+  async getSubjectId(name: string) {
     const subject_response = await axios.get(
       `http://localhost:3000/api/assignment/subject/${name}`,
     );
@@ -24,12 +44,21 @@ export class AppService {
       subject_id.push(dict.id);
     });
 
-    const student_response = await axios.get(
-      'http://localhost:3000/api/student',
-    );
+    return subject_id;
+  }
+}
 
-    let unfiltered_student_data = [];
-    student_response.data.forEach((dict) => unfiltered_student_data.push(dict));
+@Injectable()
+export class AppService extends AppUtililty {
+  async getStudentAll() {
+    let student_data = await this.getStudentData();
+
+    return student_data;
+  }
+
+  async getStudentAllByAssignmentSubject(name: string) {
+    let subject_id = await this.getSubjectId(name);
+    let unfiltered_student_data = await this.getStudentData();
 
     const student_data = unfiltered_student_data.filter((student) => {
       const filtered_assignment = student.assignment.filter((assignment) => {
@@ -47,21 +76,8 @@ export class AppService {
   }
 
   async getStudentAllByAssignmentWeek(count: number) {
-    const assignment_response = await axios.get(
-      `http://localhost:3000/api/assignment/week/${count}`,
-    );
-
-    let assignment_id = [];
-    assignment_response.data.forEach((dict) => {
-      assignment_id.push(dict.id);
-    });
-
-    const student_response = await axios.get(
-      'http://localhost:3000/api/student',
-    );
-
-    let unfiltered_student_data = [];
-    student_response.data.forEach((dict) => unfiltered_student_data.push(dict));
+    let assignment_id = await this.getAssignmentId('week', count);
+    let unfiltered_student_data = await this.getStudentData();
 
     const student_data = unfiltered_student_data.filter((student) => {
       const filtered_assignment = student.assignment.filter((assignment) => {
@@ -79,21 +95,8 @@ export class AppService {
   }
 
   async getStudentAllByAssignmentMonth(count: number) {
-    const assignment_response = await axios.get(
-      `http://localhost:3000/api/assignment/month/${count}`,
-    );
-
-    let assignment_id = [];
-    assignment_response.data.forEach((dict) => {
-      assignment_id.push(dict.id);
-    });
-
-    const student_response = await axios.get(
-      'http://localhost:3000/api/student',
-    );
-
-    let unfiltered_student_data = [];
-    student_response.data.forEach((dict) => unfiltered_student_data.push(dict));
+    let assignment_id = await this.getAssignmentId('month', count);
+    let unfiltered_student_data = await this.getStudentData();
 
     const student_data = unfiltered_student_data.filter((student) => {
       const filtered_assignment = student.assignment.filter((assignment) => {
@@ -111,36 +114,15 @@ export class AppService {
   }
 
   async getStudentAllByAssignmentWeekAndSubject(count: number, name: string) {
-    const subject_response = await axios.get(
-      `http://localhost:3000/api/assignment/subject/${name}`,
-    );
-
-    let subject_id = [];
-    subject_response.data.forEach((dict) => {
-      subject_id.push(dict.id);
-    });
-
-    const assignment_response = await axios.get(
-      `http://localhost:3000/api/assignment/week/${count}`,
-    );
-
-    let unfiltered_assignment_id = [];
-    assignment_response.data.forEach((dict) => {
-      unfiltered_assignment_id.push(dict.id);
-    });
+    let subject_id = await this.getSubjectId(name);
+    let unfiltered_assignment_id = await this.getAssignmentId('week', count);
+    let unfiltered_student_data = await this.getStudentData();
 
     const assignment_id = unfiltered_assignment_id.filter((id) => {
       if (subject_id.includes(id)) {
         return id;
       }
     });
-
-    const student_response = await axios.get(
-      'http://localhost:3000/api/student',
-    );
-
-    let unfiltered_student_data = [];
-    student_response.data.forEach((dict) => unfiltered_student_data.push(dict));
 
     const student_data = unfiltered_student_data.filter((student) => {
       const filtered_assignment = student.assignment.filter((assignment) => {
@@ -158,36 +140,15 @@ export class AppService {
   }
 
   async getStudentAllByAssignmentMonthAndSubject(count: number, name: string) {
-    const subject_response = await axios.get(
-      `http://localhost:3000/api/assignment/subject/${name}`,
-    );
-
-    let subject_id = [];
-    subject_response.data.forEach((dict) => {
-      subject_id.push(dict.id);
-    });
-
-    const assignment_response = await axios.get(
-      `http://localhost:3000/api/assignment/month/${count}`,
-    );
-
-    let unfiltered_assignment_id = [];
-    assignment_response.data.forEach((dict) => {
-      unfiltered_assignment_id.push(dict.id);
-    });
+    let subject_id = await this.getSubjectId(name);
+    let unfiltered_assignment_id = await this.getAssignmentId('month', count);
+    let unfiltered_student_data = await this.getStudentData();
 
     const assignment_id = unfiltered_assignment_id.filter((id) => {
       if (subject_id.includes(id)) {
         return id;
       }
     });
-
-    const student_response = await axios.get(
-      'http://localhost:3000/api/student',
-    );
-
-    let unfiltered_student_data = [];
-    student_response.data.forEach((dict) => unfiltered_student_data.push(dict));
 
     const student_data = unfiltered_student_data.filter((student) => {
       const filtered_assignment = student.assignment.filter((assignment) => {
