@@ -10,6 +10,11 @@ export class AppController {
     return this.appService.getStudentAll();
   }
 
+  @Get('/student/all/assignment/all/subject/:name')
+  getStudentAllByAssignmentSubject(@Param('name') name: string) {
+    return this.appService.getStudentAllByAssignmentSubject(name);
+  }
+
   @Get('/student/all/assignment/week/:count/subject/all')
   getStudentAllByAssignmentWeek(
     @Param('count', new ParseIntPipe()) count: number,
