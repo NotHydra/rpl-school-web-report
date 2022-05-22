@@ -28,10 +28,10 @@ export class AppService {
       'http://localhost:3000/api/student',
     );
 
-    let student_response_array = [];
-    student_response.data.forEach((dict) => student_response_array.push(dict));
+    let unfiltered_student_data = [];
+    student_response.data.forEach((dict) => unfiltered_student_data.push(dict));
 
-    const student_data = student_response_array.filter((student) => {
+    const student_data = unfiltered_student_data.filter((student) => {
       const filtered_assignment = student.assignment.filter((assignment) => {
         if (assignment_id.includes(assignment.id)) {
           return assignment;
