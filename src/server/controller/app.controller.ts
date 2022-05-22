@@ -5,6 +5,7 @@ import { AppService } from '../service/app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
+  //#region student all
   @Get('/student/all/assignment/all/subject/all')
   getStudentAll() {
     return this.appService.getStudentAll();
@@ -47,4 +48,14 @@ export class AppController {
       name,
     );
   }
+
+  //#endregion student all
+
+  //#region student id
+  @Get('/student/:id/assignment/all/subject/all')
+  getStudentId(@Param('id', new ParseIntPipe()) id: number) {
+    return this.appService.getStudentId(id);
+  }
+
+  //#endregion student id
 }

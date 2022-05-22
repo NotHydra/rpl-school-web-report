@@ -2,10 +2,15 @@ import { Injectable, Logger } from '@nestjs/common';
 import axios from 'axios';
 
 class AppUtililty {
-  async getStudentData() {
-    const student_response = await axios.get(
-      'http://localhost:3000/api/student',
-    );
+  async getStudentData(id = 'all') {
+    let student_response;
+    if (id == 'all') {
+      student_response = await axios.get('http://localhost:3000/api/student');
+    } else if (id != 'all') {
+      student_response = await axios.get(
+        `http://localhost:3000/api/student/${id}`,
+      );
+    }
 
     let student_data = [];
     student_response.data.forEach((dict) => student_data.push(dict));
@@ -14,17 +19,9 @@ class AppUtililty {
   }
 
   async getAssignmentId(type: string, count: number) {
-    let assignment_response;
-
-    if (type == 'week' || type == 'month') {
-      assignment_response = await axios.get(
-        `http://localhost:3000/api/assignment/${type}/${count}`,
-      );
-    } else if (type == 'all') {
-      assignment_response = await axios.get(
-        'http://localhost:3000/api/assignment',
-      );
-    }
+    const assignment_response = await axios.get(
+      `http://localhost:3000/api/assignment/${type}/${count}`,
+    );
 
     let assignment_id = [];
     assignment_response.data.forEach((dict) => {
@@ -76,6 +73,7 @@ class AppUtililty {
 
 @Injectable()
 export class AppService extends AppUtililty {
+  //#region student all
   async getStudentAll() {
     let student_data = await this.getStudentData();
 
@@ -153,4 +151,15 @@ export class AppService extends AppUtililty {
 
     return student_data;
   }
+
+  //#endregion student all
+
+  //#region student id
+  async getStudentId(id) {
+    let student_data = await this.getStudentData(id);
+
+    return student_data;
+  }
+
+  //#endregion student id
 }
