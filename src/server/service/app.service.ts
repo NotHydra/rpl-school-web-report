@@ -1,4 +1,4 @@
-import { Injectable, Logger } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import axios from 'axios';
 
 class AppUtililty {
@@ -204,6 +204,28 @@ export class AppService extends AppUtililty {
   ) {
     let subject_id = await this.getSubjectId(name);
     let unfiltered_assignment_id = await this.getAssignmentId('week', count);
+    let unfiltered_student_data = await this.getStudentData(id);
+
+    const assignment_id = this.filterAssignmentId(
+      unfiltered_assignment_id,
+      subject_id,
+    );
+
+    const student_data = this.filterStudentData(
+      unfiltered_student_data,
+      assignment_id,
+    );
+
+    return student_data;
+  }
+
+  async getStudentIdByAssignmentMonthAndSubject(
+    id: number,
+    count: number,
+    name: string,
+  ) {
+    let subject_id = await this.getSubjectId(name);
+    let unfiltered_assignment_id = await this.getAssignmentId('month', count);
     let unfiltered_student_data = await this.getStudentData(id);
 
     const assignment_id = this.filterAssignmentId(

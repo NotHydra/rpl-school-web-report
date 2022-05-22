@@ -94,5 +94,18 @@ export class AppController {
     );
   }
 
+  @Get('/student/:id/assignment/month/:count/subject/:name')
+  getStudentIdByAssignmentMonthAndSubject(
+    @Param('id', new ParseIntPipe()) id: number,
+    @Param('count', new ParseIntPipe()) count: number,
+    @Param('name') name: string,
+  ) {
+    return this.appService.getStudentIdByAssignmentMonthAndSubject(
+      id,
+      count,
+      name,
+    );
+  }
+
   //#endregion student id
 }
