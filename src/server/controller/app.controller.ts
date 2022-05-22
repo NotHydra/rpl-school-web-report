@@ -57,5 +57,13 @@ export class AppController {
     return this.appService.getStudentId(id);
   }
 
+  @Get('/student/:id/assignment/all/subject/:name')
+  getStudentIdByAssignmentSubject(
+    @Param('id', new ParseIntPipe()) id: number,
+    @Param('name') name: string,
+  ) {
+    return this.appService.getStudentIdByAssignmentSubject(id, name);
+  }
+
   //#endregion student id
 }

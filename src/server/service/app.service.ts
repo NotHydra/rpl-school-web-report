@@ -2,7 +2,7 @@ import { Injectable, Logger } from '@nestjs/common';
 import axios from 'axios';
 
 class AppUtililty {
-  async getStudentData(id = 'all') {
+  async getStudentData(id: number | string) {
     let student_response;
     if (id == 'all') {
       student_response = await axios.get('http://localhost:3000/api/student');
@@ -75,14 +75,14 @@ class AppUtililty {
 export class AppService extends AppUtililty {
   //#region student all
   async getStudentAll() {
-    let student_data = await this.getStudentData();
+    let student_data = await this.getStudentData('all');
 
     return student_data;
   }
 
   async getStudentAllByAssignmentSubject(name: string) {
     let subject_id = await this.getSubjectId(name);
-    let unfiltered_student_data = await this.getStudentData();
+    let unfiltered_student_data = await this.getStudentData('all');
 
     const student_data = this.filterStudentData(
       unfiltered_student_data,
@@ -94,7 +94,7 @@ export class AppService extends AppUtililty {
 
   async getStudentAllByAssignmentWeek(count: number) {
     let assignment_id = await this.getAssignmentId('week', count);
-    let unfiltered_student_data = await this.getStudentData();
+    let unfiltered_student_data = await this.getStudentData('all');
 
     const student_data = this.filterStudentData(
       unfiltered_student_data,
@@ -106,7 +106,7 @@ export class AppService extends AppUtililty {
 
   async getStudentAllByAssignmentMonth(count: number) {
     let assignment_id = await this.getAssignmentId('month', count);
-    let unfiltered_student_data = await this.getStudentData();
+    let unfiltered_student_data = await this.getStudentData('all');
 
     const student_data = this.filterStudentData(
       unfiltered_student_data,
@@ -119,7 +119,7 @@ export class AppService extends AppUtililty {
   async getStudentAllByAssignmentWeekAndSubject(count: number, name: string) {
     let subject_id = await this.getSubjectId(name);
     let unfiltered_assignment_id = await this.getAssignmentId('week', count);
-    let unfiltered_student_data = await this.getStudentData();
+    let unfiltered_student_data = await this.getStudentData('all');
 
     const assignment_id = this.filterAssignmentId(
       unfiltered_assignment_id,
@@ -137,7 +137,7 @@ export class AppService extends AppUtililty {
   async getStudentAllByAssignmentMonthAndSubject(count: number, name: string) {
     let subject_id = await this.getSubjectId(name);
     let unfiltered_assignment_id = await this.getAssignmentId('month', count);
-    let unfiltered_student_data = await this.getStudentData();
+    let unfiltered_student_data = await this.getStudentData('all');
 
     const assignment_id = this.filterAssignmentId(
       unfiltered_assignment_id,
@@ -155,8 +155,20 @@ export class AppService extends AppUtililty {
   //#endregion student all
 
   //#region student id
-  async getStudentId(id) {
+  async getStudentId(id: number) {
     let student_data = await this.getStudentData(id);
+
+    return student_data;
+  }
+
+  async getStudentIdByAssignmentSubject(id: number, name: string) {
+    let subject_id = await this.getSubjectId(name);
+    let unfiltered_student_data = await this.getStudentData(id);
+
+    const student_data = this.filterStudentData(
+      unfiltered_student_data,
+      subject_id,
+    );
 
     return student_data;
   }
