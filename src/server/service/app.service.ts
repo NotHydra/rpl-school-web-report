@@ -197,5 +197,27 @@ export class AppService extends AppUtililty {
     return student_data;
   }
 
+  async getStudentIdByAssignmentWeekAndSubject(
+    id: number,
+    count: number,
+    name: string,
+  ) {
+    let subject_id = await this.getSubjectId(name);
+    let unfiltered_assignment_id = await this.getAssignmentId('week', count);
+    let unfiltered_student_data = await this.getStudentData(id);
+
+    const assignment_id = this.filterAssignmentId(
+      unfiltered_assignment_id,
+      subject_id,
+    );
+
+    const student_data = this.filterStudentData(
+      unfiltered_student_data,
+      assignment_id,
+    );
+
+    return student_data;
+  }
+
   //#endregion student id
 }
