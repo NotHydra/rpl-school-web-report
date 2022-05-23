@@ -1,13 +1,9 @@
 import { Controller, Get, Param, ParseIntPipe, Render } from '@nestjs/common';
-import { AssignmentService } from '../service/assignment.service';
 import { studentAllService } from '../service/studentAll.service';
 
 @Controller('/student/all')
 export class StudentAllController {
-  constructor(
-    private readonly studentAllService: studentAllService,
-    private readonly assignmentService: AssignmentService,
-  ) {}
+  constructor(private readonly studentAllService: studentAllService) {}
 
   @Get('/assignment/all/subject/all')
   @Render('index')
@@ -24,7 +20,7 @@ export class StudentAllController {
     return {
       student_data:
         await this.studentAllService.getStudentAllByAssignmentSubject(name),
-      assignment_data: await this.assignmentService.getAssignmentAll(),
+      assignment_data: await this.studentAllService.getAssignmentAll(),
     };
   }
 
@@ -37,7 +33,7 @@ export class StudentAllController {
       student_data: await this.studentAllService.getStudentAllByAssignmentWeek(
         count,
       ),
-      assignment_data: await this.assignmentService.getAssignmentAll(),
+      assignment_data: await this.studentAllService.getAssignmentAll(),
     };
   }
 
@@ -50,7 +46,7 @@ export class StudentAllController {
       student_data: await this.studentAllService.getStudentAllByAssignmentMonth(
         count,
       ),
-      assignment_data: await this.assignmentService.getAssignmentAll(),
+      assignment_data: await this.studentAllService.getAssignmentAll(),
     };
   }
 
@@ -66,7 +62,7 @@ export class StudentAllController {
           count,
           name,
         ),
-      assignment_data: await this.assignmentService.getAssignmentAll(),
+      assignment_data: await this.studentAllService.getAssignmentAll(),
     };
   }
 
@@ -82,7 +78,7 @@ export class StudentAllController {
           count,
           name,
         ),
-      assignment_data: await this.assignmentService.getAssignmentAll(),
+      assignment_data: await this.studentAllService.getAssignmentAll(),
     };
   }
 }

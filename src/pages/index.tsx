@@ -21,7 +21,7 @@ const Home = ({ student_data, assignment_data }) => {
 
             {filtered_assignment.map((assignment_dict) => {
               return (
-                <th>
+                <th key={(assignment_dict.subject, assignment_dict.count)}>
                   {assignment_dict.subject}
                   {assignment_dict.count}
                 </th>
@@ -33,14 +33,16 @@ const Home = ({ student_data, assignment_data }) => {
           {student_data.map((student) => {
             const student_assignment_status = student.assignment.map(
               (assignment_dict) => {
-                return <td>{assignment_dict.status}</td>;
+                return (
+                  <td key={assignment_dict.status}>{assignment_dict.status}</td>
+                );
               },
             );
 
             return (
               <tr>
-                <td>{student.id}</td>
-                <td>{student.name}</td>
+                <td key={student.id}>{student.id}</td>
+                <td key={student.name}>{student.name}</td>
                 {student_assignment_status}
               </tr>
             );
