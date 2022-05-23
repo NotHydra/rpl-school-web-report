@@ -14,7 +14,7 @@ export class StudentAllController {
   async getStudentAll() {
     return {
       student_data: await this.studentAllService.getStudentAll(),
-      assignment_data: await this.assignmentService.getAssignmentAll(),
+      assignment_data: await this.studentAllService.getAssignmentAll(),
     };
   }
 

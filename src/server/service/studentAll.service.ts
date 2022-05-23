@@ -80,4 +80,10 @@ export class studentAllService extends StudentUtililty {
 
     return student_data;
   }
+
+  async getAssignmentAll() {
+    let assignment_data = await this.getAssignmentData();
+
+    return assignment_data;
+  }
 }

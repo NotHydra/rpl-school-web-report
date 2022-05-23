@@ -68,6 +68,17 @@ class StudentUtililty {
 
     return assignment_id;
   }
+
+  async getAssignmentData() {
+    let assignment_response = await axios.get(
+      'http://localhost:3000/api/assignment',
+    );
+
+    let assignment_data = [];
+    assignment_response.data.forEach((dict) => assignment_data.push(dict));
+
+    return assignment_data;
+  }
 }
 
 export default StudentUtililty;
