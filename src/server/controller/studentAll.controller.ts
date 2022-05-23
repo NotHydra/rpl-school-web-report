@@ -1,53 +1,88 @@
-import { Controller, Get, Param, ParseIntPipe } from '@nestjs/common';
+import { Controller, Get, Param, ParseIntPipe, Render } from '@nestjs/common';
+import { AssignmentService } from '../service/assignment.service';
 import { studentAllService } from '../service/studentAll.service';
 
 @Controller('/student/all')
 export class StudentAllController {
-  constructor(private readonly studentAllService: studentAllService) {}
+  constructor(
+    private readonly studentAllService: studentAllService,
+    private readonly assignmentService: AssignmentService,
+  ) {}
 
   @Get('/assignment/all/subject/all')
-  getStudentAll() {
-    return this.studentAllService.getStudentAll();
+  @Render('index')
+  async getStudentAll() {
+    return {
+      student_data: await this.studentAllService.getStudentAll(),
+      assignment_data: await this.assignmentService.getAssignmentAll(),
+    };
   }
 
   @Get('/assignment/all/subject/:name')
-  getStudentAllByAssignmentSubject(@Param('name') name: string) {
-    return this.studentAllService.getStudentAllByAssignmentSubject(name);
+  @Render('index')
+  async getStudentAllByAssignmentSubject(@Param('name') name: string) {
+    return {
+      student_data:
+        await this.studentAllService.getStudentAllByAssignmentSubject(name),
+      assignment_data: await this.assignmentService.getAssignmentAll(),
+    };
   }
 
   @Get('/assignment/week/:count/subject/all')
-  getStudentAllByAssignmentWeek(
+  @Render('index')
+  async getStudentAllByAssignmentWeek(
     @Param('count', new ParseIntPipe()) count: number,
   ) {
-    return this.studentAllService.getStudentAllByAssignmentWeek(count);
+    return {
+      student_data: await this.studentAllService.getStudentAllByAssignmentWeek(
+        count,
+      ),
+      assignment_data: await this.assignmentService.getAssignmentAll(),
+    };
   }
 
   @Get('/assignment/month/:count/subject/all')
-  getStudentAllByAssignmentMonth(
+  @Render('index')
+  async getStudentAllByAssignmentMonth(
     @Param('count', new ParseIntPipe()) count: number,
   ) {
-    return this.studentAllService.getStudentAllByAssignmentMonth(count);
+    return {
+      student_data: await this.studentAllService.getStudentAllByAssignmentMonth(
+        count,
+      ),
+      assignment_data: await this.assignmentService.getAssignmentAll(),
+    };
   }
 
   @Get('/assignment/week/:count/subject/:name')
-  getStudentAllByAssignmentWeekAndSubject(
+  @Render('index')
+  async getStudentAllByAssignmentWeekAndSubject(
     @Param('count', new ParseIntPipe()) count: number,
     @Param('name') name: string,
   ) {
-    return this.studentAllService.getStudentAllByAssignmentWeekAndSubject(
-      count,
-      name,
-    );
+    return {
+      student_data:
+        await this.studentAllService.getStudentAllByAssignmentWeekAndSubject(
+          count,
+          name,
+        ),
+      assignment_data: await this.assignmentService.getAssignmentAll(),
+    };
   }
 
   @Get('/assignment/month/:count/subject/:name')
-  getStudentAllByAssignmentMonthAndSubject(
+  @Render('index')
+  async getStudentAllByAssignmentMonthAndSubject(
     @Param('count', new ParseIntPipe()) count: number,
     @Param('name') name: string,
   ) {
-    return this.studentAllService.getStudentAllByAssignmentMonthAndSubject(
-      count,
-      name,
-    );
+    return {
+      student_data:
+        await this.studentAllService.getStudentAllByAssignmentMonthAndSubject(
+          count,
+          name,
+        ),
+      assignment_data: await this.assignmentService.getAssignmentAll(),
+    };
   }
 }
