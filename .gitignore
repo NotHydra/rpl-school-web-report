@@ -1,0 +1,10 @@
+note.txt
+
+scripts/excel/*
+!scripts/excel/.gitkeep
+
+scripts/json/*
+!scripts/json/assignment-schema.json
+!scripts/json/student-schema.json
+
+**/__pycache__
