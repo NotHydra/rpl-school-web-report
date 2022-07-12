@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "month": 1,
+        "week": [
+            {
+                "id": 1,
+                "week": 1, 
+                "assignment": [
+                    {
+                        "id": 1,
+                        "subject": "string",
+                        "count": 1
+                    }
+                ]
+            }
+        ]
+    }
+]
