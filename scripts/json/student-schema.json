@@ -2,13 +2,13 @@
     {
         "id": 1,
         "name": "string",
-        "is_muslim": true,
+        "isMuslim": true,
         "assignment": [
             {
                 "id": 1,
-                "month_id": 1,
-                "week_id": 1,
-                "assignment_id": 1,
+                "monthId": 1,
+                "weekId": 1,
+                "assignmentId": 1,
                 "status": 1
             }
         ]
