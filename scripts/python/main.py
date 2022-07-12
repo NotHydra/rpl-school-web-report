@@ -2,6 +2,13 @@ from excel import Excel
 from utility import Utility
 
 class Main():
+    nonMuslimStudent = [
+        "Keatryn Kezia P. Sihombing",
+        "Nicholas Davin Yang",
+        "O'neil Kerry Laurent",
+        "Yehezkiel Dio Sinolungan"
+    ]
+
     def main():
         workbook = Excel("./scripts/excel/List Tugas Gabunggan.xlsx")
 
@@ -92,6 +99,40 @@ class Main():
 
 
         Utility.writeJSON("./scripts/json/assignment.json", monthList)
+
+        studentData = workbook.get_value_multiple_2d("B5", "AT39")
+
+        studentList = []
+        for studentIndex, student in enumerate(studentData):
+            
+            assignmentList = []
+            assignmentCount = 1
+            for month in monthList:
+                for week in month["week"]:
+                    for assignment in week["assignment"]:
+                        assignmentObject = {
+                            "id": assignmentCount,
+                            "monthId": month["id"],
+                            "weekId": week["id"],
+                            "assignmentId": assignment["id"],
+                            "status": Utility.convertStatus(student[assignmentCount])
+                        }
+
+                        assignmentList.append(assignmentObject)
+                        assignmentCount += 1
+                        
+
+            studentObject = {
+                "id": studentIndex + 1,
+                "name": student[0],
+                "isMuslim": True if student[0] not in Main.nonMuslimStudent else False,
+                "assignment": assignmentList
+            }
+
+            studentList.append(studentObject)
+
+
+        Utility.writeJSON("./scripts/json/student.json", studentList)
 
 
 Main.main()
