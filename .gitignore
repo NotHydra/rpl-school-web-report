@@ -1,6 +1,7 @@
 dist
 node_modules
 
+.env
 note.txt
 
 **/__pycache__
