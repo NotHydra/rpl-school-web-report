@@ -1,4 +1,9 @@
+dist
+node_modules
+
 note.txt
+
+**/__pycache__
 
 scripts/excel/*
 !scripts/excel/.gitkeep
@@ -6,5 +11,3 @@ scripts/excel/*
 scripts/json/*
 !scripts/json/assignment-schema.json
 !scripts/json/student-schema.json
-
-**/__pycache__
